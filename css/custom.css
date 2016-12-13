@@ -1,10 +1,5 @@
 /*  font declaration */
 @font-face {
-   font-family: museo-sans;
-   src: url(museo/MuseoSans-500.otf);
-}
-
-@font-face {
    font-family: futura;
    src: url(futura/FuturaStd-Medium.otf);
 }
