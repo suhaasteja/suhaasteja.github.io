@@ -263,7 +263,7 @@ a.quick-links-current:active {
 
 .project-details {
 	font-family: 'Source Sans Pro';
-	font-weight: 500;
+	font-weight: 600;
 	font-size: 18px;
 	line-height: 28px;
 	margin: 0px;
@@ -431,10 +431,17 @@ h2.cover-title {
 
 h4.cover-subtitle {
 	color: #fff;
-	font-family: 'futura', sans-serif;
+	font-family: 'futura-light', sans-serif;
     font-size: 21px;
-    line-height: 32px;
+    line-height: 27px;
     margin: 0px;   
+}
+
+h6.cover-text {
+	color: #fff;
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
 }
 
 .caption-holder {
@@ -721,7 +728,7 @@ ul.nolist{
 }
 
 .margin-btm-lg {
-	margin-bottom: 80px !important;
+	margin-bottom: 40px !important;
 }
 
 .margin-lg {
