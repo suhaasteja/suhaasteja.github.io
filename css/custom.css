@@ -428,8 +428,9 @@ h2.cover-title {
 
 h4.cover-subtitle {
 	color: #fff;
-	font-family: 'futura-light', sans-serif;
-    font-size: 21px;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: 300;
+    font-size: 18px;
     line-height: 27px;
     margin: 0px;   
 }
