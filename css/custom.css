@@ -48,7 +48,7 @@ h2.text-over-img{
 
 h2 span{
 	color: white; 
-	font: bold 24px/42px 'Source Sans Pro', Sans-Serif;
+	font: bold 24px/42px 'Helvetica Neue';
 	letter-spacing: -1px;
 	background: rgba(0, 0, 0, 0.7);
 	padding: 10px 20px; 
@@ -56,9 +56,9 @@ h2 span{
 
 h4{
 	font-size: 16px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Helvetica Neue';
     font-weight: 300;
-    line-height: 24px;
+    line-height: 20px;
     color: #282828;
     margin: 16px 0px 24px 0px;
 }
@@ -100,7 +100,7 @@ div.tooltip-container {
 }
 
 p.tooltiptext{
-	font: 12px/21px 'Source Sans Pro', Sans-Serif;
+	font: 12px/21px 'Helvetica Neue';
 	padding: 5px 5px;
 	margin: 0px;
 }
@@ -174,9 +174,9 @@ nav.navbar.shrink{
 div.hr {
 	background: #fff  no-repeat scroll center;
 	height: 56px;
-    border-top: 1px solid #a5a4a4;
-    border-bottom: 1px solid #a5a4a4;
-    -webkit-transition: all 0.5s ease;
+    /*border-top: 1px solid #a5a4a4;
+    border-bottom: 1px solid #a5a4a4;*/
+    -webkit-transition: all 0.5s ease
 	transition: all 0.5s ease;
 }
 
@@ -187,8 +187,8 @@ div.header-shrink{
 div.current-page{
 	padding-left: 24px;
 	padding-right: 24px;
-	height: 24px;
-	background-color: #f2893b;
+	/*background-color: #f2893b;*/
+	border-bottom: 3px solid #f2893b;
 	display: inline-block;
 	margin-top: 16px;
 }
@@ -212,7 +212,7 @@ div.nav-page-tabs.shrink{
 
 a.quick-links{
 	text-transform: uppercase;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'futura-light';
 	font-weight: 300;
 	color: #4c4c4d;
 	font-size: 16px;
@@ -234,9 +234,9 @@ a.quick-links:active {
 
 a.quick-links-current{
 	text-transform: uppercase;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'futura-light';
 	font-weight: 300;
-	color: #fff;
+	color: #f2893b;
 	font-size: 16px;
 	margin-bottom: 0px;
 	line-height: 24px;
@@ -249,7 +249,7 @@ a.quick-links-current:active {
 }
 
 .content {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Helvetica Neue';
 	font-weight: 300;
 	color: #444444;
 	font-size: 14px;
@@ -262,7 +262,7 @@ a.quick-links-current:active {
 }
 
 .project-details {
-	font-family: 'Source Sans Pro';
+	font-family: 'Helvetica Neue';
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 28px;
@@ -270,7 +270,7 @@ a.quick-links-current:active {
 }
 
 .details {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Helvetica Neue';
 	font-weight: 300;
 	color: #4c4c4d;
 	font-size: 16px;
@@ -281,13 +281,13 @@ a.quick-links-current:active {
 }
 
 div.sr {
-	height: 1px;
-    background: #a5a4a4;
+	height: 2px;
+    background: #333;
     margin: 18px 0px;
 }
 
 h3.sub-header{
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Helvetica Neue';
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 26px;
@@ -329,7 +329,7 @@ div.project-list {
 p.footer-text{
 	margin: 24px 0px 24px 0px;
 	line-height: 24px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Helvetica Neue';
 	font-weight: 300;
 	color: #4c4c4d;
 	font-size: 14px;
@@ -337,9 +337,8 @@ p.footer-text{
 
 a.footer-list {
 	line-height: 36px;
-	font-family: 'Source Sans Pro';
-	font-weight: 300;
-	font-size: 14px;
+	font-family: 'Helvetica Neue';
+	font-size: 16px;
 	color: #4c4c4d;
 }
 
@@ -439,7 +438,7 @@ h4.cover-subtitle {
 
 h6.cover-text {
 	color: #fff;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Helvetica Neue';
     font-size: 18px;
     margin-top: 20px;
 }
@@ -516,17 +515,17 @@ div.underline{
 }
 
 .page-sub-header{
-	font-family: 'futura', sans-serif;
-	font-weight: 600;
-	font-size: 18px;
+	font-family: 'Helvetica Neue';
+	font-weight: 700;
+	font-size: 21px;
 	margin-bottom: 12px;
 	color: #444;
-	text-transform: uppercase;
 }
 
 .cstm-section-header {
-	font-family: 'futura', sans-serif;
+	font-family: 'Helvetica Neue';
 	font-size: 24px;
+	font-weight: 500;
 	line-height: 30px;
 	display: inline-block;
 	text-transform: uppercase;
@@ -550,7 +549,7 @@ div.underline{
 }
 
 .body-text{
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Helvetica Neue';
 	font-weight: 300;
 	color: #4c4d4d;
 	font-size: 16px;
@@ -559,7 +558,7 @@ div.underline{
 }
 
 .ref-text {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: "Helvetica Neue";
 	font-weight: 300;
 	font-size: 12px;
 	color: #666;
@@ -573,13 +572,13 @@ div.underline{
 }
 
 .caption-text{
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Helvetica Neue';
 	font-weight: 400;
 	font-size: 14px;
 }
 
 .contact-text {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Helvetica Neue';
 	font-weight: 400;
 	color: #f47d39;
 	font-size: 16px;
@@ -628,7 +627,7 @@ div.underline{
 	border: 1px solid #444;
 	line-height: 34px;
 	font-size: 21px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Helvetica Neue';
 	color: #444;
 }
 
@@ -657,7 +656,7 @@ ul.nolist{
 }
 
 .list-section-header {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Helvetica Neue';
 	font-weight: 700;
 	font-size: 18px;
 	text-transform: uppercase;
