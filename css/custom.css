@@ -34,8 +34,6 @@ h2
 h2.text-over-img{
 	position: relative; 
 	width: 100%;
-	z-index: 99;
-	top: -90px;
 }
 
 /*
