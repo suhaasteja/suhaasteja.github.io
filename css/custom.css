@@ -165,16 +165,12 @@ a.social-icons:active {
 	transition: all 0.5s ease;
 }
 
-nav.navbar.shrink{
-	min-height: 60px;
-}
-
 div.hr {
 	background: #fff  no-repeat scroll center;
 	height: 56px;
     /*border-top: 1px solid #a5a4a4;
     border-bottom: 1px solid #a5a4a4;*/
-    -webkit-transition: all 0.5s ease
+    -webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
