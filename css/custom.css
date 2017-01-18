@@ -530,7 +530,8 @@ div.underline{
 }
 
 .section-sub-header{
-	font-family: 'futura', sans-serif;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-weight: 600;
 	font-size: 18px;
 	color: #666;
 }
