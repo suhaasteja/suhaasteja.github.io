@@ -9,6 +9,11 @@
    src: url(futura/FuturaStd-Light.otf);
 }
 
+@font-face {
+   font-family: futura-b;
+   src: url(futura/FuturaStd-Heavy.otf);
+}
+
 /* declaration end */
 
 body {
@@ -36,14 +41,6 @@ h2.text-over-img{
 	width: 100%;
 }
 
-/*
-.header-over-img{
-	position: relative; 
-	width: 100%;
-	z-index: 99;
-	top: 270px;
-}*/
-
 h2 span{
 	color: white; 
 	font: bold 24px/42px 'Helvetica Neue';
@@ -60,6 +57,14 @@ h4{
     color: #282828;
     margin: 16px 0px 24px 0px;
 }
+
+h4.project-header {
+    font-size: 21px;
+    font-family: 'futura-b', sans-serif;
+    text-transform: uppercase;
+    color: #444;
+}
+
 .uppercase{
 	text-transform: uppercase;
 }

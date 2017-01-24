@@ -40,7 +40,7 @@
         .grad-cover{
             z-index: 1;
             position: relative;
-            height: 270px;
+            max-height: 270px;
             background: -webkit-linear-gradient(left, rgba(10,10,10,0.9), rgba(80,80,80,0.2));
             padding-left: 90px;
         }
@@ -49,7 +49,7 @@
             color: #fff;
             font-family: "Futura", sans-serif;
             font-weight: 600;
-            font-size: 36px;
+            font-size: 4.5vmin;
             line-height: 270px;
             display: inline-block;
         }
@@ -63,8 +63,20 @@
             overflow: hidden;
         }
 
+        .bg-gamb {
+            background-image: url("images/gamb.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bg-arts {
+            background: url("images/dance.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
         .cover-icon{
-            height: 96px;
+            min-height: 80px;
             margin-top: -12px;
         }
     </style>
@@ -138,12 +150,8 @@
                     </div>
                     
                     <div class="row">
-                        <div class="col-lg-12 margin-top-lg margin-btm-md" style="display:flex;justify-content:center;align-items:center;">
-                            <div class="section-line"></div>
-                            <h4 class="cstm-section-header">Individual Project</h4>
-                            <div class="section-line"></div>
-                        </div>
-                        <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+                        <div class="col-md-8 margin-top-lg">
+                            <h4 class="project-header">Individual Project</h4>
                             <p class="body-text">We wanted to provide the food insecure population with information for improved access to information resources in order to meet one of the most basic amenities - food.</p>
                         </div>
                     </div>
@@ -154,20 +162,14 @@
                                     <p class="grad-cover-text">St. Petersburg Paradox</p>
                                     <img class="cover-icon" src="images/right.svg">
                                 </div>
-                                <div class="grad-img-placeholder">
-                                    <img class="grad-img img-responsive" src="images/gamb.jpg">
-                                </div>
+                                <div class="grad-img-placeholder bg-gamb"></div>
                             </a>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-12 margin-top-lg margin-btm-md" style="display:flex;justify-content:center;align-items:center;">
-                            <div class="section-line"></div>
-                            <h4 class="cstm-section-header">Group Project</h4>
-                            <div class="section-line"></div>
-                        </div>
-                        <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+                        <div class="col-md-8 margin-top-lg">
+                            <h4 class="project-header">Group Project</h4>
                             <p class="body-text">We created a text-message based system that increases access to hot meals for homeless populations. The system will send out information about the nearest food kitchens from a given zipcode along with other information needs. Our soslution takes into account the immediate goals along with the techonological constraints of the target users.</p>
                         </div> 
                     </div>
@@ -178,9 +180,7 @@
                                     <p class="grad-cover-text">Engagement in Arts</p>
                                     <img class="cover-icon" src="images/right.svg">
                                 </div>
-                                <div class="grad-img-placeholder">
-                                    <img class="grad-img img-responsive" src="images/dance.jpg">
-                                </div>
+                                <div class="grad-img-placeholder bg-arts"></div>
                             </a>
                         </div>
                     </div>
