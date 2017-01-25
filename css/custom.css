@@ -58,13 +58,6 @@ h4{
     margin: 16px 0px 24px 0px;
 }
 
-h4.project-header {
-    font-size: 21px;
-    font-family: 'futura-b', sans-serif;
-    text-transform: uppercase;
-    color: #444;
-}
-
 .uppercase{
 	text-transform: uppercase;
 }
@@ -783,7 +776,6 @@ ul.nolist{
 	color: #4c4d4d;
 	font-size: 16px;
 	line-height: 24px;
-	vertical-align: middle;
 	border-bottom: 1px #f2893b solid;
 }
 
