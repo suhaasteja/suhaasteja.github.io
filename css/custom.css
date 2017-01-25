@@ -774,3 +774,23 @@ ul.nolist{
 .play-store-link{
 	max-width: 120px;
 }
+
+.ref-link {
+	text-decoration: none;
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	color: #4c4d4d;
+	font-size: 16px;
+	line-height: 24px;
+	vertical-align: middle;
+	border-bottom: 1px #f2893b solid;
+}
+
+a.ref-link:hover,
+a.ref-link:focus,
+a.ref-link:active
+ {
+ 	text-decoration: none;
+	color: #f2893b;
+}
