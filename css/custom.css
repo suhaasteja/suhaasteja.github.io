@@ -420,6 +420,12 @@ h2.cover-title {
     
 }
 
+.page-header-bd {
+    font-family: 'futura-b', sans-serif;
+    font-size: 27px;
+    font-color: #444 !important;
+}
+
 h4.cover-subtitle {
 	color: #fff;
 	font-family: 'Helvetica Neue', sans-serif;
