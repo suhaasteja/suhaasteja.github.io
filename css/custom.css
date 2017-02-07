@@ -394,6 +394,18 @@ a.cstm-btn-class:hover{
 	background-color: #f2893b;
 }
 
+a.body-link{
+	color: #444;
+	font-weight: 400;
+	text-decoration: underline;
+}
+
+a.body-link:focus,
+a.body-link:active,
+a.body-link:hover{
+	color: #f2893b;
+}
+
 
 .insta {
 	padding: 0px 36px;
