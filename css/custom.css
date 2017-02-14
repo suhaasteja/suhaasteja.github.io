@@ -872,6 +872,12 @@ a.ref-link:active
     cursor: pointer;
 }
 
+.shadow-box{
+	box-shadow: 0px 2px 8px #bbb;
+	padding: 12px 24px;
+	min-height: 108px;
+}
+
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px){
     .modal-content {
