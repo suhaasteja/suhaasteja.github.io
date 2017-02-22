@@ -133,18 +133,30 @@
                         <div class="col-md-6">
                             <p class="body-text">We created a solution which aims to give the user a conceptual understanding of sorting algorithms. The design allows the user to <b>explore about sorting algorithms through a scenario based task followed by a visualization of the sorting process</b>. Feedback is provided based on the task through the visualizations and allows the user to re-attempt the task.</p>
                         </div>
-                    </div>   
-                
-                    <h4 class="cstm-section-header margin-top-xl">01. Methodology</h4>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class="body-text">I initially followed an <b>open-ended literature research</b> in the domain of Algorithm Visualizations (AVs) in order to obtain a holistic idea of the work done till now and <b>identify possible areas of intervention</b>.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="body-text">This was followed by problem identification and the traditional design methodology to address this problem.</p>
-                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="dark-bg-container margin-top-xl">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-xs-12">
+                        <h4 class="cstm-section-header" style="color: #fff">01. Methodology</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="body-text" style="color: #fff">I initially followed an open-ended literature research in the domain of Algorithm Visualizations (AVs) in order to obtain a holistic idea of the work done till now and identify possible areas of intervention.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="body-text" style="color: #fff">This was followed by problem identification and the traditional design methodology to address this problem.</p>
+                            </div>
+                        </div>
+                        <img class="img-responsive margin-top-md" src="images/method.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <h4 class="cstm-section-header margin-top-xl">02. Literature Research</h4>
                     <h4 class="page-sub-header margin-top-lmd">Key Findings</h4>
@@ -331,25 +343,7 @@
         </a>
     </div>
 
-    <script>   
-        window.onresize = function(){ location.reload(); }
-
-        litResearchHt = $('.method-container#lit-research').height()-24;
-        resInsightHt = $('.method-container#res-insight').height()-56;
-        probStatementHt = $('.method-container#prob-statement').height()-56;
-        ideationHt = $('.method-container#ideation').height()-56;
-        instructGoalsHt = $('.method-container#instruct-goals').height()-56;
-        prototypingHt = $('.method-container#prototyping').height()-56;
-        usabilityHt = $('.method-container#usability').height()-56;
-
-        $('.pt-line#lit-research').height(litResearchHt+24);
-        $('.pt-line#res-insight').height(resInsightHt+12);
-        $('.pt-line#prob-statement').height(probStatementHt+32+24);
-        $('.pt-line#ideation').height(ideationHt+32);
-        $('.pt-line#instruct-goals').height(instructGoalsHt+32);
-        $('.pt-line#prototyping').height(prototypingHt+32);
-        $('.pt-line#usability').height(usabilityHt+32);
-
+    <script>
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
                 $('nav').addClass('shrink');
@@ -390,95 +384,3 @@
 </body>
 
 </html>
-<!-- <div class="col-sm-1 col-sm-offset-2 col-xs-1">
-                    <div class="pt-circle" style="margin-top: 48px"></div>
-                    <div class="pt-line" id="lit-research"></div>
-                    <div class="pt-circle"></div>
-                    <div class="pt-line" id="res-insight"></div>
-                    <div class="pt-circle"></div>
-                    <div class="pt-line" id="prob-statement"></div>
-                    <div class="pt-circle"></div>
-                    <div class="pt-line" id="ideation"></div>
-                    <div class="pt-circle"></div>
-                    <div class="pt-line" id="instruct-goals"></div>
-                    <div class="pt-circle"></div>
-                    <div class="pt-line" id="usability"></div>
-                    <div class="pt-circle"></div>
-                </div>
-
-                <div class="col-sm-7 col-xs-8">
-                    <div class="row">
-                        <div class="col-xs-2">
-                            <img class="thumb-icon margin-top-sm" id="lit-research" src="images/method-01.svg">
-                        </div>
-                        <div class="col-xs-10 method-container" id="lit-research">
-                            <h6 class="list-section-header margin-top-sm">Literature Research</h6>
-                            <ul class="content nolist no-padding">
-                                <li class="margin-top-xs">Researched the effectiveness of AVs, perceived pedagogical effectiveness of AVs, salient features of effective AVs and Computer programming for school children</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-2">
-                            <img class="thumb-icon margin-top-lmd" id="res-insight" src="images/method-02.svg">
-                        </div>
-                        <div class="col-xs-10 method-container" id="res-insight">
-                            <h6 class="list-section-header margin-top-lmd">Research Insights</h6>
-                            <ul class="content nolist no-padding">
-                                <li class="margin-top-xs">Identified limits of current AVs and limits of CS education for school children</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-2">
-                            <img class="thumb-icon" id="prob-statement" style="margin-top: 40px" src="images/method-03.svg">
-                        </div>
-                        <div class="col-xs-10 method-container" id="prob-statement">
-                            <h6 class="list-section-header margin-top-lmd">Defining the Problem</h6>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-2">
-                            <img class="thumb-icon margin-top-lmd" id="ideation" src="images/method-04.svg">
-                        </div>
-                        <div class="col-xs-10 method-container" id="ideation">
-                            <h6 class="list-section-header margin-top-lmd">Ideation</h6>
-                            <ul class="content nolist no-padding">
-                                <li class="margin-top-xs">Brainstormed real-world applications of AVs, instructional design strategy and sketched multiple interfaces</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-2">
-                            <img class="thumb-icon margin-top-lmd" id="instruct-goals" src="images/method-05.svg">
-                        </div>
-                        <div class="col-xs-10 method-container" id="instruct-goals">
-                            <h6 class="list-section-header margin-top-lmd">Instructional Goals</h6>
-                            <ul class="content nolist no-padding">
-                                <li class="margin-top-xs">Identified the key instructional goals that such a system needs to achieve</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-2">
-                            <img class="thumb-icon margin-top-lmd" id="prototyping" src="images/method-06.svg">
-                        </div>
-                        <div class="col-xs-10 method-container" id="prototyping">
-                            <h6 class="list-section-header margin-top-lmd">Prototyping</h6>
-                            <ul class="content nolist no-padding">
-                                <li class="margin-top-xs">Developed a functional web-based system</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-2">
-                            <img class="thumb-icon margin-top-lmd" id="usability" src="images/method-07.svg">
-                        </div>
-                        <div class="col-xs-10 method-container" id="usability">
-                            <h6 class="list-section-header margin-top-lmd">Usability and Evaluation</h6>
-                            <ul class="content nolist no-padding">
-                                <li class="margin-top-xs">Preliminary usability testing of the interface and evaluating the interface in terms of the goals of the project.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
