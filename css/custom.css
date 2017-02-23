@@ -287,6 +287,7 @@ p.footer-text{
 	line-height: 32px;
 	text-align: center;
 	font-family: 'Avenir Next';
+	font-weight: 500;
 	font-size: 16px;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -296,8 +297,9 @@ a.cstm-btn-class{
 	margin: 12px auto;
 	display: block;
 	width: 144px;
-	border: solid 2px #fff;
-	color: #fff;
+	border: solid 2px #dc2127;
+	background-color: #444;
+	color: #dc2127;
 	border-radius: 2px;
 }
 
@@ -334,7 +336,7 @@ a.body-link:hover{
 
 div.cover-text-placeholder{
 	margin: auto;
-	padding: 18px 0px;
+	padding: 60px 0px;
 	z-index: 99;
 	background-color: #000;
 	opacity: 0.8;
@@ -444,6 +446,14 @@ h6.cover-text {
 	font-weight: 600;
 	font-size: 30px;
 	color: #444;
+}
+
+.sub-section-header{
+	font-family: 'Avenir Next', sans-serif;
+	font-style: italic;
+	font-weight: 600;
+	font-size: 24px;
+	color: #2f9ba0;
 }
 
 .section-sub-header{
