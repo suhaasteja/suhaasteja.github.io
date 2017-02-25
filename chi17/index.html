@@ -20,8 +20,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Custom JavaScript -->
-    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         .bg-cover {
             margin-top: 144px;
@@ -330,20 +330,6 @@
 
     <script>   
         window.onresize = function(){ location.reload(); }
-
-        litResearchHt = $('.method-container#lit-research').height()-24;
-        resInsightHt = $('.method-container#res-insight').height()-56;
-        probStatementHt = $('.method-container#prob-statement').height()-56;
-        ideationHt = $('.method-container#ideation').height()-56;
-        instructGoalsHt = $('.method-container#instruct-goals').height()-56;
-        prototypingHt = $('.method-container#prototyping').height()-56;
-
-        $('.pt-line#lit-research').height(litResearchHt+24);
-        $('.pt-line#res-insight').height(resInsightHt+12);
-        $('.pt-line#prob-statement').height(probStatementHt+32+24);
-        $('.pt-line#ideation').height(ideationHt+32);
-        $('.pt-line#instruct-goals').height(instructGoalsHt+32);
-        $('.pt-line#prototyping').height(prototypingHt+32);
 
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
