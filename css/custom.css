@@ -450,10 +450,9 @@ h6.cover-text {
 
 .sub-section-header{
 	font-family: 'Avenir Next', sans-serif;
-	font-style: italic;
 	font-weight: 600;
-	font-size: 24px;
-	color: #2f9ba0;
+	font-size: 21px;
+	margin-bottom: 12px;
 }
 
 .section-sub-header{
