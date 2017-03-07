@@ -510,6 +510,14 @@ h6.cover-text {
 	margin-left: 12px;
 }
 
+.contact-text:hover,
+.contact-text:focus,
+.contact-text:active
+ {
+	text-decoration: none;
+	color: #dc2127;
+}
+
 .thumb-icon {
 	width: 48px;
 	margin-right: 24px;
@@ -654,8 +662,8 @@ ul.nolist{
 	padding: 5px !important;
 }
 
-.padding-sm {
-	padding: 5px !important;
+.padding-md {
+	padding: 15px !important;
 }
 
 .no-padding {
