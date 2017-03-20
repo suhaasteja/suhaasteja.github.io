@@ -398,8 +398,8 @@ h6.cover-text {
 
 .caption-holder {
 	position: absolute;
-    width: calc(100% - 10px);
-    height: calc(100% - 10px);
+    width: calc(100% - 30px);
+    height: 100%;
     opacity: 0;
     background: #111;
     -webkit-transition: all ease .5s;
@@ -647,6 +647,10 @@ ul.nolist{
 .margin-sm {
 	margin-top: 24px !important;
 	margin-bottom: 24px !important;
+}
+
+.margin-pf {
+	margin-bottom: 30px;
 }
 
 .margin-top-md {
