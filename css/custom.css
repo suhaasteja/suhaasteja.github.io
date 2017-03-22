@@ -373,7 +373,7 @@ h2.cover-title {
 }
 
 .page-header-bd {
-    font-family: 'Libre Baskerville', sans-serif;
+    font-family: 'Libre Baskerville', serif;
     font-size: 36px;
     font-color: #444 !important;
     font-style: italic;
@@ -412,7 +412,7 @@ h6.cover-text {
 */
 
 .shine{
-	font-family: 'Libre Baskerville', sans-serif;
+	font-family: 'Libre Baskerville', serif;
     font-style: italic;
     font-size: 21px;
 }
@@ -425,6 +425,14 @@ a.portfolio-link:hover .caption {
     background: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.38)), to(rgba(255, 255, 255, 0.38))) 0 50px/52px 50px no-repeat #dd7676;
     -webkit-background-clip: text;
 }
+
+.caption:focus,
+.caption:active,
+.caption:hover {
+	text-decoration: none;
+	color: #dd7676;
+}
+
 
 @-webkit-keyframes shine
 {
@@ -439,7 +447,7 @@ a.portfolio-link:hover .caption {
 }
 
 .caption-title{
-	font-family: 'Libre Baskerville', sans-serif;
+	font-family: 'Libre Baskerville', serif;
     font-style: italic;
     font-size: 21px;
     margin-top: 12px;
@@ -450,41 +458,6 @@ a.portfolio-link:hover .caption {
 	font-family: 'Avenir Next', sans-serif;
 	font-size: 14px;
     margin: 0px;
-}
-
-.caption-content {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 20px;
-    margin-top: -24px;
-    text-align: center;
-    font-family: 'Avenir Next', sans-serif;
-    font-size: 21px;
-    color: #fff;
-}
-
-.caption-keyword {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 20px;
-    margin-top: 8px;
-    padding: 0px 12px;
-    text-align: center;
-    font-family: 'Libre Baskerville', sans-serif;
-    font-style: italic;
-    font-size: 14px;
-    color: #fff;
-}
-
-.caption-content i {
-    margin-top: -12px;
-}
-
-.caption-content h3,
-.caption-content h4 {
-    margin: 0;
 }
 
 .img-thumbnail {
