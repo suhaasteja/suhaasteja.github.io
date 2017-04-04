@@ -342,10 +342,6 @@ a.body-link:hover{
 	color: #333;
 }
 
-.caption {
-
-}
-
 .portfolio-link:hover{
 	text-decoration: none;
 	color: #DD7676;
@@ -418,6 +414,7 @@ h6.cover-text {
 }
 
 a.portfolio-link:hover .caption {
+	text-decoration: none !important;
     color: transparent;
     animation-name: shine;
     animation-duration: 0.3s;
@@ -425,14 +422,6 @@ a.portfolio-link:hover .caption {
     background: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.38)), to(rgba(255, 255, 255, 0.38))) 0 50px/52px 50px no-repeat #dd7676;
     -webkit-background-clip: text;
 }
-
-.caption:focus,
-.caption:active,
-.caption:hover {
-	text-decoration: none;
-	color: #dd7676;
-}
-
 
 @-webkit-keyframes shine
 {
@@ -459,6 +448,13 @@ a.portfolio-link:hover .caption {
 	font-size: 14px;
     margin: 0px;
 }
+
+a.portfolio-link:focus,
+a.portfolio-link:active {
+	text-decoration: none !important;
+	color: #dd7676;
+}
+
 
 .img-thumbnail {
 	padding: 0px !important;
