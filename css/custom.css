@@ -1,3 +1,8 @@
+@font-face {
+    font-family: futura-b;
+    src: url(futura/FuturaStd-Heavy.otf);
+}
+
 /* declaration end */
 
 body {
@@ -125,8 +130,6 @@ a.social-icons:active {
 	width: 100%;
 	z-index: 999;
 }
-
-
 
 .navbar{
 	border: 0px;
@@ -337,16 +340,6 @@ a.body-link:hover{
 	padding: 0px 36px;
 }
 
-.portfolio-link{
-	text-decoration: none;
-	color: #333;
-}
-
-.portfolio-link:hover{
-	text-decoration: none;
-	color: #DD7676;
-}
-
 .portfolio-item{
 	width: 100%;
 	margin: 0px;
@@ -390,23 +383,31 @@ h6.cover-text {
     font-size: 18px;
     margin-top: 20px;
 }
-/*
+
+
 .caption-holder {
 	position: absolute;
     width: calc(100% - 30px);
     height: 100%;
-    opacity: 0;
-    background: #111;
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
 }
 
-.caption-holder:hover {
-    opacity: 0.9;
+.caption-bg{
+	background: #111;
+	opacity: 0;
+	height: 100%;
+	width: calc(100% - 30px);
+	position: absolute;
 }
-*/
 
+.caption-holder:hover {
+	background: #333;
+	opacity: 0.9;
+}
+
+/*
 .shine{
 	font-family: 'Libre Baskerville', serif;
     font-style: italic;
@@ -434,25 +435,28 @@ a.portfolio-link:hover .caption {
         background-position: top right;
     }
 }
+*/
 
 .caption-title{
-	font-family: 'Libre Baskerville', serif;
-    font-style: italic;
-    font-size: 21px;
+	font-family: 'futura-b', serif;
+    font-size: 54px;
+    line-height: 54px;
     margin-top: 12px;
     margin-bottom: 0px;
+    color: #fff;
+    text-align: center;
+    margin-top: 96px;
+    z-index: 99;
 }
 
 .caption-subtitle{
 	font-family: 'Avenir Next', sans-serif;
 	font-size: 14px;
     margin: 0px;
-}
-
-a.portfolio-link:focus,
-a.portfolio-link:active {
-	text-decoration: none !important;
-	color: #dd7676;
+    color: #fff;
+    text-align: center;
+    margin-top: 12px;
+    z-index: 99;
 }
 
 
