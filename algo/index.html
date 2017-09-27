@@ -38,25 +38,6 @@
             font-weight: 700;
         }
 
-        a.cstm-btn-class{
-            margin: 12px auto;
-            display: block;
-            width: 144px;
-            border: solid 2px #dc2127;
-            background-color: #444;
-            color: #dc2127;
-            border-radius: 2px;
-        }
-
-        a.cstm-btn-class:focus,
-        a.cstm-btn-class:active,
-        a.cstm-btn-class:hover{
-            text-decoration: none;
-            background-color: #dc2127;
-            border: solid 2px #dc2127;
-            color: #fff;
-        }
-
         a.body-link{
             color: #444;
             font-weight: 400;
@@ -71,6 +52,31 @@
 
         .bg-color{
             background-color: rgba(0, 0, 0, 0.7)
+        }
+
+        .holder {
+            height: 42px;
+            width: 180px;
+            border-radius: 32px;
+            text-align: center;
+            background: linear-gradient(to right, #6CD8CF, #87BCD2);
+            padding: 2px 2px;
+        }
+
+        div.holder:hover{
+            background: linear-gradient(to right, #30BDB2, #61B6D9);
+            transition: 0.5s ease;
+        }
+
+        p.feedback-text {
+            display: inline-flex;
+            line-height: 42px;
+            font-size: 21px;
+            vertical-align: middle;
+            margin: 0px 0px 0px 8px;
+            font-family: 'Avenir Next';
+            font-weight: 500;
+            color: #333;
         }
     </style>
 </head>
@@ -123,13 +129,15 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 col-xs-12">
                     <div class="cover bg-cover">
-                        <div class="cover-text-placeholder text-center bg-color">
+                        <div class="cover-text-placeholder text-center bg-color margin-btm-md">
                             <h2 class="caption-title text-center">AlgoPlay</h2>
                             <h4>Teaching algorithms to children through the use of<br>Task-based and visusalization techniques</h4>
                         </div>
-                        <div class="row">
-                            <a class="cstm-btn-class" href="algoplay/index.html"><div class="btn-color-outline">View Project</div></a>
-                        </div>
+                        <a href="algoplay/index.html">
+                            <div class="holder">
+                                <p class="feedback-text">View Project</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -330,7 +338,13 @@
                     <div class="col-md-10 col-md-offset-1 col-xs-12">
                         <h3 class="body-header-1" style="color: #fff">06. Prototyping</h4>
                         <p class="body-text margin-top-sm" style="color: #fff">The design attempted to provide the users with a simple, clean and intuitive interface which communicates clearly the goals of the system. I developed an initial web-based prototype and performed usability tests of the interface by the appropriate audience. I refined the initial interfaces based on feedback received from the usability tests to create the final prototype.</p>
-                        <a class="cstm-btn-class margin-top-md" href="algoplay/stranded/intro.html"><div class="btn-color-outline">View Project</div></a>
+                        <div class="margin-top-lmd" style="text-align: center">
+                            <a href="algoplay/index.html">
+                                <div class="holder">
+                                    <p class="feedback-text">View Project</p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -370,7 +384,22 @@
             </div>
         </div>
         <div class="page-footer margin-top-lg">
-            <p class="footer-text text-center">Abhraneel Sarma © 2017</p>
+            <div class="row text-center">
+                    <div class="col-sm-1 col-sm-offset-4 col-xs-2 col-xs-offset-2">
+                        <a class="social-icons email-icon" href="mailto:abhsarma@umich.edu" data-clipboard-text="abhsarma@umich.edu"><i class="fa fa-envelope-o fa-lg tiny circle"></i></a>
+                    </div>
+                    <div class="col-sm-1 col-xs-2">
+                        <a class="social-icons" href="https://in.linkedin.com/in/abhraneel-sarma-0797b590" target="_blank"><i class="fa fa-linkedin fa-lg tiny circle"></i></a>
+                    </div>
+                    <div class="col-sm-1 col-xs-2">
+                        <a class="social-icons" href="https://www.instagram.com/loysarma07" target="_blank"><i class="fa fa-instagram fa-lg tiny circle"></i></a>
+                    </div>
+                    <div class="col-sm-1 col-xs-2">
+                        <a class="social-icons" href="https://www.facebook.com/loyls7" target="_blank"><i class="fa fa-facebook fa-lg tiny circle"></i></a>
+                    </div>
+                </div>
+                <p class="footer-text text-center">Abhraneel Sarma © 2017</p>
+            </div>
         </div>
     </section>
 

@@ -70,14 +70,12 @@ h4.short-caption {
 	margin: 16px 0px 24px 0px;
 }
 
-/* Footer text */
-p.footer-text{
-	margin: 24px 0px 24px 0px;
-	line-height: 24px;
+p {
 	font-family: 'Avenir Next';
-	font-weight: 500;
-	color: #fff;
+	font-weight: 400;
+	color: #444;
 	font-size: 16px;
+	line-height: 24px;
 }
 
 /* Landing Page Project Title text */
@@ -109,7 +107,7 @@ p.footer-text{
 
 p.project-detail-subheaders{
 	font-weight: 700;
-	color: #4c4d4d;
+	color: #444;
 	line-height: 24px;
 	margin-bottom: 0px;
 	vertical-align: middle;
@@ -118,12 +116,15 @@ p.project-detail-subheaders{
 .body-header-1{}
 
 .body-text{
-	font-family: 'Avenir Next';
-	font-weight: 400;
-	color: #4c4d4d;
-	font-size: 16px;
-	line-height: 24px;
 	vertical-align: middle;
+}
+
+/* Footer text */
+p.footer-text{
+	margin-top: 24px;
+	font-weight: 500;
+	color: #111;
+	font-size: 18px;
 }
 
 /* List Style Class*/
@@ -175,6 +176,13 @@ a{
 	color: #444;
 	font-size: 16px;
 	display: inline-block;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active
+ {
 	text-decoration: none;
 }
 
@@ -354,12 +362,8 @@ div.nav-page-tabs{
 
 /* Page Footer */
 div.page-footer{
-	padding: 24px 0px;
-	background-color: #2f9ba0;
-}
-
-div.about-page-footer{
-	padding: 24px 0px;
+	padding: 64px 0px;
+	background-color: #f6f6f6;
 }
 
 /* Buttons */
@@ -386,6 +390,7 @@ div.about-page-footer{
 	font-size: 16px;
 	text-transform: uppercase;
 	cursor: pointer;
+	border-radius: 50%;
 }
 
 
