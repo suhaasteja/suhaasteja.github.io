@@ -37,9 +37,11 @@
         b{
             font-weight: 700;
         }
+
         .grad-cover{
             z-index: 1;
             position: relative;
+            width: 100% !important;
             max-height: 270px;
             background: -webkit-linear-gradient(left, rgba(10,10,10,0.9), rgba(80,80,80,0.2));
             padding-left: 90px;
@@ -90,38 +92,43 @@
 
 <body id="page-top" class="index">
     <!-- Navigation Bar -->
-    <div class="navbar nav-fix-top">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1 col-xs-12 text-center">
-                <div class="container">
-                    <a class="page-header" id="title-header" href="../index.html">
-                        <h1>Abhraneel Sarma</h1>
-                    </a>
-                    
-                    <div class="hr">
-                        <div class="row">
-                            <div class="col-sm-2 col-sm-offset-3 col-xs-4">
-                                <div class="nav-page-tabs">
-                                    <div class="current-page">
-                                        <a class="quick-links-current" href="../index.html">Work</a>
+    <div class="row">
+        <nav class="navbar nav-fix-top" style="box-shadow: 0px 2px 5px #ddd;">
+            <div class="container">
+                <div class="col-sm-12 navbar-header"> 
+                    <div class="row">  
+                        <div class="col-sm-6">
+                            <a class="page-header" href="../index.html">
+                                <h1 class="margin-top-lmd">Abhraneel Sarma</h1>
+                            </a>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="hr margin-top-lmd">
+                                <div class="row">
+                                    <div class="col-sm-4 col-xs-4">
+                                        <div class="nav-page-tabs">
+                                            <div class="current-page">
+                                                <a class="quick-links-current" href="../index.html">Work</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-2 col-xs-4">
-                                <div class="nav-page-tabs">
-                                    <a class="quick-links" href="https://drive.google.com/file/d/0B7ZA2gHdFDLhdS1PcTJvRTFCVG8/view?usp=sharing" target="_blank">Resume</a>
-                                </div>
-                            </div>
-                            <div class="col-sm-2 col-xs-4">
-                                <div class="nav-page-tabs">
-                                    <a class="quick-links" href="../about/index.html">About</a>
+                                    <div class="col-sm-4 col-xs-4">
+                                        <div class="nav-page-tabs">
+                                            <a class="quick-links" href="https://drive.google.com/file/d/0B7ZA2gHdFDLhdS1PcTJvRTFCVG8/view?usp=sharing" target="_blank">Resume</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-4">
+                                        <div class="nav-page-tabs">
+                                            <a class="quick-links" href="../about/index.html">About</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </div>
     
 
@@ -130,17 +137,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 col-xs-12">
-                    <div class="cover bg-cover margin-btm-lg" style="padding-top: 164px">
+                    <div class="cover bg-cover margin-btm-lg" style="padding-top: 128px">
                         <div class="cover-text-placeholder text-center">
-                            <h2 class="cover-title text-center" style="text-transform: capitalize">Information Visualization</h2>
-                            <h6 class="cover-text margin-btm-sm">Individual, Group Projects (Fall 2016) and Passion Project</h6>
+                            <h2 class="caption-title text-center" style="text-transform: capitalize">Information Visualization</h2>
+                            <h4>Individual, Group Projects (Fall 2016) and Passion Project</h6>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 col-xs-12">
-                    <h4 class="page-sub-header">Overview</h4>
+                    <h6 class="project-details">Overview</h6>
                     <div class="row">
                         <div class="col-md-6">
                             <p class="body-text">I have pursued several projects in information and data visualization over the past couple of years, which I have documented here. The Information Visualization course that I took at the University of Michigan School of Information entailed two projects for the course over the final 10 weeks of the semester.</p>
@@ -150,7 +157,7 @@
                         </div>
                     </div>
 
-                    <h4 class="page-sub-header margin-top-lg">Group Project</h4>
+                    <h6 class="project-details margin-top-lg">Group Project</h6>
                     <div class="row">
                         <div class="col-md-6">                            
                             <p class="body-text">The group project allowed us to explore a dataset and create a visualization which affords different types of tasks based on the role of an user that we identified. The project is to investigate how Americans engage in different artformss (such as opera, jazz etc.) using the Survey of Public Participation in the Arts 1982-2012 (ICPSR 35596).</p>
@@ -161,7 +168,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12 margin-top-md">
-                            <a href="../Arts-Engagement/index.html">
+                            <a href="../Arts-Engagement/index.html" style="width: 100%">
                                 <div class="grad-cover">
                                     <p class="grad-cover-text">Engagement in Arts</p>
                                     <img class="cover-icon" src="images/right.svg">
@@ -171,7 +178,7 @@
                         </div>
                     </div>
 
-                    <h4 class="page-sub-header margin-top-xl">Individual Project</h4>
+                    <h6 class="project-details margin-top-xl">Individual Project</h6>
                     <div class="row">
                         <div class="col-md-6">
                             <p class="body-text">The individual project explored the topic of <b>Explorable Explorations</b> - the use of interactive visualizations to support a learning task. Here, I explored how this can be used to better understand mathematical paradoxes such as the St. Petersburg Paradox.</p>
@@ -183,7 +190,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12 margin-top-md">
-                            <a href="../St-Petersburg-Paradox/index.html">
+                            <a href="../St-Petersburg-Paradox/index.html" style="width: 100%">
                                 <div class="grad-cover">
                                     <p class="grad-cover-text">St. Petersburg Paradox</p>
                                     <img class="cover-icon" src="images/right.svg">
@@ -193,7 +200,7 @@
                         </div>
                     </div>
 
-                    <h4 class="page-sub-header margin-top-xl">Premier League Transfer Visualization Project</h4>
+                    <h6 class="project-details margin-top-xl">Premier League Transfer Visualization Project</h6>
                     <div class="row">
                         <div class="col-md-6">
                             <p class="body-text">I began this project due to my strong interest in Football and my curiosity to understand and analyse player transfers. Due to constraints of collecting data, I focused on the top 5 clubs in the Premier League and gathered data of each club's transfer activity.</p>
@@ -204,7 +211,7 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12 margin-top-md">
-                            <a href="../Football-Transfers-Vis/index.html">
+                            <a href="../Football-Transfers-Vis/index.html" style="width: 100%">
                                 <div class="grad-cover">
                                     <p class="grad-cover-text">Premier League Transfers Visualization</p>
                                     <img class="cover-icon" src="images/right.svg">
@@ -234,20 +241,15 @@
     <script>
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
-                $('nav').addClass('shrink');
                 $('h1').addClass('text-shrink');
                 $('.hr').addClass('header-shrink');
-                $('.nav-page-tabs').addClass('nav-page-tabs-shrink');
-                $('.quick-links').addClass('quick-links-shrink');
-                $('.current-page').addClass('margin-xs-shrink');
+                $('.hr').removeClass('margin-top-lmd');
+                $('h1').removeClass('margin-top-lmd');
             } else {
-                $('nav').removeClass('shrink');
                 $('h1').removeClass('text-shrink');
-                $('.hr').removeClass('header-shrink');                
-                $('.nav-page-tabs').removeClass('nav-page-tabs-shrink');
-                $('.quick-links').removeClass('quick-links-shrink');
-                $('.current-page').removeClass('margin-xs-shrink');
-
+                $('.hr').removeClass('header-shrink');
+                $('.hr').addClass('margin-top-lmd');
+                $('h1').addClass('margin-top-lmd');
             }
         });
 
@@ -258,15 +260,6 @@
 
         ga('create', 'UA-79877752-1', 'auto');
         ga('send', 'pageview');
-
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:450591,hjsv:5};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
 
     <!-- jQuery -->

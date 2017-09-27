@@ -30,7 +30,8 @@
     <style>
         .bg-cover {
             padding-top: 360px;
-            padding-bottom: 50px;
+            padding-bottom: 40px;
+            padding-left: 40px;
             height: 480px;
             color: #f8f8f8;
             background: url(../img/social/loy.jpg) no-repeat center center;
@@ -41,38 +42,43 @@
 
 <body id="page-top" class="index">
     <!-- Navigation Bar -->
-    <div class="navbar nav-fix-top">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1 col-xs-12 text-center">
-                <div class="container">
-                    <a class="page-header" id="title-header" href="../index.html">
-                        <h1>Abhraneel Sarma</h1>
-                    </a>
-                    
-                    <div class="hr">
-                        <div class="row">
-                            <div class="col-sm-2 col-sm-offset-3 col-xs-4">
-                                <div class="nav-page-tabs">
-                                    <div class="current-page">
-                                        <a class="quick-links-current" href="../index.html">Work</a>
+    <div class="row">
+        <nav class="navbar nav-fix-top" style="box-shadow: 0px 2px 5px #ddd;">
+            <div class="container">
+                <div class="col-sm-12 navbar-header"> 
+                    <div class="row">  
+                        <div class="col-sm-6">
+                            <a class="page-header" href="../index.html">
+                                <h1 class="margin-top-lmd">Abhraneel Sarma</h1>
+                            </a>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="hr margin-top-lmd">
+                                <div class="row">
+                                    <div class="col-sm-4 col-xs-4">
+                                        <div class="nav-page-tabs">
+                                            <div class="current-page">
+                                                <a class="quick-links-current" href="../index.html">Work</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-2 col-xs-4">
-                                <div class="nav-page-tabs">
-                                    <a class="quick-links" href="https://drive.google.com/file/d/0B7ZA2gHdFDLhdS1PcTJvRTFCVG8/view?usp=sharing" target="_blank">Resume</a>
-                                </div>
-                            </div>
-                            <div class="col-sm-2 col-xs-4">
-                                <div class="nav-page-tabs">
-                                    <a class="quick-links" href="../about/index.html">About</a>
+                                    <div class="col-sm-4 col-xs-4">
+                                        <div class="nav-page-tabs">
+                                            <a class="quick-links" href="https://drive.google.com/file/d/0B7ZA2gHdFDLhdS1PcTJvRTFCVG8/view?usp=sharing" target="_blank">Resume</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-4">
+                                        <div class="nav-page-tabs">
+                                            <a class="quick-links" href="../about/index.html">About</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </div>
     
 
@@ -82,20 +88,19 @@
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 col-xs-12">
                     <div class="cover bg-cover">
-                        <h2 class="text-over-img">Haji Lane, Singapore</h2>
-                        <div class="text-over-bg"></div>
+                        <h2>Haji Lane, Singapore</h2>
                     </div>
                 </div>
                 <div class="col-md-10 col-md-offset-1 col-xs-12">
-                    <h2 class="bio-header margin-top-lmd">Greetings!</h2>
-                    <div class="row">
+                    <h2 class="margin-top-lmd">Greetings!</h2>
+                    <div class="row margin-top-md">
                         <div class="col-md-6">
                             <p class="body-text">My name is Abhraneel and I am currently User Experience Designer and a student of HCI at the School of Information at the University of Michigan at Ann Arbor.</p>
                             <p class="body-text">Why HCI? I am quite fascinated by the way we, as users, interact with and interpret Information, and how this process can be made more efficient. Thus I am fascinated in the field of Information and Data Visualization and would love opportunities for research in this domain.</p>
                             <p class="body-text">I am an avid reader of books and I do not restrict myself to any particular genres. Beginning with science fiction and high fantasy, my choices have matured gradually and recently, I finished the <i>Speaker For The Dead</i> by Orson Scott Card, and I am currently reading <i>Love & Math</i> by Edward Frenkel.</p>
                         </div>
                         <div class="col-md-6">
-                            <div class="margin-sm">
+                            <div>
                                 <a href="mailto:abhsarma@umich.edu" class="social-icons text-center"><i class="fa fa-envelope-o fa-lg tiny circle"></i></a>
                                 <a href="mailto:abhsarma@umich.edu" class="contact-text" target="_blank">abhsarma@umich.edu</a>
                             </div>
@@ -120,7 +125,7 @@
             </div>
         </div>
 
-        <div class="alt-footer margin-top-xl">
+        <div class="about-page-footer margin-top-xl">
             <p class="footer-text text-dark text-center">Abhraneel Sarma © 2017</p>
         </div>
     </section>
@@ -136,19 +141,15 @@
 <script>
     $(window).scroll(function() {
         if ($(document).scrollTop() > 50) {
-            $('nav').addClass('shrink');
             $('h1').addClass('text-shrink');
             $('.hr').addClass('header-shrink');
-            $('.nav-page-tabs').addClass('nav-page-tabs-shrink');
-            $('.quick-links').addClass('quick-links-shrink');
-            $('.current-page').addClass('margin-xs-shrink');
+            $('.hr').removeClass('margin-top-lmd');
+            $('h1').removeClass('margin-top-lmd');
         } else {
-            $('nav').removeClass('shrink');
             $('h1').removeClass('text-shrink');
-            $('.hr').removeClass('header-shrink');                
-            $('.nav-page-tabs').removeClass('nav-page-tabs-shrink');
-            $('.quick-links').removeClass('quick-links-shrink');
-            $('.current-page').removeClass('margin-xs-shrink');
+            $('.hr').removeClass('header-shrink');
+            $('.hr').addClass('margin-top-lmd');
+            $('h1').addClass('margin-top-lmd');
         }
     });
 

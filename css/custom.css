@@ -1,81 +1,272 @@
 @font-face {
-    font-family: futura-b;
-    src: url(futura/FuturaStd-Heavy.otf);
+	font-family: futura-b;
+	src: url(futura/FuturaStd-Heavy.otf);
 }
 
 /* declaration end */
 
 body {
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
 
+
+/*
+============================
+	START OF TEXT CLASSES		 
+============================
+*/
+
+/* Primary header */
 h1{
 	font-size: 36px;
-    font-family: 'Avenir Next', sans-serif;
-    font-weight: 600;
-    color: #dc2127;
-    margin: 36px 0px 16px 0px;
-    -webkit-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+	font-family: 'Avenir Next', sans-serif;
+	font-weight: 600;
+	color: #dc2127;
 }
 
-.bio-header{
-	font-size: 36px;
-    font-family: 'Avenir Next', sans-serif;
-    font-weight: 600;
-    color: #dc2127;
-}
-
-.cover-page-margin{
-	margin-top: 60px !important;
-}
-
+/* Header on project pages wpost-scroll-down */
 h1.text-shrink{
-	font-size: 21px;	
-    margin: 12px 0px 12px 0px;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	font-size: 21px;
+	line-height: 40px;
+	margin: 12px 0px 12px 0px;
 }
 
-h2.text-over-img{
-	position: absolute;
-	margin: 0px;
-	z-index: 99;
-	width: 100%;
-	line-height: 32px;
-	padding-left: 36px;
-	padding-top: 12px;
-	padding-bottom: 12px;
+/* Text in project banners */
+h2 {
+	font-family: 'futura-b', serif;
+	font-size: 54px;
+	line-height: 54px;
 }
 
-div.text-over-bg{
-	position: absolute;
-	z-index: 90; 
-	width: 100%;
-	height: 56px;
-	background-color: #000;
-	max-width: 360px;
-	opacity: 0.6;
+/* Section headers in project pages*/
+h3 {
+	font-family: 'Avenir Next', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	color: #444;
 }
 
+/* Default heading text size */
 h4{
-	font-size: 16px;
+	font-size: 20px;
 	font-family: 'Avenir Next';
-    font-weight: 300;
-    line-height: 20px;
-    color: #282828;
-    margin: 16px 0px 24px 0px;
+	font-weight: 500;
 }
+
+h6 {
+	font-family: 'Avenir Next';
+	font-weight: 700;
+	font-size: 16px;
+	margin-bottom: 12px;
+	color: #444;
+}
+
+/* Landing page bio text */
+h4.short-caption {
+	color: #444;
+	line-height: 30px;
+	margin: 16px 0px 24px 0px;
+}
+
+/* Footer text */
+p.footer-text{
+	margin: 24px 0px 24px 0px;
+	line-height: 24px;
+	font-family: 'Avenir Next';
+	font-weight: 500;
+	color: #fff;
+	font-size: 16px;
+}
+
+/* Landing Page Project Title text */
+.caption-title{
+	margin-top: 12px;
+	margin-bottom: 0px;
+	color: #fff;
+	text-align: center;
+	z-index: 99;
+}
+
+/* Landing Page Project Description text */
+.caption-subtitle{
+	font-family: 'Avenir Next', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	margin: 0px;
+	color: #fff;
+	text-align: center;
+	margin-top: 12px;
+	z-index: 99;
+}
+
+/* Project Page details sub-headers*/
+.project-details{
+	text-transform: uppercase;
+	color: #2f9ba0 !important;
+}
+
+p.project-detail-subheaders{
+	font-weight: 700;
+	color: #4c4d4d;
+	line-height: 24px;
+	margin-bottom: 0px;
+	vertical-align: middle;
+}
+
+.body-header-1{}
+
+.body-text{
+	font-family: 'Avenir Next';
+	font-weight: 400;
+	color: #4c4d4d;
+	font-size: 16px;
+	line-height: 24px;
+	vertical-align: middle;
+}
+
+/* List Style Class*/
+ul.body-text{
+	list-style-type: circle;
+	color: #444;
+}
+
+/*
+============================
+	END OF TEXT CLASSES		 
+============================
+*/
+
+/*
+============================
+	START OF TEXT STYLES		 
+============================
+*/
 
 .uppercase{
 	text-transform: uppercase;
+}
+
+.text-dark{
+	color: #444 !important;
+}
+
+.text-dark {
+	color: #444 !important;
+}
+
+/*
+============================
+	END OF TEXT STYLES		 
+============================
+*/
+
+
+/*
+==================================
+	START OF HYPERLINK CLASSES		 
+==================================
+*/
+
+a{
+	font-family: 'Avenir Next';
+	font-weight: 500;
+	color: #444;
+	font-size: 16px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+a.contact-text {	
+	margin-left: 12px;
+}
+
+a.contact-text:hover,
+a.contact-text:focus,
+a.contact-text:active
+ {
+	text-decoration: none;
+	color: #dc2127;
+}
+
+a.quick-links{
+	text-transform: uppercase;
+	line-height: 40px;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+a.quick-links:hover,
+a.quick-links:focus,
+a.quick-links:active {
+	text-decoration: none;
+	color: #dc2127;
+}
+
+a.quick-links-current{
+	text-transform: uppercase;
+	font-weight: 600 !important;
+	color: #dc2127;
+	font-size: 16px;
+	margin-bottom: 0px;
+	line-height: 40px;
+}
+
+a.quick-links-current:hover,
+a.quick-links-current:focus,
+a.quick-links-current:active {
+	text-decoration: none;
+}
+
+
+a.page-header{
+	margin: 0px;
+	padding: 0px !important;
+	border: none;
 }
 
 a.page-header:hover,
 a.page-header:focus,
 a.page-header:active {
 	text-decoration: none;
-	color: #f47d39;
 }
 
+a.about-link {
+	font-size: 20px;
+	font-weight: 500;
+	color: #dc2127;
+}
+
+a.about-link:focus,
+a.about-link:hover,
+a.about-link:active {
+	text-decoration: none;
+	color: #dc2127;
+}
+
+a.ref-link {
+	font-weight: 400;
+	line-height: 24px;
+	border-bottom: 1px #dc2127 solid;
+}
+
+a.ref-link:hover,
+a.ref-link:focus,
+a.ref-link:active
+ {
+ 	text-decoration: none;
+	color: #dc2127;
+}
+
+/*
+==================================
+	END OF HYPERLINK CLASSES		 
+==================================
+*/
+
+
+/* Circle class - Social Media Icons*/
 .circle{
 	border-style: solid;
 	border-width: 1pt;
@@ -83,24 +274,6 @@ a.page-header:active {
 	border-radius: 50%;
 	width: 32px;
 	height: 32px;
-}
-
-div.tooltip-container {
-	display: none;
-	position: absolute;
-	z-index: 99;
-	margin-top: -32px;
-	margin-left: 10px;
-	white-space: nowrap !important;
-	background: rgba(0, 0, 0, 0.7);
-	color: #fff;
-	border-radius: 4px;
-}
-
-p.tooltiptext{
-	font: 12px/21px 'Avenir Next';
-	padding: 5px 5px;
-	margin: 0px;
 }
 
 a.social-icons{
@@ -120,15 +293,23 @@ a.social-icons:active {
 }
 
 .fa.tiny {
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
+	width: 32px;
+	height: 32px;
+	line-height: 32px;
 }
 
+
+/*
+==================================
+	START OF NAVBAR CLASSES		 
+==================================
+*/
+
 .nav-fix-top {
-	position: fixed;
+	position: fixed !important;
 	width: 100%;
 	z-index: 999;
+	left: 0px !important;
 }
 
 .navbar{
@@ -142,143 +323,46 @@ a.social-icons:active {
 div.hr {
 	background: #fff  no-repeat scroll center;
 	height: 56px;
-    /*border-top: 1px solid #a5a4a4;
-    border-bottom: 1px solid #a5a4a4;*/
-    -webkit-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 
 div.header-shrink{
-	height: 28px;
+	height: 40px;
+	margin: 12px 0px;
 }
 
 div.current-page{
-	padding-left: 24px;
-	padding-right: 24px;
-	border-bottom: 3px solid #dc2127;
+	text-align: center;
 	display: inline-block;
-	margin-top: 16px;
 }
 
 div.nav-page-tabs{
 	-webkit-transition: all 0.5s ease;
-	max-width: 100%;
-	max-height: 56px;
+	width: 100%;
+	max-height: 40px;
 	display: inline-block;
 	transition: all 0.5s ease;
+	text-align: center;
 }
 
-div.nav-page-tabs.shrink{
-	height: 28px !important;
-	display: inline-block;
-}
+/*
+==================================
+	END OF NAVBAR CLASSES		 
+==================================
+*/
 
-a.quick-links{
-	text-transform: uppercase;
-	font-family: 'Avenir Next';
-	font-weight: 400;
-	color: #4c4c4d;
-	font-size: 16px;
-	line-height: 56px;
-	-webkit-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-}
-
-a.quick-links.quick-links-shrink{
-	line-height: 26px;
-}
-
-a.quick-links:hover,
-a.quick-links:focus,
-a.quick-links:active {
-    text-decoration: none;
-    color: #dc2127;
-}
-
-a.quick-links-current{
-	text-transform: uppercase;
-	font-family: 'Avenir Next';
-	font-weight: 400;
-	color: #dc2127;
-	font-size: 16px;
-	margin-bottom: 0px;
-	line-height: 24px;
-}
-
-a.quick-links-current:hover,
-a.quick-links-current:focus,
-a.quick-links-current:active {
-    text-decoration: none;
-}
-
-.content {
-	font-family: 'Aevnir Next';
-	font-weight: 400;
-	color: #444444;
-	font-size: 14px;
-}
-
-.cover{
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-top: 144px;
-}
-
-.project-img{
-	padding: 48px;
-}
-
-div.sr {
-	height: 2px;
-    background: #333;
-    margin: 18px 0px;
-}
-
-h3.sub-header{
-	font-family: 'Avenir';
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 26px;
-	color: #757575;
-	margin: 0px;
-}
-
+/* Page Footer */
 div.page-footer{
 	padding: 24px 0px;
-	background-color: #2f9ba0;	
+	background-color: #2f9ba0;
 }
 
-div.alt-footer{
+div.about-page-footer{
 	padding: 24px 0px;
 }
 
-div.project-list {
-	width: 180px;
-	height: 36px;
-	display: inline-block;
-}
-
-p.footer-text{
-	margin: 24px 0px 24px 0px;
-	line-height: 24px;
-	font-family: 'Avenir Next';
-	font-weight: 500;
-	color: #fff;
-	font-size: 16px;
-}
-
-.text-dark{
-	color: #444 !important;
-}
-
-.no-pad {
-	padding: 0px;
-}
-
-.left-pad {
-	padding-left: 36px;
-}
-
+/* Buttons */
 .div-btn{
 	margin: auto;
 	height: 36px;
@@ -304,42 +388,12 @@ p.footer-text{
 	cursor: pointer;
 }
 
-a.cstm-btn-class{
-	margin: 12px auto;
-	display: block;
-	width: 144px;
-	border: solid 2px #dc2127;
-	background-color: #444;
-	color: #dc2127;
-	border-radius: 2px;
-}
 
-a.cstm-btn-class:focus,
-a.cstm-btn-class:active,
-a.cstm-btn-class:hover{
-	text-decoration: none;
-	background-color: #dc2127;
-	border: solid 2px #dc2127;
-	color: #fff;
-}
-
-a.body-link{
-	color: #444;
-	font-weight: 400;
-	text-decoration: underline;
-}
-
-a.body-link:focus,
-a.body-link:active,
-a.body-link:hover{
-	color: #f2893b;
-}
-
-
-.insta {
-	padding: 0px 36px;
-}
-
+/*
+==============================================
+	LANDING PAGE PROJECT IMAGE THUMBNAILS		 
+==============================================
+*/
 .portfolio-item{
 	width: 100%;
 	margin: 0px;
@@ -347,51 +401,18 @@ a.body-link:hover{
 
 div.cover-text-placeholder{
 	margin: auto;
-	padding: 60px 0px;
+	padding: 60px 0px 32px 0px;
 	z-index: 99;
-	background-color: #000;
-	opacity: 0.8;
+	opacity: 1;
 }
-
-h2.cover-title {
-	color: #fff;
-	font-family: 'Avenir Next', sans-serif;
-    font-size: 36px;
-    font-weight: 600;
-    
-}
-
-.page-header-bd {
-    font-family: 'Libre Baskerville', serif;
-    font-size: 36px;
-    font-color: #444 !important;
-    font-style: italic;
-}
-
-h4.cover-subtitle {
-	color: #fff;
-	font-family: 'Avenir Next', sans-serif;
-	font-weight: 300;
-    font-size: 18px;
-    line-height: 27px;
-    margin: 0px;   
-}
-
-h6.cover-text {
-	color: #fff;
-	font-family: 'Avenir Next';
-    font-size: 18px;
-    margin-top: 20px;
-}
-
 
 .caption-holder {
 	position: absolute;
-    width: calc(100% - 30px);
-    height: 100%;
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    transition: all ease .5s;
+	width: calc(100% - 30px);
+	height: 100%;
+	-webkit-transition: all ease .5s;
+	-moz-transition: all ease .5s;
+	transition: all ease .5s;
 }
 
 .caption-bg{
@@ -407,217 +428,129 @@ h6.cover-text {
 	opacity: 0.9;
 }
 
-/*
-.shine{
-	font-family: 'Libre Baskerville', serif;
-    font-style: italic;
-    font-size: 21px;
-}
-
-a.portfolio-link:hover .caption {
-	text-decoration: none !important;
-    color: transparent;
-    animation-name: shine;
-    animation-duration: 0.3s;
-    animation-timing-function: ease-out;
-    background: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.38)), to(rgba(255, 255, 255, 0.38))) 0 50px/52px 50px no-repeat #dd7676;
-    -webkit-background-clip: text;
-}
-
-@-webkit-keyframes shine
-{
-    0%
-    {
-        background-position: top left;
-    }
-    100%
-    {
-        background-position: top right;
-    }
-}
-*/
-
-.caption-title{
-	font-family: 'futura-b', serif;
-    font-size: 54px;
-    line-height: 54px;
-    margin-top: 12px;
-    margin-bottom: 0px;
-    color: #fff;
-    text-align: center;
-    margin-top: 96px;
-    z-index: 99;
-}
-
-.caption-subtitle{
-	font-family: 'Avenir Next', sans-serif;
-	font-size: 14px;
-    margin: 0px;
-    color: #fff;
-    text-align: center;
-    margin-top: 12px;
-    z-index: 99;
-}
-
-
 .img-thumbnail {
 	padding: 0px !important;
 	border: 0px;
 	border-radius: 0px;
 }
 
-.vertical-center {
-	vertical-align: middle;
+.cover{
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 144px;
 }
 
-.page-sub-header{
-	font-family: 'Avenir Next';
-	font-weight: 700;
-	font-size: 16px;
-	margin-bottom: 12px;
-	color: #2f9ba0;
-	text-transform: uppercase;
-}
 
-.cstm-section-header{
-	font-family: 'Avenir Next', sans-serif;
-	font-weight: 600;
-	font-size: 30px;
-	color: #444;
-}
 
-.sub-section-header{
-	font-family: 'Avenir Next', sans-serif;
-	font-weight: 600;
-	font-size: 21px;
-	margin-bottom: 12px;
-}
+/*
+======================================
+	PROJECT PAGE STYLING CLASSES		 
+======================================
+*/
 
-.section-sub-header{
-	font-family: 'Avenir Next', sans-serif;
-	font-weight: 600;
-	font-size: 16px;
-	color: #666;
-}
-
-.text-dark {
-	color: #444 !important;
-}
-
-.to-upper {
-	text-transform: uppercase;
-}
-
-.body-text{
-	font-family: 'Avenir Next';
-	font-weight: 400;
-	color: #4c4d4d;
-	font-size: 16px;
-	line-height: 24px;
-	vertical-align: middle;
-}
-
-.project-details{
-	font-family: 'Avenir Next';
-	font-weight: 700;
-	color: #4c4d4d;
-	font-size: 16px;
-	line-height: 24px;
-	vertical-align: middle;
-}
-
-.ref-text {
-	font-family: "Avenir Next";
-	font-weight: 300;
-	font-size: 12px;
-	color: #666;
-}
-
-.caption-text{
-	font-family: 'Avenir Next';
-	font-weight: 400;
-	font-size: 14px;
-}
-
-.contact-text {
-	font-family: 'Avenir Next';
-	font-weight: 400;
-	color: #444;
-	font-size: 16px;
-	display: inline-block;
-	margin-left: 12px;
-}
-
-.contact-text:hover,
-.contact-text:focus,
-.contact-text:active
- {
-	text-decoration: none;
-	color: #dc2127;
-}
-
-.thumb-icon {
-	width: 48px;
-	margin-right: 24px;
-	float: left !important;
-	display: inline-block;
-}
-
-.thumb-icon-alt {
+.thumbnail-icon {
 	width: 64px;
 	display: block;
 	margin: auto;
 }
 
-.cstm-ul {
-	margin-top: 6px;
-	height: 3px;
-	width: 100px;
-	background-color: #FF9555;
+.dark-bg-container{
+	background-color: #333;
+	padding: 96px 0px;
 }
 
-.circle-bound-box{
+.solid-green-bg-container{
+	background-color: #2f9ba0;
+	padding: 96px 0px;
+}
+
+.drop-shadow-container{
+	box-shadow: 0px 2px 8px #bbb;
+	padding: 12px 24px;
+	min-height: 108px;
+}
+
+/* Modal Image Class - primarily used for Personas */
+#modal-img {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#modal-img:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 999; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
 	margin: auto;
-	height: 36px;
-	width: 36px;
-	border-radius: 50%;
-	border: 1px solid #444;
-	line-height: 34px;
-	font-size: 21px;
-	font-family: 'Avenir Next';
-	color: #444;
+	display: block;
+	width: 80%;
+	max-width: 700px;
 }
 
-.pt-circle{
-	height: 12px;
-	width: 12px;
-	border-radius: 50%;
-	border: 1.6px solid #444;
-	margin: 6px auto;
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption { 
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
 }
 
-.pt-line {
-	min-height: 20px;
-	width: 0.8px;
-	background-color: #444;
-	margin: 6px auto;
+@-webkit-keyframes zoom {
+	from {-webkit-transform:scale(0)} 
+	to {-webkit-transform:scale(1)}
 }
 
-ul.body-text{
-	list-style-type: circle;
-	color: #444;
+@keyframes zoom {
+	from {transform:scale(0)} 
+	to {transform:scale(1)}
 }
 
-ul.nolist{
-	list-style-type: none;
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
 }
 
-.list-section-header {
-	font-family: 'Avenir Next';
-	font-weight: 700;
-	font-size: 18px;
-	text-transform: uppercase;
+.close:hover,
+.close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
 }
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+	.modal-content {
+		width: 100%;
+	}
+}
+
+
+/*
+================================
+	START OF MARGIN CLASSES
+================================
+*/
 
 .margin-shift-up{
 	margin-top: -12px;
@@ -676,11 +609,11 @@ ul.nolist{
 }
 
 .margin-top-lmd {
-	margin-top: 56px !important;
+	margin-top: 60px !important;
 }
 
 .margin-btm-lmd {
-	margin-bottom: 56px !important;
+	margin-bottom: 60px !important;
 }
 
 .margin-top-lg {
@@ -724,129 +657,40 @@ ul.nolist{
 	margin-top: 27px !important;
 }
 
-.arrow-container{
-	width: 100%;
+
+/*
+================================
+	END OF MARGIN CLASSES
+================================
+*/
+
+
+/*
+.shine{
+	font-family: 'Libre Baskerville', serif;
+	font-style: italic;
+	font-size: 21px;
 }
 
-.img-sm {
-	height: 40px;
-	margin-top: 12px;
-	margin-left: 240px
+a.portfolio-link:hover .caption {
+	text-decoration: none !important;
+	color: transparent;
+	animation-name: shine;
+	animation-duration: 0.3s;
+	animation-timing-function: ease-out;
+	background: -webkit-gradient(linear, left bottom, right top, from(rgba(255, 255, 255, 0.38)), to(rgba(255, 255, 255, 0.38))) 0 50px/52px 50px no-repeat #dd7676;
+	-webkit-background-clip: text;
 }
 
-.inline-elem{
-	display: inline-block;
+@-webkit-keyframes shine
+{
+	0%
+	{
+		background-position: top left;
+	}
+	100%
+	{
+		background-position: top right;
+	}
 }
-
-.play-store-link{
-	max-width: 120px;
-}
-
-.ref-link {
-	text-decoration: none;
-	font-family: 'Avenir Next', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	color: #4c4d4d;
-	font-size: 16px;
-	line-height: 24px;
-	border-bottom: 1px #dc2127 solid;
-}
-
-a.ref-link:hover,
-a.ref-link:focus,
-a.ref-link:active
- {
- 	text-decoration: none;
-	color: #dc2127;
-}
-
-.dark-bg-container{
-	background-color: #333;
-	padding: 96px 0px;
-}
-
-.solid-bg-container{
-	background-color: #2f9ba0;
-	padding: 96px 0px;
-}
-
-#modal-img {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#modal-img:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 999; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (Image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-/* Add Animation - Zoom in the Modal */
-.modal-content, #caption { 
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.shadow-box{
-	box-shadow: 0px 2px 8px #bbb;
-	padding: 12px 24px;
-	min-height: 108px;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
+*/
