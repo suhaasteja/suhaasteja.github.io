@@ -1614,7 +1614,7 @@ pre code {
   margin-left: -50px;
 }
 
-.cs-row {
+.navbar-row {
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -1624,6 +1624,11 @@ pre code {
   min-height: 1px;
   padding-right: 50px;
   padding-left: 50px;
+}
+
+.col-navbar {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
 }
 
 .col-cs-md-4 {

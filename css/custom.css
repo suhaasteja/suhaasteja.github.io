@@ -14,12 +14,6 @@ body {
 	overflow-x: hidden;
 }
 
-@media (max-width: 768px) {
-    div.nav-name-container{
-        text-align: center;
-    }
-}
-
 
 /*
 ============================
@@ -683,6 +677,52 @@ div.cover-text-placeholder{
 	END OF MARGIN CLASSES
 ================================
 */
+
+
+
+/*
+================================
+	START OF MEDIA QUERIES
+================================
+*/
+
+iframe.video-container {
+    width: 945px;
+    height: 541px;
+}
+
+@media (max-width: 1366px) {
+    iframe.video-container {
+        width: 933px;
+        height: 534px;
+    }
+}
+
+@media (max-width: 1024px) {
+    iframe.video-container {
+        width: 766px;
+        height: 439px;
+    }
+}
+
+@media (max-width: 800px) {
+    iframe.video-container {
+        width: 610px;
+        height: 349px;
+    }
+
+    .nav-name-container {
+		text-align: center;
+	}
+
+	.text-shrink {
+		margin-bottom: 0px !important;
+	}
+
+	.header-shrink {
+		margin: 0px !important;
+	}
+}
 
 
 /*
