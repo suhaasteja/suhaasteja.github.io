@@ -8,6 +8,11 @@
 	src: url(futura/FuturaStd-Bold.otf);
 }
 
+@font-face {
+	font-family: Monoton;
+	src: url(monoton/Monoton-Regular.ttf);
+}
+
 /* declaration end */
 
 body {
