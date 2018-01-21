@@ -13,6 +13,11 @@
 	src: url(monoton/Monoton-Regular.ttf);
 }
 
+@font-face {
+	font-family: Avenir Next;
+	src: url(avenir/AvenirNext.ttf);
+}
+
 /* declaration end */
 
 body {
@@ -80,7 +85,8 @@ h6 {
 
 /* Landing page bio text */
 h4.short-caption {
-	color: #444;
+	color: #666;
+	font-weight: 500 !important;
 	line-height: 30px;
 	margin: 16px 0px 24px 0px;
 }
