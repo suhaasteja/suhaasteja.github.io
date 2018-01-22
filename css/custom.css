@@ -14,8 +14,23 @@
 }
 
 @font-face {
-	font-family: Avenir Next;
-	src: url(avenir/AvenirNext.ttf);
+	font-family: AvenirNext-Bold;
+	src: url(avenir/AvenirNext-Bold-01.ttf);
+}
+
+@font-face {
+	font-family: AvenirNext-DemiBold;
+	src: url(avenir/AvenirNext-DemiBold-03.ttf);
+}
+
+@font-face {
+	font-family: AvenirNext-Medium;
+	src: url(avenir/AvenirNext-Medium-06.ttf);
+}
+
+@font-face {
+	font-family: AvenirNext-Regular;
+	src: url(avenir/AvenirNext-Regular-08.ttf);
 }
 
 /* declaration end */
@@ -39,8 +54,7 @@ body {
 /* Primary header */
 h1{
 	font-size: 36px;
-	font-family: 'Avenir Next', sans-serif;
-	font-weight: 600;
+	font-family: 'AvenirNext-DemiBold', sans-serif;
 	color: #dc2127;
 }
 
@@ -62,8 +76,7 @@ h2 {
 
 /* Section headers in project pages*/
 h3 {
-	font-family: 'Avenir Next', sans-serif;
-	font-weight: 600;
+	font-family: 'AvenirNext-DemiBold', sans-serif;
 	font-size: 30px;
 	color: #444;
 }
@@ -71,8 +84,7 @@ h3 {
 /* Default heading text size */
 h4{
 	font-size: 20px;
-	font-family: 'Avenir Next';
-	font-weight: 600;
+	font-family: 'AvenirNext-Medium', sans-serif;
 }
 
 /* Landing page bio text */
@@ -89,8 +101,7 @@ h4.mockup-caption {
 }
 
 h6 {
-	font-family: 'Avenir Next';
-	font-weight: 700;
+	font-family: 'AvenirNext-Bold', sans-serif;
 	font-size: 16px;
 	margin-bottom: 12px;
 	color: #444;
@@ -104,16 +115,14 @@ h6.highlight-header {
 }
 
 p {
-	font-family: 'Avenir Next';
-	font-weight: 400;
+	font-family: 'AvenirNext-Regular', sans-serif;
 	color: #666;
 	font-size: 16px;
 	line-height: 24px;
 }
 
 p.highlight {
-	font-family: 'Avenir Next';
-	font-weight: 500;
+	font-family: 'AvenirNext-Medium', sans-serif;
 	color: #2a2a2a;
 	font-size: 18px;
 	line-height: 21px;
@@ -130,9 +139,8 @@ p.highlight {
 
 /* Landing Page Project Description text */
 .caption-subtitle{
-	font-family: 'Avenir Next', sans-serif;
+	font-family: 'AvenirNext-Medium', sans-serif;
 	font-size: 16px;
-	font-weight: 500;
 	margin: 0px;
 	color: #fff;
 	text-align: center;
@@ -171,8 +179,7 @@ p.footer-text{
 ul.body-text{
 	list-style-type: circle;
 	color: #444;
-	font-family: 'Avenir Next';
-	font-weight: 400;
+	font-family: 'AvenirNext-Regular', sans-serif;
 	color: #444;
 	font-size: 16px;
 	line-height: 24px;
@@ -232,8 +239,7 @@ span.highlight {
 */
 
 a{
-	font-family: 'Avenir Next';
-	font-weight: 500;
+	font-family: 'AvenirNext-Medium', sans-serif;
 	color: #444;
 	font-size: 16px;
 	display: inline-block;
@@ -444,7 +450,7 @@ div.page-footer{
 	color: white;
 	line-height: 36px;
 	text-align: center;
-	font-family: 'Avenir Next';
+	font-family: 'AvenirNext-Medium', sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
 }
@@ -454,8 +460,7 @@ div.page-footer{
 	max-width: 144px;
 	line-height: 32px;
 	text-align: center;
-	font-family: 'Avenir Next';
-	font-weight: 500;
+	font-family: 'AvenirNext-Medium', sans-serif;
 	font-size: 16px;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -484,6 +489,7 @@ div.cover-text-placeholder{
 	position: absolute;
 	width: calc(100% - 30px);
 	height: 100%;
+	padding-top: 15%;
 	-webkit-transition: all ease .5s;
 	-moz-transition: all ease .5s;
 	transition: all ease .5s;
