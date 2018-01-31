@@ -53,7 +53,7 @@ body {
 
 /* Primary header */
 h1{
-	font-size: 36px;
+	font-size: 32px;
 	font-family: 'AvenirNext-DemiBold', sans-serif;
 	color: #dc2127;
 }
@@ -70,8 +70,8 @@ h1.text-shrink{
 /* Text in project banners */
 h2 {
 	font-family: 'futura-b', serif;
-	font-size: 54px;
-	line-height: 54px;
+	font-size: 42px;
+	line-height: 42px;
 }
 
 /* Section headers in project pages*/
@@ -83,7 +83,7 @@ h3 {
 
 /* Default heading text size */
 h4{
-	font-size: 20px;
+	font-size: 18px;
 	font-family: 'AvenirNext-Medium', sans-serif;
 }
 
@@ -91,7 +91,7 @@ h4{
 h4.short-caption {
 	color: #666;
 	font-weight: 500 !important;
-	line-height: 30px;
+	line-height: 24px;
 	margin: 16px 0px 24px 0px;
 }
 
@@ -140,11 +140,11 @@ p.highlight {
 /* Landing Page Project Description text */
 .caption-subtitle{
 	font-family: 'AvenirNext-Medium', sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	margin: 0px;
 	color: #fff;
 	text-align: center;
-	margin-top: 12px;
+	margin-top: 8px;
 	z-index: 99;
 }
 
@@ -191,8 +191,6 @@ ul.body-text > li {
 }
 
 span.quoted {
-	font-size: 18px;
-	line-height: 24px;
 	font-style: italic;
 	color: #666666;
 }
@@ -308,8 +306,7 @@ a.page-header:active {
 }
 
 a.about-link {
-	font-size: 20px;
-	font-weight: 500;
+	font-size: 18px;
 	color: #dc2127;
 }
 
@@ -560,7 +557,7 @@ div.cover-text-placeholder{
 }
 
 .solid-green-bg-container{
-	background-color: #2f9ba0;
+	background-color: #6BBC66;
 	padding: 96px 0px;
 }
 
