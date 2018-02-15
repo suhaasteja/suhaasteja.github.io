@@ -155,7 +155,7 @@ p.highlight {
 }
 
 p.project-detail-subheaders{
-	font-weight: 700;
+	font-family: 'AvenirNext-DemiBold', sans-serif;
 	color: #444;
 	line-height: 24px;
 	margin-bottom: 0px;
@@ -197,6 +197,10 @@ span.quoted {
 
 span.highlight {
 	color: #FF9E2B;
+}
+
+b {
+	font-family: 'AvenirNext-DemiBold', sans-serif;
 }
 
 /*
@@ -249,18 +253,11 @@ a:focus,
 a:active
  {
 	text-decoration: none;
+	color: #dc2127 !important;
 }
 
 a.contact-text {	
 	margin-left: 12px;
-}
-
-a.contact-text:hover,
-a.contact-text:focus,
-a.contact-text:active
- {
-	text-decoration: none;
-	color: #dc2127;
 }
 
 a.quick-links{

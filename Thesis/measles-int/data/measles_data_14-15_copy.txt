@@ -1,0 +1,3524 @@
+state	county or district name	County vs district (or other)	data source (vaccine registry or reported by schools - REG or SCH)	# kindergarten students in county	# schools in county	# schools reporting	% schools reporting	% 2 dose MMR - all schools	% 2-dose MMR - public school	% 2-dose MMR - private schools	"% fully vaccinated (all vaccines), all schools"	% fully vaccinated - public schools	% fully vaccinated - private schools	% 1 dose MMR - all schools
+ALABAMA	AUTAUGA	county	SCH	695				0.77						0.9252
+ALABAMA	BALDWIN	county	SCH	2080				0.70						0.9197
+ALABAMA	BARBOUR	county	SCH	294				0.72						0.9320
+ALABAMA	BIBB	county	SCH	209				0.78						0.9665
+ALABAMA	BLOUNT	county	SCH	594				0.81						0.9562
+ALABAMA	BULLOCK	county	SCH	157				0.84						0.9490
+ALABAMA	BUTLER	county	SCH	281				0.90						0.9858
+ALABAMA	CALHOUN	county	SCH	1567				0.78						0.9483
+ALABAMA	CHAMBERS	county	SCH	244				0.81						0.9631
+ALABAMA	CHEROKEE	county	SCH	242				0.84						0.9669
+ALABAMA	CHILTON	county	SCH	568				0.84						0.9595
+ALABAMA	CHOCTAW	county	SCH	191				0.75						0.9215
+ALABAMA	CLARKE	county	SCH	275				0.77						0.9527
+ALABAMA	CLAY	county	SCH	132				0.89						0.9924
+ALABAMA	CLEBURNE	county	SCH	141				0.80						0.9433
+ALABAMA	COFFEE	county	SCH	668				0.66						0.8982
+ALABAMA	COLBERT	county	SCH	685				0.81						0.9635
+ALABAMA	CONECUH	county	SCH	134				0.91						0.9851
+ALABAMA	COOSA	county	SCH	104				0.77						0.9615
+ALABAMA	COVINGTON	county	SCH	471				0.86						0.9639
+ALABAMA	CRENSHAW	county	SCH	142				0.87						0.9859
+ALABAMA	CULLMAN	county	SCH	974				0.78						0.9394
+ALABAMA	DALE	county	SCH	561				0.72						0.9251
+ALABAMA	DALLAS	county	SCH	652				0.77						0.9601
+ALABAMA	DEKALB	county	SCH	931				0.80						0.9506
+ALABAMA	ELMORE	county	SCH	1117				0.80						0.9472
+ALABAMA	ESCAMBIA	county	SCH	483				0.88						0.9731
+ALABAMA	ETOWAH	county	SCH	1232				0.77						0.9472
+ALABAMA	FAYETTE	county	SCH	195				0.79						0.9692
+ALABAMA	FRANKLIN	county	SCH	488				0.77						0.9406
+ALABAMA	GENEVA	county	SCH	283				0.72						0.9470
+ALABAMA	GREENE	county	SCH	120				0.86						0.9750
+ALABAMA	HALE	county	SCH	224				0.77						0.9554
+ALABAMA	HENRY	county	SCH	152				0.68						0.9079
+ALABAMA	HOUSTON	county	SCH	1227				0.68						0.9234
+ALABAMA	JACKSON	county	SCH	624				0.76						0.9519
+ALABAMA	JEFFERSON	county	SCH	9910				0.73						0.9312
+ALABAMA	LAMAR	county	SCH	157				0.89						0.9682
+ALABAMA	LAUDERDALE	county	SCH	1036				0.69						0.9459
+ALABAMA	LAWRENCE	county	SCH	463				0.85						0.9676
+ALABAMA	LEE	county	SCH	1148				0.64						0.8981
+ALABAMA	LIMESTONE	county	SCH	934				0.73						0.9443
+ALABAMA	LOWNDES	county	SCH	157				0.88						0.9618
+ALABAMA	MACON	county	SCH	204				0.80						0.9608
+ALABAMA	MADISON	county	SCH	3981				0.70						0.9292
+ALABAMA	MARENGO	county	SCH	244				0.80						0.9795
+ALABAMA	MARION	county	SCH	316				0.82						0.9715
+ALABAMA	MARSHALL	county	SCH	1588				0.74						0.9408
+ALABAMA	MOBILE	county	SCH	6350				0.81						0.9433
+ALABAMA	MONROE	county	SCH	171				0.85						0.9708
+ALABAMA	MONTGOMERY	county	SCH	3354				0.77						0.9329
+ALABAMA	MORGAN	county	SCH	1547				0.77						0.9470
+ALABAMA	PERRY	county	SCH	137				0.84						0.9416
+ALABAMA	PICKENS	county	SCH	200				0.83						0.9550
+ALABAMA	PIKE	county	SCH	395				0.76						0.9544
+ALABAMA	RANDOLPH	county	SCH	258				0.80						0.9574
+ALABAMA	RUSSELL	county	SCH	711				0.65						0.9184
+ALABAMA	SHELBY	county	SCH	1719				0.71						0.9279
+ALABAMA	ST.CLAIR	county	SCH	1025				0.74						0.9444
+ALABAMA	SUMTER	county	SCH	144				0.80						0.9653
+ALABAMA	TALLADEGA	county	SCH	886				0.83						0.9526
+ALABAMA	TALLAPOOSA	county	SCH	417				0.80						0.9664
+ALABAMA	TUSCALOOSA	county	SCH	2440				0.68						0.9410
+ALABAMA	WALKER	county	SCH	892				0.81						0.9619
+ALABAMA	WASHINGTON	county	SCH	171				0.87						0.9415
+ALABAMA	WILCOX	county	SCH	146				0.90						0.9863
+ALABAMA	WINSTON	county	SCH	122				0.84						0.9672
+ALABAMA	UNKNOWN COUNTY	county	SCH	4711				0.50						0.7589
+Arizona	Apache	county	SCH	997				0.963						
+Arizona	Cochise	county	SCH	"1,577"				0.959						
+Arizona	Coconino	county	SCH	"1,414"				0.941						
+Arizona	Gila	county	SCH	694				0.947						
+Arizona	Graham	county	SCH	605				0.909						
+Arizona	Greenlee	county	SCH	175				0.943						
+Arizona	La Paz	county	SCH	179				0.927						
+Arizona	Maricopa	county	SCH	"54,292"				0.938						
+Arizona	Mohave	county	SCH	"1,817"				0.915						
+Arizona	Navajo	county	SCH	"1,239"				0.936						
+Arizona	Pima	county	SCH	"11,704"				0.967						
+Arizona	Pinal	county	SCH	"4,322"				0.935						
+Arizona	Santa Cruz	county	SCH	769				0.980						
+Arizona	Yavapai	county	SCH	"1,936"				0.877						
+Arizona	Yuma	county	SCH	"2,802"				0.979						
+Arkansas	Arkansas	county	SCH	245				0.98	0.98	1				
+Arkansas	Ashley	county	SCH	304				0.99	0.99	0				
+Arkansas	Baxter	county	SCH	413				0.97	0.97	0				
+Arkansas	Benton	county	SCH	3381				0.97	0.97	0.979166667				
+Arkansas	Boone	county	SCH	516				0.95	0.95	0				
+Arkansas	Bradley	county	SCH	192				0.99	1	0				
+Arkansas	Calhoun	county	SCH	42				0.95	0.95	0				
+Arkansas	Carroll	county	SCH	318				0.97	0.97	0				
+Arkansas	Chicot	county	SCH	163				0.97	0.97	0				
+Arkansas	Clark	county	SCH	255				1.00	1	0				
+Arkansas	Clay	county	SCH	183				0.99	0.99	0				
+Arkansas	Cleburne	county	SCH	274				0.97	0.97	0				
+Arkansas	Cleveland	county	SCH	116				0.99	0.99	0				
+Arkansas	Columbia	county	SCH	323				0.99	0.99	1				
+Arkansas	Conway	county	SCH	279				0.97	0.97	0.944444444				
+Arkansas	Craighead	county	SCH	1617				0.96	0.96	0.826086957				
+Arkansas	Crawford	county	SCH	801				0.96	0.96	0				
+Arkansas	Crittenden	county	SCH	968				0.99	0.99	1				
+Arkansas	Cross	county	SCH	283				0.98	0.98	0				
+Arkansas	Dallas	county	SCH	82				1.00	1	0				
+Arkansas	Desha	county	SCH	220				1.00	1	0				
+Arkansas	Drew	county	SCH	252				1.00	1	0				
+Arkansas	Faulkner	county	SCH	1605				0.97	0.97	0.955882353				
+Arkansas	Franklin	county	SCH	274				0.98	0.98	0				
+Arkansas	Fulton	county	SCH	131				0.95	0.95	0				
+Arkansas	Garland	county	SCH	1281				0.97	0.97	1				
+Arkansas	Grant	county	SCH	374				0.97	0.97	0				
+Arkansas	Greene	county	SCH	595				0.95	0.95	0.96875				
+Arkansas	Hempstead	county	SCH	318				0.99	0.99	1				
+Arkansas	Hot Spring	county	SCH	471				0.99	0.99	0				
+Arkansas	Howard	county	SCH	295				0.99	0.99	0				
+Arkansas	Independence	county	SCH	494				0.95	0.95	0				
+Arkansas	Izard	county	SCH	139				0.99	0.99	0				
+Arkansas	Jackson	county	SCH	182				0.94	0.94	0				
+Arkansas	Jefferson	county	SCH	991				0.98	0.99	0.965517241				
+Arkansas	Johnson	county	SCH	422				0.97	0.97	0				
+Arkansas	Lafayette	county	SCH	52				1.00	1	0				
+Arkansas	Lawrence	county	SCH	216				0.97	0.97	0				
+Arkansas	Lee	county	SCH	94				1.00	1	1				
+Arkansas	Lincoln	county	SCH	125				1.00	1	0				
+Arkansas	Little River	county	SCH	160				0.97	0.97	0				
+Arkansas	Logan	county	SCH	274				0.96	0.96	0				
+Arkansas	Lonoke	county	SCH	996				0.98	0.98	0				
+Arkansas	Madison	county	SCH	166				0.98	0.98	0				
+Arkansas	Marion	county	SCH	108				0.91	0.91	0				
+Arkansas	Miller	county	SCH	556				0.98	0.98	0.909090909				
+Arkansas	Mississippi	county	SCH	748				0.98	0.98	0				
+Arkansas	Monroe	county	SCH	103				0.93	0.93	0				
+Arkansas	Montgomery	county	SCH	104				0.96	0.96	0				
+Arkansas	Nevada	county	SCH	117				0.94	0.94	0				
+Arkansas	Newton	county	SCH	99				0.97	0.97	0				
+Arkansas	Ouachita	county	SCH	366				0.99	0.99	0				
+Arkansas	Perry	county	SCH	127				0.94	0.94	0				
+Arkansas	Phillips	county	SCH	346				0.98	0.98	1				
+Arkansas	Pike	county	SCH	169				0.98	0.99	0.875				
+Arkansas	Poinsett	county	SCH	367				0.99	1	0				
+Arkansas	Polk	county	SCH	315				0.96	0.96	0				
+Arkansas	Pope	county	SCH	839				0.97	0.97	0				
+Arkansas	Prairie	county	SCH	85				0.91	0.91	0				
+Arkansas	Pulaski	county	SCH	5380				0.97	0.97	0.977324263				
+Arkansas	Randolph	county	SCH	184				0.97	0.97	0				
+Arkansas	Saline	county	SCH	1335				0.98	0.98	1				
+Arkansas	Scott	county	SCH	105				0.89	0.89	0				
+Arkansas	Searcy	county	SCH	127				0.98	0.98	0				
+Arkansas	Sebastian	county	SCH	1836				0.97	0.98	0.944954128				
+Arkansas	Sevier	county	SCH	318				0.97	0.97	0				
+Arkansas	Sharp	county	SCH	228				0.94	0.94	0				
+Arkansas	St. Francis	county	SCH	318				1.00	1	0				
+Arkansas	Stone	county	SCH	138				0.99	0.99	0				
+Arkansas	Union	county	SCH	630				0.98	0.98	0				
+Arkansas	Van Buren	county	SCH	164				0.97	0.97	0				
+Arkansas	Washington	county	SCH	3251				0.97	0.97	0.939759036				
+Arkansas	White	county	SCH	1140				0.98	0.98	0.93220339				
+Arkansas	Woodruff	county	SCH	99				1.00	1	0				
+Arkansas	Yell	county	SCH	362				0.97	0.97	0				
+California	ALAMEDA	county	SCH	"20,801"	340	300	0.882	0.91						
+California	ALPINE	county	SCH	didnt respond	1	0	0	did not report						
+California	AMADOR	county	SCH	268	8	8	1	0.94						
+California	BUTTE	county	SCH	"2,735"	55	55	1	0.89						
+California	CALAVERAS	county	SCH	408	16	11	0.688	0.83						
+California	COLUSA	county	SCH	403	5	5	1	0.99						
+California	CONTRA COSTA	county	SCH	"14,651"	218	211	0.968	0.96						
+California	DEL NORTE	county	SCH	331	11	10	0.909	0.90						
+California	EL DORADO	county	SCH	"2,195"	40	40	1	0.91						
+California	FRESNO	county	SCH	"17,965"	228	226	0.991	0.96						
+California	GLENN	county	SCH	312	12	10	0.833	0.97						
+California	HUMBOLDT	county	SCH	"1,613"	60	54	0.9	0.79						
+California	IMPERIAL	county	SCH	"3,110"	45	45	1	0.95						
+California	INYO	county	SCH	243	9	6	0.667	0.97						
+California	KERN	county	SCH	"16,098"	187	183	0.979	0.95						
+California	KINGS	county	SCH	"2,722"	38	38	1	0.98						
+California	LAKE	county	SCH	845	19	17	0.895	0.92						
+California	LASSEN	county	SCH	358	16	15	0.938	0.86						
+California	LOS ANGELES	county	SCH	"130,146"	"2,009"	"1,788"	0.89	0.90						
+California	MADERA	county	SCH	"2,246"	44	33	0.75	0.95						
+California	MARIN	county	SCH	"3,334"	71	71	1	0.88						
+California	MARIPOSA	county	SCH	168	7	7	1	0.82						
+California	MENDOCINO	county	SCH	"1,191"	37	31	0.838	0.83						
+California	MERCED	county	SCH	"5,199"	72	63	0.875	0.97						
+California	MODOC	county	SCH	111	5	5	1	0.95						
+California	MONO	county	SCH	148	6	6	1	0.86						
+California	MONTEREY	county	SCH	"6,984"	94	91	0.968	0.91						
+California	NAPA	county	SCH	"1,921"	39	39	1	0.95						
+California	NEVADA	county	SCH	854	25	25	1	0.74						
+California	ORANGE	county	SCH	"42,076"	601	601	1	0.92						
+California	PLACER	county	SCH	"5,524"	96	93	0.969	0.88						
+California	PLUMAS	county	SCH	149	9	7	0.778	0.86						
+California	RIVERSIDE	county	SCH	"34,377"	380	377	0.992	0.96						
+California	SACRAMENTO	county	SCH	"19,527"	313	284	0.907	0.89						
+California	SAN BENITO	county	SCH	897	23	21	0.913	0.97						
+California	SAN BERNARDINO	county	SCH	"33,818"	432	430	0.995	0.95						
+California	SAN DIEGO	county	SCH	"43,827"	609	609	1	0.94						
+California	SAN FRANCISCO	county	SCH	"6,560"	149	146	0.98	0.90						
+California	SAN JOAQUIN	county	SCH	"11,742"	183	181	0.989	0.96						
+California	SAN LUIS OBISPO	county	SCH	"2,982"	61	61	1	0.89						
+California	SAN MATEO	county	SCH	"9,343"	162	161	0.994	0.95						
+California	SANTA BARBARA	county	SCH	"6,641"	100	99	0.99	0.95						
+California	SANTA CLARA	county	SCH	"24,541"	373	353	0.946	0.95						
+California	SANTA CRUZ	county	SCH	"3,680"	65	63	0.969	0.86						
+California	SHASTA	county	SCH	"2,245"	64	55	0.859	0.87						
+California	SIERRA	county	SCH	28	2	2	1	1.00						
+California	SISKIYOU	county	SCH	510	29	29	1	0.85						
+California	SOLANO	county	SCH	"5,273"	73	71	0.973	0.95						
+California	SONOMA	county	SCH	"6,552"	128	128	1	0.91						
+California	STANISLAUS	county	SCH	"8,921"	128	122	0.953	0.94						
+California	SUTTER	county	SCH	"1,852"	33	32	0.97	0.92						
+California	TEHAMA	county	SCH	987	24	24	1	0.95						
+California	TRINITY	county	SCH	114	11	11	1	0.85						
+California	TULARE	county	SCH	"9,315"	129	114	0.884	0.97						
+California	TUOLUMNE	county	SCH	462	17	14	0.824	0.79						
+California	VENTURA	county	SCH	"12,163"	192	192	1	0.92						
+California	YOLO	county	SCH	"2,504"	42	40	0.952	0.94						
+California	YUBA	county	SCH	"1,264"	25	25	1	0.96						
+Connecticut	Fairfield	county	SCH					0.97						
+Connecticut	Hartford	county	SCH					0.97						
+Connecticut	Litchfield	county	SCH					0.98						
+Connecticut	Middlesex	county	SCH					0.97						
+Connecticut	New Haven	county	SCH					0.98						
+Connecticut	New London	county	SCH					0.97						
+Connecticut	Tolland	county	SCH					0.96						
+Connecticut	Windham	county	SCH					0.97						
+Florida	Alachua	county	SCH	2678	57						0.93			
+Florida	Baker	county	SCH	392	3						0.96			
+Florida	Bay	county	SCH	2502	33						0.96			
+Florida	Bradford	county	SCH	342	11						0.98			
+Florida	Brevard	county	SCH	5936	108						0.96			
+Florida	Broward	county	SCH	"21,112"	214						0.94			
+Florida	Calhoun	county	SCH	186	4						0.95			
+Florida	Charlotte	county	SCH	1089	20						0.95			
+Florida	Citrus	county	SCH	1146	20						0.96			
+Florida	Clay	county	SCH	2547	47						0.96			
+Florida	Collier	county	SCH	3510	57						0.95			
+Florida	Columbia	county	SCH	987	25						0.94			
+Florida	Dade	county	SCH	"31,156"	717						0.92			
+Florida	DeSoto	county	SCH	444	5						0.80			
+Florida	Dixie	county	SCH	233	8						0.97			
+Florida	Duval	county	SCH	"12,524"	230						0.90			
+Florida	Escambia	county	SCH	"4,202"	72						0.94			
+Florida	Flagler	county	SCH	958	13						0.93			
+Florida	Franklin	county	SCH	134	3						0.94			
+Florida	Gadsden	county	SCH	541	14						1.00			
+Florida	Gilchrist	county	SCH	242	5						0.96			
+Florida	Glades	county	SCH	141	4						0.98			
+Florida	Gulf	county	SCH	162	4						0.98			
+Florida	Hamilton	county	SCH	175	9						0.98			
+Florida	Hardee	county	SCH	456	6						0.99			
+Florida	Hendry	county	SCH	602	10						0.95			
+Florida	Hernando	county	SCH	1760	30						0.92			
+Florida	Highlands	county	SCH	1116	18						0.96			
+Florida	Hillsborough	county	SCH	"18,065"	254						0.92			
+Florida	Holmes	county	SCH	280	4						0.99			
+Florida	Indian River	county	SCH	1420	24						0.94			
+Florida	Jackson	county	SCH	574	12						0.98			
+Florida	Jefferson	county	SCH	96	2						0.98			
+Florida	Lafayette	county	SCH	127	2						0.98			
+Florida	Lake	county	SCH	3647	57						0.93			
+Florida	Lee	county	SCH	6983	104						0.95			
+Florida	Leon	county	SCH	3017	52						0.96			
+Florida	Levy	county	SCH	478	9						0.93			
+Florida	Liberty	county	SCH	110	2						1			
+Florida	Madison	county	SCH	249	7						0.97			
+Florida	Manatee	county	SCH	3753	59						0.96			
+Florida	Marion	county	SCH	3437	56						0.96			
+Florida	Martin	county	SCH	1488	24						0.9			
+Florida	Monroe	county	SCH	709	19						0.96			
+Florida	Nassau	county	SCH	881	14						0.97			
+Florida	Okaloosa	county	SCH	2716	39						0.93			
+Florida	Okeechobee	county	SCH	530	8						0.97			
+Florida	Orange	county	SCH	"16,309"	265						0.95			
+Florida	Osceola	county	SCH	4547	69						0.91			
+Florida	Palm Beach	county	SCH	"15,021"	217						0.89			
+Florida	Pasco	county	SCH	5223	79						0.95			
+Florida	Pinellas	county	SCH	8592	177						0.91			
+Florida	Polk	county	SCH	8172	122						0.96			
+Florida	Putnam	county	SCH	942	19						0.96			
+Florida	Santa Rosa	county	SCH	1824	20						0.95			
+Florida	Sarasota	county	SCH	3284	58						0.92			
+Florida	Seminole	county	SCH	5193	88						0.92			
+Florida	St Johns	county	SCH	2665	40						0.92			
+Florida	St Lucie	county	SCH	3005	48						0.94			
+Florida	Sumter	county	SCH	708	7						0.95			
+Florida	Suwannee	county	SCH	529	5						0.97			
+Florida	Taylor	county	SCH	295	4						0.99			
+Florida	Union	county	SCH	191	1						0.93			
+Florida	Volusia	county	SCH	5216	97						0.95			
+Florida	Wakulla	county	SCH	432	7						0.96			
+Florida	Walton	county	SCH	729	17						0.97			
+Florida	Washington	county	SCH	272	4						0.99			
+Idaho	Boise	school district	SCH	1826				0.92						
+Idaho	Boundary	school district	SCH	103				0.79						
+Idaho	Meados Valley	school district	SCH	13				1.00						
+Idaho	Butte	school district	SCH	39				0.85						
+Idaho	Camas	school district	SCH	12				0.92						
+Idaho	Council	school district	SCH	14				0.93						
+Idaho	Nampa	school district	SCH	1161				0.91						
+Idaho	Caldwell	school district	SCH	477				0.96						
+Idaho	Wilder	school district	SCH	50				0.94						
+Idaho	Middleton	school district	SCH	248				0.83						
+Idaho	Notus	school district	SCH	20				1.00						
+Idaho	Melba	school district	SCH	49				0.92						
+Idaho	Parma	school district	SCH	80				0.90						
+Idaho	Vallivue	school district	SCH	637				0.95						
+Idaho	Grace	school district	SCH	26				1.00						
+Idaho	North Gem	school district	SCH	9				0.89						
+Idaho	Soda Springs	school district	SCH	62				0.92						
+Idaho	Cassia	school district	SCH	417				0.79						
+Idaho	Clark	school district	SCH	10				0.91						
+Idaho	Orofino	school district	SCH	70				0.87						
+Idaho	Challis	school district	SCH	21				0.91						
+Idaho	Mackay	school district	SCH	13				0.62						
+Idaho	Prairie	school district	SCH	1				1.00						
+Idaho	Glenns Ferry	school district	SCH	39				1.00						
+Idaho	Mountain Home	school district	SCH	309				0.94						
+Idaho	West Ada	school district	SCH	2622				0.95						
+Idaho	Preston	school district	SCH	172				0.87						
+Idaho	West Side	school district	SCH	45				0.76						
+Idaho	Marsh Valley	school district	SCH	91				0.88						
+Idaho	Fremont	school district	SCH	154				0.83						
+Idaho	Emmett	school district	SCH	176				0.92						
+Idaho	Gooding	school district	SCH	99				0.76						
+Idaho	Wendell	school district	SCH	98				0.84						
+Idaho	Hagerman	school district	SCH	20				0.75						
+Idaho	Bliss	school district	SCH	7				1.00						
+Idaho	Cottonwood	school district	SCH	36				0.75						
+Idaho	Salmon River	school district	SCH	8				0.38						
+Idaho	Mountain View	school district	SCH	89				0.90						
+Idaho	Pocatello	school district	SCH	941				0.94						
+Idaho	Jefferson	school district	SCH	448				0.92						
+Idaho	Ririe	school district	SCH	41				0.93						
+Idaho	West Jefferson	school district	SCH	30				0.87						
+Idaho	Jerome	school district	SCH	308				0.98						
+Idaho	Valley School	school district	SCH	41				0.98						
+Idaho	Coeur d Alene	school district	SCH	731				0.82						
+Idaho	Lakeland	school district	SCH	276				0.92						
+Idaho	Post Falls	school district	SCH	412				0.82						
+Idaho	Kootenai	school district	SCH	8				0.50						
+Idaho	Moscow	school district	SCH	184				0.88						
+Idaho	Genesee	school district	SCH	20				0.95						
+Idaho	Kendrick	school district	SCH	14				0.86						
+Idaho	Potlatch	school district	SCH	36				0.92						
+Idaho	Troy	school district	SCH	23				0.78						
+Idaho	Whitepine	school district	SCH	14				0.64						
+Idaho	Salmon	school district	SCH	47				0.87						
+Idaho	South Lemhi	school district	SCH	9				1.00						
+Idaho	Kuna	school district	SCH	367				0.90						
+Idaho	Nezperce	school district	SCH	9				1.00						
+Idaho	Kamiah	school district	SCH	36				0.83						
+Idaho	Highland	school district	SCH	12				0.75						
+Idaho	Shoshone	school district	SCH	84				0.99						
+Idaho	Dietrich	school district	SCH	18				1.00						
+Idaho	Richfield	school district	SCH	19				0.79						
+Idaho	Madison	school district	SCH	434				0.87						
+Idaho	Sugar-Salem	school district	SCH	117				0.85						
+Idaho	Bear Lake	school district	SCH	78				0.97						
+Idaho	Minidoka	school district	SCH	363				0.95						
+Idaho	Lewiston	school district	SCH	316				0.97						
+Idaho	Lapwai	school district	SCH	45				0.93						
+Idaho	Culdesac	school district	SCH	9				0.89						
+Idaho	Oneida	school district	SCH	68				0.94						
+Idaho	Marsing	school district	SCH	56				0.88						
+Idaho	Pleasant Valley	school district	SCH	2				1.00						
+Idaho	Bruneau-Grand	school district	SCH	25				0.76						
+Idaho	Homedale	school district	SCH	101				0.92						
+Idaho	Payette	school district	SCH	122				0.97						
+Idaho	New Plymouth	school district	SCH	60				0.92						
+Idaho	Fruitland	school district	SCH	113				0.92						
+Idaho	American Falls	school district	SCH	131				0.97						
+Idaho	Rockland	school district	SCH	8				0.88						
+Idaho	Arbon	school district	SCH	3				1.00						
+Idaho	Kellogg	school district	SCH	87				0.81						
+Idaho	Mullan	school district	SCH	1				1.00						
+Idaho	Wallace	school district	SCH	40				0.80						
+Idaho	Avery	school district	SCH	1				Missing						
+Idaho	Teton	school district	SCH	154				0.73						
+Idaho	St. Maries	school district	SCH	68				0.85						
+Idaho	Twin Falls	school district	SCH	756				0.91						
+Idaho	Buhl	school district	SCH	112				0.89						
+Idaho	Filer	school district	SCH	98				0.85						
+Idaho	Kimberly	school district	SCH	138				0.97						
+Idaho	Hansen	school district	SCH	28				0.93						
+Idaho	Three Creek	school district	SCH	2				1.00						
+Idaho	Castleford	school district	SCH	25				0.80						
+Idaho	Murtaugh	school district	SCH	24				0.96						
+Idaho	Mccall-Donnelly	school district	SCH	78				0.69						
+Idaho	Cascade	school district	SCH	17				0.88						
+Idaho	Weiser	school district	SCH	95				0.94						
+Idaho	Cambridge	school district	SCH	7				0.86						
+Idaho	Midvale	school district	SCH	7				0.71						
+Idaho	Plummer-Worley	school district	SCH	29				0.93						
+Idaho	Snake River	school district	SCH	119				0.91						
+Idaho	Blackfoot	school district	SCH	271				0.82						
+Idaho	Professional Technical	school district	SCH	4				1.00						
+Idaho	Aberdeen	school district	SCH	58				0.98						
+Idaho	Firth	school district	SCH	57				0.74						
+Idaho	Shelley	school district	SCH	174				0.93						
+Idaho	Blaine	school district	SCH	238				0.79						
+Idaho	Garden Valley	school district	SCH	10				0.70						
+Idaho	Basin	school district	SCH	25				0.80						
+Idaho	Horseshoe Bend	school district	SCH	17				0.82						
+Idaho	West Bonner	school district	SCH	79				0.73						
+Idaho	Lake Pend Oreille	school district	SCH	232				0.82						
+Idaho	Idaho Falls	school district	SCH	740				0.94						
+Idaho	Swan Valley	school district	SCH	4				Missing						
+Idaho	Bonneville	school district	SCH	998				0.91						
+Idaho	Charter	school district	SCH	1355				0.84						
+Idaho	Private	school district	SCH	1324				0.83						
+ILLINOIS	ADAMS	county	REG					0.63						1
+ILLINOIS	ALEXANDER	county	REG					0.61						1
+ILLINOIS	BOND	county	REG					0.70						1
+ILLINOIS	BOONE	county	REG					0.61						1
+ILLINOIS	BROWN	county	REG					0.56						1
+ILLINOIS	BUREAU	county	REG					0.66						1
+ILLINOIS	CALHOUN	county	REG					0.80						1
+ILLINOIS	CARROLL	county	REG					0.61						1
+ILLINOIS	CASS	county	REG					0.65						1
+ILLINOIS	CHAMPAIGN	county	REG					0.65						1
+ILLINOIS	CHRISTIAN	county	REG					0.53						1
+ILLINOIS	CLARK	county	REG					0.58						1
+ILLINOIS	CLAY	county	REG					0.88						1
+ILLINOIS	CLINTON	county	REG					0.53						1
+ILLINOIS	COLES	county	REG					0.66						1
+ILLINOIS	COOK	county	REG					0.60						1
+ILLINOIS	CRAWFORD	county	REG					0.81						1
+ILLINOIS	CUMBERLAND	county	REG					0.62						1
+ILLINOIS	DE KALB	county	REG					0.51						1
+ILLINOIS	DEKALB	county	REG					0.63						0.99
+ILLINOIS	DEWITT	county	REG					0.61						0.98
+ILLINOIS	DOUGLAS	county	REG					0.69						1
+ILLINOIS	DU PAGE	county	REG					0.38						0.99
+ILLINOIS	DUPAGE	county	REG					0.53						1
+ILLINOIS	EDGAR	county	REG					0.79						1
+ILLINOIS	EDWARDS	county	REG					0.77						1
+ILLINOIS	EFFINGHAM	county	REG					0.76						1
+ILLINOIS	FAYETTE	county	REG					0.80						0.99
+ILLINOIS	FORD	county	REG					0.67						0.98
+ILLINOIS	FOUNTAIN	county	REG					0.00						1
+ILLINOIS	FRANKLIN	county	REG					0.72						1
+ILLINOIS	FULTON	county	REG					0.62						1
+ILLINOIS	GALLATIN	county	REG					0.69						1
+ILLINOIS	GREENE	county	REG					0.73						1
+ILLINOIS	GRUNDY	county	REG					0.57						1
+ILLINOIS	HAMILTON	county	REG					0.77						1
+ILLINOIS	HANCOCK	county	REG					0.46						1
+ILLINOIS	HARDIN	county	REG					0.75						1
+ILLINOIS	HENDERSON	county	REG					0.62						1
+ILLINOIS	HENRY	county	REG					0.70						1
+ILLINOIS	IROQUOIS	county	REG					0.66						0.99
+ILLINOIS	JACKSON	county	REG					0.56						1
+ILLINOIS	JASPER	county	REG					0.81						1
+ILLINOIS	JEFFERSON	county	REG					0.78						1
+ILLINOIS	JERSEY	county	REG					0.78						1
+ILLINOIS	JO DAVIESS	county	REG					0.58						1
+ILLINOIS	JOHNSON	county	REG					0.67						1
+ILLINOIS	KANE	county	REG					0.57						0.99
+ILLINOIS	KANKAKEE	county	REG					0.59						1
+ILLINOIS	KENDALL	county	REG					0.40						0.99
+ILLINOIS	KNOX	county	REG					0.77						1
+ILLINOIS	LA SALLE	county	REG					0.67						1
+ILLINOIS	LAKE	county	REG					0.62						1
+ILLINOIS	LAWRENCE	county	REG					0.78						1
+ILLINOIS	LEE	county	REG					0.79						0.99
+ILLINOIS	LIVINGSTON	county	REG					0.67						1
+ILLINOIS	LOGAN	county	REG					0.58						1
+ILLINOIS	MACON	county	REG					0.76						1
+ILLINOIS	MACOUPIN	county	REG					0.68						1
+ILLINOIS	MADISON	county	REG					0.73						1
+ILLINOIS	MARION	county	REG					0.79						1
+ILLINOIS	MARSHALL	county	REG					0.59						1
+ILLINOIS	MASON	county	REG					0.64						1
+ILLINOIS	MASSAC	county	REG					0.52						1
+ILLINOIS	MCDONOUGH	county	REG					0.71						1
+ILLINOIS	MCHENRY	county	REG					0.53						1
+ILLINOIS	MCLEAN	county	REG					0.51						0.99
+ILLINOIS	MENARD	county	REG					0.61						1
+ILLINOIS	MERCER	county	REG					0.71						1
+ILLINOIS	MONROE	county	REG					0.55						0.95
+ILLINOIS	MONTGOMERY	county	REG					0.61						1
+ILLINOIS	MORGAN	county	REG					0.59						1
+ILLINOIS	MOULTRIE	county	REG					0.81						1
+ILLINOIS	OGLE	county	REG					0.67						1
+ILLINOIS	OHIO	county	REG					0.33						1
+ILLINOIS	PEORIA	county	REG					0.64						1
+ILLINOIS	PERRY	county	REG					0.67						0.99
+ILLINOIS	PIATT	county	REG					0.69						1
+ILLINOIS	PIKE	county	REG					0.73						1
+ILLINOIS	POPE	county	REG					0.65						1
+ILLINOIS	PULASKI	county	REG					0.53						1
+ILLINOIS	PUTNAM	county	REG					0.60						1
+ILLINOIS	RANDOLPH	county	REG					0.76						0.99
+ILLINOIS	RICHLAND	county	REG					0.83						1
+ILLINOIS	ROCK ISLAND	county	REG					0.72						1
+ILLINOIS	SAINT CLAIR	county	REG					0.67						1
+ILLINOIS	SALINE	county	REG					0.65						1
+ILLINOIS	SANGAMON	county	REG					0.53						1
+ILLINOIS	SCHUYLER	county	REG					0.66						1
+ILLINOIS	SCOTT	county	REG					0.50						1
+ILLINOIS	SHELBY	county	REG					0.69						1
+ILLINOIS	STARK	county	REG					0.50						1
+ILLINOIS	STEPHENSON	county	REG					0.78						1
+ILLINOIS	TAZEWELL	county	REG					0.58						1
+ILLINOIS	UNION	county	REG					0.61						1
+ILLINOIS	VERMILION	county	REG					0.73						1
+ILLINOIS	WABASH	county	REG					0.71						1
+ILLINOIS	WALWORTH	county	REG					1.00						1
+ILLINOIS	WARREN	county	REG					0.61						0.98
+ILLINOIS	WASHINGTON	county	REG					0.67						1
+ILLINOIS	WAYNE	county	REG					0.88						1
+ILLINOIS	WHITE	county	REG					0.77						1
+ILLINOIS	WHITESIDE	county	REG					0.72						1
+ILLINOIS	WILL	county	REG					0.60						1
+ILLINOIS	WILLIAMSON	county	REG					0.61						1
+ILLINOIS	WINNEBAGO	county	REG					0.62						1
+ILLINOIS	WOODFORD	county	REG					0.52						1
+Indiana	Adams	county	REG					0.65						
+Indiana	Allen	county	REG					0.79						
+Indiana	Bartholomew	county	REG					0.81						
+Indiana	Benton	county	REG					0.84						
+Indiana	Blackford	county	REG					0.93						
+Indiana	Boone	county	REG					0.78						
+Indiana	Brown	county	REG					0.91						
+Indiana	Carroll	county	REG					0.83						
+Indiana	Cass	county	REG					0.93						
+Indiana	Clark	county	REG					0.94						
+Indiana	Clay	county	REG					0.96						
+Indiana	Clinton	county	REG					0.94						
+Indiana	Crawford	county	REG					0.93						
+Indiana	Daviess	county	REG					0.89						
+Indiana	De Kalb	county	REG					0.90						
+Indiana	Dearborn	county	REG					0.89						
+Indiana	Decatur	county	REG					0.93						
+Indiana	Delaware	county	REG					0.84						
+Indiana	Dubois	county	REG					0.95						
+Indiana	Elkhart	county	REG					0.70						
+Indiana	Fayette	county	REG					0.92						
+Indiana	Floyd	county	REG					0.90						
+Indiana	Fountain	county	REG					0.96						
+Indiana	Franklin	county	REG					0.87						
+Indiana	Fulton	county	REG					0.87						
+Indiana	Gibson	county	REG					0.93						
+Indiana	Grant	county	REG					0.84						
+Indiana	Greene	county	REG					0.94						
+Indiana	Hamilton	county	REG					0.60						
+Indiana	Hancock	county	REG					0.78						
+Indiana	Harrison	county	REG					0.87						
+Indiana	Hendricks	county	REG					0.82						
+Indiana	Henry	county	REG					0.95						
+Indiana	Howard	county	REG					0.78						
+Indiana	Huntington	county	REG					0.88						
+Indiana	Jackson	county	REG					0.89						
+Indiana	Jasper	county	REG					0.90						
+Indiana	Jay	county	REG					0.86						
+Indiana	Jefferson	county	REG					0.84						
+Indiana	Jennings	county	REG					0.93						
+Indiana	Johnson	county	REG					0.83						
+Indiana	Knox	county	REG					0.90						
+Indiana	Kosciusko	county	REG					0.81						
+Indiana	La Porte	county	REG					0.87						
+Indiana	Lagrange	county	REG					0.67						
+Indiana	Lake	county	REG					0.76						
+Indiana	Lawrence	county	REG					0.92						
+Indiana	Madison	county	REG					0.83						
+Indiana	Marion	county	REG					0.72						
+Indiana	Marshall	county	REG					0.79						
+Indiana	Martin	county	REG					0.90						
+Indiana	Miami	county	REG					0.88						
+Indiana	Monroe	county	REG					0.87						
+Indiana	Montgomery	county	REG					0.87						
+Indiana	Morgan	county	REG					0.89						
+Indiana	Newton	county	REG					0.88						
+Indiana	Noble	county	REG					0.84						
+Indiana	Ohio	county	REG					0.72						
+Indiana	Orange	county	REG					0.90						
+Indiana	Owen	county	REG					0.92						
+Indiana	Parke	county	REG					0.79						
+Indiana	Perry	county	REG					0.84						
+Indiana	Pike	county	REG					0.96						
+Indiana	Porter	county	REG					0.81						
+Indiana	Posey	county	REG					0.90						
+Indiana	Pulaski	county	REG					0.94						
+Indiana	Putnam	county	REG					0.85						
+Indiana	Randolph	county	REG					0.88						
+Indiana	Ripley	county	REG					0.94						
+Indiana	Rush	county	REG					0.91						
+Indiana	Scott	county	REG					0.94						
+Indiana	Shelby	county	REG					0.87						
+Indiana	Spencer	county	REG					0.92						
+Indiana	St. Joseph	county	REG					0.63						
+Indiana	Starke	county	REG					0.78						
+Indiana	Steuben	county	REG					0.82						
+Indiana	Sullivan	county	REG					0.87						
+Indiana	Switzerland	county	REG					0.80						
+Indiana	Tippecanoe	county	REG					0.83						
+Indiana	Tipton	county	REG					0.88						
+Indiana	Union	county	REG					0.82						
+Indiana	Vanderburgh	county	REG					0.80						
+Indiana	Vermillion	county	REG					0.92						
+Indiana	Vigo	county	REG					0.88						
+Indiana	Wabash	county	REG					0.84						
+Indiana	Warren	county	REG					0.93						
+Indiana	Warrick	county	REG					0.89						
+Indiana	Washington	county	REG					0.94						
+Indiana	Wayne	county	REG					0.84						
+Indiana	Wells	county	REG					0.86						
+Indiana	White	county	REG					0.97						
+Indiana	Whitley	county	REG					0.92						
+IOWA	Adair 	county	SCH	64							0.97			
+IOWA	Adams 	county	SCH	32							0.94			
+IOWA	Allamakee 	county	SCH	178							0.78			
+IOWA	Appanoose 	county	SCH	183							0.91			
+IOWA	Audubon 	county	SCH	62							1			
+IOWA	Benton 	county	SCH	267							1			
+IOWA	Black Hawk 	county	SCH	1618							0.97			
+IOWA	Boone 	county	SCH	294							1			
+IOWA	Bremer 	county	SCH	313							0.99			
+IOWA	Buchanan 	county	SCH	274							1			
+IOWA	Buena Vista 	county	SCH	307							1			
+IOWA	Butler 	county	SCH	196							0.97			
+IOWA	Calhoun 	county	SCH	110							1			
+IOWA	Carroll 	county	SCH	287							1			
+IOWA	Cass 	county	SCH	189							0.95			
+IOWA	Cedar 	county	SCH	263							1			
+IOWA	Cerro Gordo 	county	SCH	454							1			
+IOWA	Cherokee 	county	SCH	164							1			
+IOWA	Chickasaw 	county	SCH	151							1			
+IOWA	Clarke 	county	SCH	135							0.96			
+IOWA	Clay 	county	SCH	232							1			
+IOWA	Clayton 	county	SCH	209							1			
+IOWA	Clinton 	county	SCH	668							0.98			
+IOWA	Crawford 	county	SCH	297							0.93			
+IOWA	Dallas 	county	SCH	1385							1			
+IOWA	Davis 	county	SCH	92							1			
+IOWA	Decatur 	county	SCH	75							0.85			
+IOWA	Delaware 	county	SCH	217							1			
+IOWA	Des Moines 	county	SCH	542							0.94			
+IOWA	Dickinson 	county	SCH	203							1			
+IOWA	Dubuque 	county	SCH	1268							1			
+IOWA	Emmet 	county	SCH	141							1			
+IOWA	Fayette 	county	SCH	200							0.94			
+IOWA	Floyd 	county	SCH	170							0.95			
+IOWA	Franklin 	county	SCH	158							0.99			
+IOWA	Fremont 	county	SCH	124							1			
+IOWA	Greene 	county	SCH	98							1			
+IOWA	Grundy 	county	SCH	181							0.98			
+IOWA	Guthrie 	county	SCH	134							0.99			
+IOWA	Hamilton 	county	SCH	195							0.98			
+IOWA	Hancock 	county	SCH	111							0.99			
+IOWA	Hardin 	county	SCH	322							0.98			
+IOWA	Harrison 	county	SCH	168							0.96			
+IOWA	Henry 	county	SCH	197							0.95			
+IOWA	Howard 	county	SCH	140							1			
+IOWA	Humboldt 	county	SCH	125							1			
+IOWA	Ida 	county	SCH	71							1			
+IOWA	Iowa 	county	SCH	212							0.99			
+IOWA	Jackson 	county	SCH	205							0.99			
+IOWA	Jasper 	county	SCH	428							0.99			
+IOWA	Jefferson 	county	SCH	141							1			
+IOWA	Johnson 	county	SCH	1500							0.99			
+IOWA	Jones 	county	SCH	233							1			
+IOWA	Keokuk 	county	SCH	156							1			
+IOWA	Kossuth 	county	SCH	154							1			
+IOWA	Lee 	county	SCH	421							1			
+IOWA	Linn 	county	SCH	3034							0.96			
+IOWA	Louisa 	county	SCH	164							1			
+IOWA	Lucas 	county	SCH	100							0.98			
+IOWA	Lyon 	county	SCH	159							0.99			
+IOWA	Madison 	county	SCH	218							1			
+IOWA	Mahaska 	county	SCH	263							0.98			
+IOWA	Marion 	county	SCH	443							0.98			
+IOWA	Marshall 	county	SCH	624							0.99			
+IOWA	Mills 	county	SCH	181							0.99			
+IOWA	Mitchell 	county	SCH	93							0.98			
+IOWA	Monona 	county	SCH	78							1			
+IOWA	Monroe 	county	SCH	103							0.96			
+IOWA	Montgomery 	county	SCH	124							1			
+IOWA	Muscatine 	county	SCH	540							0.97			
+IOWA	O'Brien 	county	SCH	282							0.97			
+IOWA	Osceola 	county	SCH	66							1			
+IOWA	Page 	county	SCH	219							0.99			
+IOWA	Palo Alto 	county	SCH	124							0.99			
+IOWA	Plymouth 	county	SCH	358							0.97			
+IOWA	Pocahontas 	county	SCH	77							1			
+IOWA	Polk 	county	SCH	6810							0.96			
+IOWA	Pottawattamie 	county	SCH	1307							1			
+IOWA	Poweshiek 	county	SCH	211							0.97			
+IOWA	Ringgold 	county	SCH	54							0.94			
+IOWA	Sac 	county	SCH	121							0.99			
+IOWA	Scott 	county	SCH	2546							1			
+IOWA	Shelby 	county	SCH	202							0.99			
+IOWA	Sioux 	county	SCH	582							0.99			
+IOWA	Story 	county	SCH	910							0.99			
+IOWA	Tama 	county	SCH	193							1			
+IOWA	Taylor 	county	SCH	69							0.99			
+IOWA	Union 	county	SCH	147							0.98			
+IOWA	Van Buren 	county	SCH	60							1			
+IOWA	Wapello 	county	SCH	525							0.95			
+IOWA	Warren 	county	SCH	918							0.99			
+IOWA	Washington 	county	SCH	298							0.98			
+IOWA	Wayne 	county	SCH	81							0.98			
+IOWA	Webster 	county	SCH	417							1			
+IOWA	Winnebago 	county	SCH	215							1			
+IOWA	Winneshiek 	county	SCH	207							0.96			
+IOWA	Woodbury 	county	SCH	1534							0.95			
+IOWA	Worth 	county	SCH	101							1			
+IOWA	Wright 	county	SCH	184							0.99			
+Kansas	ALLEN	county	SCH					0.96						
+Kansas	ANDERSON	county	SCH					0.91						
+Kansas	ATCHISON	county	SCH					0.94						
+Kansas	BARBER	county	SCH					0.94						
+Kansas	BARTON	county	SCH					0.90						
+Kansas	BOURBON	county	SCH					0.84						
+Kansas	BROWN	county	SCH					0.98						
+Kansas	BUTLER	county	SCH					0.95						
+Kansas	CHASE	county	SCH					0.67						
+Kansas	CHAUTAUQUA	county	SCH					0.87						
+Kansas	CHEROKEE	county	SCH					0.85						
+Kansas	CHEYENNE	county	SCH					0.89						
+Kansas	CLARK	county	SCH					0.81						
+Kansas	CLAY	county	SCH					0.98						
+Kansas	CLOUD	county	SCH					0.84						
+Kansas	COFFEY	county	SCH					0.78						
+Kansas	COMANCHE	county	SCH					1.00						
+Kansas	COWLEY	county	SCH					0.88						
+Kansas	CRAWFORD	county	SCH					0.83						
+Kansas	DECATUR	county	SCH					0.81						
+Kansas	DICKINSON	county	SCH					0.91						
+Kansas	DONIPHAN	county	SCH					0.92						
+Kansas	DOUGLAS	county	SCH					0.85						
+Kansas	EDWARDS	county	SCH					1.00						
+Kansas	ELK	county	SCH					0.76						
+Kansas	ELLIS	county	SCH					0.96						
+Kansas	ELLSWORTH	county	SCH					0.87						
+Kansas	FINNEY	county	SCH					0.92						
+Kansas	FORD	county	SCH					0.88						
+Kansas	FRANKLIN	county	SCH					0.95						
+Kansas	GEARY	county	SCH					0.90						
+Kansas	GOVE	county	SCH					0.87						
+Kansas	GRAHAM	county	SCH					0.97						
+Kansas	GRANT	county	SCH					0.93						
+Kansas	GRAY	county	SCH					0.79						
+Kansas	GREELEYà	county	SCH											
+Kansas	GREENWOOD	county	SCH					0.85						
+Kansas	HAMILTON	county	SCH					1.00						
+Kansas	HARPER	county	SCH					0.88						
+Kansas	HARVEY	county	SCH					0.90						
+Kansas	HASKELL	county	SCH					0.92						
+Kansas	HODGEMANà	county	SCH											
+Kansas	JACKSON	county	SCH					0.91						
+Kansas	JEFFERSON	county	SCH					0.88						
+Kansas	JEWELL	county	SCH					0.76						
+Kansas	JOHNSON	county	SCH					0.88						
+Kansas	KEARNY	county	SCH					0.93						
+Kansas	KINGMAN	county	SCH					0.76						
+Kansas	KIOWA	county	SCH					0.93						
+Kansas	LABETTE	county	SCH					0.87						
+Kansas	LANE	county	SCH					1.00						
+Kansas	LEAVENWORTH	county	SCH					0.95						
+Kansas	LINCOLN	county	SCH					0.88						
+Kansas	LINN	county	SCH					0.87						
+Kansas	LOGAN	county	SCH					0.87						
+Kansas	LYON	county	SCH					0.80						
+Kansas	MARION	county	SCH					0.82						
+Kansas	MARSHALL	county	SCH					0.93						
+Kansas	MCPHERSON	county	SCH					0.92						
+Kansas	MEADE	county	SCH					0.95						
+Kansas	MIAMI	county	SCH					0.87						
+Kansas	MITCHELL	county	SCH					0.99						
+Kansas	MONTGOMERY	county	SCH					0.82						
+Kansas	MORRIS	county	SCH					0.94						
+Kansas	MORTON	county	SCH					0.93						
+Kansas	NEMAHA	county	SCH					0.78						
+Kansas	NEOSHO	county	SCH					0.92						
+Kansas	NESS	county	SCH					0.86						
+Kansas	NORTON	county	SCH					0.90						
+Kansas	OSAGE	county	SCH					0.83						
+Kansas	OSBORNE	county	SCH					0.81						
+Kansas	OTTAWA	county	SCH					0.92						
+Kansas	PAWNEE	county	SCH					0.93						
+Kansas	PHILLIPS	county	SCH					0.89						
+Kansas	POTTAWATOMIE	county	SCH					0.84						
+Kansas	PRATT	county	SCH					0.94						
+Kansas	RAWLINS	county	SCH					0.92						
+Kansas	RENO	county	SCH					0.93						
+Kansas	REPUBLIC	county	SCH					0.94						
+Kansas	RICE	county	SCH					0.89						
+Kansas	RILEY	county	SCH					0.88						
+Kansas	ROOKS	county	SCH					1.00						
+Kansas	RUSH	county	SCH					0.84						
+Kansas	RUSSELL	county	SCH					0.95						
+Kansas	SALINE	county	SCH					0.90						
+Kansas	SCOTT	county	SCH					0.87						
+Kansas	SEDGWICK	county	SCH					0.88						
+Kansas	SEWARD	county	SCH					0.90						
+Kansas	SHAWNEE	county	SCH					0.80						
+Kansas	SHERIDAN	county	SCH					0.88						
+Kansas	SHERMAN	county	SCH					0.90						
+Kansas	SMITH	county	SCH					0.96						
+Kansas	STAFFORD	county	SCH					0.91						
+Kansas	STANTONà	county	SCH											
+Kansas	STEVENS	county	SCH					0.77						
+Kansas	SUMNER	county	SCH					0.81						
+Kansas	THOMAS	county	SCH					0.86						
+Kansas	TREGO	county	SCH					0.93						
+Kansas	WABAUNSEE	county	SCH					0.90						
+Kansas	WALLACE	county	SCH					0.63						
+Kansas	WASHINGTON	county	SCH					0.91						
+Kansas	WICHITA	county	SCH					1.00						
+Kansas	WILSON	county	SCH					0.96						
+Kansas	WOODSON	county	SCH					0.97						
+Kansas	WYANDOTTE	county	SCH					0.90						
+Kentucky	Adair	county	SCH	201				0.99						
+Kentucky	Allen	county	SCH	250				1.00						
+Kentucky	Anderson	county	SCH	288				0.94						
+Kentucky	Ballard	county	SCH	92				0.98						
+Kentucky	Barren	county	SCH	651				0.95						
+Kentucky	Bath	county	SCH	173				0.86						
+Kentucky	Bell	county	SCH	386				0.84						
+Kentucky	Boone	county	SCH	1780				0.98						
+Kentucky	Bourbon	county	SCH	266				0.96						
+Kentucky	Boyd	county	SCH	574				0.91						
+Kentucky	Boyle	county	SCH	339				0.91						
+Kentucky	Bracken	county	SCH	136				0.92						
+Kentucky	Breathitt	county	SCH	169				0.78						
+Kentucky	Breckinridge	county	SCH	258				0.93						
+Kentucky	Bullitt	county	SCH	990				0.93						
+Kentucky	Butler	county	SCH	176				0.90						
+Kentucky	Caldwell	county	SCH	144				0.97						
+Kentucky	Calloway	county	SCH	415				0.97						
+Kentucky	Campbell	county	SCH	976				0.97						
+Kentucky	Carlisle	county	SCH	67				0.88						
+Kentucky	Carroll	county	SCH	190				0.85						
+Kentucky	Carter	county	SCH	347				0.93						
+Kentucky	Casey	county	SCH	184				0.89						
+Kentucky	Christian	county	SCH	831				0.92						
+Kentucky	Clark	county	SCH	466				0.91						
+Kentucky	Clay	county	SCH	338				0.91						
+Kentucky	Clinton	county	SCH	150				0.98						
+Kentucky	Crittenden	county	SCH	104				0.88						
+Kentucky	Cumberland	county	SCH	78				0.97						
+Kentucky	Daviess	county	SCH	1313				0.91						
+Kentucky	Edmonson	county	SCH	148				0.99						
+Kentucky	Elliott	county	SCH	99				0.94						
+Kentucky	Estill	county	SCH	156				0.82						
+Kentucky	Fayette	county	SCH	3808				0.95						
+Kentucky	Fleming	county	SCH	199				0.98						
+Kentucky	Floyd	county	SCH	573				0.98						
+Kentucky	Franklin	county	SCH	653				0.69						
+Kentucky	Fulton	county	SCH	87				0.99						
+Kentucky	Gallatin	county	SCH	118				0.86						
+Kentucky	Garrard	county	SCH	201				0.86						
+Kentucky	Grant	county	SCH	375				0.95						
+Kentucky	Graves	county	SCH	532				0.95						
+Kentucky	Grayson	county	SCH	301				0.99						
+Kentucky	Green	county	SCH	153				0.95						
+Kentucky	Greenup	county	SCH	495				0.96						
+Kentucky	Hancock	county	SCH	102				0.99						
+Kentucky	Hardin	county	SCH	992				0.86						
+Kentucky	Harlan	county	SCH	370				0.79						
+Kentucky	Harrison	county	SCH	235				0.82						
+Kentucky	Hart	county	SCH	186				0.98						
+Kentucky	Henderson	county	SCH	627				0.97						
+Kentucky	Henry	county	SCH	203				0.98						
+Kentucky	Hickman	county	SCH	52				0.96						
+Kentucky	Hopkins	county	SCH	604				0.97						
+Kentucky	Jackson	county	SCH	193				0.98						
+Kentucky	Jefferson	county	SCH	9758				0.93						
+Kentucky	Jessamine	county	SCH	628				0.93						
+Kentucky	Johnson	county	SCH	320				0.83						
+Kentucky	Kenton	county	SCH	2358				0.96						
+Kentucky	Knott	county	SCH	218				0.91						
+Kentucky	Knox	county	SCH	438				0.79						
+Kentucky	Larue	county	SCH	171				0.86						
+Kentucky	Laurel	county	SCH	814				0.85						
+Kentucky	Lawrence	county	SCH	249				0.95						
+Kentucky	Lee	county	SCH	86				0.92						
+Kentucky	Leslie	county	SCH	148				0.93						
+Kentucky	Letcher	county	SCH	296				0.97						
+Kentucky	Lewis	county	SCH	191				0.97						
+Kentucky	Lincoln	county	SCH	312				0.96						
+Kentucky	Livingston	county	SCH	97				0.82						
+Kentucky	Logan	county	SCH	311				0.84						
+Kentucky	Lyon	county	SCH	74				0.95						
+Kentucky	Madison	county	SCH	1053				0.96						
+Kentucky	Magoffin	county	SCH	173				0.86						
+Kentucky	Marion	county	SCH	285				0.96						
+Kentucky	Marshall	county	SCH	407				0.93						
+Kentucky	Martin	county	SCH	165				0.98						
+Kentucky	Mason	county	SCH	219				0.79						
+Kentucky	McCracken	county	SCH	672				0.90						
+Kentucky	McCreary	county	SCH	210				0.96						
+Kentucky	McLean	county	SCH	119				0.94						
+Kentucky	Meade	county	SCH	350				0.99						
+Kentucky	Menifee	county	SCH	81				1.00						
+Kentucky	Mercer	county	SCH	275				0.99						
+Kentucky	Metcalfe	county	SCH	135				0.90						
+Kentucky	Monroe	county	SCH	153				0.93						
+Kentucky	Montgomery	county	SCH	422				0.85						
+Kentucky	Morgan	county	SCH	158				0.96						
+Kentucky	Muhlenberg	county	SCH	355				0.90						
+Kentucky	Nelson	county	SCH	568				0.82						
+Kentucky	Nicholas	county	SCH	95				0.95						
+Kentucky	Ohio	county	SCH	335				0.85						
+Kentucky	Oldham	county	SCH	816				0.97						
+Kentucky	Owen	county	SCH	135				0.97						
+Kentucky	Owsley	county	SCH	65				0.86						
+Kentucky	Pendleton	county	SCH	182				0.97						
+Kentucky	Perry	county	SCH	401				0.92						
+Kentucky	Pike	county	SCH	796				0.98						
+Kentucky	Powell	county	SCH	176				0.86						
+Kentucky	Pulaski	county	SCH	831				0.98						
+Kentucky	Robertson	county	SCH	19				1.00						
+Kentucky	Rockcastle	county	SCH	213				0.96						
+Kentucky	Rowan	county	SCH	280				0.91						
+Kentucky	Russell	county	SCH	272				0.99						
+Kentucky	Scott	county	SCH	733				0.86						
+Kentucky	Shelby	county	SCH	547				0.93						
+Kentucky	Simpson	county	SCH	213				0.97						
+Kentucky	Spencer	county	SCH	195				0.98						
+Kentucky	Taylor	county	SCH	327				0.95						
+Kentucky	Todd	county	SCH	149				0.72						
+Kentucky	Trigg	county	SCH	142				0.92						
+Kentucky	Trimble	county	SCH	124				0.85						
+Kentucky	Union	county	SCH	184				0.99						
+Kentucky	Warren	county	SCH	1361				0.95						
+Kentucky	Washington	county	SCH	179				0.93						
+Kentucky	Wayne	county	SCH	234				0.99						
+Kentucky	Webster	county	SCH	184				0.87						
+Kentucky	Whitley	county	SCH	569				0.95						
+Kentucky	Wolfe	county	SCH	97				0.92						
+Kentucky	Woodford	county	SCH	321				0.95						
+Louisiana	ACADIA	county	SCH/REG									0.96	0.91	
+Louisiana	ALLEN	county	SCH/REG									0.98	NA	
+Louisiana	ASCENSION	county	SCH/REG									0.99	0.97	
+Louisiana	ASSUMPTION	county	SCH/REG									0.99	1	
+Louisiana	AVOYELLES	county	SCH/REG									0.99	0.96	
+Louisiana	BEAUREGARD	county	SCH/REG									0.97	NA	
+Louisiana	BIENVILLE	county	SCH/REG									0.94	NA	
+Louisiana	BOSSIER	county	SCH/REG									0.98	NA	
+Louisiana	CADDO	county	SCH/REG									0.97	0.98	
+Louisiana	CALCASIEU	county	SCH/REG									0.99	0.9	
+Louisiana	CALDWELL	county	SCH/REG									0.99	1	
+Louisiana	CAMERON	county	SCH/REG									0.98	NA	
+Louisiana	CATAHOULA	county	SCH/REG									0.98	NA	
+Louisiana	CLAIBORNE	county	SCH/REG									0.99	0.88	
+Louisiana	CONCORDIA	county	SCH/REG									0.98	NA	
+Louisiana	DE SOTO	county	SCH/REG									1	0.67	
+Louisiana	EAST BATON ROUG	county	SCH/REG									0.93	0.93	
+Louisiana	EAST CARROLL	county	SCH/REG									1	0.88	
+Louisiana	EAST FELICIANA	county	SCH/REG									0.98	0.82	
+Louisiana	EVANGELINE	county	SCH/REG									0.96	1	
+Louisiana	FRANKLIN	county	SCH/REG									0.98	0.72	
+Louisiana	GRANT	county	SCH/REG									1	NA	
+Louisiana	IBERIA	county	SCH/REG									0.98	0.93	
+Louisiana	IBERVILLE	county	SCH/REG									0.98	0.97	
+Louisiana	JACKSON	county	SCH/REG									0.93	NA	
+Louisiana	JEFFERSON	county	SCH/REG									0.98	0.9	
+Louisiana	JEFFERSON DAVIS	county	SCH/REG									0.95	1	
+Louisiana	LA SALLE	county	SCH/REG									0.98	NA	
+Louisiana	LAFAYETTE	county	SCH/REG									0.95	0.86	
+Louisiana	LAFOURCHE	county	SCH/REG									0.98	0.94	
+Louisiana	LINCOLN	county	SCH/REG									0.98	0.97	
+Louisiana	LIVINGSTON	county	SCH/REG									0.96	0.89	
+Louisiana	MADISON	county	SCH/REG									0.92	0.82	
+Louisiana	MOREHOUSE	county	SCH/REG									0.97	0.9	
+Louisiana	NATCHITOCHES	county	SCH/REG									0.97	1	
+Louisiana	ORLEANS	county	SCH/REG									0.96	0.91	
+Louisiana	OUACHITA	county	SCH/REG									0.92	0.92	
+Louisiana	PLAQUEMINES	county	SCH/REG									0.96	0.94	
+Louisiana	POINTE COUPEE	county	SCH/REG									0.98	0.99	
+Louisiana	RAPIDES	county	SCH/REG									0.97	0.87	
+Louisiana	RED RIVER	county	SCH/REG									0.99	0.92	
+Louisiana	RICHLAND	county	SCH/REG									0.99	0.85	
+Louisiana	SABINE	county	SCH/REG									0.98	NA	
+Louisiana	ST. BERNARD	county	SCH/REG									0.97	0.98	
+Louisiana	ST. CHARLES	county	SCH/REG									0.99	0.96	
+Louisiana	ST. HELENA	county	SCH/REG									0.97	NA	
+Louisiana	ST. JAMES	county	SCH/REG									0.99	1	
+Louisiana	ST. JOHN THE BAPTI	county	SCH/REG									0.99	0.99	
+Louisiana	ST. LANDRY	county	SCH/REG									0.95	0.91	
+Louisiana	ST. MARTIN	county	SCH/REG									0.96	0.97	
+Louisiana	ST. MARY	county	SCH/REG									0.98	0.89	
+Louisiana	ST. TAMMANY	county	SCH/REG									0.94	0.87	
+Louisiana	TANGIPAHOA	county	SCH/REG									0.96	0.97	
+Louisiana	TENSAS	county	SCH/REG									0.98	1	
+Louisiana	TERREBONNE	county	SCH/REG									0.97	0.95	
+Louisiana	UNION	county	SCH/REG									0.96	0.91	
+Louisiana	VERMILION	county	SCH/REG									0.98	0.9	
+Louisiana	VERNON	county	SCH/REG									0.97	0.92	
+Louisiana	WASHINGTON	county	SCH/REG									0.96	0.91	
+Louisiana	WEBSTER	county	SCH/REG									0.98	0.94	
+Louisiana	WEST BATON ROU	county	SCH/REG									0.95	NA	
+Louisiana	WEST CARROLL	county	SCH/REG									0.93	NA	
+Louisiana	WEST FELICIANA	county	SCH/REG									0.99	NA	
+Louisiana	WINN	county	SCH/REG									0.98	NA	
+Maine	Androscoggin	county	SCH		31	22	0.71	0.90						
+Maine	Aroostook	county	SCH		29	20	0.69	0.94						
+Maine	Cumberland	county	SCH		64	43	0.67	0.87						
+Maine	Franklin	county	SCH		10	8	0.8	0.93						
+Maine	Hancock	county	SCH		23	21	0.91	0.85						
+Maine	Kennebec	county	SCH		38	28	0.74	0.90						
+Maine	Knox	county	SCH		17	14	0.82	0.91						
+Maine	Lincoln	county	SCH		14	11	0.79	0.84						
+Maine	Oxford	county	SCH		19	13	0.68	0.94						
+Maine	Penobscot	county	SCH		52	36	0.69	0.95						
+Maine	Piscataquis	county	SCH		8	5	0.63	0.88						
+Maine	Sagadahoc	county	SCH		11	8	0.73	0.89						
+Maine	Somerset	county	SCH		25	16	0.64	0.94						
+Maine	Waldo	county	SCH		18	14	0.78	0.90						
+Maine	Washington	county	SCH		27	24	0.89	0.94						
+Maine	York	county	SCH		42	28	0.67	0.96						
+Maryland	Allegany	county	SCH	718				0.98						
+Maryland	Anne Arundel	county	SCH	"6,422"				0.99						
+Maryland	Baltimore City	county	SCH	"7,928"				0.99						
+Maryland	Baltimore County	county	SCH	"9,336"				1.00						
+Maryland	Calvert	county	SCH	"1,088"				1.00						
+Maryland	Caroline	county	SCH	397				1.00						
+Maryland	Carroll	county	SCH	"1,839"				0.99						
+Maryland	Cecil	county	SCH	"1,209"				1.00						
+Maryland	Charles	county	SCH	"1,781"				1.00						
+Maryland	Dorchester	county	SCH	292				1.00						
+Maryland	Frederick	county	SCH	"3,048"				1.00						
+Maryland	Garrett	county	SCH	280				1.00						
+Maryland	Harford	county	SCH	"2,969"				1.00						
+Maryland	Howard	county	SCH	"4,258"				1.00						
+Maryland	Kent	county	SCH	174				0.99						
+Maryland	Montgomery	county	SCH	"12,416"				0.99						
+Maryland	Prince George's	county	SCH	"10,771"				0.97						
+Maryland	Queen Anne's	county	SCH	569				1.00						
+Maryland	Somerset	county	SCH	282				1.00						
+Maryland	St. Mary's	county	SCH	"1,328"				1.00						
+Maryland	Talbot	county	SCH	531				1.00						
+Maryland	Washington	county	SCH	"1,515"				0.99						
+Maryland	Wicomico	county	SCH	"1,349"				0.98						
+Maryland	Worcester	county	SCH	480				0.99						
+Massachusetts	Barnstable	county	SCH	"1,760"	35			0.95						
+Massachusetts	Berkshire	county	SCH	"1,236"	41			0.93						
+Massachusetts	Bristol	county	SCH	"6,080"	105			0.98						
+Massachusetts	Dukes	county	SCH	189	7			0.89						
+Massachusetts	Essex	county	SCH	"9,084"	182			0.96						
+Massachusetts	Franklin	county	SCH	600	27			0.93						
+Massachusetts	Hampden	county	SCH	"5,550"	103			0.96						
+Massachusetts	Hampshire	county	SCH	"1,259"	37			0.92						
+Massachusetts	Middlesex	county	SCH	"17,998"	310			0.98						
+Massachusetts	Nantucket	county	SCH	154	3			0.93						
+Massachusetts	Norfolk	county	SCH	"7,811"	145			0.98						
+Massachusetts	Plymouth	county	SCH	"5,739"	83			0.96						
+Massachusetts	Suffolk	county	SCH	"7,747"	137			0.80						
+Massachusetts	Worcester	county	SCH	"9,662"	158			0.95						
+MICHIGAN	Alcona	county	SCH					0.71						
+MICHIGAN	Alger	county	SCH					0.75						
+MICHIGAN	Allegan	county	SCH					0.84						
+MICHIGAN	Alpena	county	SCH					0.84						
+MICHIGAN	Antrim	county	SCH					0.77						
+MICHIGAN	Arenac	county	SCH					0.85						
+MICHIGAN	Baraga	county	SCH					0.76						
+MICHIGAN	Barry	county	SCH					0.83						
+MICHIGAN	Bay	county	SCH					0.82						
+MICHIGAN	Benzie	county	SCH					0.79						
+MICHIGAN	Berrien	county	SCH					0.69						
+MICHIGAN	Branch	county	SCH					0.84						
+MICHIGAN	Calhoun	county	SCH					0.87						
+MICHIGAN	Cass	county	SCH					0.70						
+MICHIGAN	Charlevoix	county	SCH					0.79						
+MICHIGAN	Cheboygan	county	SCH					0.82						
+MICHIGAN	Chippewa	county	SCH					0.82						
+MICHIGAN	Clare	county	SCH					0.80						
+MICHIGAN	Clinton	county	SCH					0.83						
+MICHIGAN	Crawford	county	SCH					0.86						
+MICHIGAN	Delta	county	SCH					0.80						
+MICHIGAN	Detroit	county	SCH					0.82						
+MICHIGAN	Dickinson	county	SCH					0.76						
+MICHIGAN	Eaton	county	SCH					0.82						
+MICHIGAN	Emmet	county	SCH					0.78						
+MICHIGAN	Genesee	county	SCH					0.79						
+MICHIGAN	Gladwin	county	SCH					0.79						
+MICHIGAN	Gogebic	county	SCH					0.78						
+MICHIGAN	Grand Traverse	county	SCH					0.80						
+MICHIGAN	Gratiot	county	SCH					0.86						
+MICHIGAN	Hillsdale	county	SCH					0.84						
+MICHIGAN	Houghton	county	SCH					0.72						
+MICHIGAN	Huron	county	SCH					0.85						
+MICHIGAN	Ingham	county	SCH					0.79						
+MICHIGAN	Ionia	county	SCH					0.84						
+MICHIGAN	Iosco	county	SCH					0.81						
+MICHIGAN	Iron	county	SCH					0.83						
+MICHIGAN	Isabella	county	SCH					0.81						
+MICHIGAN	Jackson	county	SCH					0.82						
+MICHIGAN	Kalamazoo	county	SCH					0.84						
+MICHIGAN	Kalkaska	county	SCH					0.77						
+MICHIGAN	Kent	county	SCH					0.82						
+MICHIGAN	Keweenaw	county	SCH					0.59						
+MICHIGAN	Lake	county	SCH					0.78						
+MICHIGAN	Lapeer	county	SCH					0.75						
+MICHIGAN	Leelanau	county	SCH					0.80						
+MICHIGAN	Lenawee	county	SCH					0.81						
+MICHIGAN	Livingston	county	SCH					0.79						
+MICHIGAN	Luce	county	SCH					0.79						
+MICHIGAN	Mackinac	county	SCH					0.85						
+MICHIGAN	Macomb	county	SCH					0.81						
+MICHIGAN	Manistee	county	SCH					0.67						
+MICHIGAN	Marquette	county	SCH					0.81						
+MICHIGAN	Mason	county	SCH					0.78						
+MICHIGAN	Mecosta	county	SCH					0.85						
+MICHIGAN	Menominee	county	SCH					0.59						
+MICHIGAN	Midland	county	SCH					0.73						
+MICHIGAN	Missaukee	county	SCH					0.81						
+MICHIGAN	Monroe	county	SCH					0.68						
+MICHIGAN	Montcalm	county	SCH					0.85						
+MICHIGAN	Montmorency	county	SCH					0.80						
+MICHIGAN	Muskegon	county	SCH					0.85						
+MICHIGAN	Newaygo	county	SCH					0.83						
+MICHIGAN	Oakland	county	SCH					0.77						
+MICHIGAN	Oceana	county	SCH					0.79						
+MICHIGAN	Ogemaw	county	SCH					0.77						
+MICHIGAN	Ontonagon	county	SCH					0.75						
+MICHIGAN	Osceola	county	SCH					0.84						
+MICHIGAN	Oscoda	county	SCH					0.71						
+MICHIGAN	Otsego	county	SCH					0.80						
+MICHIGAN	Ottawa	county	SCH					0.84						
+MICHIGAN	Presque Isle	county	SCH					0.91						
+MICHIGAN	Roscommon	county	SCH					0.79						
+MICHIGAN	Saginaw	county	SCH					0.83						
+MICHIGAN	St Clair	county	SCH					0.80						
+MICHIGAN	St Joseph	county	SCH					0.80						
+MICHIGAN	Sanilac	county	SCH					0.81						
+MICHIGAN	Schoolcraft	county	SCH					0.74						
+MICHIGAN	Shiawassee	county	SCH					0.82						
+MICHIGAN	Tuscola	county	SCH					0.83						
+MICHIGAN	Van Buren	county	SCH					0.82						
+MICHIGAN	Washtenaw	county	SCH					0.76						
+MICHIGAN	Wayne	county	SCH					0.81						
+MICHIGAN	Wexford	county	SCH					0.84						
+MINNESOTA	AITKIN	county	SCH	129				0.90						
+MINNESOTA	ANOKA	county	SCH	4366				0.95						
+MINNESOTA	BECKER	county	SCH	348				0.93						
+MINNESOTA	BELTRAMI	county	SCH	587				0.92						
+MINNESOTA	BENTON	county	SCH	556				0.93						
+MINNESOTA	BIG STONE	county	SCH	32				1.00						
+MINNESOTA	BLUE EARTH	county	SCH	734				0.98						
+MINNESOTA	BROWN	county	SCH	353				0.97						
+MINNESOTA	CARLTON	county	SCH	540				0.96						
+MINNESOTA	CARVER	county	SCH	1378				0.95						
+MINNESOTA	CASS	county	SCH	343				0.88						
+MINNESOTA	CHIPPEWA	county	SCH	104				0.95						
+MINNESOTA	CHISAGO	county	SCH	555				0.95						
+MINNESOTA	CLAY	county	SCH	899				0.89						
+MINNESOTA	CLEARWATER	county	SCH	115				0.83						
+MINNESOTA	COOK	county	SCH	70				0.91						
+MINNESOTA	COTTONWOOD	county	SCH	160				0.93						
+MINNESOTA	CROW WING	county	SCH	771				0.94						
+MINNESOTA	DAKOTA	county	SCH	5433				0.96						
+MINNESOTA	DODGE	county	SCH	282				0.97						
+MINNESOTA	DOUGLAS	county	SCH	391				0.96						
+MINNESOTA	FARIBAULT	county	SCH	173				0.96						
+MINNESOTA	FILLMORE	county	SCH	244				0.93						
+MINNESOTA	FREEBORN	county	SCH	317				0.98						
+MINNESOTA	GOODHUE	county	SCH	556				0.96						
+MINNESOTA	GRANT	county	SCH	104				0.85						
+MINNESOTA	HENNEPIN	county	SCH	14915				0.93						
+MINNESOTA	HOUSTON	county	SCH	282				0.90						
+MINNESOTA	HUBBARD	county	SCH	188				0.92						
+MINNESOTA	ISANTI	county	SCH	447				0.94						
+MINNESOTA	ITASCA	county	SCH	561				0.95						
+MINNESOTA	JACKSON	county	SCH	104				0.91						
+MINNESOTA	KANABEC	county	SCH	142				0.86						
+MINNESOTA	KANDIYOHI	county	SCH	568				0.96						
+MINNESOTA	KITTSON	county	SCH	47				1.00						
+MINNESOTA	KOOCHICHING	county	SCH	144				0.95						
+MINNESOTA	LAC QUI PARLE	county	SCH	55				0.95						
+MINNESOTA	LAKE	county	SCH	99				0.98						
+MINNESOTA	LAKE OF THE WOODS	county	SCH	33				0.94						
+MINNESOTA	LE SUEUR	county	SCH	305				0.96						
+MINNESOTA	LINCOLN	county	SCH	51				0.94						
+MINNESOTA	LYON	county	SCH	425				0.96						
+MINNESOTA	MAHNOMEN	county	SCH	129				0.98						
+MINNESOTA	MARSHALL	county	SCH	123				0.98						
+MINNESOTA	MARTIN	county	SCH	220				0.85						
+MINNESOTA	MCLEOD	county	SCH	450				0.94						
+MINNESOTA	MEEKER	county	SCH	262				0.95						
+MINNESOTA	MILLE LACS	county	SCH	439				0.89						
+MINNESOTA	MORRISON	county	SCH	504				0.95						
+MINNESOTA	MOWER	county	SCH	533				0.96						
+MINNESOTA	MURRAY	county	SCH	81				0.99						
+MINNESOTA	NICOLLET	county	SCH	397				0.98						
+MINNESOTA	NOBLES	county	SCH	315				0.97						
+MINNESOTA	NORMAN	county	SCH	67				0.97						
+MINNESOTA	OLMSTED	county	SCH	1969				0.97						
+MINNESOTA	OTTER TAIL	county	SCH	632				0.91						
+MINNESOTA	PENNINGTON	county	SCH	34				0.74						
+MINNESOTA	PINE	county	SCH	260				0.82						
+MINNESOTA	PIPESTONE	county	SCH	202				0.86						
+MINNESOTA	POLK	county	SCH	465				0.95						
+MINNESOTA	POPE	county	SCH	114				0.92						
+MINNESOTA	RAMSEY	county	SCH	7241				0.91						
+MINNESOTA	RED LAKE	county	SCH	46				0.98						
+MINNESOTA	REDWOOD	county	SCH	183				0.94						
+MINNESOTA	RENVILLE	county	SCH	160				0.91						
+MINNESOTA	RICE	county	SCH	692				0.97						
+MINNESOTA	ROCK	county	SCH	102				0.96						
+MINNESOTA	ROSEAU	county	SCH	112				0.99						
+MINNESOTA	SCOTT	county	SCH	2124				0.95						
+MINNESOTA	SHERBURNE	county	SCH	1153				0.93						
+MINNESOTA	SIBLEY	county	SCH	181				0.81						
+MINNESOTA	ST. LOUIS	county	SCH	2045				0.94						
+MINNESOTA	STEARNS	county	SCH	1836				0.92						
+MINNESOTA	STEELE	county	SCH	569				0.97						
+MINNESOTA	STEVENS	county	SCH	110				0.99						
+MINNESOTA	SWIFT	county	SCH	156				0.93						
+MINNESOTA	TODD	county	SCH	227				0.95						
+MINNESOTA	TRAVERSE	county	SCH	48				0.96						
+MINNESOTA	WABASHA	county	SCH	257				0.98						
+MINNESOTA	WADENA	county	SCH	237				0.92						
+MINNESOTA	WASECA	county	SCH	217				0.99						
+MINNESOTA	WASHINGTON	county	SCH	3197				0.94						
+MINNESOTA	WATONWAN	county	SCH	128				0.99						
+MINNESOTA	WILKIN	county	SCH	86				0.86						
+MINNESOTA	WINONA	county	SCH	467				0.96						
+MINNESOTA	WRIGHT	county	SCH	2100				0.94						
+MINNESOTA	YELLOW MEDICINE	county	SCH	94				0.96						
+Mississippi	ADAMS	county	SCH	450							1			
+Mississippi	ALCORN	county	SCH	463							0.99			
+Mississippi	AMITE	county	SCH	149							1			
+Mississippi	ATTALA	county	SCH	332							1			
+Mississippi	BENTON	county	SCH	109							1			
+Mississippi	BOLIVAR	county	SCH	595							0.99			
+Mississippi	CALHOUN	county	SCH	223							1			
+Mississippi	CARROLL	county	SCH	87							1			
+Mississippi	CHICKASAW	county	SCH	229							1			
+Mississippi	CHOCTAW	county	SCH	126							1			
+Mississippi	CLAIBORNE	county	SCH	124							0.99			
+Mississippi	CLARKE	county	SCH	217							1			
+Mississippi	CLAY	county	SCH	310							1			
+Mississippi	COAHOMA	county	SCH	464							0.99			
+Mississippi	COPIAH	county	SCH	407							1			
+Mississippi	COVINGTON	county	SCH	325							1			
+Mississippi	DESOTO	county	SCH	2867							0.99			
+Mississippi	FORREST	county	SCH	1162							0.99			
+Mississippi	FRANKLIN	county	SCH	107							1			
+Mississippi	GEORGE	county	SCH	350							1			
+Mississippi	GREENE	county	SCH	182							1			
+Mississippi	GRENADA	county	SCH	366							1			
+Mississippi	HANCOCK	county	SCH	671							0.99			
+Mississippi	HARRISON	county	SCH	2901							0.99			
+Mississippi	HINDS	county	SCH	3794							0.99			
+Mississippi	HOLMES	county	SCH	322							0.98			
+Mississippi	HUMPHREYS	county	SCH	156							0.99			
+Mississippi	ITAWAMBA	county	SCH	326							1			
+Mississippi	JACKSON	county	SCH	1871							0.99			
+Mississippi	JASPER	county	SCH	221							0.99			
+Mississippi	JEFFERSON	county	SCH	105							1			
+Mississippi	JEFF DAVIS	county	SCH	144							1			
+Mississippi	JONES	county	SCH	1160							0.99			
+Mississippi	KEMPER	county	SCH	100							1			
+Mississippi	LAFAYETTE	county	SCH	563							1			
+Mississippi	LAMAR	county	SCH	933							1			
+Mississippi	LAUDERDALE	county	SCH	1040							1			
+Mississippi	LAWRENCE	county	SCH	201							1			
+Mississippi	LEAKE	county	SCH	370							1			
+Mississippi	LEE	county	SCH	1298							0.99			
+Mississippi	LEFLORE	county	SCH	540							1			
+Mississippi	LINCOLN	county	SCH	569							1			
+Mississippi	LOWNDES	county	SCH	871							0.99			
+Mississippi	MADISON	county	SCH	1488							0.99			
+Mississippi	MARION	county	SCH	372							1			
+Mississippi	MARSHALL	county	SCH	403							1			
+Mississippi	MONROE	county	SCH	460							1			
+Mississippi	MONTGOMERY	county	SCH	168							1			
+Mississippi	NESHOBA	county	SCH	545							1			
+Mississippi	NEWTON	county	SCH	348							1			
+Mississippi	NOXUBEE	county	SCH	132							0.99			
+Mississippi	OKTIBBEHA	county	SCH	529							1			
+Mississippi	PANOLA	county	SCH	585							1			
+Mississippi	PEARL RIVER	county	SCH	684							0.99			
+Mississippi	PERRY	county	SCH	178							0.98			
+Mississippi	PIKE	county	SCH	636							0.99			
+Mississippi	PONTOTOC	county	SCH	484							0.99			
+Mississippi	PRENTISS	county	SCH	413							1			
+Mississippi	QUITMAN	county	SCH	107							1			
+Mississippi	RANKIN	county	SCH	2026							0.99			
+Mississippi	SCOTT	county	SCH	552							1			
+Mississippi	SHARKEY/ISSAQUENA	county	SCH	86							1			
+Mississippi	SIMPSON	county	SCH	391							0.99			
+Mississippi	SMITH	county	SCH	242							1			
+Mississippi	STONE	county	SCH	205							1			
+Mississippi	SUNFLOWER	county	SCH	364							1			
+Mississippi	TALLAHATCHIE	county	SCH	201							1			
+Mississippi	TATE	county	SCH	412							1			
+Mississippi	TIPPAH	county	SCH	381							1			
+Mississippi	TISHOMINGO	county	SCH	276							0.99			
+Mississippi	TUNICA	county	SCH	185							1			
+Mississippi	UNION	county	SCH	457							1			
+Mississippi	WALTHALL	county	SCH	166							0.99			
+Mississippi	WARREN	county	SCH	714							0.99			
+Mississippi	WASHINGTON	county	SCH	759							0.98			
+Mississippi	WAYNE	county	SCH	294							1			
+Mississippi	WEBSTER	county	SCH	161							1			
+Mississippi	WILKINSON	county	SCH	115							1			
+Mississippi	WINSTON	county	SCH	290							1			
+Mississippi	YALOBUSHA	county	SCH	137							1			
+Mississippi	YAZOO	county	SCH	383							0.99			
+MISSOURI	Adair	county	SCH					0.97						
+MISSOURI	Andrew	county	SCH					0.98						
+MISSOURI	Atchison	county	SCH					0.98						
+MISSOURI	Audrain	county	SCH					0.97						
+MISSOURI	Barry	county	SCH					0.96						
+MISSOURI	Barton	county	SCH					0.99						
+MISSOURI	Bates	county	SCH					0.97						
+MISSOURI	Benton	county	SCH					0.92						
+MISSOURI	Bollinger	county	SCH					0.99						
+MISSOURI	Boone	county	SCH					0.98						
+MISSOURI	Buchanan	county	SCH					0.98						
+MISSOURI	Butler	county	SCH					0.97						
+MISSOURI	Caldwell	county	SCH					0.96						
+MISSOURI	Callaway	county	SCH					0.95						
+MISSOURI	Camden	county	SCH					0.94						
+MISSOURI	Cape Girardeau	county	SCH					0.96						
+MISSOURI	Carroll	county	SCH					1.00						
+MISSOURI	Carter	county	SCH					0.94						
+MISSOURI	Cass	county	SCH					0.95						
+MISSOURI	Cedar	county	SCH					0.97						
+MISSOURI	Chariton	county	SCH					1.00						
+MISSOURI	Christian	county	SCH					0.94						
+MISSOURI	Clark	county	SCH					1.00						
+MISSOURI	Clay	county	SCH					0.96						
+MISSOURI	Clinton	county	SCH					0.95						
+MISSOURI	Cole	county	SCH					0.98						
+MISSOURI	Cooper	county	SCH					0.98						
+MISSOURI	Crawford	county	SCH					0.96						
+MISSOURI	Dade	county	SCH					0.94						
+MISSOURI	Dallas	county	SCH					0.95						
+MISSOURI	Daviess	county	SCH					0.88						
+MISSOURI	DeKalb	county	SCH					0.99						
+MISSOURI	Dent	county	SCH					0.97						
+MISSOURI	Douglas	county	SCH					0.95						
+MISSOURI	Dunklin	county	SCH					0.98						
+MISSOURI	Franklin	county	SCH					0.94						
+MISSOURI	Gasconade	county	SCH					0.99						
+MISSOURI	Gentry	county	SCH					0.97						
+MISSOURI	Greene	county	SCH					0.96						
+MISSOURI	Grundy	county	SCH					0.95						
+MISSOURI	Harrison	county	SCH					0.99						
+MISSOURI	Henry	county	SCH					0.93						
+MISSOURI	Hickory	county	SCH					0.82						
+MISSOURI	Holt	county	SCH					0.98						
+MISSOURI	Howard	county	SCH					0.97						
+MISSOURI	Howell	county	SCH					0.91						
+MISSOURI	Iron	county	SCH					0.98						
+MISSOURI	Jackson	county	SCH					0.96						
+MISSOURI	Jasper	county	SCH					0.97						
+MISSOURI	Jefferson	county	SCH					0.98						
+MISSOURI	Johnson	county	SCH					0.96						
+MISSOURI	Knox	county	SCH					1.00						
+MISSOURI	Laclede	county	SCH					0.96						
+MISSOURI	Lafayette	county	SCH					0.97						
+MISSOURI	Lawrence	county	SCH					0.96						
+MISSOURI	Lewis	county	SCH					0.98						
+MISSOURI	Lincoln	county	SCH					0.97						
+MISSOURI	Linn	county	SCH					0.98						
+MISSOURI	Livingston	county	SCH					0.94						
+MISSOURI	Macon	county	SCH					0.97						
+MISSOURI	Madison	county	SCH					0.98						
+MISSOURI	Maries	county	SCH					1.00						
+MISSOURI	Marion	county	SCH					0.96						
+MISSOURI	McDonald	county	SCH					0.91						
+MISSOURI	Mercer	county	SCH					1.00						
+MISSOURI	Miller	county	SCH					0.97						
+MISSOURI	Mississippi	county	SCH					0.99						
+MISSOURI	Moniteau	county	SCH					0.99						
+MISSOURI	Monroe	county	SCH					0.97						
+MISSOURI	Montgomery	county	SCH					0.98						
+MISSOURI	Morgan	county	SCH					0.94						
+MISSOURI	New Madrid	county	SCH					1.00						
+MISSOURI	Newton	county	SCH					0.97						
+MISSOURI	Nodaway	county	SCH					0.97						
+MISSOURI	Oregon	county	SCH					0.94						
+MISSOURI	Osage	county	SCH					0.99						
+MISSOURI	Ozark	county	SCH					0.89						
+MISSOURI	Pemiscot	county	SCH					0.96						
+MISSOURI	Perry	county	SCH					0.98						
+MISSOURI	Pettis	county	SCH					0.94						
+MISSOURI	Phelps	county	SCH					0.96						
+MISSOURI	Pike	county	SCH					0.97						
+MISSOURI	Platte	county	SCH					0.96						
+MISSOURI	Polk	county	SCH					0.94						
+MISSOURI	Pulaski	county	SCH					0.96						
+MISSOURI	Putnam	county	SCH					0.93						
+MISSOURI	Ralls	county	SCH					1.00						
+MISSOURI	Randolph	county	SCH					0.96						
+MISSOURI	Ray	county	SCH					0.96						
+MISSOURI	Reynolds	county	SCH					0.96						
+MISSOURI	Ripley	county	SCH					0.95						
+MISSOURI	Saline	county	SCH					0.97						
+MISSOURI	Schuyler	county	SCH					1.00						
+MISSOURI	Scotland	county	SCH					0.97						
+MISSOURI	Scott	county	SCH					0.97						
+MISSOURI	Shannon	county	SCH					0.86						
+MISSOURI	Shelby	county	SCH					0.98						
+MISSOURI	St Charles	county	SCH					0.95						
+MISSOURI	St Clair	county	SCH					0.95						
+MISSOURI	St Francois	county	SCH					0.85						
+MISSOURI	St Louis City	county	SCH					0.98						
+MISSOURI	St Louis	county	SCH					0.92						
+MISSOURI	Ste. Genevieve	county	SCH					0.93						
+MISSOURI	Stoddard	county	SCH					0.99						
+MISSOURI	Stone	county	SCH					0.96						
+MISSOURI	Sullivan	county	SCH					0.96						
+MISSOURI	Taney	county	SCH					0.95						
+MISSOURI	Texas	county	SCH					0.94						
+MISSOURI	Vernon	county	SCH					0.93						
+MISSOURI	Warren	county	SCH					0.97						
+MISSOURI	Washington	county	SCH					0.95						
+MISSOURI	Wayne	county	SCH					0.97						
+MISSOURI	Webster	county	SCH					0.94						
+MISSOURI	Worth	county	SCH					1.00						
+MISSOURI	Wright	county	SCH					0.96						
+MONTANA	Beaverhead	county						0.98						
+MONTANA	Big Horn	county						0.95						
+MONTANA	Blaine	county						0.97						
+MONTANA	Broadwater	county						0.96						
+MONTANA	Carbon	county						0.92						
+MONTANA	Carter	county						0.82						
+MONTANA	Cascade	county						0.96						
+MONTANA	Chouteau	county						1.00						
+MONTANA	Custer	county						0.98						
+MONTANA	Daniels	county						0.94						
+MONTANA	Dawson	county						0.92						
+MONTANA	Deer Lodge	county						1.00						
+MONTANA	Fallon	county						1.00						
+MONTANA	Fergus	county						0.94						
+MONTANA	Flathead	county						0.91						
+MONTANA	Gallatin	county						0.94						
+MONTANA	Garfield	county						0.94						
+MONTANA	Glacier	county						0.98						
+MONTANA	Golden Valley	county						0.67						
+MONTANA	Granite	county						0.89						
+MONTANA	Hill	county						1.00						
+MONTANA	Jefferson	county						0.98						
+MONTANA	Judith Basin	county						0.92						
+MONTANA	Lake	county						0.94						
+MONTANA	Lewis & Clark	county						0.96						
+MONTANA	Liberty	county						0.94						
+MONTANA	Lincoln	county						0.87						
+MONTANA	Madison	county						0.98						
+MONTANA	McCone	county						0.90						
+MONTANA	Meagher	county						1.00						
+MONTANA	Mineral	county						1.00						
+MONTANA	Missoula	county						0.96						
+MONTANA	Musselshell	county						0.91						
+MONTANA	Park	county						0.95						
+MONTANA	Petroleum	county						0.86						
+MONTANA	Phillips	county						0.96						
+MONTANA	Pondera	county						0.94						
+MONTANA	Powder River	county						0.89						
+MONTANA	Powell	county						0.97						
+MONTANA	Prairie	county						0.95						
+MONTANA	Ravalli	county						0.85						
+MONTANA	Richland	county						0.96						
+MONTANA	Roosevelt	county						0.96						
+MONTANA	Rosebud	county						0.98						
+MONTANA	Sanders	county						0.84						
+MONTANA	Sheridan	county						1.00						
+MONTANA	Silver Bow	county						0.98						
+MONTANA	Stillwater	county						0.99						
+MONTANA	Sweet Grass	county						1.00						
+MONTANA	Teton	county						0.95						
+MONTANA	Toole	county						0.98						
+MONTANA	Treasure	county						1.00						
+MONTANA	Valley	county						0.98						
+MONTANA	Wheatland	county						0.76						
+MONTANA	Wibaux	county						0.93						
+MONTANA	Yellowstone	county						0.97						
+Nebraska	Central District	health department	SCH	"1,264"				0.98						
+Nebraska	Dakota County	health department	SCH	321				0.97						
+Nebraska	Douglas County	health department	SCH	"8,943"				0.96						
+Nebraska	East Central District	health department	SCH	714				0.99						
+Nebraska	Elkhorn Logan Valley	health department	SCH	756				0.99						
+Nebraska	Four Corners 	health department	SCH	520				0.96						
+Nebraska	Lincoln-Lancaster County	health department	SCH	"4,325"				0.90						
+Nebraska	Loup Basin	health department	SCH	213				0.97						
+Nebraska	North Central District	health department	SCH	490				0.96						
+Nebraska	Northeast Nebraska	health department	SCH	462				0.97						
+Nebraska	Panhandle	health department	SCH	617				0.96						
+Nebraska	Public Health Solutions District	health department	SCH	609				0.96						
+Nebraska	Sarpy-Cass Dept of Health and Wellness	health department	SCH	"2,552"				0.98						
+Nebraska	Scotts Bluff County	health department	SCH	535				0.98						
+Nebraska	South Heartland District	health department	SCH	564				0.97						
+Nebraska	Southeast District	health department	SCH	485				0.99						
+Nebraska	Southwest Nebraska	health department	SCH	448				0.95						
+Nebraska	Three Rivers	health department	SCH	970				0.97						
+Nebraska	Two Rivers	health department	SCH	"1,334"				0.98						
+Nebraska	West Central District	health department	SCH	539				0.96						
+Nevada	mineral	county	REG	53				0.96						
+Nevada	pershing	county	REG	53				0.91						
+Nevada	clark	county	REG	28555				0.84						
+Nevada	carson city	county	REG	653				0.83						
+Nevada	lander	county	REG	113				0.81						
+Nevada	douglas	county	REG	406				0.80						
+Nevada	elko	county	REG	974				0.78						
+Nevada	white pine	county	REG	117				0.78						
+Nevada	washoe	county	REG	5499				0.77						
+Nevada	lyon	county	REG	630				0.77						
+Nevada	lincoln	county	REG	58				0.76						
+Nevada	humboldt	county	REG	252				0.73						
+Nevada	churchill	county	REG	351				0.69						
+Nevada	eureka	county	REG	38				0.55						
+Nevada	nye	county	REG	494				0.54						
+Nevada	esmerelda	county	REG	8										
+Nevada	storey	county	REG	46										
+New Jersey	Atlantic	county	SCH	3439							0.91	0.91	0.91	
+New Jersey	Bergen	county	SCH	11376							0.93	0.94	0.91	
+New Jersey	Burlington	county	SCH	5201							0.95	0.95	0.94	
+New Jersey	Camden	county	SCH	6663							0.9	0.9	0.91	
+New Jersey	Cape May	county	SCH	0985							0.96	0.96	0.95	
+New Jersey	Cumberland	county	SCH	2286							0.97	0.97	0.88	
+New Jersey	Essex	county	SCH	11384							0.91	0.9	0.94	
+New Jersey	Gloucester	county	SCH	3692							0.98	0.98	0.96	
+New Jersey	Hudson	county	SCH	7646							0.92	0.91	0.94	
+New Jersey	Hunterdon	county	SCH	1262							0.91	0.92	0.77	
+New Jersey	Mercer	county	SCH	4805							0.94	0.94	0.93	
+New Jersey	Middlesex	county	SCH	10263							0.95	0.96	0.88	
+New Jersey	Monmouth	county	SCH	7626							0.89	0.89	0.89	
+New Jersey	Morris	county	SCH	6076							0.89	0.9	0.89	
+New Jersey	Ocean	county	SCH	8113							0.89	0.94	0.82	
+New Jersey	Passaic	county	SCH	7255							0.95	0.95	0.91	
+New Jersey	Salem	county	SCH	0810							0.96	0.96	1	
+New Jersey	Somerset	county	SCH	4076							0.94	0.96	0.86	
+New Jersey	Sussex	county	SCH	1523							0.93	0.94	0.83	
+New Jersey	Union	county	SCH	7506							0.94	0.95	0.9	
+New Jersey	Warren	county	SCH	1136							0.96	0.96	0.94	
+North Carolina	Alamance	county	SCH					0.99						
+North Carolina	Alexander	county	SCH					1.00						
+North Carolina	Alleghany	county	SCH					0.97						
+North Carolina	Anson	county	SCH					0.99						
+North Carolina	Ashe	county	SCH					1.00						
+North Carolina	Avery	county	SCH					0.99						
+North Carolina	Beaufort	county	SCH					0.99						
+North Carolina	Bertie	county	SCH					0.98						
+North Carolina	Bladen	county	SCH					0.99						
+North Carolina	Brunswick	county	SCH					0.98						
+North Carolina	Buncombe	county	SCH					0.98						
+North Carolina	Burke	county	SCH					0.99						
+North Carolina	Cabarrus	county	SCH					0.99						
+North Carolina	Caldwell	county	SCH					1.00						
+North Carolina	Camden	county	SCH					1.00						
+North Carolina	Carteret	county	SCH					1.00						
+North Carolina	Caswell	county	SCH					0.97						
+North Carolina	Catawba	county	SCH					1.00						
+North Carolina	Chatham	county	SCH					1.00						
+North Carolina	Cherokee	county	SCH					0.99						
+North Carolina	Chowan	county	SCH					0.98						
+North Carolina	Clay	county	SCH					0.96						
+North Carolina	Cleveland	county	SCH					0.99						
+North Carolina	Columbus	county	SCH					1.00						
+North Carolina	Craven	county	SCH					1.00						
+North Carolina	Cumberland	county	SCH					0.98						
+North Carolina	Currituck	county	SCH					1.00						
+North Carolina	Dare	county	SCH					0.99						
+North Carolina	Davidson	county	SCH					0.99						
+North Carolina	Davie	county	SCH					0.99						
+North Carolina	Duplin	county	SCH					0.98						
+North Carolina	Durham	county	SCH					0.98						
+North Carolina	Edgecombe	county	SCH					0.99						
+North Carolina	Forsyth	county	SCH					0.99						
+North Carolina	Franklin	county	SCH					0.97						
+North Carolina	Gaston	county	SCH					0.99						
+North Carolina	Gates	county	SCH					1.00						
+North Carolina	Graham	county	SCH					0.98						
+North Carolina	Granville	county	SCH					1.00						
+North Carolina	Greene	county	SCH					0.97						
+North Carolina	Guilford	county	SCH					0.99						
+North Carolina	Halifax	county	SCH					0.99						
+North Carolina	Harnett	county	SCH					0.99						
+North Carolina	Haywood	county	SCH					1.00						
+North Carolina	Henderson	county	SCH					1.00						
+North Carolina	Hertford	county	SCH					0.93						
+North Carolina	Hoke	county	SCH					0.97						
+North Carolina	Hyde	county	SCH					1.00						
+North Carolina	Iredell	county	SCH					0.99						
+North Carolina	Jackson	county	SCH					1.00						
+North Carolina	Johnston	county	SCH					0.98						
+North Carolina	Jones	county	SCH					1.00						
+North Carolina	Lee	county	SCH					0.99						
+North Carolina	Lenoir	county	SCH					0.97						
+North Carolina	Lincoln	county	SCH					0.99						
+North Carolina	Macon	county	SCH					0.99						
+North Carolina	Madison	county	SCH					0.99						
+North Carolina	Martin	county	SCH					0.96						
+North Carolina	McDowell	county	SCH					1.00						
+North Carolina	Mecklenburg	county	SCH					0.97						
+North Carolina	Mitchell	county	SCH					0.95						
+North Carolina	Montgomery	county	SCH					0.99						
+North Carolina	Moore	county	SCH					1.00						
+North Carolina	Nash	county	SCH					1.00						
+North Carolina	New Hanover	county	SCH					0.99						
+North Carolina	Northampton	county	SCH					0.99						
+North Carolina	Onslow	county	SCH					0.98						
+North Carolina	Orange	county	SCH					0.99						
+North Carolina	Pamlico	county	SCH					1.00						
+North Carolina	Pasquotank	county	SCH					0.99						
+North Carolina	Pender	county	SCH					0.99						
+North Carolina	Perquimans	county	SCH					1.00						
+North Carolina	Person	county	SCH					1.00						
+North Carolina	Pitt	county	SCH					0.99						
+North Carolina	Polk	county	SCH					0.98						
+North Carolina	Randolph	county	SCH					1.00						
+North Carolina	Richmond	county	SCH					0.99						
+North Carolina	Robeson	county	SCH					0.96						
+North Carolina	Rockingham	county	SCH					0.99						
+North Carolina	Rowan	county	SCH					0.98						
+North Carolina	Rutherford	county	SCH					0.98						
+North Carolina	Sampson	county	SCH					0.99						
+North Carolina	Scotland	county	SCH					0.99						
+North Carolina	Stanly	county	SCH					0.99						
+North Carolina	Stokes	county	SCH					1.00						
+North Carolina	Surry	county	SCH					1.00						
+North Carolina	Swain	county	SCH					0.99						
+North Carolina	Transylvania	county	SCH					1.00						
+North Carolina	Tyrrell	county	SCH					0.93						
+North Carolina	Union	county	SCH					0.98						
+North Carolina	Vance	county	SCH					0.99						
+North Carolina	Wake	county	SCH					0.99						
+North Carolina	Warren	county	SCH					0.97						
+North Carolina	Washington	county	SCH					0.99						
+North Carolina	Watauga	county	SCH					1.00						
+North Carolina	Wayne	county	SCH					0.99						
+North Carolina	Wilkes	county	SCH					1.00						
+North Carolina	Wilson	county	SCH					0.98						
+North Carolina	Yadkin	county	SCH					0.98						
+North Carolina	Yancey	county	SCH					0.98						
+North Dakota	Adams	county	SCH	25				0.96						
+North Dakota	Barnes	county	SCH	110				0.95						
+North Dakota	Benson	county	SCH	142				0.90						
+North Dakota	Billings	county	SCH	8				1.00						
+North Dakota	Bottineau	county	SCH	89				0.93						
+North Dakota	Bowman	county	SCH	56				0.96						
+North Dakota	Burke	county	SCH	42				0.36						
+North Dakota	Burleigh	county	SCH	1164				0.94						
+North Dakota	Cass	county	SCH	2165				0.89						
+North Dakota	Cavalier	county	SCH	38				0.97						
+North Dakota	Dickey	county	SCH	69				0.96						
+North Dakota	Divide	county	SCH	31				0.97						
+North Dakota	Dunn	county	SCH	50				0.84						
+North Dakota	Eddy	county	SCH	25				1.00						
+North Dakota	Emmons	county	SCH	37				0.97						
+North Dakota	Foster	county	SCH	25				1.00						
+North Dakota	Golden Valley	county	SCH	26				0.88						
+North Dakota	Grand Forks	county	SCH	836				0.94						
+North Dakota	Grant	county	SCH	20				0.90						
+North Dakota	Griggs	county	SCH	33				0.94						
+North Dakota	Hettinger	county	SCH	34				0.97						
+North Dakota	Kidder	county	SCH	23				0.91						
+North Dakota	LaMoure	county	SCH	56				0.86						
+North Dakota	Logan	county	SCH	36				0.94						
+North Dakota	McHenry	county	SCH	85				0.91						
+North Dakota	McIntosh	county	SCH	30				0.97						
+North Dakota	McKenzie	county	SCH	180				0.77						
+North Dakota	McLean	county	SCH	112				0.80						
+North Dakota	Mercer	county	SCH	110				0.86						
+North Dakota	Morton	county	SCH	404				0.84						
+North Dakota	Mountrail	county	SCH	182				0.89						
+North Dakota	Nelson	county	SCH	24				0.88						
+North Dakota	Oliver	county	SCH	25				0.80						
+North Dakota	Pembina	county	SCH	77				0.91						
+North Dakota	Pierce	county	SCH	74				0.95						
+North Dakota	Ramsey	county	SCH	189				0.89						
+North Dakota	Ransom	county	SCH	72				0.90						
+North Dakota	Renville	county	SCH	57				0.89						
+North Dakota	Richland	county	SCH	163				0.93						
+North Dakota	Rolette	county	SCH	342				0.97						
+North Dakota	Sargent	county	SCH	47				0.60						
+North Dakota	Sheridan	county	SCH	6				0.83						
+North Dakota	Sioux	county	SCH	92				0.93						
+North Dakota	Slope	county	SCH	Sample Size Too Small										
+North Dakota	Stark	county	SCH	473				0.81						
+North Dakota	Steele	county	SCH	10				0.90						
+North Dakota	Stutsman	county	SCH	242				0.95						
+North Dakota	Towner	county	SCH	25				1.00						
+North Dakota	Traill	county	SCH	118				1.00						
+North Dakota	Walsh	county	SCH	142				0.93						
+North Dakota	Ward	county	SCH	1036				0.87						
+North Dakota	Wells	county	SCH	46				0.98						
+North Dakota	Williams	county	SCH	496				0.85						
+Ohio	Adams	county	SCH	370		5		0.98	0.99		0.98	0.98		
+Ohio	Allen	county	SCH	1460		24		0.95	0.96	0.84	0.92	0.93	0.85	
+Ohio	Ashland	county	SCH	471		8		0.99	0.99	0.95	0.97	0.97	0.92	
+Ohio	Ashtabula	county	SCH	992		14		0.96	0.96	0.96	0.92	0.91	0.96	
+Ohio	Athens	county	SCH	576		10		0.96	0.96		0.93	0.93		
+Ohio	Auglaize	county	SCH	555		6		0.95	0.95		0.92	0.92		
+Ohio	Belmont	county	SCH	941		14		0.98	0.98	0.97	0.97	0.97	0.92	
+Ohio	Brown	county	SCH	584		7		0.97	0.97		0.96	0.96		
+Ohio	Butler	county	SCH	4632		54		0.96	0.96	0.97	0.94	0.94	0.94	
+Ohio	Carroll	county	SCH	240		5		0.96	0.96		0.95	0.95		
+Ohio	Champaign	county	SCH	495		5		0.98	0.98		0.96	0.96		
+Ohio	Clark	county	SCH	1715		28		0.96	0.96	0.94	0.91	0.91	0.91	
+Ohio	Clermont	county	SCH	2470		33		0.96	0.96	0.96	0.93	0.93	0.93	
+Ohio	Clinton	county	SCH	529		7		0.86	0.86	0.86	0.81	0.81	0.86	
+Ohio	Columbiana	county	SCH	1114		18		0.94	0.95	0.8	0.92	0.93	0.83	
+Ohio	Coshocton	county	SCH	348		8		0.94	0.95	0.54	0.94	0.95	0.69	
+Ohio	Crawford	county	SCH	533		9		0.92	0.93		0.91	0.91		
+Ohio	Cuyahoga	county	SCH	13644		280		0.93	0.93	0.94	0.83	0.81	0.9	
+Ohio	Darke	county	SCH	457		8		0.95	0.95	0.86	0.89	0.93	0.49	
+Ohio	Defiance	county	SCH	550		7		0.95	0.95	0.96	0.93	0.93	0.93	
+Ohio	Delaware	county	SCH	2283		39		0.94	0.95	0.88	0.9	0.92	0.79	
+Ohio	Erie	county	SCH	1095		16		0.94	0.93	0.94	0.91	0.91	0.91	
+Ohio	Fairfield	county	SCH	1683		27		0.95	0.95	0.96	0.91	0.92	0.84	
+Ohio	Fayette	county	SCH	468		4		0.96	0.96	0.98	0.95	0.95	0.95	
+Ohio	Franklin	county	SCH	16548		263		0.95	0.95	0.93	0.92	0.92	0.9	
+Ohio	Fulton	county	SCH	523		9		0.95	0.96	0.54	0.95	0.95	0.77	
+Ohio	Gallia	county	SCH	377		8		0.98	0.99		0.98	0.98		
+Ohio	Geauga	county	SCH	809		15		0.96	0.96	0.93	0.91	0.91	0.91	
+Ohio	Greene	county	SCH	1546		24		0.93	0.93	0.84	0.9	0.9	0.82	
+Ohio	Guernsey	county	SCH	426		9		0.97	0.97		0.96	0.96		
+Ohio	Hamilton	county	SCH	9844		174		0.93	0.92	0.97	0.8	0.77	0.93	
+Ohio	Hancock	county	SCH	816		13		0.94	0.94		0.93	0.93		
+Ohio	Hardin	county	SCH	183		4		0.94	0.94		0.91	0.91		
+Ohio	Harrison	county	SCH	115		3		0.88	0.88		0.88	0.88		
+Ohio	Henry	county	SCH	462		9		0.98	0.98	1	0.97	0.97	0.97	
+Ohio	Highland	county	SCH	550		8		0.96	0.95	1	0.93	0.93	0.94	
+Ohio	Hocking	county	SCH	287		7		0.97	0.97	1	0.95	0.96	0.82	
+Ohio	Holmes	county	SCH	350		12		0.83	0.83		0.7	0.7		
+Ohio	Huron	county	SCH	590		9		0.90	0.9	0.96	0.89	0.89	0.93	
+Ohio	Jackson	county	SCH	295		6		0.94	0.94		0.92	0.92		
+Ohio	Jefferson	county	SCH	763		13		0.98	0.99	0.89	0.97	0.98	0.84	
+Ohio	Knox	county	SCH	534		9		0.94	0.94		0.92	0.92		
+Ohio	Lake	county	SCH	2310		40		0.96	0.96	0.96	0.85	0.84	0.94	
+Ohio	Lawrence	county	SCH	806		9		0.98	0.98	0.94	0.96	0.96	0.94	
+Ohio	Licking	county	SCH	2106		24		0.95	0.95	0.93	0.93	0.93	0.92	
+Ohio	Logan	county	SCH	429		4		0.90	0.9		0.87	0.87		
+Ohio	Lorain	county	SCH	3458		52		0.96	0.96	0.97	0.92	0.92	0.94	
+Ohio	Lucas	county	SCH	6213		108		0.89	0.89	0.94	0.83	0.82	0.89	
+Ohio	Madison	county	SCH	575		8		0.93	0.93	0.85	0.9	0.9	0.95	
+Ohio	Mahoning	county	SCH	2401		39		0.93	0.93	0.96	0.9	0.9	0.91	
+Ohio	Marion	county	SCH	845		13		0.97	0.97	0.91	0.94	0.94	0.82	
+Ohio	Medina	county	SCH	1907		31		0.96	0.96	0.95	0.93	0.94	0.89	
+Ohio	Meigs	county	SCH	274		4		0.99	0.99		0.97	0.97		
+Ohio	Mercer	county	SCH	571		7		0.95	0.95	0.95	0.9	0.9	0.95	
+Ohio	Miami	county	SCH	1164		18		0.95	0.96	0.9	0.93	0.93	0.87	
+Ohio	Monroe	county	SCH	148		5		0.99	0.99	1	0.99	0.99	1	
+Ohio	Montgomery	county	SCH	6186		88		0.94	0.94	0.95	0.89	0.89	0.93	
+Ohio	Morgan	county	SCH	158		4		0.99	0.99	1	0.98	0.99	0.93	
+Ohio	Morrow	county	SCH	394		5		0.94	0.94	0.89	0.88	0.88	0.83	
+Ohio	Muskingum	county	SCH	1116		16		0.99	0.99	0.97	0.98	0.98	0.97	
+Ohio	Noble	county	SCH	150		2		0.97	0.97		0.95	0.95		
+Ohio	Ottawa	county	SCH	403		7		0.95	0.95	0.91	0.94	0.93	1	
+Ohio	Paulding	county	SCH	256		6		0.91	0.91	0.83	0.88	0.88	0.75	
+Ohio	Perry	county	SCH	436		8		0.97	0.98	0.93	0.97	0.97	1	
+Ohio	Pickaway	county	SCH	709		11		0.98	0.98	1	0.96	0.96	1	
+Ohio	Pike	county	SCH	370		5		0.97	0.98		0.93	0.93		
+Ohio	Portage	county	SCH	1451		18		0.94	0.94	0.9	0.9	0.9	0.87	
+Ohio	Preble	county	SCH	457		6		0.95	0.95		0.9	0.9		
+Ohio	Putnam	county	SCH	510		12		0.94	0.94	1	0.93	0.92	0.97	
+Ohio	Richland	county	SCH	1458		26		0.91	0.92	0.81	0.89	0.9	0.79	
+Ohio	Ross	county	SCH	837		12		0.87	0.88	0.77	0.79	0.8	0.63	
+Ohio	Sandusky	county	SCH	771		16		0.95	0.96	0.86	0.93	0.95	0.73	
+Ohio	Scioto	county	SCH	1049		12		0.98	0.98	1	0.97	0.97	1	
+Ohio	Seneca	county	SCH	316		4		0.92	0.95	0.75	0.91	0.93	0.75	
+Ohio	Shelby	county	SCH	658		13		0.92	0.92	0.88	0.9	0.9	0.88	
+Ohio	Stark	county	SCH	4037		61		0.92	0.92	0.85	0.87	0.87	0.82	
+Ohio	Summit	county	SCH	5470		92		0.93	0.94	0.91	0.86	0.86	0.81	
+Ohio	Trumbull	county	SCH	2240		35		0.94	0.95	0.9	0.9	0.91	0.88	
+Ohio	Tuscarawas	county	SCH	1140		24		0.95	0.95	0.94	0.92	0.92	1	
+Ohio	Union	county	SCH	631		9		0.97	0.98	0.91	0.94	0.96	0.85	
+Ohio	Van Wert	county	SCH	395		4		0.96	0.96		0.93	0.93		
+Ohio	Vinton	county	SCH	186		4		0.99	0.99		0.86	0.86		
+Ohio	Warren	county	SCH	2737		21		0.96	0.96	0.93	0.93	0.94	0.93	
+Ohio	Washington	county	SCH	626		16		0.98	0.98	1	0.96	0.96	0.97	
+Ohio	Wayne	county	SCH	1133		21		0.90	0.89	0.96	0.82	0.83	0.7	
+Ohio	Williams	county	SCH	494		8		0.96	0.96		0.96	0.96		
+Ohio	Wood	county	SCH	1259		22		0.95	0.94	0.96	0.89	0.89	0.88	
+Ohio	Wyandot	county	SCH	312		7		0.97	0.98	0.96	0.96	0.96	0.94	
+Oregon	Baker	county	SCH	151	7	7		0.92						0.94
+Oregon	Benton	county	SCH	843	23	23		0.93						0.94
+Oregon	Clackamas	county	SCH	4328	107	107		0.93						0.95
+Oregon	Clatsop	county	SCH	417	7	7		0.94						0.96
+Oregon	Columbia	county	SCH	583	15	15		0.95						0.96
+Oregon	Coos	county	SCH	641	13	13		0.96						0.97
+Oregon	Crook	county	SCH	186	6	6		0.96						0.97
+Oregon	Curry	county	SCH	164	4	4		0.92						0.95
+Oregon	Deschutes	county	SCH	1907	50	50		0.93						0.95
+Oregon	Douglas	county	SCH	1122	32	32		0.93						0.96
+Oregon	Grant	county	SCH	66	6	6		0.94						0.96
+Oregon	Harney	county	SCH	76	4	4		0.97						0.97
+Oregon	Hood River	county	SCH	310	9	9		0.95						0.96
+Oregon	Jackson	county	SCH	2359	52	52		0.93						0.94
+Oregon	Jefferson	county	SCH	307	5	5		0.99						0.99
+Oregon	Josephine	county	SCH	821	25	25		0.92						0.94
+Oregon	Klamath	county	SCH	802	23	23		0.98						0.98
+Oregon	Lake	county	SCH	82	5	5		0.95						0.99
+Oregon	Lane	county	SCH	3417	91	91		0.94						0.95
+Oregon	Lincoln	county	SCH	425	13	13		0.96						0.98
+Oregon	Linn	county	SCH	1353	37	37		0.96						0.97
+Oregon	Malheur	county	SCH	460	16	16		0.95						0.98
+Oregon	Marion	county	SCH	4612	100	100		0.95						0.96
+Oregon	Morrow	county	SCH	192	4	4		0.98						0.98
+Oregon	Multnomah	county	SCH	8894	197	197		0.92						0.95
+Oregon	North Central (=Wasco + Sherman + Gilliam counties)	district	SCH	353	12	12		0.99						0.99
+Oregon	Polk	county	SCH	746	19	19		0.96						0.97
+Oregon	Tillamook	county	SCH	300	11	11		0.94						0.95
+Oregon	Umatilla	county	SCH	1090	27	27		0.98						0.98
+Oregon	Union	county	SCH	331	11	11		0.96						0.98
+Oregon	Wallowa	county	SCH	73	4	4		0.95						0.96
+Oregon	Washington	county	SCH	7322	168	168		0.96						0.97
+Oregon	Wheeler	county	SCH	17	3	3		1.00						1.00
+Oregon	Yamhill	county	SCH	1237	30	30		0.95						0.97
+Pennsylvania	Adams	county	SCH	1345				0.92						
+Pennsylvania	Allegheny	county	SCH	13286				0.93						
+Pennsylvania	Armstrong	county	SCH	684				0.89						
+Pennsylvania	Beaver	county	SCH	2226				0.91						
+Pennsylvania	Bedford	county	SCH	489				0.86						
+Pennsylvania	Berks	county	SCH	5327				0.93						
+Pennsylvania	Blair	county	SCH	1532				0.84						
+Pennsylvania	Bradford	county	SCH	746				0.94						
+Pennsylvania	Bucks	county	SCH	6914				0.90						
+Pennsylvania	Butler	county	SCH	1987				0.88						
+Pennsylvania	Cambria	county	SCH	1353				0.93						
+Pennsylvania	Cameron	county	SCH	55				1.00						
+Pennsylvania	Carbon	county	SCH	666				0.90						
+Pennsylvania	Centre	county	SCH	1033				0.90						
+Pennsylvania	Chester	county	SCH	7042				0.91						
+Pennsylvania	Clarion	county	SCH	535				0.96						
+Pennsylvania	Clearfield	county	SCH	1009				0.93						
+Pennsylvania	Clinton	county	SCH	362				0.92						
+Pennsylvania	Columbia	county	SCH	730				0.97						
+Pennsylvania	Crawford	county	SCH	638				0.88						
+Pennsylvania	Cumberland	county	SCH	2508				0.87						
+Pennsylvania	Dauphin	county	SCH	3519				0.88						
+Pennsylvania	Delaware	county	SCH	6741				0.94						
+Pennsylvania	Elk	county	SCH	296				0.92						
+Pennsylvania	Erie	county	SCH	3352				0.91						
+Pennsylvania	Fayette	county	SCH	1406				0.89						
+Pennsylvania	Forest	county	SCH	27				0.85						
+Pennsylvania	Franklin	county	SCH	1636				0.90						
+Pennsylvania	Fulton	county	SCH	151				0.93						
+Pennsylvania	Greene	county	SCH	369				0.90						
+Pennsylvania	Huntingdon	county	SCH	435				0.97						
+Pennsylvania	Indiana	county	SCH	744				0.90						
+Pennsylvania	Jefferson	county	SCH	352				0.92						
+Pennsylvania	Juniata	county	SCH	209				0.88						
+Pennsylvania	Lackawanna	county	SCH	2313				0.91						
+Pennsylvania	Lancaster	county	SCH	6249				0.87						
+Pennsylvania	Lawrence	county	SCH	939				0.85						
+Pennsylvania	Lebanon	county	SCH	1962				0.96						
+Pennsylvania	Lehigh	county	SCH	4204				0.93						
+Pennsylvania	Luzerne	county	SCH	3439				0.93						
+Pennsylvania	Lycoming	county	SCH	1174				0.89						
+Pennsylvania	McKean	county	SCH	474				0.89						
+Pennsylvania	Mercer	county	SCH	1152				0.93						
+Pennsylvania	Mifflin	county	SCH	422				0.95						
+Pennsylvania	Monroe	county	SCH	1681				0.87						
+Pennsylvania	Montgomery	county	SCH	10239				0.91						
+Pennsylvania	Montour	county	SCH	201				0.98						
+Pennsylvania	Northampton	county	SCH	3362				0.93						
+Pennsylvania	Northumberland	county	SCH	1037				0.94						
+Pennsylvania	Perry	county	SCH	452				0.90						
+Pennsylvania	Philadelphia	county	SCH	17237				0.94						
+Pennsylvania	Pike	county	SCH	461				0.96						
+Pennsylvania	Potter	county	SCH	182				0.95						
+Pennsylvania	Schuylkill	county	SCH	1474				0.92						
+Pennsylvania	Snyder	county	SCH	343				0.96						
+Pennsylvania	Somerset	county	SCH	722				0.93						
+Pennsylvania	Sullivan	county	SCH	63				0.84						
+Pennsylvania	Susquehanna	county	SCH	473				0.95						
+Pennsylvania	Tioga	county	SCH	464				0.95						
+Pennsylvania	Union	county	SCH	275				0.94						
+Pennsylvania	Venango	county	SCH	679				0.91						
+Pennsylvania	Warren	county	SCH	383				0.96						
+Pennsylvania	Washington	county	SCH	2301				0.90						
+Pennsylvania	Wayne	county	SCH	359				0.89						
+Pennsylvania	Westmoreland	county	SCH	3628				0.91						
+Pennsylvania	Wyoming	county	SCH	239				0.92						
+Pennsylvania	York	county	SCH	5544				0.93						
+Pennsylvania	Out of State	county	SCH	21				0.86						
+Rhode Island	Bristol	county	SCH	472		11		0.89	0.93	0.55	0.88	0.91	0.52	
+Rhode Island	Kent	county	SCH	1533		39		0.97	0.98	0.9	0.96	0.97	0.89	
+Rhode Island	Newport	county	SCH	765		16		0.91	0.92	0.81	0.87	0.88	0.75	
+Rhode Island	Providence	county	SCH	7113		141		0.97	0.98	0.9	0.95	0.96	0.86	
+Rhode Island	Washington	county	SCH	1160		30		0.91	0.91	0.92	0.88	0.88	0.91	
+South Carolina	Abbeville	county		"12,791"				0.10			0.87			1
+South Carolina	Aiken	county									0.89			
+South Carolina	Allendale	county									0.89			
+South Carolina	Anderson	county									0.97			
+South Carolina	Bamberg	county									0.94			
+South Carolina	Barnwell	county									0.92			
+South Carolina	Beaufort	county									0.80			
+South Carolina	Berkeley	county									0.94			
+South Carolina	Calhoun	county									0.96			
+South Carolina	Charleston	county									0.90			
+South Carolina	Cherokee	county									0.98			
+South Carolina	Chester	county									0.99			
+South Carolina	Chesterfield	county									0.95			
+South Carolina	Clarendon	county									0.89			
+South Carolina	Colleton	county									0.95			
+South Carolina	Darlington	county									0.96			
+South Carolina	Dillon	county									0.95			
+South Carolina	Dorchester	county									0.96			
+South Carolina	Edgefield	county									0.97			
+South Carolina	Fairfield	county									1.00			
+South Carolina	Florence	county									0.86			
+South Carolina	Georgetown	county									0.88			
+South Carolina	Greenville	county									0.93			
+South Carolina	Greenwood	county									0.96			
+South Carolina	Hampton	county									0.99			
+South Carolina	Horry	county									0.96			
+South Carolina	Jasper	county									0.84			
+South Carolina	Kershaw	county									0.98			
+South Carolina	Lancaster	county									0.98			
+South Carolina	Laurens	county									0.95			
+South Carolina	Lee	county									0.97			
+South Carolina	Lexington	county									0.97			
+South Carolina	Marion	county									0.98			
+South Carolina	Marlboro	county									0.96			
+South Carolina	McCormick	county												
+South Carolina	Newberry	county									1.00			
+South Carolina	Oconee	county									0.96			
+South Carolina	Orangeburg	county									0.96			
+South Carolina	Pickens	county									0.92			
+South Carolina	Richland	county									0.87			
+South Carolina	Saluda	county									0.95			
+South Carolina	Spartanburg	county									0.96			
+South Carolina	Sumter	county									0.98			
+South Carolina	Union	county									0.98			
+South Carolina	Williamsburg	county									0.96			
+South Carolina	York	county									0.98			
+South Dakota	Aurora	county	SCH	47				0.98						
+South Dakota	Beadle	county	SCH	326				0.95						
+South Dakota	Bennett	county	SCH	95				0.98						
+South Dakota	BonHomme	county	SCH	77				0.99						
+South Dakota	Brookings	county	SCH	220				0.93						
+South Dakota	Brown	county	SCH	496				0.98						
+South Dakota	Brule	county	SCH	98				1.00						
+South Dakota	Bu_alo	county	SCH	33				0.97						
+South Dakota	Butte	county	SCH	152				0.95						
+South Dakota	Campbell	county	SCH	<10				.						
+South Dakota	CharlesMix	county	SCH	176				0.97						
+South Dakota	Clark	county	SCH	50				0.92						
+South Dakota	Clay	county	SCH	137				0.98						
+South Dakota	Codington	county	SCH	413				0.99						
+South Dakota	Corson	county	SCH	85				1.00						
+South Dakota	Custer	county	SCH	72				0.93						
+South Dakota	Davison	county	SCH	281				0.98						
+South Dakota	Day	county	SCH	73				0.99						
+South Dakota	Deuel	county	SCH	47				1.00						
+South Dakota	Dewey	county	SCH	132				0.98						
+South Dakota	Douglas	county	SCH	27				1.00						
+South Dakota	Edmunds	county	SCH	48				0.98						
+South Dakota	Fall River	county	SCH	59				0.95						
+South Dakota	Faulk	county	SCH	20				1.00						
+South Dakota	Grant	county	SCH	90				0.96						
+South Dakota	Gregory	county	SCH	58				0.97						
+South Dakota	Haakon	county	SCH	24				0.96						
+South Dakota	Hamlin	county	SCH	120				0.97						
+South Dakota	Hand	county	SCH	31				1.00						
+South Dakota	Hanson	county	SCH	55				1.00						
+South Dakota	Harding	county	SCH	14				0.86						
+South Dakota	Hughes	county	SCH	254				0.98						
+South Dakota	Hutchinson	county	SCH	122				0.98						
+South Dakota	Hyde	county	SCH	14				1.00						
+South Dakota	Jackson	county	SCH	44				0.98						
+South Dakota	Jerauld	county	SCH	26				1.00						
+South Dakota	Jones	county	SCH	13				0.92						
+South Dakota	Kingsbury	county	SCH	69				0.94						
+South Dakota	Lake	county	SCH	149				0.97						
+South Dakota	Lawrence	county	SCH	214				0.93						
+South Dakota	Lincoln	county	SCH	650				0.95						
+South Dakota	Lyman	county	SCH	54				1.00						
+South Dakota	Marshall	county	SCH	46				0.96						
+South Dakota	McCook	county	SCH	73				0.96						
+South Dakota	McPherson	county	SCH	34				0.97						
+South Dakota	Meade	county	SCH	246				0.97						
+South Dakota	Mellette	county	SCH	41				1.00						
+South Dakota	Miner	county	SCH	35				1.00						
+South Dakota	Minnehaha	county	SCH	2993				0.98						
+South Dakota	Moody	county	SCH	77				1.00						
+South Dakota	Oglala Lakota	county	SCH	280				0.96						
+South Dakota	Pennington	county	SCH	1628				0.98						
+South Dakota	Perkins	county	SCH	48				0.94						
+South Dakota	Potter	county	SCH	23				0.91						
+South Dakota	Roberts	county	SCH	168				0.97						
+South Dakota	Sanborn	county	SCH	18				0.89						
+South Dakota	Spink	county	SCH	94				0.98						
+South Dakota	Stanley	county	SCH	21				0.95						
+South Dakota	Sully	county	SCH	10				0.80						
+South Dakota	Todd	county	SCH	288				0.99						
+South Dakota	Tripp	county	SCH	69				0.99						
+South Dakota	Turner	county	SCH	100				0.93						
+South Dakota	Union	county	SCH	209				0.99						
+South Dakota	Walworth	county	SCH	51				1.00						
+South Dakota	Yankton	county	SCH	243				1.00						
+South Dakota	Ziebach	county	SCH	22				0.95						
+Tennessee	Anderson	county		810							0.97			
+Tennessee	Bedford	county		657							0.98			
+Tennessee	Benton	county		166							0.95			
+Tennessee	Bledsoe	county		126							0.96			
+Tennessee	Blount	county		1348							0.97			
+Tennessee	Bradley	county		1116							0.94			
+Tennessee	Campbell	county		399							0.97			
+Tennessee	Cannon	county		142							0.96			
+Tennessee	Carroll	county		333							0.95			
+Tennessee	Carter	county		600							0.92			
+Tennessee	Cheatham	county		451							0.98			
+Tennessee	Chester	county		205							0.98			
+Tennessee	Claiborne	county		323							0.89			
+Tennessee	Clay	county		77							1.00			
+Tennessee	Cocke	county		380							0.99			
+Tennessee	Coffee	county		639							0.97			
+Tennessee	Crockett	county		227							1.00			
+Tennessee	Cumberland	county		560							0.95			
+Tennessee	Davidson	county		7296							0.96			
+Tennessee	Decatur	county		116							0.88			
+Tennessee	DeKalb	county		213							0.99			
+Tennessee	Dickson	county		616							0.98			
+Tennessee	Dyer	county		510							1.00			
+Tennessee	Fayette	county		271							0.99			
+Tennessee	Fentress	county		177							0.69			
+Tennessee	Franklin	county		348							0.97			
+Tennessee	Gibson	county		676							0.98			
+Tennessee	Giles	county		276							0.96			
+Tennessee	Grainger	county		240							0.95			
+Tennessee	Greene	county		655							0.97			
+Tennessee	Grundy	county		174							0.96			
+Tennessee	Hamblen	county		786							0.95			
+Tennessee	Hamilton	county		3545							0.92			
+Tennessee	Hancock	county		71							0.97			
+Tennessee	Hardeman	county		302							0.95			
+Tennessee	Hardin	county		256							0.95			
+Tennessee	Hawkins	county		584							0.97			
+Tennessee	Haywood	county		196							0.96			
+Tennessee	Henderson	county		369							0.96			
+Tennessee	Henry	county		387							0.97			
+Tennessee	Hickman	county		254							0.96			
+Tennessee	Houston	county		91							0.97			
+Tennessee	Humphreys	county		208							0.97			
+Tennessee	Jackson	county		107							0.92			
+Tennessee	Jefferson	county		517							0.92			
+Tennessee	Johnson	county		140							0.98			
+Tennessee	Knox	county		4426							0.96			
+Tennessee	Lake	county		77							0.97			
+Tennessee	Lauderdale	county		305							0.93			
+Tennessee	Lawrence	county		525							0.91			
+Tennessee	Lewis	county		154							0.96			
+Tennessee	Lincoln	county		386							0.97			
+Tennessee	Loudon	county		512							0.98			
+Tennessee	Macon	county		328							0.95			
+Tennessee	Madison	county		1040							0.97			
+Tennessee	Marion	county		345							0.98			
+Tennessee	Marshall	county		342							0.97			
+Tennessee	Maury	county		970							0.97			
+Tennessee	McMinn	county		519							0.93			
+Tennessee	McNairy	county		304							0.99			
+Tennessee	Meigs	county		123							0.97			
+Tennessee	Monroe	county		514							0.96			
+Tennessee	Montgomery	county		2628							0.96			
+Tennessee	Moore	county		49							0.98			
+Tennessee	Morgan	county		193							0.97			
+Tennessee	Obion	county		380							0.96			
+Tennessee	Overton	county		232							0.98			
+Tennessee	Perry	county		82							0.95			
+Tennessee	Pickett	county		44							0.91			
+Tennessee	Polk	county		174							0.93			
+Tennessee	Putnam	county		859							0.93			
+Tennessee	Rhea	county		389							0.99			
+Tennessee	Roane	county		446							0.94			
+Tennessee	Robertson	county		845							0.96			
+Tennessee	Rutherford	county		3816							0.94			
+Tennessee	Scott	county		334							0.97			
+Tennessee	Sequatchie	county		163							0.99			
+Tennessee	Sevier	county		1099							0.93			
+Tennessee	Shelby	county		11958							0.90			
+Tennessee	Smith	county		229							0.88			
+Tennessee	Stewart	county		115							0.88			
+Tennessee	Sullivan	county		1488							0.96			
+Tennessee	Sumner	county		2104							0.95			
+Tennessee	Tipton	county		780							0.98			
+Tennessee	Trousdale	county		81							0.99			
+Tennessee	Unicoi	county		144							0.99			
+Tennessee	Union	county		316							0.90			
+Tennessee	Van Buren	county		57							0.75			
+Tennessee	Warren	county		482							0.97			
+Tennessee	Washington	county		1198							0.95			
+Tennessee	Wayne	county		173							0.98			
+Tennessee	Weakley	county		354							0.97			
+Tennessee	White	county		289							0.96			
+Tennessee	Williamson	county		2698							0.94			
+Tennessee	Wilson	county		1464							0.97			
+Texas	ANDERSON	county	SCH					0.98	0.98	.				
+Texas	ANDREWS	county	SCH					0.97	0.97	.				
+Texas	ANGELINA	county	SCH					0.99	0.99	1.00				
+Texas	ARANSAS	county	SCH					0.97	0.97	0.97				
+Texas	ARCHER	county	SCH					0.98	0.98	.				
+Texas	ARMSTRONG	county	SCH					0.96	0.96	.				
+Texas	ATASCOSA	county	SCH					0.97	0.97	.				
+Texas	AUSTIN	county	SCH					0.99	0.99	0.88				
+Texas	BAILEY	county	SCH					0.99	0.99	.				
+Texas	BANDERA	county	SCH					0.96	0.96	.				
+Texas	BASTROP	county	SCH					0.73	0.73	0.72				
+Texas	BAYLOR	county	SCH					0.96	0.96	.				
+Texas	BEE	county	SCH					0.99	0.99	.				
+Texas	BELL	county	SCH					0.98	0.98	0.91				
+Texas	BEXAR	county	SCH					0.98	0.98	0.98				
+Texas	BLANCO	county	SCH					0.95	0.95	.				
+Texas	BORDEN	county	SCH					1.00	1.00	.				
+Texas	BOSQUE	county	SCH					0.98	0.98	.				
+Texas	BOWIE	county	SCH					0.98	0.98	0.92				
+Texas	BRAZORIA	county	SCH					0.98	0.98	0.89				
+Texas	BRAZOS	county	SCH					0.97	0.97	0.88				
+Texas	BREWSTER	county	SCH					0.94	0.94	.				
+Texas	BRISCOE	county	SCH					1.00	1.00	.				
+Texas	BROOKS	county	SCH					1.00	1.00	.				
+Texas	BROWN	county	SCH					0.99	0.99	.				
+Texas	BURLESON	county	SCH					1.00	1.00	.				
+Texas	BURNET	county	SCH					0.96	0.96	0.86				
+Texas	CALDWELL	county	SCH					0.98	0.98	.				
+Texas	CALHOUN	county	SCH					0.99	0.99	.				
+Texas	CALLAHAN	county	SCH					0.97	0.97	.				
+Texas	CAMERON	county	SCH					0.99	1.00	0.99				
+Texas	CAMP	county	SCH					0.99	0.99	.				
+Texas	CARSON	county	SCH					0.98	0.98	.				
+Texas	CASS	county	SCH					0.98	0.98	.				
+Texas	CASTRO	county	SCH					0.92	0.92	.				
+Texas	CHAMBERS	county	SCH					0.99	0.99	.				
+Texas	CHEROKEE	county	SCH					0.99	0.99	.				
+Texas	CHILDRESS	county	SCH					1.00	1.00	.				
+Texas	CLAY	county	SCH					0.98	0.98	.				
+Texas	COCHRAN	county	SCH					1.00	1.00	.				
+Texas	COKE	county	SCH					0.97	0.97	.				
+Texas	COLEMAN	county	SCH					0.98	0.98	.				
+Texas	COLLIN	county	SCH					0.97	0.97	0.88				
+Texas	COLLINGSWORTH	county	SCH					0.92	0.92	.				
+Texas	COLORADO	county	SCH					0.99	0.99	0.97				
+Texas	COMAL	county	SCH					0.97	0.97	0.94				
+Texas	COMANCHE	county	SCH					0.94	0.94	.				
+Texas	CONCHO	county	SCH					1.00	1.00	.				
+Texas	COOKE	county	SCH					0.96	0.96	1.00				
+Texas	CORYELL	county	SCH					0.97	0.97	.				
+Texas	COTTLE	county	SCH					0.94	0.94	.				
+Texas	CRANE	county	SCH					1.00	1.00	.				
+Texas	CROCKETT	county	SCH					0.99	0.99	.				
+Texas	CROSBY	county	SCH					0.99	0.99	.				
+Texas	DALLAM	county	SCH					0.93	0.92	1.00				
+Texas	DALLAS	county	SCH					0.98	0.98	0.97				
+Texas	DAWSON	county	SCH					0.97	0.97	.				
+Texas	DEAF SMITH	county	SCH					0.99	0.99	1.00				
+Texas	DELTA	county	SCH					1.00	1.00	.				
+Texas	DENTON	county	SCH					0.96	0.96	0.89				
+Texas	DEWITT	county	SCH					0.99	0.99	1.00				
+Texas	DICKENS	county	SCH					1.00	1.00	.				
+Texas	DIMMIT	county	SCH					1.00	1.00	.				
+Texas	DONLEY	county	SCH					0.94	0.94	.				
+Texas	DUVAL	county	SCH					1.00	1.00	.				
+Texas	EASTLAND	county	SCH					0.93	0.93	.				
+Texas	ECTOR	county	SCH					0.97	0.97	0.94				
+Texas	EDWARDS	county	SCH					1.00	1.00	.				
+Texas	EL PASO	county	SCH					0.98	0.98	0.93				
+Texas	ELLIS	county	SCH					0.97	0.97	0.95				
+Texas	ERATH	county	SCH					0.98	0.98	.				
+Texas	FALLS	county	SCH					1.00	1.00	.				
+Texas	FANNIN	county	SCH					0.98	0.98	.				
+Texas	FAYETTE	county	SCH					0.99	0.99	1.00				
+Texas	FLOYD	county	SCH					0.99	0.99	.				
+Texas	FOARD	county	SCH					0.93	0.93	.				
+Texas	FORT BEND	county	SCH					0.98	0.99	0.87				
+Texas	FRANKLIN	county	SCH					0.99	0.99	.				
+Texas	FREESTONE	county	SCH					0.98	0.98	.				
+Texas	FRIO	county	SCH					1.00	1.00	.				
+Texas	GAINES	county	SCH					0.89	0.89	.				
+Texas	GALVESTON	county	SCH					0.96	0.96	0.90				
+Texas	GARZA	county	SCH					1.00	1.00	.				
+Texas	GILLESPIE	county	SCH					0.96	0.96	1.00				
+Texas	GLASSCOCK	county	SCH					1.00	1.00	.				
+Texas	GOLIAD	county	SCH					1.00	1.00	.				
+Texas	GONZALES	county	SCH					1.00	1.00	.				
+Texas	GRAY	county	SCH					0.99	0.99	.				
+Texas	GRAYSON	county	SCH					0.98	0.98	0.90				
+Texas	GREGG	county	SCH					0.95	0.95	0.86				
+Texas	GRIMES	county	SCH					0.99	0.99	.				
+Texas	GUADALUPE	county	SCH					0.98	0.98	0.97				
+Texas	HALE	county	SCH					0.98	0.99	0.86				
+Texas	HALL	county	SCH					0.97	0.97	.				
+Texas	HAMILTON	county	SCH					1.00	1.00	.				
+Texas	HANSFORD	county	SCH					0.98	0.98	.				
+Texas	HARDEMAN	county	SCH					0.98	0.98	.				
+Texas	HARDIN	county	SCH					1.00	1.00	.				
+Texas	HARRIS	county	SCH					0.97	0.97	0.96				
+Texas	HARRISON	county	SCH					0.98	0.99	0.75				
+Texas	HARTLEY	county	SCH					0.80	0.80	.				
+Texas	HASKELL	county	SCH					0.99	0.99	.				
+Texas	HAYS	county	SCH					0.97	0.97	0.88				
+Texas	HEMPHILL	county	SCH					0.95	0.95	.				
+Texas	HENDERSON	county	SCH					0.99	0.99	.				
+Texas	HIDALGO	county	SCH					1.00	1.00	0.92				
+Texas	HILL	county	SCH					0.96	0.96	.				
+Texas	HOCKLEY	county	SCH					1.00	1.00	1.00				
+Texas	HOOD	county	SCH					0.97	0.97	0.87				
+Texas	HOPKINS	county	SCH					0.99	0.99	.				
+Texas	HOUSTON	county	SCH					1.00	1.00	.				
+Texas	HOWARD	county	SCH					0.99	0.99	.				
+Texas	HUDSPETH	county	SCH					0.90	0.90	.				
+Texas	HUNT	county	SCH					0.98	0.99	0.95				
+Texas	HUTCHINSON	county	SCH					0.99	0.99	.				
+Texas	IRION	county	SCH					1.00	1.00	.				
+Texas	JACK	county	SCH					0.99	0.99	.				
+Texas	JACKSON	county	SCH					0.97	0.97	.				
+Texas	JASPER	county	SCH					0.98	0.98	.				
+Texas	JEFF DAVIS	county	SCH					0.83	0.83	.				
+Texas	JEFFERSON	county	SCH					0.98	0.98	0.94				
+Texas	JIM HOGG	county	SCH					0.99	0.99	.				
+Texas	JIM WELLS	county	SCH					1.00	1.00	1.00				
+Texas	JOHNSON	county	SCH					0.97	0.98	0.80				
+Texas	JONES	county	SCH					0.98	0.98	.				
+Texas	KARNES	county	SCH					0.93	0.93	.				
+Texas	KAUFMAN	county	SCH					0.98	0.98	.				
+Texas	KENDALL	county	SCH					0.95	0.97	0.78				
+Texas	KENEDY	county	SCH					1.00	1.00	.				
+Texas	KENT	county	SCH					1.00	1.00	.				
+Texas	KERR	county	SCH					0.98	0.98	0.93				
+Texas	KIMBLE	county	SCH					1.00	1.00	.				
+Texas	KING	county	SCH					0.83	0.83	.				
+Texas	KINNEY	county	SCH					0.95	0.95	.				
+Texas	KLEBERG	county	SCH					1.00	1.00	1.00				
+Texas	KNOX	county	SCH					1.00	1.00	.				
+Texas	LAMAR	county	SCH					0.99	0.99	.				
+Texas	LAMB	county	SCH					0.99	0.99	.				
+Texas	LAMPASAS	county	SCH					0.97	0.97	.				
+Texas	LAVACA	county	SCH					0.98	0.98	1.00				
+Texas	LEE	county	SCH					0.99	0.99	1.00				
+Texas	LEON	county	SCH					0.99	0.99	.				
+Texas	LIBERTY	county	SCH					0.94	0.94	.				
+Texas	LIMESTONE	county	SCH					0.97	0.97	.				
+Texas	LIPSCOMB	county	SCH					0.82	0.82	.				
+Texas	LIVE OAK	county	SCH					0.99	0.99	.				
+Texas	LLANO	county	SCH					0.97	0.97	.				
+Texas	LUBBOCK	county	SCH					0.96	0.97	0.95				
+Texas	LYNN	county	SCH					0.97	0.97	.				
+Texas	MADISON	county	SCH					0.98	0.98	.				
+Texas	MARION	county	SCH					1.00	1.00	.				
+Texas	MARTIN	county	SCH					0.88	0.88	.				
+Texas	MASON	county	SCH					1.00	1.00	.				
+Texas	MATAGORDA	county	SCH					0.97	0.98	0.75				
+Texas	MAVERICK	county	SCH					1.00	1.00	1.00				
+Texas	MCCULLOCH	county	SCH					0.97	0.97	.				
+Texas	MCLENNAN	county	SCH					0.98	0.98	0.81				
+Texas	MCMULLEN	county	SCH					0.94	0.94	.				
+Texas	MEDINA	county	SCH					0.98	0.98	.				
+Texas	MENARD	county	SCH					1.00	1.00	.				
+Texas	MIDLAND	county	SCH					0.98	0.99	0.98				
+Texas	MILAM	county	SCH					0.97	0.98	0.86				
+Texas	MILLS	county	SCH					0.96	0.96	.				
+Texas	MITCHELL	county	SCH					0.97	0.97	.				
+Texas	MONTAGUE	county	SCH					0.91	0.91	.				
+Texas	MONTGOMERY	county	SCH					0.97	0.97	0.89				
+Texas	MOORE	county	SCH					0.98	0.98	.				
+Texas	MORRIS	county	SCH					0.99	0.99	.				
+Texas	NACOGDOCHES	county	SCH					0.99	0.99	0.78				
+Texas	NAVARRO	county	SCH					0.99	0.99	.				
+Texas	NEWTON	county	SCH					0.78	0.78	.				
+Texas	NOLAN	county	SCH					0.98	0.98	.				
+Texas	NUECES	county	SCH					0.98	0.98	0.97				
+Texas	OCHILTREE	county	SCH					0.99	0.99	.				
+Texas	OLDHAM	county	SCH					0.94	0.94	.				
+Texas	ORANGE	county	SCH					0.97	0.97	.				
+Texas	PALO PINTO	county	SCH					0.97	0.97	1.00				
+Texas	PANOLA	county	SCH					0.96	0.96	.				
+Texas	PARKER	county	SCH					0.97	0.97	0.96				
+Texas	PARMER	county	SCH					0.98	0.98	.				
+Texas	PECOS	county	SCH					0.99	0.99	.				
+Texas	POLK	county	SCH					0.97	0.97	.				
+Texas	POTTER	county	SCH					0.97	0.97	0.95				
+Texas	PRESIDIO	county	SCH					1.00	1.00	.				
+Texas	RAINS	county	SCH					0.98	0.98	.				
+Texas	RANDALL	county	SCH					0.96	0.96	.				
+Texas	REAGAN	county	SCH					0.90	0.90	.				
+Texas	REAL	county	SCH					0.68	0.68	.				
+Texas	RED RIVER	county	SCH					0.99	0.99	.				
+Texas	REEVES	county	SCH					0.84	0.84	.				
+Texas	REFUGIO	county	SCH					0.98	0.98	.				
+Texas	ROBERTS	county	SCH					0.83	0.83	.				
+Texas	ROBERTSON	county	SCH					0.93	0.93	.				
+Texas	ROCKWALL	county	SCH					0.98	0.98	0.88				
+Texas	RUNNELS	county	SCH					0.99	0.99	.				
+Texas	RUSK	county	SCH					0.97	0.99	.				
+Texas	SABINE	county	SCH					0.97	0.97	.				
+Texas	SAN AUGUSTINE	county	SCH					1.00	1.00	.				
+Texas	SAN JACINTO	county	SCH					0.99	0.99	.				
+Texas	SAN PATRICIO	county	SCH					0.99	0.99	.				
+Texas	SAN SABA	county	SCH					1.00	1.00	.				
+Texas	SCHLEICHER	county	SCH					1.00	1.00	.				
+Texas	SCURRY	county	SCH					1.00	1.00	.				
+Texas	SHACKELFORD	county	SCH					0.86	0.86	.				
+Texas	SHELBY	county	SCH					0.91	0.91	.				
+Texas	SHERMAN	county	SCH					0.95	0.95	.				
+Texas	SMITH	county	SCH					0.98	0.98	0.98				
+Texas	SOMERVELL	county	SCH					0.97	0.97	.				
+Texas	STARR	county	SCH					1.00	1.00	1.00				
+Texas	STEPHENS	county	SCH					1.00	1.00	.				
+Texas	STERLING	county	SCH					0.95	0.95	.				
+Texas	STONEWALL	county	SCH					0.92	0.92	.				
+Texas	SUTTON	county	SCH					1.00	1.00	.				
+Texas	SWISHER	county	SCH					1.00	1.00	.				
+Texas	TARRANT	county	SCH					0.98	0.98	0.95				
+Texas	TAYLOR	county	SCH					0.98	0.98	0.95				
+Texas	TERRELL	county	SCH					1.00	1.00	.				
+Texas	TERRY	county	SCH					0.98	0.98	.				
+Texas	THROCKMORTON	county	SCH					1.00	1.00	.				
+Texas	TITUS	county	SCH					1.00	1.00	.				
+Texas	TOM GREEN	county	SCH					0.99	0.99	0.98				
+Texas	TRAVIS	county	SCH					0.95	0.96	0.89				
+Texas	TRINITY	county	SCH					1.00	1.00	.				
+Texas	TYLER	county	SCH					0.98	0.98	.				
+Texas	UPSHUR	county	SCH					0.98	0.98	.				
+Texas	UPTON	county	SCH					0.99	0.99	.				
+Texas	UVALDE	county	SCH					0.97	0.98	0.84				
+Texas	VAL VERDE	county	SCH					0.90	0.90	1.00				
+Texas	VAN ZANDT	county	SCH					0.97	0.97	.				
+Texas	VICTORIA	county	SCH					0.99	0.99	0.95				
+Texas	WALKER	county	SCH					0.99	0.99	0.95				
+Texas	WALLER	county	SCH					0.97	0.97	.				
+Texas	WARD	county	SCH					0.99	0.99	.				
+Texas	WASHINGTON	county	SCH					0.98	0.98	1.00				
+Texas	WEBB	county	SCH					1.00	1.00	1.00				
+Texas	WHARTON	county	SCH					0.99	0.99	0.94				
+Texas	WHEELER	county	SCH					0.93	0.93	.				
+Texas	WICHITA	county	SCH					0.98	0.98	0.94				
+Texas	WILBARGER	county	SCH					0.94	0.94	.				
+Texas	WILLACY	county	SCH					0.99	0.99	.				
+Texas	WILLIAMSON	county	SCH					0.96	0.96	0.85				
+Texas	WILSON	county	SCH					0.99	0.99	1.00				
+Texas	WINKLER	county	SCH					1.00	1.00	.				
+Texas	WISE	county	SCH					0.98	0.98	.				
+Texas	WOOD	county	SCH					0.97	0.97	.				
+Texas	YOAKUM	county	SCH					0.99	0.99	.				
+Texas	YOUNG	county	SCH					0.97	0.97	.				
+Texas	ZAPATA	county	SCH					1.00	1.00	.				
+Texas	ZAVALA	county	SCH					1.00	1.00	.				
+Utah	Alpine	school district	SCH	9				0.89			0.89			
+Utah	Beaver	school district	SCH	5208				0.96			0.92			
+Utah	Box Elder	school district	SCH	427				0.94			0.91			
+Utah	Cache	school district	SCH	171				0.83			0.78			
+Utah	Canyons	school district	SCH	63				0.94			0.94			
+Utah	Carbon	school district	SCH	113				0.99			0.99			
+Utah	Daggett	school district	SCH	5863				0.97			0.94			
+Utah	Davis	school district	SCH	672				0.95			0.92			
+Utah	Duchesne	school district	SCH	4135				0.95			0.93			
+Utah	Emery	school district	SCH	201				0.84			0.77			
+Utah	Garfield	school district	SCH	88				0.90			0.88			
+Utah	Grand	school district	SCH	561				0.97			0.92			
+Utah	Granite	school district	SCH	221				0.94			0.91			
+Utah	Iron	school district	SCH	235				0.94			0.89			
+Utah	Jordan	school district	SCH	551				0.94			0.88			
+Utah	Juab	school district	SCH	2503				0.93			0.89			
+Utah	Kane	school district	SCH	186				0.92			0.89			
+Utah	Logan	school district	SCH	87				0.94			0.94			
+Utah	Millard	school district	SCH	1136				0.93			0.87			
+Utah	Morgan	school district	SCH	342				0.90			0.87			
+Utah	Murray	school district	SCH	18				1.00			0.94			
+Utah	Nebo	school district	SCH	1364				0.92			0.87			
+Utah	North Sanpete	school district	SCH	38				1.00			1			
+Utah	North Summit	school district	SCH	2440				0.96			0.94			
+Utah	Ogden	school district	SCH	279				0.89			0.86			
+Utah	Park City	school district	SCH	364				0.93			0.92			
+Utah	Piute	school district	SCH	216				0.94			0.91			
+Utah	Provo	school district	SCH	103				1.00			1			
+Utah	Rich	school district	SCH	20				1.00			1			
+Utah	Salt Lake	school district	SCH	1000				0.98			0.96			
+Utah	San Juan	school district	SCH	770				0.93			0.89			
+Utah	Sevier	school district	SCH	18				0.89			0.89			
+Utah	South Sanpete	school district	SCH	424				0.96			0.94			
+Utah	South Summit	school district	SCH	2018				0.94			0.91			
+Utah	Tintic	school district	SCH	32				0.84			0.88			
+Utah	Tooele	school district	SCH	1000				0.98			0.96			
+Utah	Uintah	school district	SCH	770				0.93			0.89			
+Utah	Utah D & B	school district	SCH	18				0.89			0.89			
+Utah	Wasatch	school district	SCH	424				0.96			0.94			
+Utah	Washington	school district	SCH	2018				0.94			0.91			
+Utah	Wayne	school district	SCH	32				0.84			0.88			
+Utah	Weber	school district	SCH	2271				0.96			0.94			
+Vermont	Addison	county	SCH	348				0.91						
+Vermont	Bennington	county	SCH	401				0.95						
+Vermont	Caledonia	county	SCH	285				0.90						
+Vermont	Chittenden	county	SCH	1535				0.94						
+Vermont	Essex	county	SCH	52				0.98						
+Vermont	Franklin	county	SCH	562				0.97						
+Vermont	Grand Isle	county	SCH	74				0.91						
+Vermont	Lamoille	county	SCH	297				0.85						
+Vermont	Orange	county	SCH	337				0.96						
+Vermont	Orleans	county	SCH	275				0.93						
+Vermont	Rutland	county	SCH	558				0.95						
+Vermont	Washington	county	SCH	652				0.88						
+Vermont	Windham	county	SCH	414				0.93						
+Vermont	Windsor	county	SCH	487				0.91						
+Virginia	Accomack	county	SCH	423				1.00	1		0.97	0.97		
+Virginia	Albemarle	county	SCH	1190				0.94	0.94	0.91	0.93	0.94	0.91	
+Virginia	Alexandria city	city	SCH	1609				1.00	1	1	0.96	0.96	0.98	
+Virginia	Alleghany	county	SCH	164				0.99	0.99		0.98	0.98		
+Virginia	Amelia	county	SCH	139				0.94	0.94		0.93	0.93		
+Virginia	Amherst	county	SCH	343				0.97	0.96	1	0.96	0.96	1	
+Virginia	Appomattox	county	SCH	160				0.97	0.97		0.97	0.97		
+Virginia	Arlington	county	SCH	2346				0.95	0.95	0.95	0.94	0.94	0.95	
+Virginia	Augusta	county	SCH	709				0.96	0.96		0.98	0.98		
+Virginia	Bath	county	SCH	40				0.95	0.95		0.95	0.95		
+Virginia	Bedford	county	SCH	728				0.97	0.97	1	0.96	0.96	0.9	
+Virginia	Bland	county	SCH	50				1.00	1		1	1		
+Virginia	Botetourt	county	SCH	320				0.96	0.96		0.96	0.96		
+Virginia	Bristol city	county	SCH	185				0.97	0.97		0.97	0.97		
+Virginia	Brunswick	county	SCH	146				0.99	0.99		0.99	0.99		
+Virginia	Buchanan	county	SCH	190				1.00	1		1	1		
+Virginia	Buckingham	county	SCH	182				0.99	0.99		0.99	0.99		
+Virginia	Buena Vista city	city	SCH	69				1.00	1		1	1		
+Virginia	Campbell	county	SCH	516				0.81	0.81		0.97	0.97		
+Virginia	Caroline	county	SCH	193				0.95	0.95		0.96	0.96		
+Virginia	Carroll	county	SCH	297				0.97	0.97		0.97	0.97		
+Virginia	Charlotte	county	SCH	160				0.97	0.97		0.98	0.98		
+Virginia	Charlottesville city	city	SCH	275				0.95	0.95		0.95	0.95		
+Virginia	Chesapeake city	city	SCH	2074				0.97	0.97	0.92	0.97	0.97	0.92	
+Virginia	Chesterfield	county	SCH	4335				0.94	0.94	0.93	0.92	0.92	0.93	
+Virginia	Clarke	county	SCH	133				0.91	0.89	0.96	0.89	0.88	0.96	
+Virginia	Colonial Beach	county	SCH	42				0.90	0.9		0.88	0.88		
+Virginia	Colonial Heights city	city	SCH	235				0.97	0.97		0.97	0.97		
+Virginia	Covington city	city	SCH	85				0.95	0.95		0.93	0.93		
+Virginia	Culpeper	county	SCH	615				0.96	0.96	1	0.95	0.95	1	
+Virginia	Cumberland	county	SCH	90				0.98	0.98		0.96	0.96		
+Virginia	Danville city	city	SCH	342				0.89	0.87	0.96	0.97	0.97	0.98	
+Virginia	Dickenson	county	SCH	148				0.98	0.98		1	1		
+Virginia	Dinwiddie	county	SCH	269				0.96	0.96		0.97	0.97		
+Virginia	Essex	county	SCH	105				0.94	0.94		0.93	0.93		
+Virginia	Fairfax	county	SCH	14369				0.98	0.98	0.94	0.87	0.87	0.94	
+Virginia	Falls Church city	city	SCH	199				0.98	0.97	1	0.97	0.97	0.95	
+Virginia	Fauquier	county	SCH	816				0.95	0.95	1	0.94	0.94	0.95	
+Virginia	Floyd	county	SCH	127				0.97	0.97		0.96	0.96		
+Virginia	Fluvanna	county	SCH	229				0.98	0.98		0.97	0.97		
+Virginia	Franklin city	city	SCH	97				1.00	1		0.99	0.99		
+Virginia	Franklin	county	SCH	573				1.00	1		0.99	0.99		
+Virginia	Frederick	county	SCH	939				0.97	0.97		0.96	0.96		
+Virginia	Fredericksburg city	city	SCH	323				0.83	0.94		0.93	0.92	0.95	
+Virginia	Galax city	city	SCH	136				0.97	0.97		0.99	0.99		
+Virginia	Giles	county	SCH	169				0.99	0.99		0.99	0.99		
+Virginia	Gloucester	county	SCH	379				0.95	0.95		0.95	0.95		
+Virginia	Goochland	county	SCH	141				0.99	0.99		0.99	0.99		
+Virginia	Grayson	county	SCH	114				0.99	0.99		0.97	0.97		
+Virginia	Greene	county	SCH	243				0.95	0.95		0.94	0.94		
+Virginia	Greensville	county	SCH	197				0.98	0.98		0.98	0.98		
+Virginia	Halifax	county	SCH	0										
+Virginia	Hampton city	city	SCH	1508				0.98	0.98		0.97	0.97		
+Virginia	Hanover	county	SCH	1146				0.81	0.81		0.96	0.96		
+Virginia	Harrisonburg city	city	SCH	359				0.96	0.96	1	0.95	0.95	1	
+Virginia	Henrico	county	SCH	4074				0.88	0.87	0.97	0.96	0.96	0.97	
+Virginia	Henry	county	SCH	567				1.00	1		0.97	0.97		
+Virginia	Highland	county	SCH	14				0.68	0.68		0.93	0.93		
+Virginia	Hopewell city	city	SCH	343				0.97	0.97		0.97	0.97		
+Virginia	Isle of Wight	county	SCH	432				0.98	0.98	0.98	0.96	0.96	0.98	
+Virginia	King George	county	SCH	314				0.94	0.94		0.94	0.94		
+Virginia	King William	county	SCH	152				0.99	0.99		0.99	0.99		
+Virginia	King and Queen	county	SCH	24				1.00	1		1	1		
+Virginia	Lancaster	county	SCH	152				0.99	0.99		0.99	0.99		
+Virginia	Lee	county	SCH	27				0.93	0.93		0.93	0.93		
+Virginia	Loudoun	county	SCH	4929				0.97	0.97	0.99	0.96	0.96	0.98	
+Virginia	Louisa	county	SCH	378				0.98	0.98		0.98	0.98		
+Virginia	Lunenburg	county	SCH	113				0.99	0.99		0.99	0.99		
+Virginia	Lynchburg city	city	SCH	741				0.95	0.96	0.91	0.94	0.95	0.9	
+Virginia	Madison	county	SCH	113				0.94	0.94		0.94	0.94		
+Virginia	Manassas Park city	city	SCH	293				0.95	0.95		0.92	0.92		
+Virginia	Manassas city	city	SCH	680				0.96	0.96	0.97	0.95	0.95	0.97	
+Virginia	Martinsville city	city	SCH	208				1.00	1	0.94	1	1	0.94	
+Virginia	Mathews	county	SCH	67				0.97	0.97		0.97	0.97		
+Virginia	Mecklenburg	county	SCH	347				1.00	1		1	1		
+Virginia	Middlesex	county	SCH	92				0.98	0.98		0.98	0.98		
+Virginia	Montgomery	county	SCH	781				0.97	0.97	1	0.96	0.96	0.96	
+Virginia	Nelson	county	SCH	132				0.95	0.95		0.9	0.9		
+Virginia	New Kent	county	SCH	213				0.95	0.95		0.95	0.95		
+Virginia	Newport News city	city	SCH	2331				0.93	0.93	0.95	0.9	0.9	0.94	
+Virginia	Norfolk city	city	SCH	2779				0.96	0.95	0.97	0.96	0.95	0.97	
+Virginia	Northampton	county	SCH	147				1.00	1	1	1	1	1	
+Virginia	Northumberland	county	SCH	93				1.00	1		1	1		
+Virginia	Norton city	city	SCH	64				0.97	0.97		0.97	0.97		
+Virginia	Nottoway	county	SCH	176				0.94	0.94		0.93	0.93		
+Virginia	Orange	county	SCH	257				0.98	0.98	1	0.96	0.96	1	
+Virginia	Page	county	SCH	257				0.97	0.97		0.96	0.96		
+Virginia	Patrick	county	SCH	161				1.00	1		0.98	0.98		
+Virginia	Petersburg city	city	SCH	398				0.99	0.99		0.99	0.99		
+Virginia	Pittsylvania	county	SCH	669				0.98	0.98		0.96	0.96		
+Virginia	Poquoson city	city	SCH	123				0.99	0.99		0.98	0.98		
+Virginia	Portsmouth city	city	SCH	1391				1.00	0.98	1	0.97	0.98	0.92	
+Virginia	Powhatan	county	SCH	277				0.94	0.94	0.92	0.93	0.93	0.92	
+Virginia	Prince Edward	county	SCH	155				0.99	0.99		0.99	0.99		
+Virginia	Prince George	county	SCH	473				0.98	0.98		0.98	0.98		
+Virginia	Prince William	county	SCH	6296				0.94	0.94	0.99	0.94	0.94	0.96	
+Virginia	Pulaski	county	SCH	321				0.98	0.98		0.98	0.98		
+Virginia	Radford city	city	SCH	122				0.94	0.94		0.93	0.93		
+Virginia	Rappahannock	county	SCH	0										
+Virginia	Richmond city	city	SCH	1954				0.93	0.93	0.97	0.92	0.91	0.95	
+Virginia	Richmond	county	SCH	101				0.94	0.94		0.93	0.93		
+Virginia	Roanoke city	city	SCH	1177				0.68	0.67	0.9	0.93	0.93	0.87	
+Virginia	Roanoke	county	SCH	957				0.83	0.83		0.97	0.97		
+Virginia	Rockbridge	county	SCH	184				0.99	0.99		0.99	0.99		
+Virginia	Rockingham	county	SCH	860				0.97	0.97		0.96	0.96		
+Virginia	Russell	county	SCH	309				0.96	0.96		0.96	0.96		
+Virginia	Salem city	city	SCH	310				0.97	0.97		0.96	0.96		
+Virginia	Scott	county	SCH	309				0.98	0.98		0.98	0.98		
+Virginia	Shenandoah	county	SCH	438				0.97	0.97		0.96	0.96		
+Virginia	Smyth	county	SCH	438				0.97	0.97		0.96	0.96		
+Virginia	Southampton	county	SCH	198				0.96	0.98	0.84	0.96	0.98	0.84	
+Virginia	Spotsylvania	county	SCH	1645				0.95	0.95	0.86	0.93	0.94	0.86	
+Virginia	Stafford	county	SCH	1943				0.97	0.97	0.97	0.96	0.97	0.95	
+Virginia	Staunton city	city	SCH	218				1.00	1	0.7	0.98	1	0.67	
+Virginia	Suffolk city	city	SCH	990				0.98	0.98	1	0.98	0.98	1	
+Virginia	Surry	county	SCH	65				1.00	1		1	1		
+Virginia	Sussex	county	SCH	0										
+Virginia	Tazewell	county	SCH	440				0.95	0.95		0.94	0.94		
+Virginia	Virginia Beach city	city	SCH	5007				0.97	0.97	0.96	0.96	0.96	0.96	
+Virginia	Warren	county	SCH	370				0.96	0.96		0.9	0.9		
+Virginia	Washington	county	SCH	525				0.85	0.85		0.84	0.84		
+Virginia	Waynesboro city	city	SCH	250				0.98	0.98		0.98	0.98		
+Virginia	West Point	county	SCH	44				0.86	0.86		0.86	0.86		
+Virginia	Westmoreland	county	SCH	127				0.98	0.98		0.98	0.98		
+Virginia	Williamsburg city	city	SCH	28				0.82		0.82	0.82		0.82	
+Virginia	Williamsburg-James city	city	SCH	750				0.96	0.96		0.96	0.96		
+Virginia	Winchester city	city	SCH	344				0.96	0.96	0.96	0.96	0.96	0.96	
+Virginia	Wise	county	SCH	481				0.94	0.94		0.94	0.94		
+Virginia	Wythe	county	SCH	288				0.67	0.67		0.91	0.91		
+Virginia	York	county	SCH	813				0.98			0.97	0.97		
+Washington	ADAMS	county	SCH	390	10	9	0.90	0.97			0.94			
+Washington	ASOTIN	county	SCH	248	8	8	1.00	0.86			0.78			
+Washington	BENTON	county	SCH	2866	36	34	0.94	0.96			0.92			
+Washington	CHELAN	county	SCH	1014	21	20	0.95	0.96			0.94			
+Washington	CLALLAM	county	SCH	305	18	11	0.61	0.87			0.76			
+Washington	CLARK	county	SCH	5742	86	82	0.95	0.85			0.77			
+Washington	COLUMBIA	county	SCH	39	2	2	1.00	0.85			0.69			
+Washington	COWLITZ	county	SCH	1304	27	24	0.89	0.92			0.89			
+Washington	DOUGLAS	county	SCH	535	10	10	1.00	0.94			0.91			
+Washington	FERRY	county	SCH	44	7	5	0.71	0.77			0.66			
+Washington	FRANKLIN	county	SCH	1546	15	14	0.93	0.97			0.95			
+Washington	GARFIELD	county	SCH	23	1	1	1.00	0.96			0.96			
+Washington	GRANT	county	SCH	1483	30	27	0.90	0.93			0.90			
+Washington	GRAYS HARBOR	county	SCH	819	24	23	0.96	0.78			0.74			
+Washington	ISLAND	county	SCH	747	17	15	0.88	0.87			0.83			
+Washington	JEFFERSON	county	SCH	183	9	8	0.89	0.78			0.67			
+Washington	KING	county	SCH	24861	465	429	0.92	0.89			0.81			
+Washington	KITSAP	county	SCH	2753	60	55	0.92	0.92			0.86			
+Washington	KITTITAS	county	SCH	418	12	11	0.92	0.84			0.71			
+Washington	KLICKITAT	county	SCH	199	11	9	0.82	0.91			0.83			
+Washington	LEWIS	county	SCH	854	21	19	0.90	0.94			0.90			
+Washington	LINCOLN	county	SCH	163	12	11	0.92	0.76			0.65			
+Washington	MASON	county	SCH	612	14	13	0.93	0.87			0.80			
+Washington	OKANOGAN	county	SCH	409	11	9	0.82	0.86			0.80			
+Washington	PACIFIC	county	SCH	195	7	7	1.00	0.95			0.84			
+Washington	PEND OREILLE	county	SCH	114	3	3	1.00	0.78			0.59			
+Washington	PIERCE	county	SCH	10747	170	162	0.95	0.92			0.86			
+Washington	SAN JUAN	county	SCH	82	9	6	0.67	0.87			0.74			
+Washington	SKAGIT	county	SCH	1539	32	32	1.00	0.91			0.86			
+Washington	SKAMANIA	county	SCH	69	4	2	0.50	0.81			0.71			
+Washington	SNOHOMISH	county	SCH	8140	141	131	0.93	0.91			0.86			
+Washington	SPOKANE	county	SCH	6151	117	113	0.97	0.82			0.73			
+Washington	STEVENS	county	SCH	349	20	15	0.75	0.88			0.78			
+Washington	THURSTON	county	SCH	3277	61	58	0.95	0.86			0.76			
+Washington	WAHKIAKUM	county	SCH	33	1	1	1.00	0.88			0.82			
+Washington	WALLA WALLA	county	SCH	735	17	15	0.88	0.90			0.83			
+Washington	WHATCOM	county	SCH	2200	53	52	0.98	0.90			0.82			
+Washington	WHITMAN	county	SCH	375	17	15	0.88	0.92			0.85			
+Washington	YAKIMA	county	SCH	4191	54	49	0.91	0.94			0.90			
+West Virginia	Barbour	county	SCH					1.00						
+West Virginia	Berkeley	county	SCH					0.99						
+West Virginia	Boone	county	SCH					1.00						
+West Virginia	Braxton	county	SCH					0.86						
+West Virginia	Brooke	county	SCH					0.99						
+West Virginia	Cabell	county	SCH					1.00						
+West Virginia	Calhoun	county	SCH					1.00						
+West Virginia	Clay	county	SCH					0.99						
+West Virginia	Doddridge	county	SCH					0.99						
+West Virginia	Fayette	county	SCH					0.93						
+West Virginia	Gilmer	county	SCH					1.00						
+West Virginia	Grant	county	SCH					1.00						
+West Virginia	Greenbrier	county	SCH					1.00						
+West Virginia	Hampshire	county	SCH					1.00						
+West Virginia	Hancock	county	SCH					1.00						
+West Virginia	Hardy	county	SCH					1.00						
+West Virginia	Harrison	county	SCH					1.00						
+West Virginia	Jackson	county	SCH					0.99						
+West Virginia	Jefferson	county	SCH					0.99						
+West Virginia	Kanawha	county	SCH					0.95						
+West Virginia	Lewis	county	SCH					0.89						
+West Virginia	Lincoln	county	SCH					0.99						
+West Virginia	Logan	county	SCH					1.00						
+West Virginia	Marion	county	SCH					0.99						
+West Virginia	Marshall	county	SCH					1.00						
+West Virginia	Mason	county	SCH					0.98						
+West Virginia	Mercer	county	SCH					0.93						
+West Virginia	Mineral	county	SCH					1.00						
+West Virginia	Mingo	county	SCH					0.96						
+West Virginia	Monogalia	county	SCH					1.00						
+West Virginia	Monroe	county	SCH					1.00						
+West Virginia	Morgan	county	SCH					1.00						
+West Virginia	McDowell	county	SCH					1.00						
+West Virginia	Nicholas	county	SCH					0.98						
+West Virginia	Ohio	county	SCH					0.99						
+West Virginia	Pendleton	county	SCH					0.99						
+West Virginia	Pleasants	county	SCH					1.00						
+West Virginia	Pocahontas	county	SCH					0.97						
+West Virginia	Preston	county	SCH					0.97						
+West Virginia	Putnam	county	SCH					0.99						
+West Virginia	Raleigh	county	SCH					0.99						
+West Virginia	Randolph	county	SCH					1.00						
+West Virginia	Ritchie	county	SCH					0.97						
+West Virginia	Roane	county	SCH					0.99						
+West Virginia	Summers	county	SCH					1.00						
+West Virginia	Taylor	county	SCH					0.98						
+West Virginia	Tucker	county	SCH					0.95						
+West Virginia	Tyler	county	SCH					1.00						
+West Virginia	Upshur	county	SCH					1.00						
+West Virginia	Wayne	county	SCH					1.00						
+West Virginia	Webster	county	SCH					0.95						
+West Virginia	Wetzel	county	SCH					0.97						
+West Virginia	Wirt	county	SCH					1.00						
+West Virginia	Wood	county	SCH					1.00						
+West Virginia	Wyoming	county	SCH					0.98						
+Wisconsin	Ashland	county	REG	227				0.91						
+Wisconsin	Bayfield	county	REG	142				0.75						
+Wisconsin	Florence	county	REG	36				0.56						
+Wisconsin	Forest	county	REG	111				0.93						
+Wisconsin	Iron	county	REG	60				0.70						
+Wisconsin	Langlade	county	REG	229				0.81						
+Wisconsin	Lincoln	county	REG	335				0.84						
+Wisconsin	Marathon	county	REG	1824				0.82						
+Wisconsin	Oneida	county	REG	371				0.79						
+Wisconsin	Portage	county	REG	841				0.83						
+Wisconsin	Price	county	REG	116				0.81						
+Wisconsin	Sawyer	county	REG	238				0.80						
+Wisconsin	Taylor	county	REG	282				0.71						
+Wisconsin	Vilas	county	REG	224				0.79						
+Wisconsin	Wood	county	REG	972				0.82						
+Wisconsin	Brown	county	REG	3968				0.80						
+Wisconsin	Calumet	county	REG	650				0.83						
+Wisconsin	Door	county	REG	251				0.82						
+Wisconsin	Fond du Lac	county	REG	1289				0.82						
+Wisconsin	Green Lake	county	REG	229				0.78						
+Wisconsin	Kewaunee	county	REG	248				0.84						
+Wisconsin	Manitowoc	county	REG	858				0.83						
+Wisconsin	Marinette	county	REG	478				0.78						
+Wisconsin	Marquette	county	REG	171				0.74						
+Wisconsin	Menominee	county	REG	105				0.84						
+Wisconsin	Oconto	county	REG	465				0.82						
+Wisconsin	Outagamie	county	REG	2575				0.85						
+Wisconsin	Shawano	county	REG	477				0.85						
+Wisconsin	Sheboygan	county	REG	1508				0.84						
+Wisconsin	Waupaca	county	REG	617				0.80						
+Wisconsin	Waushara	county	REG	238				0.78						
+Wisconsin	Winnebago	county	REG	2192				0.85						
+Wisconsin	Adams	county	REG	156				0.83						
+Wisconsin	Columbia	county	REG	737				0.76						
+Wisconsin	Crawford	county	REG	207				0.74						
+Wisconsin	Dane	county	REG	7431				0.78						
+Wisconsin	Dodge	county	REG	1068				0.78						
+Wisconsin	Grant	county	REG	597				0.61						
+Wisconsin	Green	county	REG	452				0.85						
+Wisconsin	Iowa	county	REG	329				0.81						
+Wisconsin	Jefferson	county	REG	1043				0.84						
+Wisconsin	Juneau	county	REG	321				0.80						
+Wisconsin	Lafayette	county	REG	226				0.70						
+Wisconsin	Richland	county	REG	263				0.73						
+Wisconsin	Rock	county	REG	2385				0.76						
+Wisconsin	Sauk	county	REG	904				0.77						
+Wisconsin	Vernon	county	REG	467				0.58						
+Wisconsin	Kenosha	county	REG	2647				0.70						
+Wisconsin	Milwaukee	county	REG	16680				0.78						
+Wisconsin	Ozaukee	county	REG	1062				0.74						
+Wisconsin	Racine	county	REG	2968				0.80						
+Wisconsin	Walworth	county	REG	1337				0.80						
+Wisconsin	Washington	county	REG	1755				0.83						
+Wisconsin	Waukesha	county	REG	4907				0.81						
+Wisconsin	Barron	county	REG	596				0.78						
+Wisconsin	Buffalo	county	REG	183				0.77						
+Wisconsin	Burnett	county	REG	178				0.73						
+Wisconsin	Chippewa	county	REG	864				0.82						
+Wisconsin	Clark	county	REG	621				0.54						
+Wisconsin	Douglas	county	REG	616				0.78						
+Wisconsin	Dunn	county	REG	529				0.76						
+Wisconsin	Eau Claire	county	REG	1326				0.79						
+Wisconsin	Jackson	county	REG	258				0.81						
+Wisconsin	La Crosse	county	REG	1612				0.85						
+Wisconsin	Monroe	county	REG	728				0.75						
+Wisconsin	Pepin	county	REG	85				0.72						
+Wisconsin	Pierce	county	REG	512				0.73						
+Wisconsin	Polk	county	REG	612				0.71						
+Wisconsin	Rusk	county	REG	171				0.80						
+Wisconsin	St Croix	county	REG	1350				0.70						
+Wisconsin	Trempealeau	county	REG	458				0.76						
+Wisconsin	Washburn	county	REG	181				0.83						
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
+														
