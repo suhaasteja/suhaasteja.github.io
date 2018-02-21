@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Americans Die Younger Despite Spending the Most on Health Care</title>
+
+    <!-- D3 and JQuery Javascript -->
+    <script  src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap Core CSS  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <style>
+        .background path {
+            fill: none;
+            stroke: #ddd;
+        }
+
+        .foreground path {
+            fill: none;
+            stroke: #666;
+            stroke-width: 2px;
+        }
+
+        .label-container{
+            text-align: center;
+            height: 56px;
+        }
+
+        .category-label {
+            color: #333;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+        }
+    </style>
+    <script>
+        window.onbeforeunload = function(){ window.scrollTo(0,0); }
+
+        $(function(){
+            $(".dropdown-menu.dropdown-bar").on('click', 'li a', function(){
+                replace = $(this).text();
+                $(this).parent().parent().prev().html(replace+ ' <span class="caret"></span>');
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>Americans Die Younger Despite Spending the Most on Health Care</h1>
+                    <p class="margin-top-sm">Typically, the more a developed country spends on health care, the longer its people live. The U.S., which spends the most on health care, bucks that trend. Compared to the 35 countries in the Organization for Economic Cooperation and Development, which promotes policies to improve social and economic well-being, the U.S. has the highest per-capita spending on healthcare. Despite this, it lags behind on most scales such as life expectancy, infant and maternal mortality etc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="container">
+                <div class="row">
+                    <div class="col-md-4 margin-top-lg">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-exp">Per-capita spending on health care ($)</p></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-out">Life expectancy at birth (years)</p></div>
+                            </div>
+                        </div>
+                        <div class="row"><div class="graph graph-1"></div></div>
+                    </div>
+                    <div class="col-md-4 margin-top-lg">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-exp">Per-capita spending on health care ($)</p></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-out">Infant mortality per 1000 live births</p></div>
+                            </div>
+                        </div>
+                        <div class="row"><div class="graph graph-2"></div></div>
+                    </div>
+                    <div class="col-md-4 margin-top-lg">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-exp">Per-capita spending on health care ($)</p></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-out">Maternal mortality per 100,000 live births</p></div>
+                            </div>
+                        </div>
+                        <div class="row"><div class="graph graph-3"></div></div>
+                    </div>
+                    <div class="col-md-4 margin-top-lg">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-exp">Per-capita spending on health care ($)</p></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-out">Probability of dying prematurely from noncommunicative disease (%)</p></div>
+                            </div>
+                        </div>
+                        <div class="row"><div class="graph graph-4"></div></div>
+                    </div>
+                    <div class="col-md-4 margin-top-lg">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-exp">Per-capita spending on health care ($)</p></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-out">Obesity as % of population ages 15 & over</p></div>
+                            </div>
+                        </div>
+                        <div class="row"><div class="graph graph-5"></div></div>
+                    </div>
+                    <div class="col-md-4 margin-top-lg">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-exp">Government spending on health care (%)</p></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-out">Life expectancy at birth (years)</p></div>
+                            </div>
+                        </div>
+                        <div class="row"><div class="graph graph-6"></div></div>
+                    </div>
+                    <!-- <div class="col-md-4 margin-top-lg">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-exp">Per-capita spending on health care ($)</p></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-out"></p></div>
+                            </div>
+                        </div>
+                        <div class="row"><div class="graph graph-7"></div></div>
+                    </div>
+                    <div class="col-md-4 margin-top-lg">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-exp">Per-capita spending on health care ($)</p></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-out"></p></div>
+                            </div>
+                        </div>
+                        <div class="row"><div class="graph graph-8"></div></div>
+                    </div>
+                    <div class="col-md-4 margin-top-lg">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-exp">Per-capita spending on health care ($)</p></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-out"></p></div>
+                            </div>
+                        </div>
+                        <div class="row"><div class="graph graph-9"></div></div>
+                    </div>
+                    <div class="col-md-4 margin-top-lg">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-exp">Per-capita spending on health care ($)</p></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="label-container"><p class="category-label label-out"></p></div>
+                            </div>
+                        </div>
+                        <div class="row"><div class="graph graph-10"></div></div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="survey.html"><div class="survey-button">Quiz <i class="fa fa-long-arrow-right" aria-hidden="true"></i></div></a>
+    </div>
+</body>
+<script src="js/custom.js"></script>
+<script>
+    $(document).ready(function() {
+        function disableBack() { window.history.forward() }
+
+        window.onload = disableBack();
+        window.onpageshow = function(evt) { if (evt.persisted) disableBack() }
+    });
+</script>
+</html>

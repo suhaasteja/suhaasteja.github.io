@@ -68,6 +68,10 @@ span.highlight-alt{
   margin-bottom: 48px;
 }
 
+.margin-lg {
+  margin: 80px 0px;
+}
+
 .axis-label {
   fill: #4a4a4a !important;
   font-family: 'Avenir Next', sans-serif;
@@ -110,5 +114,44 @@ text {
 
 .domain{
   opacity: 0;
+}
+
+
+
+.footer {
+  background-color: #fafafa;
+  margin-top: 80px;
+  padding: 48px 0px;
+}
+
+.survey-button {
+  width: 120px;
+  height: 32px;
+  line-height: 32px;
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #2a2a2a;
+  border-radius: 2px;
+  text-align: center;
+  color: #fff;
+  margin: 32px auto;
+}
+
+.step-circle {
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  border: 2px solid #666;
+  background-color: none;
+  margin: 12px 2px;
+}
+
+.section-active {
+  background-color: #333;
+  border: 2px solid #333;
+  height: 16px;
+  width: 16px;
+  margin: 10px 0px;
 }
 

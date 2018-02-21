@@ -44,12 +44,28 @@ var svg = d3.select('div#graph')
 				.attr('width', SVGwidth)
 				.attr('height', SVGheight);
 
+function steppers(){
+	num = d3.select("#sections").selectAll("div").size();
+	for (i = 0; i < num; i++){
+		d3.select("div.steps")
+			// .append("a")
+			// .attr("href", "#story-"+i)
+			.append("div")
+			.attr("class", "step-circle")
+			.attr("id", "section-"+i);
+	}
+}
+
+steppers()
+
 var gs = d3.graphScroll()
 			.container(d3.select('#container'))
 			.graph(d3.selectAll('#graph'))
 			.eventId('uniqueId1')
 			.sections(d3.selectAll('#sections > div'))
 			.on('active', function(i){
+				d3.selectAll(".step-circle").classed("section-active", false);
+				d3.select("#section-"+i).classed("section-active", true);
 				update(i);
 			})
 
