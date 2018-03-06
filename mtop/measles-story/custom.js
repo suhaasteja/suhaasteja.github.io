@@ -53,7 +53,7 @@ function handleLoadComplete(percent, pop, i, idx, rZero = 15) {
 						}])
 						.attr("id", "movingDot")
 						.attr("fill", "#b51800")
-						.attr("r", 6)
+						.attr("r", 5)
 						.attr("cx", d3.randomUniform(250))
 						.attr("cy", -100);
 
@@ -72,14 +72,14 @@ function handleLoadComplete(percent, pop, i, idx, rZero = 15) {
 
 	movingDot.transition() 
 			.ease(d3.easeQuadOut)
-			.duration(750)
+			.duration(500)
 			.attr("cx", x(targettedNodeDatum.x))
 			.attr("cy", y(targettedNodeDatum.y));
 
 	movingDot.transition()
 			.ease(d3.easeQuad)
-			.delay(750)
-			.duration(1000)
+			.delay(700)
+			.duration(750)
 			.attr("cx", d3.randomUniform(250))
 			.attr("cy", "600");
 
@@ -104,7 +104,7 @@ function handleLoadComplete(percent, pop, i, idx, rZero = 15) {
 			const infectCheck = d3.select("#node_"+percent+"_"+element.id).classed("checked");
 			const currentNode = d3.select("#node_"+percent+"_"+element.id);
 			currentNode.transition()
-				.delay(750+25*i) //distance between transitions
+				.delay(600+25*i) //distance between transitions
 					.attr("fill", function (d) {
 					//if the node is immune, don't change colors
 					if (d.status == "immune") {
@@ -221,8 +221,9 @@ function animateDots(p, idx){
 		let handleLoadCompleteFactory = function (callback) {
 			setTimeout(function () {
 				inf = handleLoadComplete(p, pop[idx], i, idx);
+				console.log(i);
 				callback(null);
-			}, (i * 2000));
+			}, (i * 1500 + 500));
 		}
 		q.defer(handleLoadCompleteFactory);
 	}
@@ -305,7 +306,6 @@ function updatePopBar(pop, percentVacc){
 	duration = pop.infected * 40 + 750
 
 	if (pop.infected >= 1){
-		console.log("not");
 		d3.select(".infect-status."+percent).text("Not Protected").attr("style", "color: #b51800");
 	} else {
 		d3.select(".infect-status."+percent).attr("style", "color: #94b1ca");

@@ -1,14 +1,3 @@
-function steppers(){
-	num = d3.select("#sections").selectAll("div").size();
-	for (i = 0; i < num; i++){
-		d3.select("div.steps").append("div")
-			.attr("class", "step-circle")
-			.attr("id", "section-"+i);
-	}
-}
-
-steppers()
-
 var	domain = {x: 720, y: 600},
 	margin = {top: 60, left: 120, bottom: 20, right: 120},
 	SVGwidth = 720,
@@ -288,6 +277,17 @@ function handleMouseOut(d, i){
 	d3.select("g." + country).style("opacity", 0.3);
 	d3.selectAll("g."+CountryExp1+", g."+CountryOut1).style("opacity", 1);
 }
+
+function steppers(){
+	num = d3.select("#sections").selectAll("div").size();
+	for (i = 0; i < num; i++){
+		d3.select("div.steps").append("div")
+			.attr("class", "step-circle")
+			.attr("id", "section-"+i);
+	}
+}
+
+steppers()
 
 var gs = d3.graphScroll()
 			.container(d3.select('#container'))

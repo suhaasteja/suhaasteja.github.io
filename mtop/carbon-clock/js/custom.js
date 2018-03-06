@@ -281,19 +281,19 @@ function drawFluctuate(data, year){
 		}
 	}
 
-	xAxis = d3.axisBottom(x)
-				.tickSize(0)
-				.tickFormat(function(d, i) {
-					return (1950+d)
-				});
+	// xAxis = d3.axisBottom(x)
+	// 			.tickSize(0)
+	// 			.tickFormat(function(d, i) {
+	// 				return (1950+d)
+	// 			});
 
-	yAxis = d3.axisRight(y)
-				.tickSize(0)
-				.tickFormat(function(d) {
-					return this.parentNode.nextSibling
-						? "\xa0" + +d
-						: +d + " ppm";
-				});
+	// yAxis = d3.axisRight(y)
+	// 			.tickSize(0)
+	// 			.tickFormat(function(d) {
+	// 				return this.parentNode.nextSibling
+	// 					? "\xa0" + +d
+	// 					: +d + " ppm";
+	// 			});
 
 	svg.transition().select(".x.axis") // change the x axis
 		.duration(axisTransDur)
@@ -457,11 +457,14 @@ var steps = [
 	},
 	function step6() {
 		updateScales(carbonData, 6);
-		//updateData(carbonData, 6);
+		updateData(carbonData, 6);
 		drawTrend(carbonData, 6);
 		drawFluctuate(carbonData, 6);
 	},
 	function step7() {
+		updateScales(carbonData, 60);
+		updateData(carbonData, 60);
+		drawTrend(carbonData, 60);
 		svg2.selectAll("*").remove();
 		initInteract(carbonDataInt, 60);
 	}

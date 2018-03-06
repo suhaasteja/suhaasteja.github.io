@@ -150,7 +150,12 @@ function initInteract(data, year) {
 						if (d == 0){
 							return "present"
 						}
-						return Math.abs(d/1000) + "k yrs ago"
+						return Math.abs(d/1000) + "k years ago"
+					} else if (dmin >= -10){
+						d = d + 2017.88
+						yr = Math.floor(d);
+						month = Math.floor((d % Math.floor(d))*12);
+						return formatDate(parseDate(yr+"-"+(month)));
 					}
 					else {
 						return (2017+d)
@@ -264,6 +269,9 @@ function updateInteract(data, year, id){
 	$("button").removeClass('selected');
 	$("#"+id).addClass('selected');
 
+	var parseDate = d3.timeParse("%Y-%m"),
+		formatDate = d3.timeFormat("%b %Y");
+
 	main.selectAll(".down-trend").remove();
 
 	dmin = 100
@@ -286,20 +294,22 @@ function updateInteract(data, year, id){
 	x2Scale.domain(xScale.domain());
 	y2Scale.domain(yScale.domain());
 
-	numTicks = axisTicks(dmin)
+	numTicks = axisTicks(dmin);
 
 	xAxisInt = d3.axisBottom(xScale)
 				.ticks(numTicks)
 				.tickSize(0)
 				.tickFormat(function(d, i) {
 					if (dmin < -100){
-						if (d == 0) {
-							return "present";
-						} else if (Math.abs(d/1000) > 1){
-							return Math.abs(d/1000) + "k yrs ago"
-						}  else if (Math.abs(d/1000) <= 1) {
-							return Math.abs(d) + " yrs ago"
+						if (d == 0){
+							return "present"
 						}
+						return Math.abs(d/1000) + "k years ago"
+					} else if (dmin >= -10){
+						d = d + 2017.88
+						yr = Math.floor(d);
+						month = Math.floor((d % Math.floor(d))*12);
+						return formatDate(parseDate(yr+"-"+(month)));
 					}
 					else {
 						return (2017+d)
@@ -351,19 +361,19 @@ function updateInteract(data, year, id){
 	context.selectAll("*").remove();
 	context.append('rect')
 		.attr('class', 'end-left')
-		.attr('x', margin2.left)
+		.attr('x', marginInt2.left)
 		.attr('y', 0)
 		.attr('width', 8)
-		.attr('height', height2)
+		.attr('height', heightInt2)
 		.attr('fill', '#4A90E2')
 		.attr('rx', 4);
 
 	context.append('rect')
 			.attr('class', 'end-right')
-			.attr('x', (width + margin2.left))
+			.attr('x', (width + marginInt2.left))
 			.attr('y', 0)
 			.attr('width', 8)
-			.attr('height', height2)
+			.attr('height', heightInt2)
 			.attr('fill', '#4A90E2')
 			.attr('rx', 4);
 

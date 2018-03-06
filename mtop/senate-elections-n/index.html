@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>A Really Small Slice of Americans Get to Decide Who Will Rule the Senate</title>
+
+        <!-- D3 and JQuery Javascript -->
+        <script  src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.1.0/d3-annotation.min.js"></script>
+
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap Core CSS  -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Custom CSS -->
+        <link href="css/custom.css" rel="stylesheet">
+        <style>
+            #graph{
+                width: 960px;
+                position: absolute;
+                top: 160px;
+            }
+
+            .btn-default{
+                min-width: 144px !important;
+            }
+
+            .legend-text{
+                font:;
+            }
+
+            .scale-legend{
+                fill: none;
+                stroke: #aaa;
+                stroke-width: 2px;
+            }
+
+            .annotation-note-title, text.title {
+                font-weight: bold;
+            }
+
+            text.title {
+                font-size: 1.2em;
+            }
+        </style>
+        <script>
+            window.onbeforeunload = function(){ window.scrollTo(0,0); }
+        </script>
+    </head>
+
+    <body>
+        <div class="navbar" style="box-shadow: 0px 2px 5px #ddd;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h1>A Really Small Slice of Americans Get to Decide Who Will Rule the Senate</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 160px">
+            <div id="graph-1">
+                <h3>Proportion of people who vote in the US.</h3>
+                <p>Data presented is for the year 2014. Total population in the US was 319 million.</p>
+            </div>
+            <hr>
+            <div id="graph-2">
+                <h3>States which had a senate election in 2014</h3>
+            </div>
+            <hr>
+            <div id="graph-3">
+                <h3>Number of people who voted from the 8 states where races are close</h3>                
+                <p>The total number of people who voted from these 8 states was 10.8 million.</p>
+            </div>
+        </div>
+    </body>
+
+    <!-- <script src="js/graph-scroll.js"></script> -->
+    <script src="js/custom.js"></script>
+</html>

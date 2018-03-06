@@ -62,20 +62,6 @@ p.death-desc {
   margin: 80px 0px;
 }
 
-.axis-label {
-  fill: #4a4a4a !important;
-  font-family: 'Avenir Next', sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-}
-
-.tickFormat {
-  fill: #4a4a4a !important;
-  font-family: 'Avenir Next', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-}
-
 .axis path,
 .axis line{
     fill: none;
@@ -89,20 +75,11 @@ text {
   font-size: 14px;
 }
 
-.sim-output{
-  font-size: 18px;
-  font-weight: 500;
-  font-family: 'Avenir Next', 'Helvetica Neue', sans-serif;
-  line-height: 30px;
-}
-
 p.caption {
   font-size: 14px;
   font-weight: 400;
   font-style: italic;
 }
-
-
 
 .footer {
   background-color: #fafafa;

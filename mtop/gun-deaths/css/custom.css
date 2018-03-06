@@ -81,22 +81,6 @@ text {
   font-size: 14px;
 }
 
-.payoffLine {
-  fill: none;
-  stroke: #f2893b;
-  stroke-width: 1.5px;
-}
-
-.utilityLine {
-  fill: none;
-  stroke: #bbb;
-  stroke-width: 1.5px;
-}
-
-#spend {
-  color: #f2893b;
-}
-
 .label-container{
   height: 32px;
   width: 100px;
@@ -111,24 +95,6 @@ text.data-label {
   line-height: 32px;
 }
 
-.maxUtility {
-  fill: none;
-  stroke: #f2893b;
-  stroke-width: 1.5px;
-}
-
-.val-adjust{
-  font-size: 24px;
-  font-weight: 600;
-  font-family: 'Avenir Next', 'Helvetica Neue', sans-serif;
-  line-height: 48px;
-}
-
-.val-output{
-  font-weight: 700;
-  text-transform: underline;
-}
-
 .sim-output{
   font-size: 18px;
   font-weight: 500;
@@ -138,7 +104,6 @@ text.data-label {
 
 .footer {
   background-color: #fafafa;
-  margin-top: 80px;
   padding: 48px 0px;
 }
 

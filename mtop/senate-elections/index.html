@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>A Really Small Slice of Americans Get to Decide Who Will Rule the Senate</title>
+
+        <!-- D3 and JQuery Javascript -->
+        <script  src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+        <!-- Bootstrap Core CSS  -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Custom CSS -->
+        <link href="css/custom.css" rel="stylesheet">
+        <style>
+            #sections{
+                width: 340px;
+            }
+
+            #sections > div{
+                background-color: rgba(255, 255, 255, 0.8);
+                opacity: .2;
+                margin-bottom: 300px;
+                z-index: 99;
+            }
+
+            #sections > div:last-child{
+                margin-bottom: 30px;
+            }
+
+            #sections > div.graph-scroll-active{
+                opacity: 1;
+            }
+
+            #graph{
+                width: 960px;
+                position: absolute;
+                margin-left: 300px;
+                z-index: -1;
+            }
+
+            .graph-scroll-fixed #graph{
+                position: fixed;
+                top: 160px;
+            }
+
+            .graph-scroll-below #graph{
+                bottom: 0px;
+                top: auto;
+            }
+
+            .btn-default{
+                min-width: 144px !important;
+            }
+        </style>
+        <script>
+            window.onbeforeunload = function(){ window.scrollTo(0,0); }
+        </script>
+    </head>
+
+    <body>
+        <div class="navbar" style="box-shadow: 0px 2px 5px #ddd;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h1>A Really Small Slice of Americans Get to Decide Who Will Rule the Senate</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div id='container'>
+                    <div id="graph">
+                    </div>
+                    <div id='sections'>
+                        <div class="story-text" style="margin-top: 240px;">
+                            <p>The U.S. population is about 319 million, according to the U.S. Census. Of course, only a fraction of Americans will actually vote in November's election. How small? To get an idea, look at the last midterm election, in 2014.<br>Here's the <b>U.S. population that year</b>.</p>
+                        </div>
+                        <div class="story-text">
+                            <p>Here's the proportion of people who were of <b>voting age</b>.</p>
+                        </div>
+                        <div class="story-text">
+                            <p>And here's the proportion of voting-age Americans who <b>actually cast ballots</b>. Fewer people tend to show up at the polls for midterms, when the White House isn't at stake.</p>
+                        </div>
+                        <div class="story-text">
+                            <p>This year, there are <b>34 states</b> with Senate elections.</p>
+                        </div>
+                        <div class="story-text">
+                            <p>Of which, 8 of the incumbent were Democrats and the rest were Republicans.</p>
+                        </div>
+                        <div class="story-text">
+                            <p>Most of these aren't close races. There are <b>eight states</b> where Bloomberg Politics considers the outcome to be seriously in doubt. The people who live there will determine whether Republicans take control of the Senate.</p>
+                        </div>
+                        <div class="story-text">
+                            <p>In the last midterm, <b>10.8 million people</b> total from these states showed up to vote. If turnout patterns stay about the same this year as in midterms past, this figure will likely be in the same ballpark, even taking population growth into account.</p>
+                        </div>
+                        <div class="story-text" style="margin-bottom: 480px;">
+                            <p>Put another way: The number of people who'll decide this election will likely be <b>smaller than the population of Florida</b>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="js/graph-scroll.js"></script>
+    <script src="js/custom.js"></script>
+</html>

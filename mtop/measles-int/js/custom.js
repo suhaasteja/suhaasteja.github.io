@@ -61,7 +61,7 @@ function handleLoadComplete(percent, pop, rZero = 15) {
 						}])
 						.attr("id", "movingDot")
 						.attr("fill", "#b51800")
-						.attr("r", 6)
+						.attr("r", 4)
 						.attr("cx", d3.randomUniform(250))
 						.attr("cy", -50);
 

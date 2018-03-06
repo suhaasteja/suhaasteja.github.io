@@ -28,7 +28,7 @@
                     <!-- </p>
                     <p class="margin-top-sm"><b>Notes on the visualization:</b></p>
                     <p class="body"> -->
-                    The graphic below presents a hypothetical community, for which you can set different vaccination rates and run a simulation. If you run the simulation enough times, only very highly vaccinated groups are able to consistently block measles infection from their community, showing just how important high rates of immunization can be. All the dots represent people who are the same or similar ages, such as school children. There are no babies or non-immune elderly folks in our examples, but there are some children who can’t get the vaccine for medical reasons.<br><br>The sample children above are in close contact and they mix randomly and they each have an equal chance of coming into contact with someone from the outside world who is infected with measles – the incoming red dots. Due to the extreme infectiousness of measles, if one “dot-child” brings the disease back into their group, all of those inside who are not immune – the susceptibles – will have a 90% chance of getting infected. Among the vaccinated, there's a 1% chance of vaccine failure.</p>
+                    The graphic below presents a hypothetical community, for which you can set different vaccination rates and run a simulation. If you run the simulation enough times, only very highly vaccinated groups are able to consistently block measles infection from their community, showing just how important high rates of immunization can be. All the dots represent people who are the same or similar ages, such as school children. There are no babies or non-immune elderly folks in our examples, but there are some children who can’t get the vaccine for medical reasons.<br><br>The sample children above are in close contact and they mix randomly and they each have an equal chance of coming into contact with someone from the outside world who is infected with measles – the incoming red dots. Measles is extremely infectious - the simulation below shows how it spreads within a community.</p>
                 </div>
             </div>
             <div class="row">
@@ -38,17 +38,21 @@
                             <circle r="12" fill="#94b1ca" stroke = "#94b1ca" cx="12" cy="18"></circle>
                             <text x="32" y="24" text-anchor="start">vaccinated</text>
 
-                            <circle r="12" fill="#ffce4b" stroke = "#ffce4b" cx="160" cy="18"></circle>
+                            <circle r="12" fill="#ffce4b" stroke = "#ffce4b" cx="140" cy="18"></circle>
                             <text x="180" y="24" text-anchor="start">susceptible</text>
 
-                            <circle r="12" fill="#ffce4b" stroke = "#94b1ca" stroke-width="3" cx="320" cy="18"></circle>
+                            <circle r="12" fill="#ffce4b" stroke = "#94b1ca" stroke-width="3" cx="280" cy="18"></circle>
                             <text x="340" y="24" text-anchor="start">vaccinated, but susceptible</text>                        
+
+                            <circle r="12" fill="#b51800" stroke = "#b51800" cx="520" cy="18"></circle>
+                            <text x="600" y="24" text-anchor="start">infected</text>
 
                             <circle r="12" fill="#b51800" stroke = "#b51800" cx="580" cy="18"></circle>
                             <text x="600" y="24" text-anchor="start">infected</text>
                         </svg>
                     </div>
                 <hr>
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
@@ -68,45 +72,47 @@
                     <button class="stepper-button reset"><i class="fa fa-repeat" aria-hidden="true"></i> &nbsp Reset</button>
                 </div>
             </div>
-            <div style="margin-bottom: 120px"></div>
         </div>
-        <script src="js/custom.js"></script>
-        <script>
-            var slider = document.getElementById("percentVacc-slider");
-            var output = document.getElementById("percentVacc-output");
-            $(".stepper-button.start").on('click', startAnimation);
-            $(".stepper-button.reset").on('click', resetGraph);
-
-            percentVacc = 50;
-
-            slider.oninput = function() {
-                percentVacc = parseInt(slider.value)
-                initGraph(percentVacc, 0);
-                output.innerHTML = percentVacc
-            }
-            
-            function startAnimation(){
-                animateDots(percentVacc)
-                $(".stepper-button").off('click');
-                $(".stepper-button").addClass('inactive');
-                setTimeout(function(){
-                    $(".stepper-button.start").on('click', startAnimation);
-                    $(".stepper-button.reset").on('click', resetGraph);
-                    $(".stepper-button").removeClass('inactive');
-                }, 9500)
-            }
-
-            function resetGraph(){
-                initGraph(percentVacc, 0);
-            }
-
-            var position
-
-            d3.json('data/position.json', function(data){
-                position = data
-
-                initGraph(50, 0);
-            });
-        </script>
+        <div class="footer">
+            <a href="survey.html"><div class="survey-button">Quiz <i class="fa fa-long-arrow-right" aria-hidden="true"></i></div></a>
+        </div>
     </body>
+    <script src="js/custom.js"></script>
+    <script>
+        var slider = document.getElementById("percentVacc-slider");
+        var output = document.getElementById("percentVacc-output");
+        $(".stepper-button.start").on('click', startAnimation);
+        $(".stepper-button.reset").on('click', resetGraph);
+
+        percentVacc = 50;
+
+        slider.oninput = function() {
+            percentVacc = parseInt(slider.value)
+            initGraph(percentVacc, 0);
+            output.innerHTML = percentVacc
+        }
+        
+        function startAnimation(){
+            animateDots(percentVacc)
+            $(".stepper-button").off('click');
+            $(".stepper-button").addClass('inactive');
+            setTimeout(function(){
+                $(".stepper-button.start").on('click', startAnimation);
+                $(".stepper-button.reset").on('click', resetGraph);
+                $(".stepper-button").removeClass('inactive');
+            }, 9500)
+        }
+
+        function resetGraph(){
+            initGraph(percentVacc, 0);
+        }
+
+        var position
+
+        d3.json('data/position.json', function(data){
+            position = data
+
+            initGraph(50, 0);
+        });
+    </script>
 </html>

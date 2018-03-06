@@ -169,6 +169,16 @@ function drawCanvas(){
 	});
 }
 
+function steppers(){
+	num = d3.select("#sections").selectAll("div.story-text").size();
+	for (i = 0; i < num; i++){
+		d3.select("div.steps").append("div")
+			.attr("class", "step-circle")
+			.attr("id", "section-"+i);
+	}
+}
+
+steppers()
 
 var gs = d3.graphScroll()
 			.container(d3.select('#container'))
@@ -176,6 +186,8 @@ var gs = d3.graphScroll()
 			.eventId('uniqueId1')
 			.sections(d3.selectAll('#sections > div'))
 			.on('active', function(i){
+				d3.selectAll(".step-circle").classed("section-active", false);
+				d3.select("#section-"+i).classed("section-active", true);
 				update(i);
 			})
 

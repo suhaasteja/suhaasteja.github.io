@@ -9,7 +9,6 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  margin: 0px;
 }
 
 p.body{
@@ -33,6 +32,10 @@ p.body{
 
 .margin-btm-md {
   margin-bottom: 48px;
+}
+
+.margin-lg {
+  margin: 80px 0px !important;
 }
 
 svg {
@@ -195,3 +198,4 @@ p.supplementary-text {
   width: 16px;
   margin: 10px 0px;
 }
+
