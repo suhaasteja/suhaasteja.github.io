@@ -23,8 +23,8 @@ h6{
 p {
   font-family: 'Avenir Next', serif;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .navbar{
@@ -153,5 +153,19 @@ text {
   height: 16px;
   width: 16px;
   margin: 10px 0px;
+}
+
+.instructions {
+  width: 144px;
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  margin-left: -72px;
+  color: #aaa;
+}
+
+.instructions > p{
+  font-size: 12px;
+  line-height: 14px;
 }
 

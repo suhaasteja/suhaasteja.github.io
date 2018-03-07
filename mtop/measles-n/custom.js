@@ -137,6 +137,7 @@ function handleLoadComplete(percent, pop, i, idx, rZero = 15) {
 		pop.infected += infectionCounter;
 		pop.susceptible -= infectionCounter;
 	}
+	console.log(pop, percent);
 	initPopBar(pop, percent);
 	return pop.infected
 }

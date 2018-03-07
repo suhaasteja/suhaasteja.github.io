@@ -12,6 +12,7 @@
 
         <!-- Bootstrap Core CSS  -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
         <!-- Custom CSS -->
@@ -109,6 +110,10 @@
 
     <body>
         <div class="container">
+            <div class="instructions text-center">
+                <i class="material-icons">arrow_drop_down_circle</i>
+                <p>Use up / down arrow keys to scroll up / down</p>
+            </div>
             <h1>Gun Deaths in America</h1>
             <div id='container'>
                 <div id="graph">
@@ -163,5 +168,13 @@
     <script src="js/graph-scroll.js"></script>
     <script src="js/custom.js"></script>
     <script>
+        document.onkeydown = checkKey;
+
+        function checkKey(e) {
+            e = e || window.event;
+            if (e.keyCode == '38' || e.keyCode == '40') {
+                $('div.instructions').hide();
+            }
+        }
     </script>
 </html>

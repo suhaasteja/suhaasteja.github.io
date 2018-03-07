@@ -13,6 +13,7 @@
 
         <!-- Bootstrap Core CSS  -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
         <!-- Custom CSS -->
@@ -24,7 +25,7 @@
 
             #sections{
                 width: 320px;
-                margin-top: -240px;
+                margin-top: -320px;
                 padding-bottom: 360px;
                 z-index: -1;
             }
@@ -79,6 +80,10 @@
             </div>
         </div>
         <div class="container">
+            <div class="instructions text-center">
+                <i class="material-icons">arrow_drop_down_circle</i>
+                <p>Use up / down arrow keys to scroll up / down</p>
+            </div>
             <div id='container'>
                 <div id="graph">
                     <p class="carbon-clock" style="margin-left: 10px"></p>
@@ -128,5 +133,14 @@
             var ppm = (((new Date() - start) / 1000) * rate + base).toFixed(8);
             $("#carbon-ppm").html(ppm);
         }, 50);
+
+        document.onkeydown = checkKey;
+
+        function checkKey(e) {
+            e = e || window.event;
+            if (e.keyCode == '38' || e.keyCode == '40') {
+                $('div.instructions').hide();
+            }
+        }
     </script>
 </html>

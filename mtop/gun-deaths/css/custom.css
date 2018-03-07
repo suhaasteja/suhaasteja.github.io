@@ -137,3 +137,17 @@ text.data-label {
   width: 16px;
   margin: 10px 0px;
 }
+
+.instructions {
+  width: 144px;
+  position: fixed;
+  bottom: 10%;
+  left: 50%;
+  margin-left: -72px;
+  color: #aaa;
+}
+
+.instructions > p{
+  font-size: 12px;
+  line-height: 14px;
+}

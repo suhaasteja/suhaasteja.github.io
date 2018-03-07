@@ -61,7 +61,7 @@
       var containerBB = container.node().getBoundingClientRect()
       var graphHeight = graph.node() ? graph.node().getBoundingClientRect().height : 0
 
-      containerStart = containerBB.top + pageYOffset + 120
+      containerStart = containerBB.top + pageYOffset - 40
       belowStart = containerBB.bottom - graphHeight + pageYOffset
     }
 

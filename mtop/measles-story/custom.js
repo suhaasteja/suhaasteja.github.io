@@ -4,6 +4,8 @@ var domain = {x: 240, y: 240},
 var width = 220,
 	height = 220;
 
+seed = [100, 10, 230, 110, 50, 30];
+
 var x = d3.scaleLinear()
 				.domain([0, domain.x])
 				.range([margin.left, width - margin.right]),
@@ -61,8 +63,12 @@ function handleLoadComplete(percent, pop, i, idx, rZero = 15) {
 	//randomly pick a node, need to round to a integer
 
 	//10*(i+1)*(parseInt(idx)+1)
-	Math.seedrandom(100*(i+1)*(idx+1));
+	// Math.seedrandom(100*(i+1)*(idx+1));
+	// randUniform = Math.random()*POPULATION_SIZE
+
+	Math.seedrandom(seed[idx] + (i+1));
 	randUniform = Math.random()*POPULATION_SIZE
+
 	const targetSelection = Math.floor(randUniform);
 	const targettedNode = d3.select("#node_"+percent+"_"+ targetSelection);
 	
@@ -72,18 +78,21 @@ function handleLoadComplete(percent, pop, i, idx, rZero = 15) {
 
 	movingDot.transition() 
 			.ease(d3.easeQuadOut)
+			.delay(250)
 			.duration(500)
 			.attr("cx", x(targettedNodeDatum.x))
 			.attr("cy", y(targettedNodeDatum.y));
 
 	movingDot.transition()
 			.ease(d3.easeQuad)
-			.delay(700)
+			.delay(750)
 			.duration(750)
 			.attr("cx", d3.randomUniform(250))
 			.attr("cy", "600");
 
-	if (targettedNodeDatum.status != "immune") {
+	console.log(targettedNodeDatum.status);
+
+	if (targettedNodeDatum.status != "immune" && pop.susceptible > 0) {
 		//if the node isn't immune, calculate how to spread the infection
 		var AllNodesSelection = svg.selectAll(".node_"+percent);
 
@@ -104,7 +113,7 @@ function handleLoadComplete(percent, pop, i, idx, rZero = 15) {
 			const infectCheck = d3.select("#node_"+percent+"_"+element.id).classed("checked");
 			const currentNode = d3.select("#node_"+percent+"_"+element.id);
 			currentNode.transition()
-				.delay(600+25*i) //distance between transitions
+				.delay(750+25*i) //distance between transitions
 					.attr("fill", function (d) {
 					//if the node is immune, don't change colors
 					if (d.status == "immune") {
@@ -131,6 +140,8 @@ function handleLoadComplete(percent, pop, i, idx, rZero = 15) {
 			//adds a checked class to the element to prevent double incrementing
 			const selected = d3.select("#node_"+percent+"_"+element.id).classed("checked", true);
 		}
+		console.log(pop, percent, infectionCounter);
+		
 		pop.infected += infectionCounter;
 		pop.susceptible -= infectionCounter;
 	}
@@ -221,9 +232,8 @@ function animateDots(p, idx){
 		let handleLoadCompleteFactory = function (callback) {
 			setTimeout(function () {
 				inf = handleLoadComplete(p, pop[idx], i, idx);
-				console.log(i);
 				callback(null);
-			}, (i * 1500 + 500));
+			}, (i * 1500 + 1000));
 		}
 		q.defer(handleLoadCompleteFactory);
 	}
@@ -285,6 +295,8 @@ function initPopulationArray(popSize, pop) {
 
 function initPopBar(pop, percentVacc){
 	$('.status-container._'+percentVacc).show();
+
+	d3.select(".infect-status._"+percentVacc).text("Protected").attr("style", "color: #94b1ca");
 
 	d3.select('.bar._'+percentVacc+'.infected')
 		.attr("style", "width: "+(pop.infected)*2+"px");

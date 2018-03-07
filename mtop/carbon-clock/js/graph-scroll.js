@@ -18,7 +18,7 @@
         containerStart = 0,
         belowStart,
         eventId = Math.random(),
-        offset = 240
+        offset = 200
 
     function reposition(){
       var i1 = 0
@@ -59,8 +59,8 @@
       var containerBB = container.node().getBoundingClientRect()
       var graphHeight = graph.node() ? graph.node().getBoundingClientRect().height : 0
 
-      containerStart = containerBB.top + pageYOffset - 90
-      belowStart = containerBB.bottom - graphHeight + pageYOffset - 120
+      containerStart = containerBB.top + pageYOffset - 40
+      belowStart = containerBB.bottom - graphHeight + pageYOffset
     }
 
     function keydown() {
