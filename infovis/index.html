@@ -35,6 +35,10 @@
             font-weight: 700;
         }
 
+        #link{
+            color: #dc2127;
+        }
+
         .grad-cover{
             z-index: 1;
             position: relative;
@@ -83,6 +87,12 @@
         .cover-icon{
             min-height: 80px;
             margin-top: -12px;
+        }
+
+        span.normal-text {
+            color: #666;
+            font-size: 16px;
+            text-transform: lowercase;
         }
     </style>
 </head>
@@ -139,7 +149,7 @@
                     <div class="cover bg-cover margin-btm-lg" style="padding-top: 128px">
                         <div class="cover-text-placeholder text-center">
                             <h2 class="caption-title text-center" style="text-transform: capitalize">Information Visualization</h2>
-                            <h4>Individual, Group Projects (Fall 2016) and Passion Project</h6>
+                            <h4>Research projects (Ongoing) and Course Projects (Fall 2016)</h6>
                         </div>
                     </div>
                 </div>
@@ -148,15 +158,59 @@
                 <div class="col-md-12">
                     <h6 class="project-details">Overview</h6>
                     <div class="row">
-                        <div class="col-md-6">
-                            <p class="body-text">I have pursued several projects in information and data visualization over the past couple of years, which I have documented here. The Information Visualization course that I took at the University of Michigan School of Information entailed two projects for the course over the final 10 weeks of the semester.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="body-text">In addition to this I also pursued a passion project which explored to what degree does player transfers in Football really impact the club's performance in order to justify the fees involved.</p>
+                        <div class="col-md-8">
+                            <p class="body-text">In my final year of undergraduate, my friend and I, both being very passionate football players, began working on a project to visualize some data about football players. We both threw different ideas at each other, and even though we ended up going in different with our projects, I gained significantly from our exchanges. Two years later, and much wiser, I have worked on 5 projects in Infovis so far, which includes both research work and course projects. I have collated all my work in Infovis here:</p>
+                            <!-- <p class="body-text">I have pursued several projects in information and data visualization over the past couple of years, which I have documented here. The Information Visualization course that I took at the University of Michigan School of Information entailed two projects for the course over the final 10 weeks of the semester.</p> -->
                         </div>
                     </div>
 
-                    <h6 class="project-details margin-top-lg">Group Project</h6>
+                    <h6 class="project-details margin-top-xl">Master's Thesis</h6>
+                    <p class="body-text"><i>Data collection currently ongoing, to be updated soon</i></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="body-text">I am currently working on my Master's Thesis, advised by <a id="link" href="http://www.mjskay.com/" target="_blank">Prof. Matthew Kay</a>, where we are examining how different visualizations strategies such as the use of narratives, interactivity, a combination of the two, or neither, can affect what the viewer takes away from a visualization.</p>
+                            <p class="body-text">Although the use of storytelling through data visualizations has surged recently, very little research has been done on how it benefits the reader. <a id="link" href="https://dl.acm.org/citation.cfm?id=2702452" target="_blank">Previous research</a> found that the use of narratives reduces user engagement with the data (measured through the number of click and hover interactions). However, the goal of using narratives is usually to guide the viewer in making sense of the data - driven by how the author has interpreted it.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="body-text"><b>Methodology: </b>I adapted 4 professionally designed visualizations and redesigned them to fit into each of the four visualization strategies (conditions) described above. We then created a set of True or False questions which ask about the data presented. Some of the questions ask about details explicitly mentioned in the narrative, whereas other questions are not, and the user would need to interact with the data beyond what is presented in the narrative to answer them.</p>
+                            <p class="body-text">Participants, recruited from Mechanical Turk, will see one visualization (in one visualization strategy). I will fit a mixed-effects logistic regression model to see if the visualization condition has an effect on the number of questions people get correct.</p>
+                        </div> 
+                    </div>
+
+                    <h6 class="project-details margin-top-xl">Visualizations for Interpretable Statistics</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="body-text">I am collaborating on a research project with <a id="link" href="http://www.mjskay.com/" target="_blank">Prof. Matthew Kay</a> to study how different ways of presenting the uncertainty around a statistical estimate can affect how the viewer interprets the data and can make the uncertainty in that estimate easier to understand.</p>
+                            <p class="body-text">The main motivation of this study was that researchers often tend to misunderstand the uncertainty in statistical results; for example, they have been shown to be susceptible to several statistical fallacies when interpreting the meaning of 95% confidence intervals. These misunderstandings are prevalent even amongst those who have some education in statistical methods.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="body-text"><b>Methodology: </b>We are showing alternative visualizations of uncertainty to researchers in the context of a hypothetical study result, and then testing their interpretation of the uncertainty using questions adapted from previous studies of statistical understanding. We are testing whether changing the type of estimate shown - a Bayesian or frequentist estimate - can elicit more correct interpretations of the results. This work has the potential to influence recommendations for statistical methods and reporting across scientific fields that make use of confidence intervals.</p>
+                        </div> 
+                    </div>
+
+                    <h6 class="project-details margin-top-xl">Premier League Transfers Visualization</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="body-text">I began this project due to my strong interest in Football and my curiosity to understand and analyse player transfers. Due to constraints of collecting data, I focused on the top 5 clubs in the Premier League and gathered data of each club's transfer activity.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="body-text">This data included players bought, sold or released, player performance data (appearances and goals) and team event data such as trophies won, managers changed, ownership change etc. The goal was to identify the factors which determine the success of a club in the long run. I analysed the player transfer fees and their corresponding impact at the club to find a correlation.</p>
+                        </div> 
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 margin-top-md">
+                            <a href="../Football-Transfers-Vis/index.html" style="width: 100%">
+                                <div class="grad-cover">
+                                    <p class="grad-cover-text">Premier League Transfers</p>
+                                    <img class="cover-icon" src="images/right.svg">
+                                </div>
+                                <div class="grad-img-placeholder bg-football"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <h6 class="project-details margin-top-lg">INFOVIS Course Group Project</h6>
                     <div class="row">
                         <div class="col-md-6">                            
                             <p class="body-text">The group project allowed us to explore a dataset and create a visualization which affords different types of tasks based on the role of an user that we identified. The project is to investigate how Americans engage in different artformss (such as opera, jazz etc.) using the Survey of Public Participation in the Arts 1982-2012 (ICPSR 35596).</p>
@@ -184,7 +238,7 @@
                             <p class="body-text">I was inspired to pursue this due to my own fascination with the Monty Hall paradox and <a class="ref-link" target="_blank" href="https://web.archive.org/web/20140413131827/http://www.decisionsciences.org/DecisionLine/Vol30/30_1/vazs30_1.pdf">Paul Erdos's disbelief in the correct solution</a></p>
                         </div>
                         <div class="col-md-6">
-                            <p class="body-text">Why? To encourage active reading, several ideas have been proposed: A reactive document allows the reader to play with the author's assumptions and analyses, and see the consquences. An explorable example makes the abstract concrete, and allows the reader to develop an intuition for how a system works. Contextual information allows the reader to learn related material just-in-time, and cross-check the author's claims. <a class="ref-link"  target="_blank" href="http://www.easybib.com/reference/guide/apa/website">(Bret Victor; Explorable Explations)</a></p>
+                            <p class="body-text">Why? To encourage active reading, several ideas have been proposed: A reactive document allows the reader to play with the author's assumptions and analyses, and see the consquences. An explorable example makes the abstract concrete, and allows the reader to develop an intuition for how a system works. Contextual information allows the reader to learn related material just-in-time, and cross-check the author's claims. <a class="ref-link"  target="_blank" href="http://worrydream.com/ExplorableExplanations/">(Bret Victor; Explorable Explations)</a></p>
                         </div>
                     </div>
                     <div class="row">
@@ -195,27 +249,6 @@
                                     <img class="cover-icon" src="images/right.svg">
                                 </div>
                                 <div class="grad-img-placeholder bg-gamb"></div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <h6 class="project-details margin-top-xl">Premier League Transfers</h6>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p class="body-text">I began this project due to my strong interest in Football and my curiosity to understand and analyse player transfers. Due to constraints of collecting data, I focused on the top 5 clubs in the Premier League and gathered data of each club's transfer activity.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="body-text">This data included players bought, sold or released, player performance data (appearances and goals) and team event data such as trophies won, managers changed, ownership change etc. The goal was to identify the factors which determine the success of a club in the long run. I analysed the player transfer fees and their corresponding impact at the club to find a correlation.</p>
-                        </div> 
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12 margin-top-md">
-                            <a href="../Football-Transfers-Vis/index.html" style="width: 100%">
-                                <div class="grad-cover">
-                                    <p class="grad-cover-text">Premier League Transfers</p>
-                                    <img class="cover-icon" src="images/right.svg">
-                                </div>
-                                <div class="grad-img-placeholder bg-football"></div>
                             </a>
                         </div>
                     </div>
