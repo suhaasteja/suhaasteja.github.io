@@ -1,91 +1,322 @@
-
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	</head>
-	<body>
-		<!-- <h3>Carbon Clock</h3>
-		<ul>
-			<li><a href="carbon-clock/index.html">Storytelling + Interactivity</a></li>
-			<li><a href="carbon-clock-story/index.html">Storytelling</a></li>
-			<li><a href="carbon-clock-int/index.html">Interactivity</a></li>
-			<li><a href="carbon-clock-n/index.html">No Storytelling + No Interactivity</a></li>
-		</ul>
-		<br>
-		<h3>Gun Deaths</h3>
-		<ul>
-			<li><a href="gun-deaths/index.html">Storytelling + Interactivity</a></li>
-			<li><a href="gun-deaths-story/index.html">Storytelling</a></li>
-			<li><a href="gun-deaths-int/index.html">Interactivity</a></li>
-			<li><a href="gun-deaths-n/index.html">No Storytelling + No Interactivity</a></li>
-		</ul>
-		<br>
-		<h3>Measles Vaccination</h3>
-		<ul>
-			<li><a href="measles/index.html">Storytelling + Interactivity</a></li>
-			<li><a href="measles-story/index.html">Storytelling</a></li>
-			<li><a href="measles-int/index.html">Interactivity</a></li>
-			<li><a href="measles-n/index.html">No Storytelling + No Interactivity</a></li>
-		</ul>
-		<br>
-		<h3>US Healthcare</h3>
-		<ul>
-			<li><a href="us-healthcare/index.html">Storytelling + Interactivity</a></li>
-			<li><a href="us-healthcare-story/index.html">Storytelling</a></li>
-			<li><a href="us-healthcare-int/index.html">Interactivity</a></li>
-			<li><a href="us-healthcare-n/index.html">No Storytelling + No Interactivity</a></li>
-		</ul> -->
-	</body>
-	<script  src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script type="text/javascript">
-		// /* DEFINE FUNCTION TO EXTRACT PARAMETERS FROM URL */
-		// function turkGetParam( name ) { 
-		// var regexS = "[\?&]"+name+"=([^&#]*)"; 
-		// var regex = new RegExp( regexS ); 
-		// var tmpURL = fullurl; 
-		// var results = regex.exec( tmpURL ); 
-		// if( results == null ) { 
-		// return ""; 
-		// } else { 
-		// return results[1];    
-		// } 
-		// }
+<html lang="en">
 
-		// /* THIS IS THE LINE TO CAPTURE THE ACTUAL URL: */
-		// var fullurl = window.location.href;
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		// /* ASSIGNS THE URL PARAMETERS TO JAVASCRIPT VARIABLES */
-		// var assign = turkGetParam('assignmentId');
-		// var hit = turkGetParam('hitId');
-		// var worker = turkGetParam('workerId');
+    <title>Abhraneel Sarma - Portfolio</title>
 
-		// /* WHAT TO DO IF THE WORKER IS PREVIEWING THE HIT: */
-		// if(assign=="ASSIGNMENT_ID_NOT_AVAILABLE")
-		// {
-		// document.write("<p style='font-weight:bold;text-align:center;'>Link will become available once you accept the HIT.</p>");
-		// }
-		// /* CHECK workerId AGAINST THE LIST OF INELIGIBLE WORKERS */
-		// else {
-		// /* THE BELOW RANDOMIZES INTO A TREATMENT CONDITION */
-		// /* DEPENDING ON THE EXPERIMENT THE "rtext[i]" RANDOMIZATION COULD BE USED TO DO MULTIPLE THINGS */
+    <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.css" rel="stylesheet">
 
-		var rtext = new Array ();
-		/* THE NUMBER OF VALUES HERE DEPENDS ON NUMBER OF CONDITIONS */
-		rtext[0] = "us-healthcare";
-		rtext[1] = "carbon-clock-story";
-		rtext[2] = "carbon-clock-story";
-		rtext[3] = "gun-deaths";
-		//rtext[4] = "measles-story";
+    <!-- Custom CSS -->
+    <link href="../css/custom.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    
+    <!-- Custom JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-		/* THE MULTIPLIER WILL DEPEND ON THE NUMBER OF CONDITIONS */
-		var i = Math.floor(4*Math.random());
-		/* RECORDS THE RANDOMIZATION IN A HIDDEN FORM FIELD */
-		/* DISPLAY RANDOMIZED LINK */
-		//var surveylink = new String("http://www-personal.umich.edu/~abhsarma/" + rtext[i] + "/index.html");
-		var surveylink = new String("http://www.abhraneelsarma.com/mtop/" + rtext[i] + "/index.html");
-		//personal.umich.edu/~abhsarma/
-		
-		window.location.href = surveylink;
-	</script>
+    <style>
+        .bg-cover {
+            padding: 60px 200px;
+            height: 240px;
+            text-align: center;
+            color: #333;
+        }
+
+        .futura {
+            font-family: "futura-bb", sans-serif;
+            font-size: 58px;
+            line-height: 64px;
+            font-weight: 700;
+            color: #444;
+        }
+
+        .drop-shadow {
+            box-shadow: 2px 4px 8px #a0a0a0;
+        }
+
+        .thesis-caption{
+            line-height: 24px;
+            font-family: 'Lora', serif;
+            font-weight: 700;
+        }
+
+        .advisor-link {
+            font-weight: 400;
+            color: #dc2127;
+        }
+    </style>
+</head>
+
+
+<body id="page-top" class="index">
+    <!-- Navigation Bar -->
+    <nav class="navbar nav-fix-top" style="box-shadow: 0px 2px 5px #ddd;">
+        <div class="container">
+            <div class="navbar-row">
+                <div class="col-md-12 col-sm-12 col-navbar navbar-header"> 
+                    <div class="navbar-row">  
+                        <div class="col-md-6 col-sm-12 col-navbar">
+                            <div class="nav-name-container">
+                                <a class="page-header" href="../index.html">
+                                    <h1 class="margin-top-lmd">Abhraneel Sarma</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-navbar">
+                            <div class="hr margin-top-lmd">
+                                <div class="navbar-row">
+                                    <div class="col-sm-4 col-xs-4 col-navbar">
+                                        <div class="nav-page-tabs">
+                                            <div class="current-page">
+                                                <a class="quick-links-current" href="../index.html">Work</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-4 col-navbar">
+                                        <div class="nav-page-tabs">
+                                            <a class="quick-links" href="../about/Abhraneel_resume.pdf" target="_blank">Resume</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 col-xs-4 col-navbar">
+                                        <div class="nav-page-tabs">
+                                            <a class="quick-links" href="../about/index.html">About</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+        
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="navbar-row">
+                <div class="col-md-12">
+                    <div class="cover bg-cover">
+                        <h2 class="text-center">Master's Thesis</h2>
+                        <h4 class="thesis-caption">Revisiting Storytelling in Information Visualization: Does it have any effect on recall and engagement?</h4>
+                        <h4>Advisor: Prof. Matthey Kay</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-row">
+                <div class="col-md-12">
+                    <h6 class="project-details margin-top-lg">Overview</h6>
+                    <p><i>(Ongoing Project)</i></p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>There are different strategies that are adopted in the visualization design. These are the use of interactivity, narrative, a combination of the interactivity and narrative, or static (no-interactivity or non-narrative). Although each of these approaches will allow the viewer to engage with the data in different ways, a narrative based approach or a combination of the interactive and narrative visualization approach, may allow the viewer to better recall the meaningful aspects of the data which were highlighted through the story - such as trends and patterns in the data, and also affect how users interact with the data.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>The purpose of this study is to measure the effect of using different visualization strategies on recall and engagement, operationalized through two variables: interactivity (static or interactive) and narrative (non-narrative or narrative). We aim to measure differences in recall of visualization content and interaction with the visualization across the four combinations of these variables (static+non-narrative, static+narrative, interactive+non-narrative, interactive+narrative).</p>
+                        </div>
+                    </div>
+                    <h6 class="project-details margin-top-lg">Project Details</h6>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="project-detail-subheaders">Duration</p>
+                            <p class="margin-btm-md">June 2017 - Ongoing</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="project-detail-subheaders">Tools Used</p>
+                            <p class="margin-btm-md">Qualtrics, Mechanical Turk, PostgresSQL, D3.js, AWS Lambda</p>
+                        </div>
+                        <!-- <div class="col-md-6">
+                            <p class="project-detail-subheaders">Role</p>
+                            <p class="margin-btm-md">The entire project is my individual contribution including proposing the project, with <a class="advisor-link" href="http://www.mjskay.com" target="_blank">Prof. Matthew Kay</a> serving as the faculty advisor</p>
+                        </div> -->
+                    </div>
+                    <!-- <h6 class="project-details margin-top-lg">Overview of the Solution</h6>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p>placeholder</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="navbar-row">
+                <div class="col-md-12">
+                    <h3 class="body-header-1 margin-top-xl">01. Methodology</h3>
+                    <div class="row margin-top-md">
+                        <div class="col-md-8">
+                            <h6 class="project-details margin-top-sm">Research Questions</h6>
+                            <p>I initially did a comprehensive literature review of prior research on Storytelling in Information Visualization. This helped me identify possible areas for research. I found the work by <a class="ref-link" target="_blank" href="https://dl.acm.org/citation.cfm?id=2702452">Boy et. al. (2015)</a> very interesting. However, I found that the conclusions of the result were constrained as it only analysed engagement.</p>
+                            <p>My goal was to build on this study and I came up with the following set of research questions:
+                            <br>
+                            <i>What is the effect of narrative and interactivity on viewer recall of the data presented in the visualization?</i>
+                            <br>
+                            <i>What is the effect of engagement (measured through the duration of time spent on visualization and number of meaningful interactions) on recall?</i></p>
+                            <h6 class="project-details margin-top-lg">Study Design</h6>
+                            <p>I adapted 4 professionally designed visualizations<sup>1</sup> and redesigned them to fit into each of the four visualization strategies (interactive, narrative, a combination of the interactive and narrative, or static). Thus there were 16 unique combinations of condition and visualization. I then created a set of True or False questions which asked about the data presented, to test participant recall. The questions were created in such a way that some of them were better suited to be answered in the narrative condition, whereas the others were better suited to the interactive condition</p>
+                            <h6 class="project-details margin-top-lg">Study Methodology</h6>
+                            <p>We first pilot tested the survey to see the percentage of correct responses - this helped us identify poorly worded questions as well as get preliminary data on the number of questions an average respondent will get correct (and determine how much to pay workers on MTurk).
+                            We recruited 400 participants on Amazon's Mechanical Turk in a completely between subjects design - each participant saw one visualization, in one condition. On average each participant was paid $2.1.</p>
+                            <h6 class="project-details margin-top-lg">Data Analysis</h6>
+                            <p>To analyse the data I fit a bayesian mixed-effects logistic regression model with the number of questions answered correctly in each condition as the dependent variable and the condition that the participants were placed into as the independent variable. We took into account random-effects due to varying ability of the participants, differences in the difficulty of the questions (within and across visualizations), and effects of the visualization itself.</p>
+                            <p><i>Currently we are still in the data analysis stage.</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="dark-bg-container margin-top-xl">
+            <div class="container">
+                <div class="navbar-row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h3 class="body-header-1" style="color: #fff">The Problem</h4>
+                                <p style="color: #fff">How do we help the digital generation resist “corrupt personalization”? Our preliminary research has suggested that millenials' source of information may result in a harmful filter bubble. They are also unable to assess the credibility of the information that they consume. Hence, we need to <span class="highlight">meet their particular news consumption needs – mobile, shareable, aspirational – in a critically reflective way.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="navbar-row">
+                <div class="col-md-12">
+                    <h3 class="body-header-1 margin-top-xl">02. User Study & Analysis</h3>
+                    <div class="row">
+                        <div class="col-md-6 margin-top-md">
+                            <h6 class="project-details">Research Questions</h6>
+                            <p>To help us design a formative user study, we first formulated a set of decision and research questions. We classified our set of research questions into <b>behavioral</b> and <b>attitudinal</b> i.e. whether the question relates to user attitudes or user behavior.</p>
+                            <p>Since our questions were primarily behavior, our study needed to be able to gather in-context data. We <b>identified a photo-diary study</b> which allows the participant to highlight details of their personal lives directly, to be the most appropriate method.</p>
+                        </div>
+                        <div class="col-md-6 margin-top-md">
+                            <h6 class="project-details">Study Design & Outcomes</h6>
+                            <p>We <b>conducted a 1 week long photo diary study with 6 participants, and received 82 photos accompanied with captions</b> as submissions. To motivate the participants, we compensated them with $15 on study completion (submission of 12+ photos across 4 different days) and an additional $5 for a follow-up interview.</p>
+                            <p>Because this was a creative method, we found participants to be much more enthusiastic and engaged during the course of the study.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="grey-bg-container margin-top-xl">
+            <div class="container">
+                <div class="navbar-row">
+                    <div class="col-md-12">
+                        <h3 class="body-header-1">03. Insights</h3>
+                        <div class="row">
+                            <div class="col-md-6 margin-top-md">
+                                <p>Users primarily encounter the news in a context where self exploration, self affirmation, and self expression are the primary context.</p>
+                            </div>
+                            <div class="col-md-6 margin-top-md">
+                                <p>Information is consumed in micro-periods, and engaging with newsmedia can be a passive activity. <i>("...in the morning (in bed)”, “...over breakfast”, “...between class”, “...before I go to sleep”)</i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="orange-bg-container">
+            <div class="container">
+                <div class="navbar-row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <h3 class="body-header-1">04. Design Decisions</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 margin-top-md">
+                                <h6 class="highlight-header">Need: Access new perspectives</h6>
+                                <p class="highlight"><b>Solution:</b> Leverage social media to present information from outside the user’s social network</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container margin-top-xl">
+            <div class="navbar-row">
+                <div class="col-md-12">
+                    <h3 class="body-header-1">06. Designs</h3>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="page-footer margin-top-lg">
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="row text-center">
+                        <div class="col-sm-1 col-sm-offset-4 col-xs-2 col-xs-offset-2 col-navbar">
+                            <a class="social-icons email-icon" href="mailto:abhsarma@umich.edu" data-clipboard-text="abhsarma@umich.edu"><i class="fa fa-envelope-o fa-lg tiny circle"></i></a>
+                        </div>
+                        <div class="col-sm-1 col-xs-2 col-navbar">
+                            <a class="social-icons" href="https://in.linkedin.com/in/abhraneel-sarma-0797b590" target="_blank"><i class="fa fa-linkedin fa-lg tiny circle"></i></a>
+                        </div>
+                        <div class="col-sm-1 col-xs-2 col-navbar">
+                            <a class="social-icons" href="https://www.instagram.com/loysarma07" target="_blank"><i class="fa fa-instagram fa-lg tiny circle"></i></a>
+                        </div>
+                        <div class="col-sm-1 col-xs-2 col-navbar">
+                            <a class="social-icons" href="https://www.facebook.com/loyls7" target="_blank"><i class="fa fa-facebook fa-lg tiny circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <p class="footer-text">Abhraneel Sarma © 2017</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+</body>
+
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('h1').addClass('text-shrink');
+            $('.hr').addClass('header-shrink');
+            $('.hr').removeClass('margin-top-lmd');
+            $('h1').removeClass('margin-top-lmd');
+        } else {
+            $('h1').removeClass('text-shrink');
+            $('.hr').removeClass('header-shrink');
+            $('.hr').addClass('margin-top-lmd');
+            $('h1').addClass('margin-top-lmd');
+        }
+    });
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-79877752-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<!-- jQuery -->
+<script src="../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
 </html>
