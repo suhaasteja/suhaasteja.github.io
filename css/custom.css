@@ -353,12 +353,12 @@ a.social-icons:hover,
 a.social-icons:focus,
 a.social-icons:active {
 	text-decoration: none;
-	color: #fff;
 }
 
 .circle:hover{
 	background-color: #dc2127;
 	border-color: #dc2127;
+	color: #fff;
 }
 
 .fa.tiny {
