@@ -70,6 +70,12 @@ h1.text-shrink{
 /* Text in project banners */
 h2 {
 	font-family: 'futura-b', serif;
+	font-size: 30px;
+	line-height: 28px;
+}
+
+h2.page-title {
+	font-family: 'futura-b', serif;
 	font-size: 42px;
 	line-height: 42px;
 }
@@ -85,6 +91,14 @@ h3 {
 h4{
 	font-size: 18px;
 	font-family: 'AvenirNext-Medium', sans-serif;
+}
+
+
+h4.thesis-caption{
+	font-size: 20px;
+    line-height: 20px;
+    font-family: 'AvenirNext-Medium', sans-serif;
+    font-weight: 700;
 }
 
 /* Landing page bio text */
@@ -104,6 +118,12 @@ h6 {
 	font-family: 'AvenirNext-Bold', sans-serif;
 	font-size: 16px;
 	margin-bottom: 12px;
+	color: #444;
+}
+
+h6.project-subtitle{
+	font-family: 'AvenirNext-Medium', sans-serif;
+	font-size: 16px;
 	color: #444;
 }
 
@@ -253,7 +273,6 @@ a:focus,
 a:active
  {
 	text-decoration: none;
-	color: #dc2127 !important;
 }
 
 a.contact-text {	
@@ -286,6 +305,31 @@ a.quick-links-current{
 a.quick-links-current:hover,
 a.quick-links-current:focus,
 a.quick-links-current:active {
+	text-decoration: none;
+}
+
+/*a.portfolio-link:hover,
+a.portfolio-link:focus,
+a.portfolio-link:active {
+	background-size: 110% 110%;
+}*/
+
+
+
+#mtop-img:hover,
+#mtop-img:focus,
+#mtop-img:active, {
+	transform: scale(1.25);
+}
+
+a.portfolio-text-link{
+	text-decoration: none;
+}
+
+a.portfolio-text-link:hover,
+a.portfolio-text-link:focus,
+a.portfolio-text-link:active{
+	color: #dc2127;
 	text-decoration: none;
 }
 
@@ -469,7 +513,17 @@ div.page-footer{
 */
 .portfolio-item{
 	width: 100%;
+	height: 180px;
 	margin: 0px;
+	background-size: 125%; 
+	background-position: center center;
+	-webkit-transition: background-size ease .5s;
+	-moz-transition: background-size ease .5s;
+	transition: background-size ease .5s;
+}
+
+.portfolio-item:hover {
+	background-size: 150%;
 }
 
 div.cover-text-placeholder{
