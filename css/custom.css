@@ -72,19 +72,20 @@ h2 {
 	font-family: 'futura-b', serif;
 	font-size: 30px;
 	line-height: 28px;
+	margin-top: 0px;
 }
 
 h2.page-title {
 	font-family: 'futura-b', serif;
 	display: inline;
 	font-size: 42px;
-	line-height: 42px;
+	line-height: 50px;
 }
-/*
+
 h2.page-title span {
-	background-color: #202020;
+	background-color: #FD926F;
 	padding: 4px 0px;
-}*/
+}
 
 /* Section headers in project pages*/
 h3 {
@@ -121,15 +122,15 @@ h4.mockup-caption {
 }
 
 h6 {
-	font-family: 'AvenirNext-Bold', sans-serif;
-	font-size: 24px;
+	font-family: 'AvenirNext-DemiBold', sans-serif;
+	font-size: 21px;
 	margin-bottom: 12px;
 	color: #444;
 }
 
 h6.project-subtitle{
 	font-family: 'AvenirNext-Medium', sans-serif;
-	font-size: 20px;
+	font-size: 16px;
 	color: #444;
 }
 

@@ -97,7 +97,7 @@
     <section id="portfolio">
         <div class="container">
             <div class="navbar-row">
-                <div class="col-md-8">
+                <div class="col-md-9">
                     <div class="cover margin-cover">
                         <h2 class="page-title"><span>Storytelling in Information Visualization: Evaluating the effects of narrative and interactivity on recall?</span></h2>
                         <h4 class="thesis-caption">Master's Thesis</h4><h4 class="thesis-caption">Advisor: Prof. Matthew Kay</h4>
@@ -109,10 +109,12 @@
                     <h6 class="project-details margin-top-lg">Overview</h6>
                     <div class="row">
                         <div class="col-md-6">
-                            <p>Narratives and interactivity have been widely used in data visualizations to present the data in a more compelling and accessible manner. However, research on how the incorporation of narratives or interactivity to a visualization affects insight generation has not been sufficiently researched. In this study, we measure the effect of using different visualization strategies, operationalised through two variables: interactivity (static or interactive) and narrative (non-narrative or narrative), on recall. We designed and conducted a controlled experiment of 400 participants on Amazons Mechanical Turk.</p>
+                            <p>Narratives and interactivity have been widely used in data visualizations to present the data in a more compelling and accessible manner. However, research on on the effect of narratives or interactivity on insight generation has not been sufficiently researched.</p>
+                            <p>We measure the effect of using different visualization strategies, operationalised through two variables: interactivity (static or interactive) and narrative (non-narrative or narrative), on recall. We designed and conducted a controlled experiment of 400 participants on Amazons Mechanical Turk.</p>
                         </div>
                         <div class="col-md-6">
-                            <p>Participants were asked to interact with visualizations adapted from professionally designed visualizations to the four possible combinations of the two variables - interactivity and recall; they were then required to answer a 11-item True / False Questionnaire. We used mixed effect models to analyse the data. Our results indicate <mark>a weak positive effect due to the presence of narratives, but little or no effect due to the presence of interactivity, on the probability of answering a question correctly.</mark></p>
+                            <p>Participants were asked to interact with visualizations adapted from professionally designed visualizations to the four possible combinations of the two variables - interactivity and recall; they were then required to answer a 11-item True / False Questionnaire.</p>
+                            <p>We used mixed effect models to analyse the data. Our results indicate <mark>a weak positive effect due to the presence of narratives, but little or no effect due to the presence of interactivity, on the probability of answering a question correctly.</mark></p>
                         </div>
                     </div>
                     <div class="row">
@@ -168,12 +170,12 @@
                         <div class="row margin-top-md">
                             <div class="col-md-6">
                                 <h6 class="project-details">Previous Research</h6>
-                                <p>Previous research measured the effect of the presence or absence of an introductory narrative component in an interactive visualization on user engagement. But, engagement is an indirect way to measure insight.</p>
+                                <p>Measured the effect of the presence of an introductory narrative component in an interactive visualization on user engagement. But, engagement is an indirect way to measure insight.</p>
                                 <img class="img-responsive" src="images/motivation-engagement.png">
                             </div>
                             <div class="col-md-6">
                                 <h6 class="project-details">Our Research</h6>
-                                <p>Insight is to gain an accurate understanding of the data. Hence, we use recall and comprehension which allow us to observe the outcome of interest directly.<br><br></p>
+                                <p>Insight is to gain an accurate understanding of the data. Hence, we use recall and comprehension which allow us to observe the outcome of interest directly.</p>
                                 <img class="img-responsive" src="images/motivation-recall.png">
                             </div>
                         </div>
@@ -197,7 +199,7 @@
                     <div class="row margin-top-md">
                         <div class="col-md-8">
                             <h6 class="project-details">Measuring Recall</h6>
-                            <p>Created a 11 item True / False questionnaire deployed in Qualtrics, to measure recall and comprehension. One question served as attention check.</p>
+                            <p>Created a 11 item True / False questionnaire for each visualization in Qualtrics, to measure recall and comprehension. One question served as an advanced attention check.</p>
                         </div>
                     </div>
                     <div class="row margin-top-md">
@@ -218,14 +220,57 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <p style="color: #fff">We used a bayesian mixed-effects logistic regression model to calculate probability of getting an answer correct.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-10 margin-top-md">
                                 <img class="img-responsive" src="images/regression-model.png">
                             </div>
-                            <div class="col-md-6">
-                                <p style="color: #fff">Independent variables are <span style="font-family: monospace;">narrative</span> & <span style="font-family: monospace;">interactivity</span> and their interaction term.</p>
-                                <p style="color: #fff">A random intercept for each participant, because each participant might have different ability, thereby a different baseline for correctly answering a question.</p>
-                                <p style="color: #fff">A random slope for the interaction between <span style="font-family: monospace;">narrative</span> and <span style="font-family: monospace;">interactivity</span> as the effect of these variables will vary across different visualization designs.</p>
-                                <p style="color: #fff">A random intercept for questions for each visualization, because each question will be of differing difficulty.</p>                                
-                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="navbar-row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <h3 class="body-header-1 margin-top-xl">05. Results</h3>
+                            <h6 class="project-details margin-top-md">Effect of Interactivity & Narrative</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>In fig. 3(a), we have the raw probabilities of answering a question correctly for an average individual. In fig 3(b), we compare the difference between interactive-only and narrative-interactive conditions (top); and the difference between static, non-narrative and the narrative-only conditions (bottom).</p>
+                            <p>We observe <mark><b>a small positive affect due to the presence of narratives, the size of this effect is getting one more question correct</b></mark> in our 11 item questionnaire.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>In fig 3(c), to measure the effect of the presence of interactivity, we compare the difference between narrative-only and narrative-interactive conditions (top); and the difference between static, non-narrative and interactive-only conditions (bottom).</p>
+                            <p>We can see that <mark><b>interactivity most likely doesn't have any effect on recall and comprehension.</b></mark> Thus, we can't conclude that the ability to interact with the visualization allows the viewer to gather more insights.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <img class="img-responsive margin-top-sm" src="images/mean-diff-all.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6 class="project-details margin-top-md">Diving Deeper: Are the effects consistent across visualizations?</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>When we compare the results for each condition within each visualizatio, we see that the <mark><b>effects are more or less consistent</b></mark> and do not show a lot of variability across different visualizations.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>The presence of narrative has a small positive effect in 5/8 of the possible comparisons, whereas interactivity again most likely does not show an affect on recall in all except 1 comparison.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <img class="img-responsive margin-top-sm" src="images/mean-diff-vis.png">
                         </div>
                     </div>
                 </div>
