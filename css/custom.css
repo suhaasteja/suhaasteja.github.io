@@ -76,9 +76,15 @@ h2 {
 
 h2.page-title {
 	font-family: 'futura-b', serif;
+	display: inline;
 	font-size: 42px;
 	line-height: 42px;
 }
+/*
+h2.page-title span {
+	background-color: #202020;
+	padding: 4px 0px;
+}*/
 
 /* Section headers in project pages*/
 h3 {
@@ -116,14 +122,14 @@ h4.mockup-caption {
 
 h6 {
 	font-family: 'AvenirNext-Bold', sans-serif;
-	font-size: 16px;
+	font-size: 24px;
 	margin-bottom: 12px;
 	color: #444;
 }
 
 h6.project-subtitle{
 	font-family: 'AvenirNext-Medium', sans-serif;
-	font-size: 16px;
+	font-size: 20px;
 	color: #444;
 }
 
@@ -136,7 +142,7 @@ h6.highlight-header {
 
 p {
 	font-family: 'AvenirNext-Regular', sans-serif;
-	color: #666;
+	color: #4a4a4a;
 	font-size: 16px;
 	line-height: 24px;
 }
@@ -146,6 +152,12 @@ p.highlight {
 	color: #2a2a2a;
 	font-size: 18px;
 	line-height: 21px;
+}
+
+p.img-caption{
+	font-size: 14px;
+	line-height: 16px;
+	padding: 0px 32px;
 }
 
 /* Landing Page Project Title text */
@@ -170,7 +182,6 @@ p.highlight {
 
 /* Project Page details sub-headers*/
 .project-details{
-	text-transform: uppercase;
 	color: #2f9ba0 !important;
 }
 
@@ -284,6 +295,10 @@ a.quick-links{
 	line-height: 40px;
 	-webkit-transition: all 0.5s ease;
 	transition: all 0.5s ease;
+}
+
+a.portfolio-item-link{
+	width: 100%;
 }
 
 a.quick-links:hover,
@@ -533,29 +548,6 @@ div.cover-text-placeholder{
 	opacity: 1;
 }
 
-.caption-holder {
-	position: absolute;
-	width: calc(100% - 30px);
-	height: 100%;
-	padding-top: 15%;
-	-webkit-transition: all ease .5s;
-	-moz-transition: all ease .5s;
-	transition: all ease .5s;
-}
-
-.caption-bg{
-	background: #111;
-	opacity: 0;
-	height: 100%;
-	width: calc(100% - 30px);
-	position: absolute;
-}
-
-.caption-holder:hover {
-	background: #333;
-	opacity: 0.9;
-}
-
 .img-thumbnail {
 	padding: 0px !important;
 	border: 0px;
@@ -755,6 +747,10 @@ div.cover-text-placeholder{
 
 .margin-xs-shrink {
 	margin-top: 1px !important;
+}
+
+.margin-cover {
+	margin-top: 180px;
 }
 
 .shiftup{
