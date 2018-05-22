@@ -105,13 +105,12 @@ h4.thesis-caption{
 	font-size: 20px;
     line-height: 20px;
     font-family: 'AvenirNext-Medium', sans-serif;
-    font-weight: 700;
 }
 
 /* Landing page bio text */
 h4.short-caption {
-	color: #666;
-	font-weight: 500 !important;
+	color: #333;
+	font-family: 'AvenirNext-Regular', sans-serif;
 	line-height: 24px;
 	margin: 16px 0px 24px 0px;
 }
