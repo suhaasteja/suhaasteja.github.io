@@ -97,7 +97,7 @@ h3 {
 /* Default heading text size */
 h4{
 	font-size: 18px;
-	font-family: 'AvenirNext-Medium', sans-serif;
+	font-family: 'AvenirNext-DemiBold', sans-serif;
 }
 
 
@@ -118,7 +118,9 @@ h4.short-caption {
 
 /* Landing page bio text */
 h4.mockup-caption {
-	font-family: futura-bb;
+	font-family: futura-b;
+	font-size: 21px;
+	margin-bottom: 4px;
 }
 
 h6 {
@@ -136,7 +138,6 @@ h6.project-subtitle{
 
 h6.highlight-header {
 	font-family: 'futura-bb';
-	color: #fff;
 	font-size: 21px;
 	line-height: 24px;
 }
@@ -458,7 +459,7 @@ div.hr {
 
 hr.underline {
 	margin: 0px !important;
-	border: 2px solid #F9963E !important;
+	border: 2px solid #7BCDD1 !important;
 	width: 180px;
 	float: left;
 	display: block;
@@ -570,9 +571,9 @@ div.cover-text-placeholder{
 */
 
 .thumbnail-icon {
-	width: 64px;
+	width: 48px;
 	display: block;
-	margin: auto;
+	margin: 0px auto 12px auto;
 }
 
 .thumbnail-icon-lg {
