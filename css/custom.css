@@ -70,16 +70,16 @@ h1.text-shrink{
 /* Text in project banners */
 h2 {
 	font-family: 'futura-b', serif;
-	font-size: 30px;
-	line-height: 28px;
+	font-size: 2em;
+	line-height: 1.15;
 	margin-top: 0px;
 }
 
 h2.page-title {
 	font-family: 'futura-b', serif;
 	display: inline;
-	font-size: 42px;
-	line-height: 50px;
+	font-size: 3.5em;
+	line-height: 1.15;
 }
 
 h2.page-title span {
@@ -96,22 +96,23 @@ h3 {
 
 /* Default heading text size */
 h4{
-	font-size: 18px;
+	font-size: 1.4em;
 	font-family: 'AvenirNext-DemiBold', sans-serif;
 }
 
 
 h4.thesis-caption{
-	font-size: 20px;
-    line-height: 20px;
-    font-family: 'AvenirNext-Medium', sans-serif;
+	font-size: 1.6em;
+    line-height: 1.15;
+    font-family: 'AvenirNext-DemiBold', sans-serif;
+    color: #909090;
 }
 
 /* Landing page bio text */
 h4.short-caption {
-	color: #333;
-	font-family: 'AvenirNext-Regular', sans-serif;
-	line-height: 24px;
+	color: #5b5e6d;
+	font-family: 'AvenirNext-Medium', sans-serif;
+	line-height: 1.5em;
 	margin: 16px 0px 24px 0px;
 }
 
@@ -124,15 +125,17 @@ h4.mockup-caption {
 
 h6 {
 	font-family: 'AvenirNext-DemiBold', sans-serif;
-	font-size: 21px;
+	font-size: 1.6em;
+	line-height: 1.15
 	margin-bottom: 12px;
 	color: #444;
 }
 
 h6.project-subtitle{
-	font-family: 'AvenirNext-Medium', sans-serif;
-	font-size: 16px;
-	color: #444;
+	font-family: 'AvenirNext-Regular', sans-serif;
+	font-size: 1.25em;
+	line-height: 1.5;
+	color: #5b5e6d;
 }
 
 h6.highlight-header {
@@ -143,9 +146,9 @@ h6.highlight-header {
 
 p {
 	font-family: 'AvenirNext-Regular', sans-serif;
-	color: #4a4a4a;
-	font-size: 16px;
-	line-height: 24px;
+	color: #5b5e6d;
+	font-size: 1.2em;
+	line-height: 1.5;
 }
 
 p.highlight {
@@ -702,11 +705,11 @@ div.cover-text-placeholder{
 }
 
 .margin-top-md {
-	margin-top: 36px !important;
+	margin-top: 48px !important;
 }
 
 .margin-btm-md {
-	margin-bottom: 36px !important;
+	margin-bottom: 48px !important;
 }
 
 .margin-top-lmd {
