@@ -40,7 +40,7 @@
 					this.weight_to_skeptic = (100 - this.weight_to_optim);
 					this.weight_to_narrow = (100 - this.weight_to_wide);
 
-					weights = [ this.weight_to_skeptic / 100 * this.weight_to_narrow / 100,
+					prior_weights = [ this.weight_to_skeptic / 100 * this.weight_to_narrow / 100,
 									(1 - this.weight_to_skeptic / 100) * this.weight_to_narrow / 100,
 									this.weight_to_skeptic / 100 * (1 - this.weight_to_narrow / 100),
 									(1 - this.weight_to_skeptic / 100) * (1 - this.weight_to_narrow / 100) ];
@@ -51,8 +51,12 @@
 					this.weight_optimistic_wide = ((100 - this.weight_to_skeptic) * (100 - this.weight_to_narrow)) / 100;
 
 					$(document).ready(function(){
-						draw_mixture_prior_density(Object.values(single_prior_densities), weights);
-						draw_posterior_density(data, j, weights, log_ll);
+						d3.selectAll('.mixture').remove();
+
+						var post_weights = get_posterior_weights(prior_weights, log_ll);
+
+						draw_mixture_density(g_prior, Object.values(single_prior_densities), prior_weights);
+						draw_mixture_density(g_posterior, Object.values(single_posterior_densities), post_weights);
 					});
 				}
 			});
@@ -76,12 +80,6 @@
 	figcaption::before {
 		content: "Figure " counter(figure) ". ";
 	}
-	/*#graph {
-	  float: right;
-	  display: inline-block;
-	  margin-left: 0px;
-	}*/
-
 	span.weight-set {
 		color: #46F !important;
 	}

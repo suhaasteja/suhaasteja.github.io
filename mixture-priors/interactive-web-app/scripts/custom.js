@@ -114,8 +114,6 @@ d3.csv("posterior_estimates.csv", function(error, d){
 					.rollup(function(v) { return [+v[0].prior_mu, +v[0].prior_sigma]; })
 					.object(data);
 
-	console.log(data[10000]);
-
 	for (var i = 1; i <= j; i++){
 		posterior_estimates[i] = [];
 
