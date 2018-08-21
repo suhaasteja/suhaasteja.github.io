@@ -61,3 +61,7 @@ h2{
    margin: -75px 0px 75px -110px;
 }
 
+.double-column{
+   column-span: all;
+}
+

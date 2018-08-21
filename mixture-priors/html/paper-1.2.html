@@ -4,7 +4,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://distill.pub/template.v1.js"></script>
 
-	<script type="text/javascript" src="scripts/Tangle.js"></script>
+	<script type="text/javascript" src="scripts/tangle.js"></script>
 	<script type="text/javascript" src="scripts/TangleKit/mootools.js"></script>
 	<script type="text/javascript" src="scripts/TangleKit/sprintf.js"></script>
 	<script type="text/javascript" src="scripts/TangleKit/BVTouchable.js"></script>
@@ -33,7 +33,8 @@
 					
 					this.weight_to_optim = 50;
 					this.weight_to_wide = 50;
-				},
+				}
+				,
 				update: function () {
 					// 1. update the figures
 					// 2. update the text
@@ -55,8 +56,8 @@
 
 						var post_weights = get_posterior_weights(prior_weights, log_ll);
 
-						draw_mixture_density(g_prior, Object.values(single_prior_densities), prior_weights);
-						draw_mixture_density(g_posterior, Object.values(single_posterior_densities), post_weights);
+						draw_mixture_density(g, Object.values(single_prior_densities), prior_weights, 'none', 'red');
+						draw_mixture_density(g, Object.values(single_posterior_densities), post_weights);
 					});
 				}
 			});
@@ -99,27 +100,34 @@
 <script type="text/front-matter">
   title: "How Relevant are Incidental Power Poses for HCI?"
   authors:
-  - Pierre Dragicevic: http://dragice.fr
   - Yvonne Jansen: http://yvonnejansen.me
+  - Abhraneel Sarma
+  - Matthew Kay
   affiliations:
-  - Inria: http://www.aviz.fr
   - CNRS, Sorbonne Université: http://hci.isir.upmc.fr
+  - University of Michigan
+  - University of Michigan
 </script>
 
 <dt-article>
 	<header class="col-span">
 	<h1 class="title">How Relevant are Incidental Power Poses for HCI?</h1>
-		<div class="authors col-2">
-			<div class="author">
-				<div>Pierre Dragicevic</div>
-				<div>Inria</div>
-				<div>pierre.dragicevic@inria.fr</div>
-			</div>
+		<div class="authors col-3">
 			<div class="author">
 				<div>Yvonne Jansen</div>
 				<div>Université Paris-Sud & Inria</div>
 				<div>yvonne.jansen@inria.fr</div>
 			</div>
+			<div class="author">
+				<div>Abhraneel Sarma</div>
+				<div>University of Michigan</div>
+				<div>abhsarma@umich.edu</div>
+			</div>
+			<div class="author">
+				<div>Matthew Kay</div>
+				<div>University of Michigan</div>
+				<div>mjskay@umich.edu</div>
+			</div>			
 		</div>
 	</header>
 	<dt-byline></dt-byline>
@@ -181,9 +189,10 @@
 		Wide</li>
 	</ul>
 
-	<div>
+	<figure class="double-column">
 		<div id="graph"></div>
-	</div>
+		<figcaption>A figure caption.</figcaption>
+	</figure>
 
 	<h2>Discussion & Conclusion</h2>
 	</dt-article>
@@ -193,5 +202,5 @@
 
 
 	<!-- <script type="text/bibliography"></script> -->
-	<script src = "scripts/custom.js"></script>
+	<script src = "scripts/custom-1.2.js"></script>
 </body>

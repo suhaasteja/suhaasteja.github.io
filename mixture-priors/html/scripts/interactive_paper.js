@@ -78,17 +78,19 @@ var distill_authors, acm_authors, title;
 
 
 function switchLayout() {
-console.log("switching layouts...");
-if (tangle) {
+  d3.selectAll('svg').remove();
+  console.log("switching layouts...");
+  if (tangle) {
   tangle.cleanup();
-}
-tangle = null;
+  }
+  tangle = null;
 
-// switching to distill layout
-if (currentLayout == "ACM"){
+  // switching to distill layout
+  if (currentLayout == "ACM"){
   // disable ACM css
   $('link[href="pubcss-acm-sigchi.css"]').prop('disabled', true);
   $('link[href="style.css"]').prop('disabled', true);
+  $('style').prop('disabled', false);
 
   // remove page divs
   unsnip();
@@ -105,15 +107,15 @@ if (currentLayout == "ACM"){
   setUpTangle();
   // get the distill js
   $.getScript("https://distill.pub/template.v1.js");
-  $('style').prop('disabled', false);
 
+  moveFullColumnFiguresBack();
   // store that we switched layout
   currentLayout = "distill";
   $('#layout_button').html('Switch to ACM layout');
 
-} else {
+  } else {
   // switching to ACM layout
-  
+
   // remove distill js file
   removejscssfile("template.v1.js", "js");
   $('style').prop('disabled', true);
@@ -132,11 +134,22 @@ if (currentLayout == "ACM"){
   setUpTangle();
   snip();
 
+  moveFullColumnFiguresToTopOfPage();
+
   currentLayout = "ACM";
   $('#layout_button').html('Switch to Distill layout');
 
-}
-console.log("switched layout to " + currentLayout);
+  }
+  console.log("switched layout to " + currentLayout);
+
+  var bounding_width = d3.select('div#graph').node().getBoundingClientRect().width;
+
+  setSVG(bounding_width);
+
+  for (var i = 1; i <= j; i++){
+    draw_density(g, single_prior_densities[i], 'none',  color(i), 2, 'prior');
+    //draw_density(g, single_posterior_densities[i], 'none', color(i), 0);
+  }
 }
 
 // setup to enable switching between layouts;
@@ -166,12 +179,48 @@ $('link[href="style.css"]').prop('disabled', true);
 
   $('dt-article').prepend($('.title'));
   $('header').hide();
-
-
 })
 
+// This function looks for figures with the class '.double-column'
+// and moves them to the beginning of the div (used in ACM layout)
+function moveFullColumnFiguresToTopOfPage() {
+  var figures = $('.double-column');
+  if (figures.length){
+    // $(figures).addClass("acm");
+    $(figures).each(function(index){
+      $(this).attr("id", "double-column-figure-" + index);
+      var parent = $(this).parent();
+      var newdiv = document.createElement("div");
+      newdiv.addClass("double-column");
+      newdiv.addClass("distill");
+      $(newdiv).attr("id", "double-column-figure-" + index);
+      $(newdiv).append($(this).children());
+      $(parent).prepend(newdiv);
+    });
 
+  }
+  $('dt-article').css('counter-reset', 'figure');
+  $('dt-article').css('counter-increment', 'figure');
+}
 
+// This function moves .double-column figures back to where they
+// originally were (used for distill layout)
+function moveFullColumnFiguresBack() {
+  var figures = $('.double-column.distill');
+  if (figures.length){
+    $(figures).each(function(index){
+      var divid = $(this).attr('id');
+      $(this).attr("id", "");
+  
+      $("#"+divid).last().append($(this).children());
+      $(this).detach();
+    });
+
+  }
+  $('dt-article').css('counter-reset', '');
+  $('dt-article').css('counter-increment', '');
+
+}
 
 // function to remove a javascript file
 function removejscssfile(filename, filetype){
