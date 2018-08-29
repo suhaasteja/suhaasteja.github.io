@@ -5,7 +5,7 @@
 //  Created by Bret Victor on 5/2/10.
 //  (c) 2011 Bret Victor.  MIT open-source license.
 //
-//  Modified by Pierre Dragicevic June 2018.
+//  Modified by Pierre Dragicevic June-August 2018.
 //
 //
 //  ------ model ------
@@ -28,6 +28,11 @@
 //  Tangle.formats.myFormat = function (value) { return "..."; };
 //
 
+// -- added by Pierre. Convenience functions for the randomize() function.
+function rnd_int(min, max) {return Math.floor(Math.random() * (max-min+1)) + min;}
+function rnd_bool() {return (rnd_int(0, 1) == 1);}
+function rnd_list() {return arguments[rnd_int(0, arguments.length-1)];}
+
 var Tangle = this.Tangle = function (rootElement, modelClass) {
 
     var tangle = this;
@@ -36,6 +41,9 @@ var Tangle = this.Tangle = function (rootElement, modelClass) {
     tangle.getValue = getValue;
     tangle.setValue = setValue;
     tangle.setValues = setValues;
+    // -- added by Pierre
+    tangle.cleanup = cleanup;
+    tangle.randomize = randomize;
 
     var _model;
     var _nextSetterID = 0;
@@ -51,16 +59,6 @@ var Tangle = this.Tangle = function (rootElement, modelClass) {
 
     initializeElements();
     setModel(modelClass);
-
-    // -- Added by Pierre
-    tangle.cleanup = function() {
-        for (var i = 0, length = _injectedValues.length; i < length; i++) {
-            var injectedValue = _injectedValues[i];
-            var parent = injectedValue.parentElement;
-            parent.removeChild(injectedValue);
-        }
-        _injectedValues = [];
-    }
 
     return tangle;
 
@@ -384,6 +382,39 @@ var Tangle = this.Tangle = function (rootElement, modelClass) {
         
         applySettersForVariables(changedVarNames);
     }
+
+    // -- Added by Pierre, without much understanding of how it works
+    function randomize() {
+        var ShadowModel = function () {};  // make a shadow object, so we can see exactly which properties changed
+        ShadowModel.prototype = _model;
+        var shadowModel = new ShadowModel;
+        
+        shadowModel.randomize();
+        shadowModel.update();
+        
+        var changedVarNames = [];
+        for (var varName in shadowModel) {
+            if (!shadowModel.hasOwnProperty(varName)) { continue; }
+            if (_model[varName] === shadowModel[varName]) { continue; }
+            
+            _model[varName] = shadowModel[varName];
+            changedVarNames.push(varName);
+        }
+        
+        applySettersForVariables(changedVarNames);
+    }
+
+    // -- Added by Pierre
+    function cleanup() {
+        for (var i = 0, length = _injectedValues.length; i < length; i++) {
+            var injectedValue = _injectedValues[i];
+            var parent = injectedValue.parentElement;
+            parent.removeChild(injectedValue);
+        }
+        _injectedValues = [];
+    }
+
+
 
 
     //----------------------------------------------------------

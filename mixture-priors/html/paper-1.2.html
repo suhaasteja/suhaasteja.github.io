@@ -9,14 +9,14 @@
 	<script type="text/javascript" src="scripts/TangleKit/sprintf.js"></script>
 	<script type="text/javascript" src="scripts/TangleKit/BVTouchable.js"></script>
 	<script type="text/javascript" src="scripts/TangleKit/TangleKit.js"></script>
-	<script src="scripts/interactive_paper.js"></script>
+	<script src="../../template/scripts/interactive_paper.js"></script>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 
 	<script src="scripts/lodash.js"></script>
 	<script src="https://unpkg.com/mathjs@5.0.4/dist/math.js"></script>
 
-	<link rel="stylesheet" href="pubcss-acm-sigchi.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<link rel="stylesheet" href="css/pubcss-acm-sigchi.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 	<!-- TangleKit (optional) -->
 	<link rel="stylesheet" href="scripts/TangleKit/TangleKit.css" type="text/css">
 
@@ -35,6 +35,14 @@
 					this.weight_to_wide = 50;
 				}
 				,
+				randomize: function () {
+          			// Set options to a random value. Used for animating the multiverse. Make sure
+          			// all values are legal and accessible through the Tangle UI controls.
+					
+					this.weight_to_optim = rnd_int(0, 100);
+					this.weight_to_wide = rnd_int(0, 100);
+				}
+				,
 				update: function () {
 					// 1. update the figures
 					// 2. update the text
@@ -51,14 +59,14 @@
 					this.weight_skeptical_wide = (this.weight_to_skeptic * (100 - this.weight_to_narrow)) / 100;
 					this.weight_optimistic_wide = ((100 - this.weight_to_skeptic) * (100 - this.weight_to_narrow)) / 100;
 
-					$(document).ready(function(){
+					if (log_ll){
 						d3.selectAll('.mixture').remove();
 
 						var post_weights = get_posterior_weights(prior_weights, log_ll);
 
-						draw_mixture_density(g, Object.values(single_prior_densities), prior_weights, 'none', 'red');
-						draw_mixture_density(g, Object.values(single_posterior_densities), post_weights);
-					});
+						draw_mixture_density(g, Object.values(single_prior_densities), 'prior mixture', prior_weights, 'none', 'red');
+						draw_mixture_density(g, Object.values(single_posterior_densities), 'posterior mixture', post_weights);
+					}	
 				}
 			});
 		}
@@ -84,21 +92,28 @@
 	span.weight-set {
 		color: #46F !important;
 	}
+
+	span.highlight {
+		color: red;
+	}
   </style>
 </head>
 
 <body id="tangleRoot" onload="setUpTangle();">
-	<div style="width: 100%; height: 40px;"></div>
-	<div style="width: 100%; height: 40px; background-color: rgba(100,100,100,0.5); position: fixed;top: 0%; z-index: 1000">
-	<button id="layout_button" style="width: 150px; margin: auto; position: fixed;top: 0%; left: calc(50% - 75px);" onclick="switchLayout();">Switch to ACM layout</button>
-	</div>
+
+<!--- TOOL MENU --->
+<div style="width: 100%; height: 40px;"></div>
+<div style="width: 100%; height: 40px; background-color: rgba(100,100,100,0.5); position: fixed;top: 0%; z-index: 1000">
+  <button id="layout_button" style="width: 150px; margin: auto; position: fixed;top: 0%; left: calc(50% - 80px - 75px);" onclick="switchLayout();">Switch to ACM layout</button>
+  <button id="animate_button" style="width: 150px; margin: auto; position: fixed;top: 0%; left: calc(50% + 80px - 75px);" onmousedown="anim = setInterval(tangle.randomize, 120);" onmouseup="clearInterval(anim);">Animate multiverse</button>
+</div>
 
 <!---------------------------------------------------------------------------------------------------->
 <!--  Start editing from here -->
 <!---------------------------------------------------------------------------------------------------->
 
 <script type="text/front-matter">
-  title: "How Relevant are Incidental Power Poses for HCI?"
+  title: "A Multiverse Analysis Considering Different Priors for Incidental Power Poses in HCI"
   authors:
   - Yvonne Jansen: http://yvonnejansen.me
   - Abhraneel Sarma
@@ -111,7 +126,7 @@
 
 <dt-article>
 	<header class="col-span">
-	<h1 class="title">How Relevant are Incidental Power Poses for HCI?</h1>
+	<h1 class="title">A Multiverse Analysis Considering Different Priors for Incidental Power Poses in HCI</h1>
 		<div class="authors col-3">
 			<div class="author">
 				<div>Yvonne Jansen</div>
@@ -133,10 +148,12 @@
 	<dt-byline></dt-byline>
   
 	<h2 id="Abstract">Abstract</h2>
-	<p>The concept of power pose originates from a Psychology study from 2010 which suggested that holding an expansive pose can change hormone levels and increase risk-taking behavior. Follow-up experiments suggested that expansive poses incidentally imposed by the design of an environment lead to more dishonest behaviors. While multiple replication attempts of the 2010 study failed, the follow-up experiments on incidental postures have so far not been replicated. As UI design in HCI can incidentally lead to expansive body postures, we attempted two conceptual replications: we first asked 44 participants to tap areas on a wall-sized display and measured their self-reported sense of power; we then asked 80 participants to play a game on a large touch-screen and measured risk-taking. Based on Bayesian analyses we find that incidental power poses had little to no effect on our measures but could cause physical discomfort. We conclude by discussing our findings in the context of theory-driven research in HCI.</p>
+	<p>The concept of power pose originates from a Psychology study from 2010 which suggested that holding an expansive pose can change hormone levels and increase risk-taking behavior. Follow-up experiments suggested that expansive poses incidentally imposed by the design of an environment lead to more dishonest behaviors. Jansen and Hornbæk applied the concept in the form of incidental power poses within HCI and reported an at best very small effect.</p>
+	<p>In this article we re-analyze the data of their second experiment to consider different priors varying on two dimensions: degree of informedness and strength of belief. We discuss the robustness of the Jansen and Hornbæk's findings in light of our extended analysis.</p>
+
 
 	<h2 id="keywords">Author Keywords</h2>
-	<p id="keywords">Physical visualization; multiverse analysis.</p>
+	<p id="keywords">Incidental power poses; multiverse analysis.</p>
 
 	<h2 id="acm">ACM Classification Keywords</h2>
 	<p id="acm">H5.2 User Interfaces: Evaluation/Methodology</p>
@@ -148,9 +165,9 @@
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-	<h2 id="experiment">Experiment 2: Inclined Tabletop</h2>
+	<h2 id="experiment">Experiment: Inclined Tabletop</h2>
 
-	<p>Our second experiment is inspired by experiment 2 from Yap et al. <!-- enter citations -->. There, participants’ incidental posture was imposed by either arranging their tools around a large (0.6 m2) or a small (0.15 m2) workspace. Yap et al. study investigated the effect of incidental postures imposed by the different workspaces on people’s dishonesty, whereas we applied the paradigm to risk-taking behavior which is a common behavioral measure in multiple studies on explicit power poses <!-- enter citations -->. These previous studies all gave binary choices to participants, asking them whether they were willing to take a single gamble <!-- enter citations --> or to make several risky choices in both gain and loss domain <!-- enter citations --> using examples taken from Tversky and Kahneman <!-- enter citations -->. There, participants’ binary response was the measure for risk-taking. We opted for a more continuous measure for risk-taking as it results in higher resolution for responses, and used the balloon analog risk task (BART), a behavioral measure for risk-taking propensity [49]. We again study one main factor: incidental posture with two levels, expansive and constrictive, implemented as two variations of the same graphical user interface (see Figure 7). To keep comfort constant across conditions, we used a slightly inclined 60” tabletop display instead of a wall display so that participants in both conditions could rest their arms while performing the task (see Figure 1C&D).</p>
+	<p>Our experiment is inspired by experiment 2 from Yap et. al <dt-cite key="yap2013ergonomics"></dt-cite>. There, participants’ incidental posture was imposed by either arranging their tools around a large (0.6 m<sup>2</sup>) or a small (0.15 m<sup>2</sup>) workspace. Yap et al. study investigated the effect of incidental postures imposed by the different workspaces on people’s dishonesty, whereas we applied the paradigm to risk-taking behavior which is a common behavioral measure in multiple studies on explicit power poses <dt-cite key="cesario2013bodies,carney2010power,ranehill2015assessing"></dt-cite>. These previous studies all gave binary choices to participants, asking them whether they were willing to take a single gamble <dt-cite key="cesario2013bodies,carney2010power"></dt-cite> or to make several risky choices in both gain and loss domain  <dt-cite key="ranehill2015assessing"></dt-cite> using examples taken from Tversky and Kahneman <dt-cite key="tversky1981framing"></dt-cite>. There, participants’ binary response was the measure for risk-taking. We opted for a more continuous measure for risk-taking as it results in higher resolution for responses, and used the balloon analog risk task (BART), a behavioral measure for risk-taking propensity  <dt-cite key="lejuez2002evaluation"></dt-cite>. We again study one main factor: incidental posture with two levels, expansive and constrictive, implemented as two variations of the same graphical user interface <span class="highlight">(see Figure 7)</span>. To keep comfort constant across conditions, we used a slightly inclined 60” tabletop display instead of a wall display so that participants in both conditions could rest their arms while performing the task <span class="highlight">(see Figure 1C&D)</span>.</p>
 
 	<h3>Participants</h3>
 
@@ -158,11 +175,11 @@
 
 	<h3>Procedure</h3>
 
-	<p>Similar to experiment 1, participants were alternately assigned in order of arrival to either the constrictive or the expansive condition. After signing an informed consent form for the “usability study”, participants were introduced to the tabletop setup and asked to go through the on-screen instructions of the game. They were informed that the amount of their compensation would depend on the number of points they achieved in the game. They then pumped up 30 balloons. Once finished, they filled a questionnaire on their level of comfort during the game (12 items), and the BIS-11 impulsivity test  <!-- enter citations --> (30 items). Finally, participants filled a separate form to receive a cinema voucher for their participation. The value of the voucher was between 13e and 20e, depending on how many points they accumulated in the game following the original BART protocol  <!-- enter citations -->. The entire experiment lasted about 20 min.</p>
+	<p>Participants were alternately assigned in order of arrival to either the constrictive or the expansive condition. After signing an informed consent form for the “usability study”, participants were introduced to the tabletop setup and asked to go through the on-screen instructions of the game. They were informed that the amount of their compensation would depend on the number of points they achieved in the game. They then pumped up 30 balloons. Once finished, they filled a questionnaire on their level of comfort during the game (12 items), and the BIS-11 impulsivity test  <!-- enter citations --> (30 items). Finally, participants filled a separate form to receive a cinema voucher for their participation. The value of the voucher was between 13e and 20e, depending on how many points they accumulated in the game following the original BART protocol  <!-- enter citations -->. The entire experiment lasted about 20 min.</p>
 
 	<h3>Analysis</h3>
 
-	<p>We analyze our data using Bayesian estimation, through a robust linear model using as likelihood a heteroskedastic scaled and shifted t distribution with degrees of freedom ν. We assume our data to be drawn from two groups, the difference between which is given by β. We use this method for the robust analysis of metric data in nominal groups with weakly informed skeptical priors which help to avoid inflated effect sizes. Our analysis setup can be seen as a Bayesian analog to a standard ANOVA analysis yet without the prerequisites of an ANOVA, normality and equal variances, and with the possibility of accepting the null hypothesis if the posterior credibility for parameter ranges falls into a pre-defined region of practical equivalence (ROPE)</p>
+	<p>We analyze our data using Bayesian estimation, through a robust linear model using as likelihood a heteroskedastic scaled and shifted t distribution with degrees of freedom ν. We assume our data to be drawn from two groups, with different means: μ = α<sub>0</sub> + βx, where x = 0 for the constrictive (baseline) condition and x = 1 for the expansive condition. Thus, the difference between the two conditions is given by β. We use this method for the robust analysis of metric data in nominal groups with weakly informed priors which help to avoid inflated effect sizes. This model also allows us to set priors on the difference between the two conditions, β, to be skeptical i.e. set the mean at zero with a small variance; or to be optimistic i.e. set either a positive or negative mean depending on what we believe the effect of the treatment condition to be. Our analysis setup can be seen as a Bayesian analog to a standard ANOVA analysis yet without the prerequisites of an ANOVA, normality and equal variances, and with the possibility of accepting the null hypothesis if the posterior credibility for parameter ranges falls into a pre-defined region of practical equivalence (ROPE)</p>
 
 	<figure class="l-body">
 	<img id="model" src="figures/model.png" width="100%"><figcaption>Data Anslysis model specification<span label="model"></span></figcaption>
@@ -170,22 +187,23 @@
 
 	<h2 id="results">Results</h2>
 
-	<p>We ran our models with 4 different sets of priors for β, which are a combination of skeptical (ceneterd around 0) and optimistic (ceneterd around a value informed by prior literature), and narrow (low variance, highly regularized) and wide (high variance, weakly regularized), based on the degree of informedness, and the strength of belief. Thus the 4 sets of priors for β, and the weights assigned to each are:</p>
+	<p>We ran our models with 4 different sets of priors for β, which are a combination of skeptical (ceneterd around 0) and optimistic (ceneterd around a value informed by prior literature), and narrow (low variance, highly regularized) and wide (high variance, weakly regularized), based on the degree of informedness, and the strength of belief. For the optimistic priors, we can use the effect-size for Carney et. al.'s original study (d = ~0.6) or the effect-size from the meta-analysis (d = ~0.23) as the mean for the Normal distribution. In this example, we use the d = 0.6 to calculate the mean of the optimistic priors.</p>
+	<p>Thus the 4 sets of priors for β, and the weights assigned to each are:</p>
 	<ul>
-		<li>Skeptical, narrow: N(0, 1): <span data-var="weight_skeptical_narrow" data-format="pretty_percent"></span></li>
-		<li>Optimistic, narrow: N(0.45, 1): <span data-var="weight_optimistic_narrow" data-format="pretty_percent"></span></li>
-		<li>Skeptical, wide: N(0, 10): <span data-var="weight_skeptical_wide" data-format="pretty_percent"></span></li>
-		<li>Optimistic, wide: N(0.45, 10): <span data-var="weight_optimistic_wide" data-format="pretty_percent"></span></li>
+		<li>Skeptical, narrow: N(0, 4): <span data-var="weight_skeptical_narrow" data-format="pretty_percent"></span></li>
+		<li>Optimistic, narrow: N(9, 4): <span data-var="weight_optimistic_narrow" data-format="pretty_percent"></span></li>
+		<li>Skeptical, wide: N(0, 20): <span data-var="weight_skeptical_wide" data-format="pretty_percent"></span></li>
+		<li>Optimistic, wide: N(9, 20): <span data-var="weight_optimistic_wide" data-format="pretty_percent"></span></li>
 	</ul>
 	<p>By default, each priors are equally weighted. Below, you can interact with the weights for the priors to obtain the posterior for a mixture of these 4 sets of priors.</p>
 	<ul>
 		<li>Skeptical 
 			<span class="weight-set" data-var="weight_to_skeptic" data-format="pretty_percent"></span> - 
-			<span data-var="weight_to_optim" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="pretty_percent"></span>
+			<span data-var="weight_to_optim" class="TKAdjustableNumber" data-min="0" data-max="100" data-step="2"data-format="pretty_percent"></span>
 		Optimistic</li>
 		<li>Narrow 
 			<span class="weight-set" data-var="weight_to_narrow" data-format="pretty_percent"></span> - 
-			<span data-var="weight_to_wide" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="pretty_percent"></span> 
+			<span data-var="weight_to_wide" class="TKAdjustableNumber" data-min="0" data-max="100" data-step="2"data-format="pretty_percent"></span> 
 		Wide</li>
 	</ul>
 
@@ -194,13 +212,93 @@
 		<figcaption>A figure caption.</figcaption>
 	</figure>
 
+	<h2>Implementation: obtaining posterior estimates for mixture priors</h2>
+	<p>First, we fit the bayesian model described above using each of the 4 priors used to get 4 posterior distributions. We then calculate the marginal likelihood for each posterior distribution which allow us to calculate the posterior weights. Using the prior weights, w<sup>(0)</sup><sub>j</sub>, (where, j indexes each set of priors), we obtain the posterior weights, w<sup>(1)</sup> according to the formula:</p>
+	<figure class="l-body">
+		<img id="weights" src="figures/weights.png" width="10%"><figcaption>Posterior weight calculation<span label="weights"></span></figcaption>
+	</figure>
+	<p>where, C<sub>j</sub> is the log-likelihood for each distribution.</p>
+	<p>Using these posterior weights, we calculated the weighted density estimates for each posterior distribution to obtain the mixture posterior distribution.</p>
+	<p>We fit the models to calculate each posterior distribution, and marginal log-likelihoods in R, and have provided R functions in the supplementary materials which accepts as parameters the observed data (as a list), the different sets of priors (as a data.frame) and bayesian model (as a stanmodel). Currently we support only rstan but we can expand this to include models from other bayesian packages as well.</p>
+
 	<h2>Discussion & Conclusion</h2>
+	<p>In Carney et. al.'s initial paper, the authors claimed to have found a strong effect of power poses on risk taking (d = 0.6). However, multiple replications of the original study have failed to find an effect. A researcher, who is trying to replicate the initial study;s findings with a Bayesian analysis, is faced with the question of what priors to use. One can use an uninformative prior or an informative prior. One can also model one's belief in the strength of these priors. However, performing an analysis with just one of these priors might lead to a biased result.</p>
+	<p>To illustrate this, let's consider a couple of possible scenarios where an author is performing the replication analysis. In the first scenario, unknown to this author, the findings of the original study, by chance, chose a very unusual sample. The informed prior knowledge happens to be bad. The sample for the second study is reasonably representative. The author does not know what to do, so they drop the informative prior from their research. As it works out, this is fortunate because the happenstance of drawing an unusual sample is now avoided.</p>
+	<p>In the second example, unknown to the author, the data collected for the first study happens to be very representative of the data. Thus, using the resulting posterior as an informative prior for the replication study would be a good decision. Unfortunately, when they perform the second experiment, by chance, they happen to draw a very unusual sample. They compare the results with the two priors and drop the one with the informative prior. Unfortunately, they now have a very biased set of parameter estimates because they are unaware that they have drawn a strange sample.</p>
+	<p>This example illustrates the benefit of using multiple priors in the analysis and reporting the results from these multiple priors. The authors can then defend why they believe that one prior is superior for the analysis compared to the others. An explorable multiverse analysis, which would allow the readers to set the weights between these different priors provides an additional layer of transparency to the authors' decisions.</p>
+	<p>In this example, we observe that the effect size estimated in the original study <dt-cite key="carney2010power"></dt-cite> has been overestimated, and using optimistic priors based on the original study would result in a biased posterior estimate in the replication study. Instead, using uninformed, skeptical or very weakly informative priors may be more appropriate. The results of the repplication find no effect of incidental power poses on risk-taking behavior.</p>
 	</dt-article>
 
-	<!-- <dt-appendix>
-	</dt-appendix> -->
+	<dt-appendix>
+	</dt-appendix>
 
 
-	<!-- <script type="text/bibliography"></script> -->
+	<script type="text/bibliography">
+		@article{carney2010power,
+			title={Power posing: Brief nonverbal displays affect neuroendocrine levels and risk tolerance},
+			author={Carney, Dana R and Cuddy, Amy JC and Yap, Andy J},
+			journal={Psychological science},
+			volume={21},
+			number={10},
+			pages={1363--1368},
+			year={2010},
+			publisher={Sage Publications Sage CA: Los Angeles, CA}
+		}
+
+		@article{yap2013ergonomics,
+			title={The ergonomics of dishonesty: The effect of incidental posture on stealing, cheating, and traffic violations},
+			author={Yap, Andy J and Wazlawek, Abbie S and Lucas, Brian J and Cuddy, Amy JC and Carney, Dana R},
+			journal={Psychological science},
+			volume={24},
+			number={11},
+			pages={2281--2289},
+			year={2013},
+			publisher={Sage Publications Sage CA: Los Angeles, CA}
+		}
+
+		@article{tversky1981framing,
+			title={The framing of decisions and the psychology of choice},
+			author={Tversky, Amos and Kahneman, Daniel},
+			journal={science},
+			volume={211},
+			number={4481},
+			pages={453--458},
+			year={1981},
+			publisher={American Association for the Advancement of Science}
+		}
+
+		@article{lejuez2002evaluation,
+			title={Evaluation of a behavioral measure of risk taking: the Balloon Analogue Risk Task (BART).},
+			author={Lejuez, Carl W and Read, Jennifer P and Kahler, Christopher W and Richards, Jerry B and Ramsey, Susan E and Stuart, Gregory L and Strong, David R and Brown, Richard A},
+			journal={Journal of Experimental Psychology: Applied},
+			volume={8},
+			number={2},
+			pages={75},
+			year={2002},
+			publisher={American Psychological Association}
+		}
+
+		@article{cesario2013bodies,
+			title={Bodies in context: Power poses as a computation of action possibility},
+			author={Cesario, Joseph and McDonald, Melissa M},
+			journal={Social Cognition},
+			volume={31},
+			number={2},
+			pages={260--274},
+			year={2013},
+			publisher={Guilford Press}
+		}
+
+		@article{ranehill2015assessing,
+			title={Assessing the robustness of power posing: No effect on hormones and risk tolerance in a large sample of men and women},
+			author={Ranehill, Eva and Dreber, Anna and Johannesson, Magnus and Leiberg, Susanne and Sul, Sunhae and Weber, Roberto A},
+			journal={Psychological science},
+			volume={26},
+			number={5},
+			pages={653--656},
+			year={2015},
+			publisher={Sage Publications Sage CA: Los Angeles, CA}
+		}
+	</script>
 	<script src = "scripts/custom-1.2.js"></script>
 </body>

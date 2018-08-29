@@ -147,7 +147,7 @@ function switchLayout() {
   setSVG(bounding_width);
 
   for (var i = 1; i <= j; i++){
-    draw_density(g, single_prior_densities[i], 'none',  color(i), 2, 'prior');
+    draw_density(g, single_prior_densities[i], 'prior', 'none', '#b0b0b0', 1, 2);
     //draw_density(g, single_posterior_densities[i], 'none', color(i), 0);
   }
 }
