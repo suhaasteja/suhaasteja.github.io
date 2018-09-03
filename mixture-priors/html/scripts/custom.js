@@ -6,6 +6,14 @@ var samples, j, priors, log_ll, data,
 	single_posterior_densities = {},
 	prior_weight = {};
 
+//global variables for estiamates specific to this paper
+var ROPE = [-3.03, 3.03],
+	dens_in_ROPE = 68.53,
+	median = [0.74],
+	cuddy_effect_size = 0.6,
+	meta_analysis_effect_size = 0.23,
+	sd_pooled = 15.16;
+
 var bounding_width = d3.select('div#graph').node().getBoundingClientRect().width;
 
 setSVG(bounding_width);
@@ -58,8 +66,8 @@ function setSVG(width){
 		.attr("x", canvas.w - margin.right)
 		.attr("y", -6)
 		.attr("fill", "#000")
-		.attr("text-anchor", "end")
-		.text("estimates");
+		.attr("text-anchor", "end");
+	//	.text("estimates");
 
 	// g.append("g")
 	// 	.attr("class", "axis axis--y")
@@ -152,6 +160,9 @@ d3.csv("../R/prior_posterior_density_estimates.csv", function(error, d){
 
 	draw_mixture_density(g, Object.values(single_prior_densities), 'prior mixture', Object.values(prior_weight), 'none', 'red');
 	draw_mixture_density(g, Object.values(single_posterior_densities), 'posterior mixture', post_weights);
+
+	effect_size_annotation(cuddy_effect_size);
+	effect_size_annotation(meta_analysis_effect_size);
 });
 
 
@@ -188,7 +199,7 @@ function get_quantile(density, interval) {
 
 	var sum = 0;
 	for (var i = 1; i < density.length; i++){
-		if (sum < lower){
+		if (sum <= lower){
 			sum += (del_x[i] - del_x[i-1])*y[i];
 		} else {
 			break;
@@ -203,7 +214,38 @@ function get_quantile(density, interval) {
 			break;
 		}
 	}
+
 	return [i, j]
+}
+
+function get_ROPE(density, interval) {
+	var x = density.map(x => +x[0]);
+
+	var lower_idx, upper_idx;
+
+	for (var i = 1; i < density.length; i++){
+		if (x[i] <= interval[0]){
+			lower_idx = i
+		} else if (x[i] <= interval[1]){
+			upper_idx = i;
+		}
+	}
+
+	return [lower_idx, upper_idx]
+}
+
+function ROPE_density(density, interval) {
+	var x = density.map(x => +x[0]),
+		y = density.map(x => +x[1]),
+		xmin = interval[0], xmax = interval[1],
+		sum = 0;
+
+	for (var i = 1; i < density.length; i++){
+		if (x[i] >= xmin && x[i] <= xmax){
+			sum += (x[i] - x[i-1])*y[i];
+		}
+	}
+	return sum*100;
 }
 
 function get_posterior_weights(prior_weights, log_ll) {
@@ -228,13 +270,15 @@ function draw_mixture_density(group, densities, dens_class, weights, fillColor =
 	draw_density(group, mixture_density, dens_class, fillColor, strokeColor, 2, dashArray);
 
 	if (dens_class == 'posterior mixture'){
-		var [lower95, upper95] = get_quantile(mixture_density, 95);
-		var [lowerMedian, upperMedian] = get_quantile(mixture_density, 2);
+		dens_in_ROPE = ROPE_density(mixture_density, ROPE);		
 
-		HDI95 = mixture_density.slice(lower95, upper95);
-		HDI95.splice(0, 0, [+mixture_density[lower95][0], 0]);
-		HDI95.push([+mixture_density[upper95][0], 0]);
-		draw_density(group, HDI95, dens_class, '#5D9CCA', 'none', dashArray);
+		var [lower_quantile, upper_quantile] = get_ROPE(mixture_density, ROPE); //get_quantile(mixture_density, 95);
+		var [lowerMedian, upperMedian] = get_quantile(mixture_density, 0.1);
+
+		HDI = mixture_density.slice(lower_quantile, upper_quantile);
+		HDI.splice(0, 0, [+mixture_density[lower_quantile][0], 0]);
+		HDI.push([+mixture_density[upper_quantile][0], 0]);
+		draw_density(group, HDI, dens_class, '#5D9CCA', 'none', dashArray);
 
 		var dens = mixture_density.map(x => x[1]);
 		median = mixture_density[dens.indexOf(d3.max(dens))];
@@ -245,9 +289,50 @@ function draw_mixture_density(group, densities, dens_class, weights, fillColor =
 			.attr('y1', y(median[1]))
 			.attr('x2', x(median[0]))
 			.attr('y2', y(0))
-			.attr('stroke-width', 4)
+			.attr('stroke-width', 2)
 			.attr('stroke', '#666');
 	}
+}
+
+function effect_size_annotation(effect_size){
+	g.append("line")
+		.attr('class', 'mixture effect-size-annotation')
+		.attr('x1', x(sd_pooled*effect_size))
+		.attr('y1', y(max_y/50))
+		.attr('x2', x(sd_pooled*effect_size))
+		.attr('y2', y(-1*max_y/50))
+		.attr('stroke-width', 2)
+		.attr('stroke', 'red');
+
+	const type = d3.annotationCustomType(
+		d3.annotationLabel, 
+		{"className":"custom",
+		"connector":{"type":"elbow"},
+		"note":{"align":"middle",
+		"orientation":"topBottom"}}
+	)
+
+	const annotations = [{
+		note: {
+			label: "Mean calculated from effect size of d = "+ effect_size +""
+		},
+		//className: "show-bg",
+		x: x(sd_pooled*effect_size),
+		y: y(0),
+		dy: -120,
+		dx: 100,
+	}]
+
+	const makeAnnotations = d3.annotation()
+		.editMode(false)
+		.textWrap(60)
+		.notePadding(5)
+		.type(type)
+		.annotations(annotations);
+
+	g.append("g")
+		.attr("class", "mixture annotation-group")
+		.call(makeAnnotations)
 }
 
 // function update_weights(sketchpad_x, sketchpad_y){

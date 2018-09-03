@@ -4,21 +4,22 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://distill.pub/template.v1.js"></script>
 
-	<script type="text/javascript" src="scripts/Tangle.js"></script>
-	<script type="text/javascript" src="scripts/TangleKit/mootools.js"></script>
-	<script type="text/javascript" src="scripts/TangleKit/sprintf.js"></script>
-	<script type="text/javascript" src="scripts/TangleKit/BVTouchable.js"></script>
-	<script type="text/javascript" src="scripts/TangleKit/TangleKit.js"></script>
+	<script type="text/javascript" src="../../template/scripts/Tangle.js"></script>
+	<script type="text/javascript" src="../../template/scripts/TangleKit/mootools.js"></script>
+	<script type="text/javascript" src="../../template/scripts/TangleKit/sprintf.js"></script>
+	<script type="text/javascript" src="../../template/scripts/TangleKit/BVTouchable.js"></script>
+	<script type="text/javascript" src="../../template/scripts/TangleKit/TangleKit.js"></script>
 	<script src="../../template/scripts/interactive_paper.js"></script>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.3.0/d3-annotation.js"></script>
 
 	<script src="scripts/lodash.js"></script>
 	<script src="https://unpkg.com/mathjs@5.0.4/dist/math.js"></script>
 
 	<link rel="stylesheet" href="css/pubcss-acm-sigchi.css" media="screen" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="../../template/css/style.css" media="screen" />
 	<!-- TangleKit (optional) -->
-	<link rel="stylesheet" href="scripts/TangleKit/TangleKit.css" type="text/css">
+	<link rel="stylesheet" href="../../template/scripts/TangleKit/TangleKit.css" type="text/css">
 
 	<script type="text/javascript">
 		var tangle = null;
@@ -33,6 +34,8 @@
 					
 					this.weight_to_optim = 50;
 					this.weight_to_wide = 50;
+					this.ROPE = dens_in_ROPE;
+					this.median_beta = Math.round(median[0] * 100) / 100;
 				}
 				,
 				randomize: function () {
@@ -66,6 +69,12 @@
 
 						draw_mixture_density(g, Object.values(single_prior_densities), 'prior mixture', prior_weights, 'none', 'red');
 						draw_mixture_density(g, Object.values(single_posterior_densities), 'posterior mixture', post_weights);
+
+						effect_size_annotation(cuddy_effect_size);
+						effect_size_annotation(meta_analysis_effect_size);
+
+						this.ROPE = dens_in_ROPE;
+						this.median_beta = Math.round(median[0] * 100) / 100;
 					}	
 				}
 			});
@@ -95,6 +104,14 @@
 
 	span.highlight {
 		color: red;
+	}
+
+	ul.nomargin-list > li {
+		margin: 0px !important;
+	}
+
+	text.annotation-note-label{
+		font-size: 12px !important;
 	}
   </style>
 </head>
@@ -179,24 +196,38 @@
 
 	<h3>Analysis</h3>
 
-	<p>We analyze our data using Bayesian estimation, through a robust linear model using as likelihood a heteroskedastic scaled and shifted t distribution with degrees of freedom ν. We assume our data to be drawn from two groups, with different means: μ = α<sub>0</sub> + βx, where x = 0 for the constrictive (baseline) condition and x = 1 for the expansive condition. Thus, the difference between the two conditions is given by β. We use this method for the robust analysis of metric data in nominal groups with weakly informed priors which help to avoid inflated effect sizes. This model also allows us to set priors on the difference between the two conditions, β, to be skeptical i.e. set the mean at zero with a small variance; or to be optimistic i.e. set either a positive or negative mean depending on what we believe the effect of the treatment condition to be. Our analysis setup can be seen as a Bayesian analog to a standard ANOVA analysis yet without the prerequisites of an ANOVA, normality and equal variances, and with the possibility of accepting the null hypothesis if the posterior credibility for parameter ranges falls into a pre-defined region of practical equivalence (ROPE)</p>
+	<p>We analyze our data using Bayesian estimation, through a robust linear model described by Kruschke et. al. <dt-cite key="kruschke2013bayesian"></dt-cite> using as likelihood a heteroskedastic, scaled and shifted t distribution with degrees of freedom ν. Our model can be interpreted as a Bayesian t-test, but without the prerequisites of normality and equal variances, and with the possibility of accepting the null hypothesis if the posterior credibility for parameter ranges falls into a pre-defined region of practical equivalence (ROPE).</p>
+	<p>We assume our data to be drawn from two groups, with different means: μ = α<sub>0</sub> + βx, where x = 0 for the constrictive (baseline) condition and x = 1 for the expansive condition. Thus, the difference between the two conditions is given by β. We use this method for the robust analysis of metric data in nominal groups.</p>
 
 	<figure class="l-body">
 	<img id="model" src="figures/model.png" width="100%"><figcaption>Data Anslysis model specification<span label="model"></span></figcaption>
 	</figure>
 
-	<h2 id="results">Results</h2>
+	<p>where,<ul class="nomargin-list">
+		<li>y<sub>i</sub> indicates the number of pumps for each participant, i</li>
+		<li>x<sub>i</sub> indicates the group (expansive or constrictive) for each participant, i</li>
+		<li>ν indicates the degrees of freedom</li>
+		<li>μ indicates the mean of the t-distribution corresponding to each group</li>
+		<li>σ<sub>y</sub> indicates the variance of the t-distribution corresponding to each group</li>
+		<li>β indicates the mean difference in the number of pumps between the two groups</li>
+	</ul></p>
 
-	<p>We ran our models with 4 different sets of priors for β, which are a combination of skeptical (ceneterd around 0) and optimistic (ceneterd around a value informed by prior literature), and narrow (low variance, highly regularized) and wide (high variance, weakly regularized), based on the degree of informedness, and the strength of belief. For the optimistic priors, we can use the effect-size for Carney et. al.'s original study (d = ~0.6) or the effect-size from the meta-analysis (d = ~0.23) as the mean for the Normal distribution. In this example, we use the d = 0.6 to calculate the mean of the optimistic priors.</p>
+	<p>A Bayesian analysis allows us to model our beliefs about the effect of our conditions through the use of priors. Here, our primary parameter of interest is β (the mean difference between the two conditions) and we set a prior on this (as well as other) parameters. A prior, which is a normal distribution in this case, is determined by the following: (1) One's degree of optimism / skepticism about an effect by manipulating the location of the mean; setting the mean at zero indicates a skeptical prior, setting the mean at a value derived from prior literature indicates an optimistic prior. (2) One's strength of belief which can be manipulated by the variance of the normal distribution; setting a narrow prior indicates strong belief about the presence or absence of an effect, a wide prior indicates weak belief about the presence or absence of an effect).</p>
+
+	<p>In this paper, we run our analysis using 4 different sets of prior for β, and take a mixture of these priors - which results in an unique prior. We show the estimates for the posterior probability distribution of β calculated using this mixture distribution of priors. We allow the reader to interact with the prior weights to set their own prior on the primary parameter of interest, β (the mean difference between the two conditions). Our priors are a combination of skeptical (ceneterd at 0) and optimistic (centered at a value informed by prior literature), and narrow (low variance, highly regularized) and wide (high variance, weakly regularized), based on the degree of informedness, and the strength of belief. For the optimistic priors, we <!-- can use the effect-size for Carney et. al.'s original study (d = ~0.6) or --> use the effect-size from the meta-analysis (d = ~0.23), to calculate the mean for the Normal distribution.</p>
+
+	<p>As per <dt-cite key="kruschke2013bayesian"></dt-cite>, we also define a region of practical equivalence (ROPE) around the null value (mean difference of zero), which <i>"encloses those values of the parameter that are deemed to be negligibly different from the null value for practical purposes."</i> Since an effect size of 0.2 is considered to be small, we define the interval on β, which would correspond to an effect size of 0.2: [-3.03, 3.03].</p>
+
+	<h2 id="results">Results</h2>
 	<p>Thus the 4 sets of priors for β, and the weights assigned to each are:</p>
-	<ul>
+	<ul class="nomargin-list">
 		<li>Skeptical, narrow: N(0, 4): <span data-var="weight_skeptical_narrow" data-format="pretty_percent"></span></li>
 		<li>Optimistic, narrow: N(9, 4): <span data-var="weight_optimistic_narrow" data-format="pretty_percent"></span></li>
 		<li>Skeptical, wide: N(0, 20): <span data-var="weight_skeptical_wide" data-format="pretty_percent"></span></li>
 		<li>Optimistic, wide: N(9, 20): <span data-var="weight_optimistic_wide" data-format="pretty_percent"></span></li>
 	</ul>
-	<p>By default, each priors are equally weighted. Below, you can interact with the weights for the priors to obtain the posterior for a mixture of these 4 sets of priors.</p>
-	<ul>
+	<p>The outcome of our analysis are the posterior distributions for the parameters in our model. These distributions indicate credible values for the parameters. Below, we show the density for the posterior distribution of β, the media, and highlight the region which falls under the ROPE. You can interact with the weights for the priors to obtain the posterior for a mixture of these 4 sets of priors.</p>
+	<ul class="nomargin-list">
 		<li>Skeptical 
 			<span class="weight-set" data-var="weight_to_skeptic" data-format="pretty_percent"></span> - 
 			<span data-var="weight_to_optim" class="TKAdjustableNumber" data-min="0" data-max="100" data-step="2"data-format="pretty_percent"></span>
@@ -211,22 +242,14 @@
 		<div id="graph"></div>
 		<figcaption>A figure caption.</figcaption>
 	</figure>
-
-	<h2>Implementation: obtaining posterior estimates for mixture priors</h2>
-	<p>First, we fit the bayesian model described above using each of the 4 priors used to get 4 posterior distributions. We then calculate the marginal likelihood for each posterior distribution which allow us to calculate the posterior weights. Using the prior weights, w<sup>(0)</sup><sub>j</sub>, (where, j indexes each set of priors), we obtain the posterior weights, w<sup>(1)</sup> according to the formula:</p>
-	<figure class="l-body">
-		<img id="weights" src="figures/weights.png" width="10%"><figcaption>Posterior weight calculation<span label="weights"></span></figcaption>
-	</figure>
-	<p>where, C<sub>j</sub> is the log-likelihood for each distribution.</p>
-	<p>Using these posterior weights, we calculated the weighted density estimates for each posterior distribution to obtain the mixture posterior distribution.</p>
-	<p>We fit the models to calculate each posterior distribution, and marginal log-likelihoods in R, and have provided R functions in the supplementary materials which accepts as parameters the observed data (as a list), the different sets of priors (as a data.frame) and bayesian model (as a stanmodel). Currently we support only rstan but we can expand this to include models from other bayesian packages as well.</p>
+	<p>Our results indicate that the probability of our estimate, β, being within the ROPE is <span data-var="ROPE" data-format="pretty_percent"></span>, with the median value being <span data-var="median_beta"></span>.</p>
 
 	<h2>Discussion & Conclusion</h2>
-	<p>In Carney et. al.'s initial paper, the authors claimed to have found a strong effect of power poses on risk taking (d = 0.6). However, multiple replications of the original study have failed to find an effect. A researcher, who is trying to replicate the initial study;s findings with a Bayesian analysis, is faced with the question of what priors to use. One can use an uninformative prior or an informative prior. One can also model one's belief in the strength of these priors. However, performing an analysis with just one of these priors might lead to a biased result.</p>
-	<p>To illustrate this, let's consider a couple of possible scenarios where an author is performing the replication analysis. In the first scenario, unknown to this author, the findings of the original study, by chance, chose a very unusual sample. The informed prior knowledge happens to be bad. The sample for the second study is reasonably representative. The author does not know what to do, so they drop the informative prior from their research. As it works out, this is fortunate because the happenstance of drawing an unusual sample is now avoided.</p>
-	<p>In the second example, unknown to the author, the data collected for the first study happens to be very representative of the data. Thus, using the resulting posterior as an informative prior for the replication study would be a good decision. Unfortunately, when they perform the second experiment, by chance, they happen to draw a very unusual sample. They compare the results with the two priors and drop the one with the informative prior. Unfortunately, they now have a very biased set of parameter estimates because they are unaware that they have drawn a strange sample.</p>
-	<p>This example illustrates the benefit of using multiple priors in the analysis and reporting the results from these multiple priors. The authors can then defend why they believe that one prior is superior for the analysis compared to the others. An explorable multiverse analysis, which would allow the readers to set the weights between these different priors provides an additional layer of transparency to the authors' decisions.</p>
-	<p>In this example, we observe that the effect size estimated in the original study <dt-cite key="carney2010power"></dt-cite> has been overestimated, and using optimistic priors based on the original study would result in a biased posterior estimate in the replication study. Instead, using uninformed, skeptical or very weakly informative priors may be more appropriate. The results of the repplication find no effect of incidental power poses on risk-taking behavior.</p>
+	<p>In Carney et. al.'s initial paper, the authors claimed to have found a strong effect of power poses on risk taking (d = 0.6)<dt-cite key="carney2010power"></dt-cite>. However, multiple replications of the original study have failed to find an effect. A researcher, who is trying to replicate the initial study's findings with a Bayesian analysis, is faced with the question of what priors to use. One can use an uninformative prior or an informative prior. One can also model one's belief in the strength of these priors. However, performing an analysis with just one of these priors might lead to a biased result.</p>
+
+	<p>Hence, in our analysis, we used multiple priors to estimate the posterior distribution of the parameter, β. We see that, regardless of the prior used, the median value is always in the interval [-1, 1], and the probability that the parameter lies within ROPE is always greater than 50%. However, our results also show that using a more optimistic prior, calculated from the effect size proposed in the original study <dt-cite key="carney2010power"></dt-cite> and Yap et. al.'s work <dt-cite key="yap2013ergonomics"></dt-cite> would have resulted in biased estimates, as the reported effect sizes in those studies have been overestimated. Thus, using uninformed, skeptical or very weakly informative priors may be more appropriate for this analysis.</p>
+	
+	<p>Our experiment found that incidental body posture did not predict participants' behavior, and this is consistent with the findings of the recent replications which elicited postures explicitly. The results of our replication find no effect of incidental power poses on risk-taking behavior, leading us to conclude that incidental power poses are unlikely to produce measurable differences in risk-taking behavior when tested across a diverse population.</p>
 	</dt-article>
 
 	<dt-appendix>
@@ -299,6 +322,26 @@
 			year={2015},
 			publisher={Sage Publications Sage CA: Los Angeles, CA}
 		}
+
+		@article{kruschke2013bayesian,
+			title={Bayesian estimation supersedes the t test.},
+			author={Kruschke, John K},
+			journal={Journal of Experimental Psychology: General},
+			volume={142},
+			number={2},
+			pages={573},
+			year={2013},
+			publisher={American Psychological Association}
+		}
+
+		@article{team2016rstan,
+			title={RStan: the R interface to Stan},
+			author={Team, SD},
+			journal={R package version},
+			volume={2},
+			number={1},
+			year={2016}
+		}
 	</script>
-	<script src = "scripts/custom-1.2.js"></script>
+	<script src = "scripts/custom.js"></script>
 </body>

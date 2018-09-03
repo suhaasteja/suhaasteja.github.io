@@ -140,6 +140,7 @@ function switchLayout() {
   $('#layout_button').html('Switch to Distill layout');
 
   }
+
   console.log("switched layout to " + currentLayout);
 
   var bounding_width = d3.select('div#graph').node().getBoundingClientRect().width;
@@ -150,6 +151,9 @@ function switchLayout() {
     draw_density(g, single_prior_densities[i], 'prior', 'none', '#b0b0b0', 1, 2);
     //draw_density(g, single_posterior_densities[i], 'none', color(i), 0);
   }
+
+  // draw_mixture_density(g, Object.values(single_prior_densities), 'prior mixture', Object.values(prior_weight), 'none', 'red');
+  // draw_mixture_density(g, Object.values(single_posterior_densities), 'posterior mixture', post_weights);
 }
 
 // setup to enable switching between layouts;

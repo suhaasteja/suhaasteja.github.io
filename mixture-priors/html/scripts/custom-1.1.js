@@ -1,102 +1,116 @@
 $(document).ready(function() { console.clear() });
 
-// Defining variables for plotting the graphs
-var svg_dims = {w: 600, h: 640}, // dimensions of the canvas for plotting the posterior
-	canvas = {w: 600, h: 320}, // dimensions of the canvas for plotting the posterior
-	margin = {top: 30, right: 30, bottom: 30, left: 30} // margins for the canvas for plotting the posterior
-	input = {h: 300, w: 300}, // dimensions of the input-pad for plotting the posterior
-	margin_input = {top: 50, right: 50, bottom: 50, left: 50}, // margins for the input-pad for posterior weights
-	prior_loc = [ [margin_input.left, (margin_input.top - 30)], 
-					[(input.w - margin_input.right), (margin_input.top - 30)], 
-					[margin_input.left, input.h - 30], 
-					[(input.w - margin_input.right), input.h - 30] ];
-
 // Defining some global variables which are going to be useful for storing the data
 var samples, j, priors, log_ll, data,
 	single_prior_densities = {}, 
 	single_posterior_densities = {},
 	prior_weight = {};
 
-var svg = d3.select('div#graph')
+var bounding_width = d3.select('div#graph').node().getBoundingClientRect().width;
+
+setSVG(bounding_width);
+
+function setSVG(width){
+	d3.selectAll('svg').remove();
+
+	console.log('updating graphs...', width);
+
+	// Defining variables for plotting the graphs
+	var canvas = {w: width, h: width * 9/16}, // dimensions of the canvas for plotting the posterior
+		margin = {top: 20, right: 30, bottom: 40, left: 30}, // margins for the canvas for plotting the posterior
+		input = {h: 300, w: 300}, // dimensions of the input-pad for plotting the posterior
+		margin_input = {top: 50, right: 50, bottom: 50, left: 50}, // margins for the input-pad for posterior weights
+		prior_loc = [ [margin_input.left, (margin_input.top - 30)], 
+						[(input.w - margin_input.right), (margin_input.top - 30)], 
+						[margin_input.left, input.h - 30], 
+						[(input.w - margin_input.right), input.h - 30] ];
+
+	svg = d3.select('div#graph')
 			.append('svg')
-			.attr('width', svg_dims.w)
-			.attr('height', svg_dims.h);
+			.attr('width', canvas.w)
+			.attr('height', canvas.h);
 
-var g_prior = svg.append('g')
-			.attr('class', 'graph_prior');
+	g = svg.append('g')
+			.attr('class', 'graph');
 
-var g_posterior = svg.append('g')
-			.attr('class', 'graph_posterior')
-			.attr("transform", "translate(0," + canvas.h + ")");
-
-var x = d3.scaleLinear()
+	x = d3.scaleLinear()
 			.domain([-20, 20])
 			.range([margin.left, canvas.w - margin.right]),
 
 	y = d3.scaleLinear()
-			//.domain([0, 0.4])
+			.domain([0, 0.4])
 			.range([canvas.h - margin.bottom, margin.top]),
+
+	input_x = d3.scaleLinear()
+			.domain([0, 100])
+			.range([margin_input.left, input.w - margin_input.right]),
+
+	input_y = d3.scaleLinear()
+			.domain([100, 0])
+			.range([input.h - margin_input.bottom, margin_input.top]),
 
 	color = d3.scaleOrdinal()
 				.range(["#54BA94", "#A0C4E2", "#FF8552",  "#297373", "#59ADDE"]);
 
-var sketchpad = d3.select('div#sketchpad')
-			.append('svg')
-			.attr('class', 'input')
-			.attr('width', input.w)
-			.attr('height', input.h);
+	sketchpad = d3.select('div#sketchpad')
+				.append('svg')
+				.attr('class', 'input')
+				.attr('width', input.w)
+				.attr('height', input.h);
 
-	// input_x = d3.scaleLinear()
-	// 		.domain([0, 100])
-	// 		.range([margin_input.left, input.w - margin_input.right]),
+	g.append("g")
+		.attr("class", "axis axis--x")
+		.attr("transform", "translate(0," + (canvas.h - margin.bottom) + ")")
+		.call(d3.axisBottom(x))
+		.append("text")
+		.attr("x", canvas.w - margin.right)
+		.attr("y", -6)
+		.attr("fill", "#000")
+		.attr("text-anchor", "end")
+		.text("estimates");
 
-	// input_y = d3.scaleLinear()
-	// 		.domain([100, 0])
-	// 		.range([input.h - margin_input.bottom, margin_input.top]);
+	// g.append("g")
+	// 	.attr("class", "axis axis--y")
+	// 	.attr("transform", "translate(" + margin.left + ",0)")
+	// 	.call(d3.axisLeft(y).ticks(null));
 
-g_prior.append("g")
-	.attr("class", "axis axis--x")
-	.attr("transform", "translate(0," + (canvas.h - margin.bottom) + ")")
-	.call(d3.axisBottom(x))
-	.append("text")
-	.attr("x", canvas.w - margin.right)
-	.attr("y", -6)
-	.attr("fill", "#000")
-	.attr("text-anchor", "end")
-	.text("estimates");
+	g.append('text')
+		.attr('class', 'legend prior-legend')
+		.text('Prior densities')
+		.attr('x', (x.range()[0] * 1.5))
+		.attr('y', (y.range()[1] * 1.5))
+		.attr('font-size', '16px');
 
-g_prior.append("g")
-	.attr("class", "axis axis--y")
-	.attr("transform", "translate(" + margin.left + ",0)")
-	.call(d3.axisLeft(y).ticks(null));
+	g.append('path')
+		.attr('transform', 
+			'translate(' + (x.range()[0] * 1.5 + d3.select('.prior-legend')._groups[0][0].getComputedTextLength() + 8) + ',' 
+			+ (y.range()[1] * 1.5 - 4) + ')')
+		.attr('d', 'M0 0 L50 0')
+		.attr('stroke', '#979797')
+		.style('stroke-dasharray', 2)
+		.attr('stroke-width', 1);
 
-g_posterior.append("g")
-	.attr("class", "axis axis--x")
-	.attr("transform", "translate(0," + (canvas.h - margin.bottom) + ")")
-	.call(d3.axisBottom(x))
-	.append("text")
-	.attr("x", canvas.w - margin.right)
-	.attr("y", -6)
-	.attr("fill", "#000")
-	.attr("text-anchor", "end")
-	.text("estimates");
+	g.append('text')
+		.attr('class', 'legend prior-mixture-legend')
+		.text('Prior mixture density')
+		.attr('x', (x.range()[0] * 1.5))
+		.attr('y', (y.range()[1] * 2.25))
+		.attr('font-size', '16px');
 
-g_posterior.append("g")
-	.attr("class", "axis axis--y")
-	.attr("transform", "translate(" + margin.left + ",0)")
-	.call(d3.axisLeft(y).ticks(null));
+	g.append('path')
+		.attr('transform', 
+			'translate(' + (x.range()[0] * 1.5 + d3.select('.prior-mixture-legend')._groups[0][0].getComputedTextLength() + 8) + ',' 
+			+ (y.range()[1] * 2.25 - 4) + ')')
+		.attr('d', 'M0 0 L50 0')
+		.attr('stroke', 'red')
+		.attr('stroke-width', 2);
 
-g_prior.append('text')
-	.attr('class', 'desc')
-	.text('Prior densities')
-	.attr('x', (x.range()[0] * 1.5))
-	.attr('y', (y.range()[1] * 2));
-
-g_posterior.append('text')
-	.attr('class', 'desc')
-	.text('Posterior densities')
-	.attr('x', (x.range()[0] * 1.5))
-	.attr('y', (y.range()[1] * 2));
+	g.append("text")
+		.attr("transform", "translate(" + (canvas.w/2) + " ," +  (canvas.h - 8) + ")")
+		.style("text-anchor", "middle")
+		.text("Mean difference in the number of pumps")
+		.attr('font-size', '16px');
+}
 
 // input_group = sketchpad.append('g');
 
@@ -105,14 +119,17 @@ d3.csv("../R/prior_posterior_density_estimates.csv", function(error, d){
 
 	data = d; // setting it to the globally declared variable so that it can be accessed by functions
 
-	y.domain( [0, d3.max(data, function(d) { return d3.max([+d.prior_d, +d.post_d]); })] );
+	max_y = d3.max(data, function(d) { return d3.max([+d.prior_d, +d.post_d]); });
+	y.domain( [0, max_y] );
 
 	j = d3.max(data, function(d) { return d.j; });
 
-	log_ll = d3.nest()
-				.key(function(d) { return d.j; })
-				.rollup(function(v) { return +v[0].log_C; }) // d3.mean(v, function(d) { return d.log_C; }); })
-				.object(data);
+	log_ll = Object.values(
+				d3.nest()
+					.key(function(d) { return d.j; })
+					.rollup(function(v) { return +v[0].log_C; }) // d3.mean(v, function(d) { return d.log_C; }); })
+					.object(data)
+			);
 
 	priors = d3.nest()
 				.key(function(d) { return d.j; })
@@ -127,29 +144,6 @@ d3.csv("../R/prior_posterior_density_estimates.csv", function(error, d){
 		// thus, it would be set to 1/J, where J is the number of different priors
 		// In this version, J = 4
 		prior_weight[i] = 1/j;
-		/*
-		prior_text = input_group.append('text')
-			.style('font-weight', 'bold')
-			.attr('text-anchor', 'middle');
-
-		prior_text.append('tspan')
-			.attr('class', 'prior-'+i)
-			.text('N(' + priors[i][0] + ',' + priors[i][1] + ')')
-			.style('fill', color(i))
-			.attr('x', prior_loc[i-1][0])
-			.attr('y', prior_loc[i-1][1])
-			.attr('dx', 0)
-			.attr('dy', 0);
-
-		prior_text.append('tspan')
-			.attr('class', 'weight-'+i)
-			.style('font-style', 'italic')
-			.text('weight: 0.25')
-			.attr('x', prior_loc[i-1][0])
-			.attr('y', prior_loc[i-1][1])
-			.attr('dx', 0)
-			.attr('dy', 16);
-		*/
 	}
 
 	data.forEach(function(d, i) {
@@ -158,65 +152,23 @@ d3.csv("../R/prior_posterior_density_estimates.csv", function(error, d){
 	});
 
 	for (var i = 1; i <= j; i++){
-		draw_density(g_prior, single_prior_densities[i], 'none',  color(i), 2, 'prior');
-		draw_density(g_posterior, single_posterior_densities[i], 'none', color(i), 0);
+		draw_density(g, single_prior_densities[i], 'prior', 'none', '#b0b0b0', 1, 2);
+		//draw_density(g, single_posterior_densities[i], 'none', color(i), 0);
 	}
 
 	var post_weights = get_posterior_weights(prior_weight, log_ll);
 
-	draw_mixture_density(g_prior, Object.values(single_prior_densities), Object.values(prior_weight));
-	draw_mixture_density(g_posterior, Object.values(single_posterior_densities), post_weights);
-
-	/*
-	input_group.append('rect')
-		.attr('class', 'input-space')
-		.attr('x', input_x(0))
-		.attr('y', input_y(0))
-		.attr('width', (input_x(100) - input_x(0)))
-		.attr('height', (input_y(100) - input_y(0)))
-		.attr('fill', '#ddd')
-		.on('mouseup', function(d){
-			if (d3.mouse(this)[0] >= margin_input.left && d3.mouse(this)[0] <= (input.w - margin_input.right) && 
-				(d3.mouse(this)[1] >= margin_input.top) && (d3.mouse(this)[1] <= (input.w - margin_input.right))) {
-				update_weights(d3.mouse(this)[0], d3.mouse(this)[1]);
-			}
-		})
-
-	input_group.append('circle')
-		.attr('class', 'weight-indicator')
-		.attr('cx', input_x(50))
-		.attr('cy', input_y(50))
-		.attr('r', 5)
-		.attr('fill', '#333')
-		.attr('stroke', '#333')
-		.attr('stroke-width', 3)
-		.call(d3.drag()
-		.on("drag", function(d){
-			if (d3.event.x > margin_input.left && d3.event.x < (input.w - margin_input.right)) {
-				sketchpad_x = d3.event.x;
-			} else if (d3.event.x <= margin_input.left) {
-				sketchpad_x = margin_input.left;
-			} else {
-				sketchpad_x = (input.w - margin_input.right);
-			}
-
-			if (d3.event.y > margin_input.top && d3.event.y < (input.h - margin_input.bottom)) {
-				sketchpad_y = d3.event.y;
-			} else if (d3.event.y <= margin_input.top) {
-				sketchpad_y = margin_input.top;
-			} else {
-				sketchpad_y = (input.h - margin_input.bottom);
-			}
-
-			update_weights(sketchpad_x, sketchpad_y);
-		}));
-	*/
+	draw_mixture_density(g, Object.values(single_prior_densities), 'prior mixture', Object.values(prior_weight), 'none', 'red');
+	draw_mixture_density(g, Object.values(single_posterior_densities), 'posterior mixture', post_weights);
 });
 
-function draw_density(svg, density, fillColor = 'none', strokeColor = 'none', dashArray = 0, obj_class = 'posterior'){
+
+function draw_density(svg, density, dens_class, fillColor = 'none', strokeColor = 'none', strokeWidth, dashArray = 0){
+	y.domain( [0, max_y] );
+
 	svg.append("path")
 		.datum(density)
-		.attr('class', obj_class)
+		.attr('class', dens_class)
 		.attr("fill", "none")
 		.attr("stroke", "#000")
 		.attr("stroke-width", 1.5)
@@ -226,14 +178,40 @@ function draw_density(svg, density, fillColor = 'none', strokeColor = 'none', da
 		.x(function(d) { return x(d[0]); })
 		.y(function(d) { return y(d[1]); }))
 		.style('fill', fillColor)
-		.style('fill-opacity', 0.7)
+		.style('fill-opacity', 0.4)
 		.style('stroke', strokeColor)
 		.style('stroke-dasharray', dashArray)
-		.style('stroke-width', 2);
+		.style('stroke-width', strokeWidth);
 }
 
 function get_log_sum_exp(ll_sum){
 	return Math.log(ll_sum.map( x => Math.exp(x - Math.max(...ll_sum))).reduce((a, b) => a + b)) + Math.max(...ll_sum);
+}
+
+function get_quantile(density, interval) {
+	var del_x = density.map(x => +x[0]),
+		y = density.map(x => +x[1]),
+		lower = (1 - (interval/100))/2,
+		upper = 1 - lower;
+
+	var sum = 0;
+	for (var i = 1; i < density.length; i++){
+		if (sum < lower){
+			sum += (del_x[i] - del_x[i-1])*y[i];
+		} else {
+			break;
+		}
+	}
+
+	var sum = 0;
+	for (var j = 1; j < density.length; j++){
+		if (sum < upper){
+			sum += (del_x[j] - del_x[j-1])*y[j];
+		} else {
+			break;
+		}
+	}
+	return [i, j]
 }
 
 function get_posterior_weights(prior_weights, log_ll) {
@@ -244,7 +222,7 @@ function get_posterior_weights(prior_weights, log_ll) {
 	return ll_sum.map( x => Math.exp(x - log_sum_exp));
 }
 
-function draw_mixture_density(group, densities, weights){
+function draw_mixture_density(group, densities, dens_class, weights, fillColor = '#B9E3FF', strokeColor = 'none', dashArray = 0){
 	var single_weighted_densities = [];
 	var x_ticks = densities[0].map(x => x[0]);
 
@@ -255,7 +233,29 @@ function draw_mixture_density(group, densities, weights){
 	const add = (a, b) => (a + b);
 
 	var mixture_density = _.zip( x_ticks, _.unzip(single_weighted_densities).map(x => x.reduce(add)) );
-	draw_density(group, mixture_density, '#a6a4c1', 'none', 0, 'mixture');
+	draw_density(group, mixture_density, dens_class, fillColor, strokeColor, 2, dashArray);
+
+	if (dens_class == 'posterior mixture'){
+		var [lower_quantile, lower_quantile] = get_quantile(mixture_density, 95);
+		var [lowerMedian, upperMedian] = get_quantile(mixture_density, 2);
+
+		HDI = mixture_density.slice(lower_quantile, lower_quantile);
+		HDI.splice(0, 0, [+mixture_density[lower_quantile][0], 0]);
+		HDI.push([+mixture_density[lower_quantile][0], 0]);
+		draw_density(group, HDI, dens_class, '#5D9CCA', 'none', dashArray);
+
+		var dens = mixture_density.map(x => x[1]);
+		median = mixture_density[dens.indexOf(d3.max(dens))];
+
+		group.append('line')
+			.attr('class', 'posterior median mixture')
+			.attr('x1', x(median[0]))
+			.attr('y1', y(median[1]))
+			.attr('x2', x(median[0]))
+			.attr('y2', y(0))
+			.attr('stroke-width', 4)
+			.attr('stroke', '#666');
+	}
 }
 
 // function update_weights(sketchpad_x, sketchpad_y){
@@ -278,6 +278,6 @@ function draw_mixture_density(group, densities, weights){
 // 	d3.selectAll('.mixture').remove();
 
 // 	var post_weights = get_posterior_weights(prior_weights, log_ll);
-// 	draw_mixture_density(g_prior, Object.values(single_prior_densities), prior_weights);
-// 	draw_mixture_density(g_posterior, Object.values(single_posterior_densities), post_weights);
+// 	draw_mixture_density(g, Object.values(single_prior_densities), prior_weights, 'none', 'red');
+// 	draw_mixture_density(g, Object.values(single_posterior_densities), post_weights);
 // }

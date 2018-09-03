@@ -1,0 +1,197 @@
+<!doctype html>
+<head>
+<meta charset="utf-8">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://distill.pub/template.v1.js"></script>
+
+	<script type="text/javascript" src="scripts/Tangle.js"></script>
+	<script type="text/javascript" src="scripts/TangleKit/mootools.js"></script>
+	<script type="text/javascript" src="scripts/TangleKit/sprintf.js"></script>
+	<script type="text/javascript" src="scripts/TangleKit/BVTouchable.js"></script>
+	<script type="text/javascript" src="scripts/TangleKit/TangleKit.js"></script>
+	<script src="scripts/interactive_paper.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+
+	<script src="scripts/lodash.js"></script>
+	<script src="https://unpkg.com/mathjs@5.0.4/dist/math.js"></script>
+
+	<link rel="stylesheet" href="pubcss-acm-sigchi.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	<!-- TangleKit (optional) -->
+	<link rel="stylesheet" href="scripts/TangleKit/TangleKit.css" type="text/css">
+
+	<script type="text/javascript">
+		var tangle = null;
+
+		function setUpTangle () {
+			// tip: use as tangle root whatever element is an ancestor of all tangle elements.
+			var tangleRoot = document.getElementById("tangleRoot");
+
+			tangle = new Tangle(tangleRoot, {
+				initialize: function () {
+					// 0. default statistical analysis options
+					
+					this.weight_to_optim = 50;
+					this.weight_to_wide = 50;
+				},
+				update: function () {
+					// 1. update the figures
+					// 2. update the text
+					this.weight_to_skeptic = (100 - this.weight_to_optim);
+					this.weight_to_narrow = (100 - this.weight_to_wide);
+
+					prior_weights = [ this.weight_to_skeptic / 100 * this.weight_to_narrow / 100,
+									(1 - this.weight_to_skeptic / 100) * this.weight_to_narrow / 100,
+									this.weight_to_skeptic / 100 * (1 - this.weight_to_narrow / 100),
+									(1 - this.weight_to_skeptic / 100) * (1 - this.weight_to_narrow / 100) ];
+
+					this.weight_skeptical_narrow = (this.weight_to_skeptic * this.weight_to_narrow) / 100;
+					this.weight_optimistic_narrow = ((100 - this.weight_to_skeptic) * this.weight_to_narrow) / 100;
+					this.weight_skeptical_wide = (this.weight_to_skeptic * (100 - this.weight_to_narrow)) / 100;
+					this.weight_optimistic_wide = ((100 - this.weight_to_skeptic) * (100 - this.weight_to_narrow)) / 100;
+
+					$(document).ready(function(){
+						d3.selectAll('.mixture').remove();
+
+						var post_weights = get_posterior_weights(prior_weights, log_ll);
+
+						draw_mixture_density(g_prior, Object.values(single_prior_densities), prior_weights);
+						draw_mixture_density(g_posterior, Object.values(single_posterior_densities), post_weights);
+					});
+				}
+			});
+		}
+	</script>
+
+  <!-- CSS code taken from pubcss that adds figure numbering also for the distill layout. -->
+  <style>
+	a[href^="#"].figure {
+	  content: target-counter(attr(href, url), figure); 
+	}
+	a[href^="#"].figure::before {
+	  content: "Figure "; 
+	}
+	a[href^="#"].figure::after {
+	  content: ''; 
+	}
+	figure {
+		counter-increment: figure;
+	}
+	figcaption::before {
+		content: "Figure " counter(figure) ". ";
+	}
+	span.weight-set {
+		color: #46F !important;
+	}
+  </style>
+</head>
+
+<body id="tangleRoot" onload="setUpTangle();">
+	<div style="width: 100%; height: 40px;"></div>
+	<div style="width: 100%; height: 40px; background-color: rgba(100,100,100,0.5); position: fixed;left:0%;top: 0%; z-index: 1000">
+	<button id="layout_button" style="width: 150px; margin: auto; position: fixed;top: 0%; left: calc(50% - 75px);" onclick="switchLayout();">Switch to ACM layout</button>
+	</div>
+
+<!---------------------------------------------------------------------------------------------------->
+<!--  Start editing from here -->
+<!---------------------------------------------------------------------------------------------------->
+
+<script type="text/front-matter">
+  title: "How Relevant are Incidental Power Poses for HCI?"
+  authors:
+  - Pierre Dragicevic: http://dragice.fr
+  - Yvonne Jansen: http://yvonnejansen.me
+  affiliations:
+  - Inria: http://www.aviz.fr
+  - CNRS, Sorbonne Université: http://hci.isir.upmc.fr
+</script>
+
+<dt-article>
+	<header class="col-span">
+	<h1 class="title">How Relevant are Incidental Power Poses for HCI?</h1>
+		<div class="authors col-2">
+			<div class="author">
+				<div>Pierre Dragicevic</div>
+				<div>Inria</div>
+				<div>pierre.dragicevic@inria.fr</div>
+			</div>
+			<div class="author">
+				<div>Yvonne Jansen</div>
+				<div>Université Paris-Sud & Inria</div>
+				<div>yvonne.jansen@inria.fr</div>
+			</div>
+		</div>
+	</header>
+	<dt-byline></dt-byline>
+  
+	<h2 id="Abstract">Abstract</h2>
+	<p>The concept of power pose originates from a Psychology study from 2010 which suggested that holding an expansive pose can change hormone levels and increase risk-taking behavior. Follow-up experiments suggested that expansive poses incidentally imposed by the design of an environment lead to more dishonest behaviors. While multiple replication attempts of the 2010 study failed, the follow-up experiments on incidental postures have so far not been replicated. As UI design in HCI can incidentally lead to expansive body postures, we attempted two conceptual replications: we first asked 44 participants to tap areas on a wall-sized display and measured their self-reported sense of power; we then asked 80 participants to play a game on a large touch-screen and measured risk-taking. Based on Bayesian analyses we find that incidental power poses had little to no effect on our measures but could cause physical discomfort. We conclude by discussing our findings in the context of theory-driven research in HCI.</p>
+
+	<h2 id="keywords">Author Keywords</h2>
+	<p id="keywords">Physical visualization; multiverse analysis.</p>
+
+	<h2 id="acm">ACM Classification Keywords</h2>
+	<p id="acm">H5.2 User Interfaces: Evaluation/Methodology</p>
+
+	<h2 id="terms">General Terms</h2>
+	<p id="terms">Human Factors; Design; Experimentation; Measurement.</p>
+
+	<h2 id="introduction">Introduction</h2>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<h2 id="experiment">Experiment 2: Inclined Tabletop</h2>
+
+	<p>Our second experiment is inspired by experiment 2 from Yap et al. <!-- enter citations -->. There, participants’ incidental posture was imposed by either arranging their tools around a large (0.6 m2) or a small (0.15 m2) workspace. Yap et al. study investigated the effect of incidental postures imposed by the different workspaces on people’s dishonesty, whereas we applied the paradigm to risk-taking behavior which is a common behavioral measure in multiple studies on explicit power poses <!-- enter citations -->. These previous studies all gave binary choices to participants, asking them whether they were willing to take a single gamble <!-- enter citations --> or to make several risky choices in both gain and loss domain <!-- enter citations --> using examples taken from Tversky and Kahneman <!-- enter citations -->. There, participants’ binary response was the measure for risk-taking. We opted for a more continuous measure for risk-taking as it results in higher resolution for responses, and used the balloon analog risk task (BART), a behavioral measure for risk-taking propensity [49]. We again study one main factor: incidental posture with two levels, expansive and constrictive, implemented as two variations of the same graphical user interface (see Figure 7). To keep comfort constant across conditions, we used a slightly inclined 60” tabletop display instead of a wall display so that participants in both conditions could rest their arms while performing the task (see Figure 1C&D).</p>
+
+	<h3>Participants</h3>
+
+	<p>We recruited a total of 80 participants (42 women, 38 men, mean age 26) in two batches. Similar to experiment 1, we initially recruited 40 participants. A Bayes factor analysis <!-- enter citations --> at that point indicated that our data was not sensitive enough to draw any conclusions, and we decided to increase the total number of participants to 80. As is common in this type of experiment and as suggested by Carney et al. <!-- enter citations -->, we used a cover story to keep our research question hidden from participants. The study was advertised as a usability study for a touchscreen game. Participants were unaware of the different interface layouts since posture was manipulated between subjects, making it more difficult for them to guess the real purpose of the study.</p>
+
+	<h3>Procedure</h3>
+
+	<p>Similar to experiment 1, participants were alternately assigned in order of arrival to either the constrictive or the expansive condition. After signing an informed consent form for the “usability study”, participants were introduced to the tabletop setup and asked to go through the on-screen instructions of the game. They were informed that the amount of their compensation would depend on the number of points they achieved in the game. They then pumped up 30 balloons. Once finished, they filled a questionnaire on their level of comfort during the game (12 items), and the BIS-11 impulsivity test  <!-- enter citations --> (30 items). Finally, participants filled a separate form to receive a cinema voucher for their participation. The value of the voucher was between 13e and 20e, depending on how many points they accumulated in the game following the original BART protocol  <!-- enter citations -->. The entire experiment lasted about 20 min.</p>
+
+	<h3>Analysis</h3>
+
+	<p>We analyze our data using Bayesian estimation, through a robust linear model using as likelihood a heteroskedastic scaled and shifted t distribution with degrees of freedom ν. We assume our data to be drawn from two groups, the difference between which is given by β. We use this method for the robust analysis of metric data in nominal groups with weakly informed skeptical priors which help to avoid inflated effect sizes. Our analysis setup can be seen as a Bayesian analog to a standard ANOVA analysis yet without the prerequisites of an ANOVA, normality and equal variances, and with the possibility of accepting the null hypothesis if the posterior credibility for parameter ranges falls into a pre-defined region of practical equivalence (ROPE)</p>
+
+	<figure class="l-body">
+	<img id="model" src="figures/model.png" width="100%"><figcaption>Data Anslysis model specification<span label="model"></span></figcaption>
+	</figure>
+
+	<h2 id="results">Results</h2>
+
+	<p>We ran our models with 4 different sets of priors for β, which are a combination of skeptical (ceneterd around 0) and optimistic (ceneterd around a value informed by prior literature), and narrow (low variance, highly regularized) and wide (high variance, weakly regularized), based on the degree of informedness, and the strength of belief. Thus the 4 sets of priors for β, and the weights assigned to each are:</p>
+	<ul>
+		<li>Skeptical, narrow: N(0, 1): <span data-var="weight_skeptical_narrow" data-format="pretty_percent"></span></li>
+		<li>Optimistic, narrow: N(0.45, 1): <span data-var="weight_optimistic_narrow" data-format="pretty_percent"></span></li>
+		<li>Skeptical, wide: N(0, 10): <span data-var="weight_skeptical_wide" data-format="pretty_percent"></span></li>
+		<li>Optimistic, wide: N(0.45, 10): <span data-var="weight_optimistic_wide" data-format="pretty_percent"></span></li>
+	</ul>
+	<p>By default, each priors are equally weighted. Below, you can interact with the weights for the priors to obtain the posterior for a mixture of these 4 sets of priors.</p>
+	<ul>
+		<li>Skeptical 
+			<span class="weight-set" data-var="weight_to_skeptic" data-format="pretty_percent"></span> - 
+			<span data-var="weight_to_optim" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="pretty_percent"></span>
+		Optimistic</li>
+		<li>Narrow 
+			<span class="weight-set" data-var="weight_to_narrow" data-format="pretty_percent"></span> - 
+			<span data-var="weight_to_wide" class="TKAdjustableNumber" data-min="0" data-max="100" data-format="pretty_percent"></span> 
+		Wide</li>
+	</ul>
+
+	<div>
+		<div id="graph"></div>
+	</div>
+
+	<h2>Discussion & Conclusion</h2>
+	</dt-article>
+
+	<!-- <dt-appendix>
+	</dt-appendix> -->
+
+
+	<!-- <script type="text/bibliography"></script> -->
+	<script src = "scripts/custom-1.1.js"></script>
+</body>
