@@ -96,7 +96,7 @@ h3 {
 
 /* Default heading text size */
 h4{
-	font-size: 1.4em;
+	font-size: 1.25em;
 	font-family: 'AvenirNext-DemiBold', sans-serif;
 }
 
@@ -125,8 +125,8 @@ h4.mockup-caption {
 
 h6 {
 	font-family: 'AvenirNext-DemiBold', sans-serif;
-	font-size: 1.6em;
-	line-height: 1.15
+	font-size: 1.25em;
+	line-height: 1.15;
 	margin-bottom: 12px;
 	color: #444;
 }
@@ -134,7 +134,7 @@ h6 {
 h6.project-subtitle{
 	font-family: 'AvenirNext-Regular', sans-serif;
 	font-size: 1.25em;
-	line-height: 1.5;
+	line-height: 1.15;
 	color: #5b5e6d;
 }
 
@@ -278,7 +278,6 @@ b {
 a{
 	font-family: 'AvenirNext-Medium', sans-serif;
 	color: #444;
-	font-size: 16px;
 	display: inline-block;
 	text-decoration: none;
 }
@@ -288,6 +287,7 @@ a:focus,
 a:active
  {
 	text-decoration: none;
+	color: #dc2127;
 }
 
 a.contact-text {	
