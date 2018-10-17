@@ -9,6 +9,16 @@
 }
 
 @font-face {
+	font-family: kepler-b;
+	src: url(kepler-std/KeplerStd-BoldCapt.otf);
+}
+
+@font-face {
+	font-family: kepler-bb;
+	src: url(kepler-std/KeplerStd-BoldCapt.otf);
+}
+
+@font-face {
 	font-family: Monoton;
 	src: url(monoton/Monoton-Regular.ttf);
 }
@@ -55,7 +65,7 @@ body {
 h1{
 	font-size: 32px;
 	font-family: 'AvenirNext-DemiBold', sans-serif;
-	color: #dc2127;
+	color: #a8943d;
 }
 
 /* Header on project pages wpost-scroll-down */
@@ -69,17 +79,17 @@ h1.text-shrink{
 
 /* Text in project banners */
 h2 {
-	font-family: 'futura-b', serif;
+	font-family: 'kepler-b', serif;
 	font-size: 2em;
-	line-height: 1.15;
+	line-height: 1;
 	margin-top: 0px;
 }
 
 h2.page-title {
-	font-family: 'futura-b', serif;
+	font-family: 'kepler-b', serif;
 	display: inline;
 	font-size: 3.5em;
-	line-height: 1.15;
+	line-height: 0.95;
 }
 
 h2.page-title span {
@@ -103,7 +113,7 @@ h4{
 
 h4.thesis-caption{
 	font-size: 1.6em;
-    line-height: 1.15;
+    line-height: 1.1;
     font-family: 'AvenirNext-DemiBold', sans-serif;
     color: #909090;
 }
@@ -111,21 +121,22 @@ h4.thesis-caption{
 /* Landing page bio text */
 h4.short-caption {
 	color: #5b5e6d;
-	font-family: 'AvenirNext-Medium', sans-serif;
+	font-family: 'AvenirNext-Regular', sans-serif;
+	font-size: 1.1em;
 	line-height: 1.5em;
 	margin: 16px 0px 24px 0px;
 }
 
 /* Landing page bio text */
 h4.mockup-caption {
-	font-family: futura-b;
+	font-family: 'kepler-b';
 	font-size: 21px;
 	margin-bottom: 4px;
 }
 
 h6 {
 	font-family: 'AvenirNext-DemiBold', sans-serif;
-	font-size: 1.25em;
+	font-size: 1.1em;
 	line-height: 1.15;
 	margin-bottom: 12px;
 	color: #444;
@@ -133,13 +144,13 @@ h6 {
 
 h6.project-subtitle{
 	font-family: 'AvenirNext-Regular', sans-serif;
-	font-size: 1.25em;
+	/*font-size: 1em;*/
 	line-height: 1.15;
 	color: #5b5e6d;
 }
 
 h6.highlight-header {
-	font-family: 'futura-bb';
+	font-family: 'kepler-bb';
 	font-size: 21px;
 	line-height: 24px;
 }
@@ -147,7 +158,7 @@ h6.highlight-header {
 p {
 	font-family: 'AvenirNext-Regular', sans-serif;
 	color: #5b5e6d;
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: 1.5;
 }
 
@@ -197,11 +208,6 @@ p.project-detail-subheaders{
 	vertical-align: middle;
 }
 
-.body-header-1{
-	font-family: 'futura-bb';
-	font-size: 32px;
-}
-
 /* Footer text */
 p.footer-text{
 	margin-top: 24px;
@@ -216,8 +222,8 @@ ul.body-text{
 	color: #444;
 	font-family: 'AvenirNext-Regular', sans-serif;
 	color: #444;
-	font-size: 16px;
-	line-height: 24px;
+	font-size: 1em;
+	line-height: 1.5;
 	padding-left: 20px;
 }
 
@@ -287,7 +293,7 @@ a:focus,
 a:active
  {
 	text-decoration: none;
-	color: #dc2127;
+	color: #a8943d;
 }
 
 a.contact-text {	
@@ -309,14 +315,13 @@ a.quick-links:hover,
 a.quick-links:focus,
 a.quick-links:active {
 	text-decoration: none;
-	color: #dc2127;
+	color: #a8943d;
 }
 
 a.quick-links-current{
 	text-transform: uppercase;
 	font-weight: 600 !important;
-	color: #dc2127;
-	font-size: 16px;
+	color: #a8943d;
 	margin-bottom: 0px;
 	line-height: 40px;
 }
@@ -348,7 +353,7 @@ a.portfolio-text-link{
 a.portfolio-text-link:hover,
 a.portfolio-text-link:focus,
 a.portfolio-text-link:active{
-	color: #dc2127;
+	color: #a8943d;
 	text-decoration: none;
 }
 
@@ -366,21 +371,20 @@ a.page-header:active {
 }
 
 a.about-link {
-	font-size: 18px;
-	color: #dc2127;
+	color: #a8943d;
 }
 
 a.about-link:focus,
 a.about-link:hover,
 a.about-link:active {
 	text-decoration: none;
-	color: #dc2127;
+	color: #a8943d;
 }
 
 a.ref-link {
 	font-weight: 400;
 	line-height: 24px;
-	border-bottom: 1px #dc2127 solid;
+	border-bottom: 1px #a8943d solid;
 }
 
 a.ref-link:hover,
@@ -388,7 +392,7 @@ a.ref-link:focus,
 a.ref-link:active
  {
  	text-decoration: none;
-	color: #dc2127;
+	color: #a8943d;
 }
 
 /*
@@ -402,14 +406,14 @@ a.ref-link:active
 .circle{
 	border-style: solid;
 	border-width: 1pt;
-	border-color: #dc2127;
+	border-color: #a8943d;
 	border-radius: 50%;
 	width: 32px;
 	height: 32px;
 }
 
 a.social-icons{
-	color: #dc2127;
+	color: #a8943d;
 }
 
 a.social-icons:hover,
@@ -419,8 +423,8 @@ a.social-icons:active {
 }
 
 .circle:hover{
-	background-color: #dc2127;
-	border-color: #dc2127;
+	background-color: #a8943d;
+	border-color: #a8943d;
 	color: #fff;
 }
 
