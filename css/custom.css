@@ -80,7 +80,7 @@ h1.text-shrink{
 /* Text in project banners */
 h2 {
 	font-family: 'kepler-b', serif;
-	font-size: 6em;
+	font-size: 8em;
 	line-height: 0.8;
 	margin-top: 0px;
 }
@@ -118,22 +118,6 @@ h4.thesis-caption{
     color: #909090;
 }
 
-/* Landing page bio text */
-h4.intro {
-	color: #5b5e6d;
-	font-family: 'AvenirNext-Regular', sans-serif;
-	font-size: 1.1em;
-	line-height: 1.5em;
-	margin: 16px 0px 24px 0px;
-}
-
-/* Landing page bio text */
-h4.mockup-caption {
-	font-family: 'kepler-b';
-	font-size: 21px;
-	margin-bottom: 4px;
-}
-
 h6 {
 	font-family: 'AvenirNext-DemiBold', sans-serif;
 	font-size: 1.1em;
@@ -160,6 +144,20 @@ p {
 	color: #5b5e6d;
 	font-size: 1em;
 	line-height: 1.5;
+}
+
+/* Landing page bio text */
+p.intro {
+	color: #5b5e6d;
+	font-family: 'AvenirNext-Regular', sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5em;
+	margin: 16px 0px 24px 0px;
+}
+
+.cv{
+	font-size: 1.25em !important;
+	margin-top: 24px !important;
 }
 
 p.highlight {
@@ -309,6 +307,14 @@ a:focus,
 a:active
  {
 	text-decoration: none;
+	color: #a8943d;
+}
+
+.cv:hover,
+.cv:focus,
+.cv:active
+ {
+	text-decoration: underline;
 	color: #a8943d;
 }
 
