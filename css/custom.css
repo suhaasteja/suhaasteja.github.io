@@ -65,7 +65,7 @@ body {
 h1{
 	font-size: 32px;
 	font-family: 'AvenirNext-DemiBold', sans-serif;
-	color: #a8943d;
+	color: #FD926F;
 }
 
 /* Header on project pages wpost-scroll-down */
@@ -133,6 +133,11 @@ h6.project-subtitle{
 	color: #5b5e6d;
 }
 
+/* Project Page details sub-headers*/
+.project-details{
+	color: #2f9ba0 !important;
+}
+
 h6.highlight-header {
 	font-family: 'kepler-bb';
 	font-size: 21px;
@@ -173,39 +178,6 @@ p.img-caption{
 	padding: 0px 32px;
 }
 
-/* Landing Page Project Title text */
-.caption-title{
-	margin-top: 12px;
-	margin-bottom: 0px;
-	color: #fff;
-	text-align: center;
-	z-index: 99;
-}
-
-/* Landing Page Project Description text */
-.caption-subtitle{
-	font-family: 'AvenirNext-Medium', sans-serif;
-	font-size: 14px;
-	margin: 0px;
-	color: #fff;
-	text-align: center;
-	margin-top: 8px;
-	z-index: 99;
-}
-
-/* Project Page details sub-headers*/
-.project-details{
-	color: #2f9ba0 !important;
-}
-
-p.project-detail-subheaders{
-	font-family: 'AvenirNext-DemiBold', sans-serif;
-	color: #444;
-	line-height: 24px;
-	margin-bottom: 0px;
-	vertical-align: middle;
-}
-
 /* Footer text */
 p.footer-text{
 	margin-top: 24px;
@@ -238,6 +210,10 @@ span.highlight {
 	color: #FF9E2B;
 }
 
+/*
+For publications
+*/
+
 span.paper-title{
 	font-family: 'AvenirNext-DemiBold', sans-serif;
 	font-size: 1.1em;
@@ -263,6 +239,7 @@ b {
 	END OF TEXT CLASSES		 
 ============================
 */
+
 
 /*
 ============================
@@ -307,7 +284,7 @@ a:focus,
 a:active
  {
 	text-decoration: none;
-	color: #a8943d;
+	color: #FD926F;
 }
 
 .cv:hover,
@@ -315,7 +292,7 @@ a:active
 .cv:active
  {
 	text-decoration: underline;
-	color: #a8943d;
+	color: #FD926F;
 }
 
 a.contact-text {	
@@ -337,13 +314,13 @@ a.quick-links:hover,
 a.quick-links:focus,
 a.quick-links:active {
 	text-decoration: none;
-	color: #a8943d;
+	color: #FD926F;
 }
 
 a.quick-links-current{
 	text-transform: uppercase;
 	font-weight: 600 !important;
-	color: #a8943d;
+	color: #FD926F;
 	margin-bottom: 0px;
 	line-height: 40px;
 }
@@ -354,19 +331,6 @@ a.quick-links-current:active {
 	text-decoration: none;
 }
 
-/*a.portfolio-link:hover,
-a.portfolio-link:focus,
-a.portfolio-link:active {
-	background-size: 110% 110%;
-}*/
-
-
-
-#mtop-img:hover,
-#mtop-img:focus,
-#mtop-img:active, {
-	transform: scale(1.25);
-}
 
 a.portfolio-text-link{
 	text-decoration: none;
@@ -375,10 +339,9 @@ a.portfolio-text-link{
 a.portfolio-text-link:hover,
 a.portfolio-text-link:focus,
 a.portfolio-text-link:active{
-	color: #a8943d;
+	color: #FD926F;
 	text-decoration: none;
 }
-
 
 a.page-header{
 	margin: 0px;
@@ -393,20 +356,20 @@ a.page-header:active {
 }
 
 a.about-link {
-	color: #a8943d;
+	color: #FD926F;
 }
 
 a.about-link:focus,
 a.about-link:hover,
 a.about-link:active {
 	text-decoration: none;
-	color: #a8943d;
+	color: #FD926F;
 }
 
 a.ref-link {
 	font-weight: 400;
 	line-height: 24px;
-	border-bottom: 1px #a8943d solid;
+	border-bottom: 1px #FD926F solid;
 }
 
 a.ref-link:hover,
@@ -414,7 +377,7 @@ a.ref-link:focus,
 a.ref-link:active
  {
  	text-decoration: none;
-	color: #a8943d;
+	color: #FD926F;
 }
 
 /*
@@ -428,14 +391,14 @@ a.ref-link:active
 .circle{
 	border-style: solid;
 	border-width: 1pt;
-	border-color: #a8943d;
+	border-color: #FD926F;
 	border-radius: 50%;
 	width: 32px;
 	height: 32px;
 }
 
 a.social-icons{
-	color: #a8943d;
+	color: #FD926F;
 }
 
 a.social-icons:hover,
@@ -445,8 +408,8 @@ a.social-icons:active {
 }
 
 .circle:hover{
-	background-color: #a8943d;
-	border-color: #a8943d;
+	background-color: #FD926F;
+	border-color: #FD926F;
 	color: #fff;
 }
 
@@ -681,11 +644,6 @@ div.cover-text-placeholder{
 	START OF MARGIN CLASSES
 ================================
 */
-
-.margin-shift-up{
-	margin-top: -12px;
-}
-
 .nomargin {
 	margin-top: 0px !important;
 	margin-bottom: 0px !important;
@@ -724,10 +682,6 @@ div.cover-text-placeholder{
 .margin-sm {
 	margin-top: 24px !important;
 	margin-bottom: 24px !important;
-}
-
-.margin-pf {
-	margin-bottom: 30px;
 }
 
 .margin-top-md {
@@ -787,10 +741,6 @@ div.cover-text-placeholder{
 	margin-top: -32px !important;
 }
 
-.shiftdown {
-	margin-top: 27px !important;
-}
-
 
 /*
 ================================
@@ -843,32 +793,3 @@ iframe.video-container {
 		margin: 0px !important;
 	}
 }
-
-
-/*
-.shine{
-	font-family: 'Libre Baskerville', serif;
-	font-style: italic;
-	font-size: 21px;
-}
-
-a.portfolio-link:hover .caption {
-	text-decoration: none !important;
-	color: transparent;
-	animation-name: shine;
-	animation-duration: 0.3s;
-	animation-timing-function: ease-out;
-}
-
-@-webkit-keyframes shine
-{
-	0%
-	{
-		background-position: top left;
-	}
-	100%
-	{
-		background-position: top right;
-	}
-}
-*/
