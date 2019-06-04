@@ -59,8 +59,8 @@ body {
 /* Primary header */
 h1{
 	font-size: 32px;
-	font-family: 'AvenirNext-DemiBold', sans-serif;
-	color: #FD926F;
+	font-family: 'kepler-b', serif;
+	color: #2a2a2a;
 }
 
 /* Header on project pages wpost-scroll-down */
@@ -222,7 +222,7 @@ For publications
 
 span.paper-title{
 	font-family: 'AvenirNext-DemiBold', sans-serif;
-	font-size: 1.1em;
+	font-size: 1.25em;
 	line-height: 1.5em;
 }
 

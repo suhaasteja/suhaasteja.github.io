@@ -64,7 +64,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-12 col-navbar">
+                        <!-- <div class="col-md-6 col-sm-12 col-navbar">
                             <div class="hr margin-top-lmd">
                                 <div class="navbar-row">
                                     <div class="col-sm-4 col-xs-4 col-navbar">
@@ -86,7 +86,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -97,9 +97,9 @@
     <section id="portfolio">
         <div class="container">
             <div class="navbar-row">
-                <div class="col-md-7">
+                <div class="col-md-9">
                     <div class="cover margin-cover">
-                        <h2 class="page-title">Storytelling in InfoVis: What are the effects of narrative and interactivity on recall?</h2>
+                        <h2 class="page-title">The effect of Explanatory Narratives and Exploratory Interactivity on learning through recall</h2>
                         <h4 class="thesis-caption">Master's Thesis</h4><h4 class="thesis-caption">Advisor: Prof. Matthew Kay</h4>
                     </div>
                 </div>
@@ -109,34 +109,16 @@
                     <h6 class="project-details margin-top-lg">Overview</h6>
                     <div class="row">
                         <div class="col-md-6">
-                            <p>Narratives and interactivity have been widely used in data visualizations to present the data in a more compelling and accessible manner. However, research on on the effect of narratives or interactivity on insight generation has not been sufficiently researched.</p>
-                            <p>We study <mark><b>the effect of using different visualization strategies, operationalised through two variables: interactivity (static or interactive) and narrative (non-narrative or narrative), on recall.</b></mark> We designed and conducted a controlled experiment of 400 participants on Amazons Mechanical Turk.</p>
+                            <p>Communicative visualizations incorporating narratives and/or interactivity are commonplace. However, the relative importance of narratives versus interactivity in improving readers' understanding is unclear. As narratives and interactivity are broad design strategies, for the purposes of our work we define more specific subsets of these two strategies:</p>
+                            <ul class="body-text">
+                                <li>exploratory interactivity: the presence of interactivity that allowsthe user to explore the data, and</li>
+                                <li>explanatory narrative: the presence of textual messaging and anauthor-prescribed sequence of steps through the visualization.</li>
+                            </ul>
+                            <p>We designed visualizations which vary in the presence or absence of exploratory interactivity and explanatory narrative, presented them to Turkers, and measured recall of facts from the visualizations using a ten item True/False questionnaire.</p>
                         </div>
                         <div class="col-md-6">
-                            <p>Participants were asked to interact with visualizations adapted from professionally designed visualizations to the four possible combinations of the two variables - interactivity and recall; they were then required to answer a 11-item True / False Questionnaire.</p>
-                            <p>We used mixed effect models to analyse the data. Our results indicate <mark><b>a small positive effect due to the presence of narratives, but little or no effect due to the presence of interactivity, on the probability of answering a question correctly.</b></mark></p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h6 class="project-details margin-top-lg">Project Context</h6>
-                            <p class="margin-btm-md">This was a 2 semester long project, submitted in partial fulfillment for the degree of Master of Science in Information at the University of Michigan</p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6 class="project-details margin-top-lg">Methodology</h6>
-                            <p class="margin-btm-md">
-                                Literature Research <br>
-                                Research Questions <br>
-                                Study Design <br>
-                                Visualization design & development <br>
-                                Data collection <br> 
-                                Data cleaning & manipulation <br> 
-                                Model fitting & analysis
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <h6 class="project-details margin-top-lg">Tools Used</h6>
-                            <p class="margin-btm-md">R, Stan <br> Qualtrics <br> Mechanical Turk <br> SQL <br> HTML, CSS, JavaScript, D3.js</p>
+                            <p>We find a weak positive effect&mdash;an increase of ~10 percentage points, 95% CI: [6.1, 14.3]&mdash;from the presence of explanatory narratives, but likely little or no practical effect from exploratory interactivity (mean: 2.3 percentage points, 95%CI: [&ndash;1.4, 6.0]).<br><br>
+                            We argue that explanatory narratives may better facilitate recall than exploratory interactivity in communicative visualizations. Given the expertise required to construct exploratory interactive visualizations, the associated costs (in terms of design time or personnel) may not be worth the likely small gain in reader understanding. We suggest that in contrast to visualization for data analysis (where exploratory interactivity is quite powerful), for communicative visualization, explanatory narrative and other forms of interactivity (e.g., active learning approaches) might represent better trade-offs in the design space.</p>
                         </div>
                     </div>
                 </div>
@@ -159,7 +141,6 @@
                         </div>
                         <div class="col-md-5">
                             <img class="img-responsive" style="margin-top: -20px" src="images/design-space.png">
-                            <p class="text-center img-caption">Figure 1: Design Space for classifying visualization along a spectrum of narrative and interactivity</p>
                         </div>
                     </div>
                 </div>
@@ -172,7 +153,7 @@
                         <h3 class="body-header-1">02. Primary Research Question</h3>
                         <div class="row margin-top-md">
                             <div class="col-md-6">
-                                <p>What is the effect of the presence of interactivity and narratives on the audience and the ability to <mark><b>gather insight</b></mark> from the visualization?</p>
+                                <p>What are the effects of the presence of explanatory narrative and exploratory interactivity on the audience's ability to <mark><b>recall factual knowledge</b></mark> from the visualization?</p>
                             </div>
                         </div>
                         <div class="row margin-top-md">
