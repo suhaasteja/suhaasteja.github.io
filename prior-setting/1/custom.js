@@ -26,11 +26,9 @@ $("#btn-pg-2").click(function(){
 		text = $(this).text().split(" ")[0];
     
     if (text == "Show") {
-    		$('div#design-of-the-bart-experiment').css('display', 'inherit');
-  			$('div#prior-studies').css('display', 'inherit');
+    		$('div#experiment-details').css('display', 'inherit');
     } else {
-    		$('div#design-of-the-bart-experiment').css('display', 'none');
-  			$('div#prior-studies').css('display', 'none');
+    		$('div#experiment-details').css('display', 'none');
     }
     
 		$(this).text(function(i, text){
