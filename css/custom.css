@@ -49,6 +49,9 @@ body {
 	margin: auto !important;
 }
 
+.dp {
+	width: 75%;
+}
 
 /*
 ============================
@@ -75,7 +78,7 @@ h1.text-shrink{
 /* Text in project banners */
 h2 {
 	font-family: 'kepler-b', serif;
-	font-size: 8em;
+	font-size: 7em;
 	line-height: 0.8;
 	margin-top: 0px;
 }
