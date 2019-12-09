@@ -169,11 +169,6 @@ p.intro {
 	margin: 16px 0px 24px 0px;
 }
 
-.cv{
-	font-size: 1.25em !important;
-	margin-top: 24px !important;
-}
-
 p.highlight {
 	font-family: 'AvenirNext-Medium', sans-serif;
 	color: #2a2a2a;
@@ -296,11 +291,15 @@ a:active
 	color: #FD926F;
 }
 
+.cv{
+	font-size: 1.25em !important;
+	margin-top: 24px !important;
+}
+
 .cv:hover,
 .cv:focus,
 .cv:active
  {
-	text-decoration: underline;
 	color: #FD926F;
 }
 
