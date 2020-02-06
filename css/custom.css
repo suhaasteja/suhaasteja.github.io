@@ -53,6 +53,14 @@ body {
 	width: 75%;
 }
 
+@media (max-width: 767px) {
+    .dp {
+    	width: 75%;
+    	margin-top: -96px;
+    	margin-bottom: 64px;
+    }
+}
+
 /*
 ============================
 	START OF TEXT CLASSES		 
@@ -407,6 +415,7 @@ a.ref-link:active
 
 a.social-icons{
 	color: #FD926F;
+	margin: 16px;
 }
 
 a.social-icons:hover,
