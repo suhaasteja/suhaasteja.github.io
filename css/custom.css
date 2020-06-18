@@ -50,7 +50,7 @@ body {
 }
 
 .dp {
-	width: 75%;
+	width: 95%;
 }
 
 @media (max-width: 767px) {
@@ -86,7 +86,7 @@ h1.text-shrink{
 /* Text in project banners */
 h2 {
 	font-family: 'kepler-b', serif;
-	font-size: 7em;
+	font-size: 90px;
 	line-height: 0.8;
 	margin-top: 0px;
 }
@@ -103,9 +103,9 @@ h2 {
 
 
 h2.page-title {
-	font-family: 'kepler-b', serif;
+	font-family: 'AvenirNext-Bold', serif;
 	display: inline;
-	font-size: 3.5em;
+	font-size: 21px;
 	line-height: 0.95;
 }
 
@@ -172,8 +172,8 @@ p {
 p.intro {
 	color: #5b5e6d;
 	font-family: 'AvenirNext-Regular', sans-serif;
-	font-size: 1.1em;
-	line-height: 1.5em;
+	font-size: 14px;
+	line-height: 18px;
 	margin: 16px 0px 24px 0px;
 }
 
@@ -228,18 +228,18 @@ For publications
 
 span.paper-title{
 	font-family: 'AvenirNext-DemiBold', sans-serif;
-	font-size: 1.25em;
-	line-height: 1.5em;
+	font-size: 14px;
+	line-height: 16px;
 }
 
 span.authors{
-	font-size: 1.1em;
-	line-height: 1.5em;
+	font-size: 14px;
+	line-height: 16px;
 }
 
 span.venue{
-	font-size: 1.1em;
-	line-height: 1.5em;
+	font-size: 14px;
+	line-height: 16px;
 }
 
 b {
@@ -300,8 +300,9 @@ a:active
 }
 
 .cv{
-	font-size: 1.25em !important;
-	margin-top: 24px !important;
+	font-size: 14px !important;
+	font-family: 'AvenirNext-Bold', sans-serif;
+	/*margin-top: 24px !important;*/
 }
 
 .cv:hover,
@@ -311,9 +312,6 @@ a:active
 	color: #FD926F;
 }
 
-a.contact-text {	
-	margin-left: 12px;
-}
 
 a.quick-links{
 	text-transform: uppercase;
@@ -413,16 +411,20 @@ a.ref-link:active
 	height: 32px;
 }
 
-a.social-icons{
+.social-icons{
+	text-align: center;
 	color: #FD926F;
-	margin: 16px;
+	position: relative;
+	top: -4px;
+	margin-right: 12px;
+	/*margin: 16px;*/
 }
 
-a.social-icons:hover,
+/*a.social-icons:hover,
 a.social-icons:focus,
 a.social-icons:active {
 	text-decoration: none;
-}
+}*/
 
 .circle:hover{
 	background-color: #FD926F;
