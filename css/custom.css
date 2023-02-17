@@ -2,7 +2,6 @@
 	font-family: futura-b;
 	src: url(futura/FuturaStd-Heavy.otf);
 }
-
 @font-face {
 	font-family: futura-bb;
 	src: url(futura/FuturaStd-Bold.otf);
@@ -105,8 +104,8 @@ h2 {
 h2.page-title {
 	font-family: 'AvenirNext-Bold', serif;
 	display: inline;
-	font-size: 21px;
-	line-height: 0.95;
+	font-size: 1.6em;
+	line-height: 1.2;
 }
 
 h2.page-title span {
@@ -130,7 +129,6 @@ h4{
 
 h4.thesis-caption{
 	font-size: 1.6em;
-    line-height: 1.1;
     font-family: 'AvenirNext-DemiBold', sans-serif;
     color: #909090;
 }
@@ -240,6 +238,22 @@ span.authors{
 span.venue{
 	font-size: 14px;
 	line-height: 16px;
+	color: #444;
+	font-family: 'Avenir Next', sans-serif;
+	font-weight: 500;
+}
+
+span.paper-award {
+/*	color: #D6633C;*/
+	colour: #444;
+	font-family: 'Avenir Next', sans-serif;
+	font-weight: 500;
+}
+
+span.self {
+	font-family: 'Avenir Next', sans-serif;
+	font-style: italic;
+	font-weight: 500;	
 }
 
 b {
@@ -297,6 +311,20 @@ a:active
  {
 	text-decoration: none;
 	color: #FD926F;
+}
+
+a.clean-link {
+	text-decoration: none;
+	font-family: 'Avenir Next', sans-serif;
+	font-weight: 400;
+	color: #444;
+}
+
+a.clean-link:hover,
+a.clean-link:focus,
+a.clean-link:active {
+	text-decoration: none;
+	color: #dc2127;
 }
 
 .cv{
@@ -570,91 +598,6 @@ div.cover-text-placeholder{
 	padding-left: 0px;
 	padding-right: 0px;
 	margin-top: 144px;
-}
-
-
-
-/*
-======================================
-	PROJECT PAGE STYLING CLASSES		 
-======================================
-*/
-
-.thumbnail-icon {
-	width: 48px;
-	display: block;
-	margin: 0px auto 12px auto;
-}
-
-.thumbnail-icon-lg {
-	width: 128px;
-	display: block;
-	margin: auto;
-}
-
-.mockup-img {
-	height: 540px;
-}
-
-.dark-bg-container{
-	background-color: #333;
-	padding: 96px 0px;
-}
-
-.orange-bg-container{
-	background-color: #F9963E;
-	padding: 96px 0px;
-}
-
-.grey-bg-container{
-	background-color: #f0f0f0;
-	padding: 96px 0px;
-}
-
-.solid-green-bg-container{
-	background-color: #6BBC66;
-	padding: 96px 0px;
-}
-
-.drop-shadow-container{
-	box-shadow: 0px 2px 8px #bbb;
-	padding: 12px 24px;
-	min-height: 108px;
-}
-
-.drop-shadow-container:hover{
-	box-shadow: 2px 4px 12px #979797;
-}
-
-/* Modal Image Class - primarily used for Personas */
-#modal-img {
-	border-radius: 5px;
-	cursor: pointer;
-	transition: 0.3s;
-}
-
-#modal-img:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-	display: none; /* Hidden by default */
-	position: fixed; /* Stay in place */
-	z-index: 999; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
-	left: 0;
-	top: 0;
-	width: 100%; /* Full width */
-	height: 100%; /* Full height */
-	overflow: auto; /* Enable scroll if needed */
-	background-color: rgb(0,0,0); /* Fallback color */
-	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-	.modal-content {
-		width: 100%;
-	}
 }
 
 
