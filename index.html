@@ -23,7 +23,6 @@
 	<!-- Custom JavaScript -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<style>
 		a.clean-link {
 			text-decoration: none;
@@ -37,12 +36,6 @@
 		a.clean-link:active {
 			text-decoration: none;
 			color: #dc2127;
-		}
-
-		span.paper-award {
-			color: #be1e2d;
-			font-family: 'Avenir Next', sans-serif;
-			font-weight: 600;
 		}
 
 		span.self {
@@ -70,24 +63,55 @@
 				<div class="col-sm-7">
 					<div class="info">                      
 						<p class="intro">
-							I am a PhD student in Computer Science at Northwestern University, advised by Professor <a href="http://users.eecs.northwestern.edu/~jhullman/">Jessica Hullman</a> and Professor <a href="http://www.mjskay.com/">Matthew Kay</a>.
+							I am a PhD student in Computer Science at Northwestern University, advised by Professor <a href="http://www.mjskay.com/">Matthew Kay</a> and Professor <a href="http://users.eecs.northwestern.edu/~jhullman/">Jessica Hullman</a>.
 						</p>
 						<p class="intro">
-							Broadly&mdash;I am interested in studying how people make sense of uncertainty information which arise in a typical data analysis pipeline.
-							Specifically&mdash;I have developed tools which help analysts to surface the uncertainty in their data analysis process itself (<a href="https://github.com/MUCollective/multiverse">the multiverse R library</a>), or studying how users interpret uncertainty visualisations in missing data contexts or multiple comparison scenarios.
+							Broadly&mdash;I am interested in studying how people make sense of uncertainty in typical data analysis pipeline; this spans data quality issues, ambiguity over how data should be analysed (both in terms of data processing and modeling), and how results should be interpreted.
+							Specifically&mdash;I have developed tools which help analysts to specify the uncertainty in their data analysis process itself (<a href="https://github.com/MUCollective/multiverse">the multiverse R library</a>), as well as visualise the results of such specification uncertainty (which I like to refer to as possibilistic uncertainty, but also referred to by statisticians epistemic uncertainty). I have also conducted studies to understand how users interpret uncertainty information in missing data contexts, and how we can improve decision making during in exploratory data analysis in multiple comparison scenarios.
 						</p>
 						<p class="intro"><a class="cv" href="about/abhraneel_cv.pdf" target="_blank">CV <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-7 margin-top-lg">
+				<div class="col-sm-7 margin-top-md">
 					<div class="projects">
 						<h2 class="page-title">Publications</h2>
-						<p class="margin-top-xs">
+						<p class="margin-top-sm">
 							<span class="paper-title">
-								<a href="osf.io/q4y5r/ " target="_blank">
-								<a href="https://osf.io/yfbwm" target="_blank">
+								<a href="https://osf.io/xtsfz/" target="_blank">
+									Odds and Insights: Decision Quality in Visual Analytics Under Uncertainty
+								</a>
+							</span><br>
+							<span class="authors"><span class="self">Abhraneel Sarma</span>, Xiaoying Pu, Yuan Cui, Eli T Brown, Michael Correll and Matthew Kay</span><br>
+							<span class="venue">
+								CHI 2024 &#x25CF
+								<!-- <span class="paper-award">BEST PAPER HONORABLE MENTION</span> &#x25CF -->
+								<a href="pubs/CHI2024-multiple_comparisons.pdf" target="_blank">PDF</a>
+								&#x25CF
+								<a href="https://osf.io/xtsfz/" target="_blank">OSF</a> 
+							</span>
+						</p>
+						
+						<p class="margin-top-sm">
+							<span class="paper-title">
+								<a href="https://osf.io/me5ap/" target="_blank">
+									Milliways: Taming Multiverses through Principled Evaluation of Data Analysis Paths
+								</a>
+							</span><br>
+							<span class="authors"><span class="self">Abhraneel Sarma</span>, Kyle Hwang, Jessica Hullman and Matthew Kay</span><br>
+							<span class="venue">
+								CHI 2024 &#x25CF
+								<!-- <span class="paper-award">BEST PAPER HONORABLE MENTION</span> &#x25CF -->
+								<a href="pubs/CHI2024-milliways.pdf" target="_blank">PDF</a>
+								&#x25CF
+								<a href="https://osf.io/me5ap/" target="_blank">OSF</a> 
+							</span>
+						</p>
+						
+						<p class="margin-top-sm">
+							<span class="paper-title">
+								<a href="https://osf.io/jn5pe/" target="_blank">
 									multiverse: Multiplexing Alternative Data Analyses in R Notebooks
 								</a>
 							</span><br>
@@ -95,11 +119,12 @@
 							<span class="venue">
 								CHI 2023 &#x25CF
 								<span class="paper-award">BEST PAPER HONORABLE MENTION</span> &#x25CF
-								<a href="pubs/multiverse_package-CHI2023.pdf" target="_blank">PDF</a>
+								<a href="pubs/CHI2023-multiverse_package.pdf" target="_blank">PDF</a>
 								&#x25CF
 								<a href="https://osf.io/jn5pe/" target="_blank">OSF</a> 
 							</span>
 						</p>
+						
 						<p class="margin-top-sm">
 							<span class="paper-title">
 								<a href="https://osf.io/5cy8k/" target="_blank">
@@ -110,11 +135,12 @@
 							<span class="venue">
 								VIS 2022 &#x25CF
 								<span class="paper-award">BEST PAPER HONORABLE MENTION</span> &#x25CF
-								<a href="pubs/Imputations-VIS2022.pdf" target="_blank">PDF</a>
+								<a href="pubs/VIS2022-missing_data_imputations.pdf" target="_blank">PDF</a>
 								&#x25CF
-								<a href="https://osf.io/q4y5r/" target="_blank">OSF</a> 
+								<a href="https://osf.io/5cy8k/" target="_blank">OSF</a> 
 							</span>
 						</p>
+						
 						<p class="margin-top-sm">
 							<span class="paper-title">
 								<a href="https://osf.io/fcmun" target="_blank">
@@ -124,28 +150,31 @@
 							<span class="authors"><span class="self">Abhraneel Sarma</span> and Matthew Kay</span><br>
 							<span class="venue">
 								CHI 2020 &#x25CF
-								<a href="pubs/Prior_Setting-CHI2020.pdf" target="_blank">PDF</a> &#x25CF 
+								<a href="pubs/CHI2020-Prior_Setting.pdf" target="_blank">PDF</a> &#x25CF 
 								<a href="https://github.com/abhsarma/interactive-prior-setting" target="_blank">GITHUB</a>
 							</span>
 						</p>
+						
 						<p class="margin-top-sm">
 							<span class="paper-title"><a href="https://hal.inria.fr/hal-01976951/document" target="_blank">Increasing the transparency of research papers with Explorable Multiverse Analyses</a></span><br>
 							<span class="authors">Pierre Dragicevic, Yvonne Jansen, <span class="self">Abhraneel Sarma</span>, Matthew Kay, and Fanny Chevalier</span><br>
 							<span class="venue">
 								CHI 2019 &#x25CF
 								<span class="paper-award">BEST PAPER AWARD</span> &#x25CF
-								<a href="pubs/Interactive_Paper-CHI2019.pdf" target="_blank">PDF</a> &#x25CF 
-								<a href="https://github.com/explorablemultiverse/explorablemultiverse.github.io" target="_blank">GITHUB</a>
+								<a href="pubs/CHI2019-EMARs.pdf" target="_blank">PDF</a> &#x25CF 
+								<a href="https://github.com/explorablemultiverse/explorablemultiverse.github.io" target="_blank">GITHUB</a> &#x25CF 
+								<a href="https://osf.io/v8wmq/">OSF</a>
 							</span>
 						</p>
 					</div>
 				</div>
 			</div>
+			
 			<div class="row">
-				<div class="col-sm-7 margin-top-lg">
+				<div class="col-sm-7 margin-top-md">
 					<div class="projects">
 						<h2 class="page-title">Projects</h2>
-						<p class="margin-top-xs">
+						<p class="margin-top-sm">
 							<span class="paper-title"><a href="mtop/index.html">The Effect of Explanatory Narratives and Exploratory Interactivity on learning through recall</a></span><br>
 							<span class="authors"><span class="self">Abhraneel Sarma</span> and Matthew Kay</span>
 							<br>
@@ -161,16 +190,15 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-7 margin-top-lg">
+				<div class="col-sm-7 margin-top-md">
 					<div class="projects">
 						<h2 class="page-title">Courses</h2>
-						<p class="margin-top-xs">I've been involved in organising the following courses as an instructor:</p>
-						<p class="margin-top-xs">
+						<p class="margin-top-xs">I've been involved in organising the following courses and tutorials as an instructor (this is a lecture series with rolling instructors):</p>						<p class="margin-top-xs">
 							<span class="paper-title"><a href="https://osf.io/2dnq7/">Transparent Practices for Quantitative Empirical Research</a></span><br>
 							<span class="authors">Chat Wacharamanotham, Fumeng Yang, Xiaoying Pu, <span class="self">Abhraneel Sarma</span> and Lace Padilla</span><br>
-							<span class="venue">
-								ACM Human Factors in Computing Systems (CHI) 2022
-							</span>
+							<span class="venue">VIS 2023</span><br/>
+							<span class="venue">CHI 2023</span><br/>
+							<span class="venue">CHI 2022</span>
 						</p>
 					</div>
 				</div>
