@@ -1,12 +1,3 @@
-/*@font-face {
-	font-family: futura-b;
-	src: url(futura/FuturaStd-Heavy.otf);
-}
-@font-face {
-	font-family: futura-bb;
-	src: url(futura/FuturaStd-Bold.otf);
-}
-*/
 @font-face {
 	font-family: kepler-b;
 	src: url(kepler-std/KeplerStd-BoldCapt.otf);
@@ -83,9 +74,15 @@ h1.text-shrink{
 }
 
 /* Text in project banners */
-h2 {
+h2.title {
 	font-family: 'kepler-b', serif;
 	font-size: 90px;
+	line-height: 0.8;
+	margin-top: 0px;
+}
+
+h2.small-title {
+	font-family: 'kepler-b', serif;
 	line-height: 0.8;
 	margin-top: 0px;
 }
@@ -99,16 +96,14 @@ h2 {
 	}
 }
 
-
-
-h2.page-title {
+h2.section-title {
 	font-family: 'AvenirNext-Bold', serif;
 	display: inline;
 	font-size: 1.6em;
 	line-height: 1.2;
 }
 
-h2.page-title span {
+h2.section-title span {
 	background-color: #FD926F;
 	padding: 4px 0px;
 }
@@ -233,26 +228,24 @@ span.paper-title{
 span.authors{
 	font-size: 14px;
 	line-height: 16px;
+	font-family: 'AvenirNext-Regular', sans-serif;
 }
 
-span.venue{
+span.paper-details{
 	font-size: 14px;
 	line-height: 16px;
 	color: #444;
-	font-family: 'Avenir Next', sans-serif;
-	font-weight: 500;
+	font-family: 'AvenirNext-Medium', sans-serif;
 }
 
 span.paper-award {
 	color: #e76f51;
-	font-family: 'Avenir Next', sans-serif;
-	font-weight: 600;
+	font-family: 'AvenirNext-Bold', sans-serif;
 }
 
 span.self {
-	font-family: 'Avenir Next', sans-serif;
-	font-style: italic;
-	font-weight: 500;	
+	font-family: 'AvenirNext-Regular', sans-serif;
+	text-decoration: underline;
 }
 
 b {
@@ -298,7 +291,6 @@ b {
 */
 
 a{
-	font-family: 'AvenirNext-Medium', sans-serif;
 	color: #444;
 	display: inline-block;
 	text-decoration: none;
@@ -312,18 +304,17 @@ a:active
 	color: #FD926F;
 }
 
-a.clean-link {
+a.header-link {
 	text-decoration: none;
-	font-family: 'Avenir Next', sans-serif;
-	font-weight: 400;
+	font-family: 'AvenirNext-Bold', sans-serif !important;
+	font-weight: 700;
 	color: #444;
 }
 
-a.clean-link:hover,
-a.clean-link:focus,
-a.clean-link:active {
-	text-decoration: none;
-	color: #dc2127;
+.header-link:hover,
+.header-link:focus,
+.header-link:active {
+	color: #FD926F;
 }
 
 .cv{
@@ -347,10 +338,6 @@ a.quick-links{
 	transition: all 0.5s ease;
 }
 
-a.portfolio-item-link{
-	width: 100%;
-}
-
 a.quick-links:hover,
 a.quick-links:focus,
 a.quick-links:active {
@@ -372,18 +359,6 @@ a.quick-links-current:active {
 	text-decoration: none;
 }
 
-
-a.portfolio-text-link{
-	text-decoration: none;
-}
-
-a.portfolio-text-link:hover,
-a.portfolio-text-link:focus,
-a.portfolio-text-link:active{
-	color: #FD926F;
-	text-decoration: none;
-}
-
 a.page-header{
 	margin: 0px;
 	padding: 0px !important;
@@ -394,17 +369,6 @@ a.page-header:hover,
 a.page-header:focus,
 a.page-header:active {
 	text-decoration: none;
-}
-
-a.about-link {
-	color: #FD926F;
-}
-
-a.about-link:focus,
-a.about-link:hover,
-a.about-link:active {
-	text-decoration: none;
-	color: #FD926F;
 }
 
 a.ref-link {
@@ -446,12 +410,6 @@ a.ref-link:active
 	margin-right: 12px;
 	/*margin: 16px;*/
 }
-
-/*a.social-icons:hover,
-a.social-icons:focus,
-a.social-icons:active {
-	text-decoration: none;
-}*/
 
 .circle:hover{
 	background-color: #FD926F;
@@ -533,64 +491,16 @@ div.page-footer{
 	background-color: #f6f6f6;
 }
 
-/* Buttons */
-.div-btn{
-	margin: auto;
-	height: 36px;
-	width: 144px;
-	background-color: #282828;
-	color: white;
-	line-height: 36px;
-	text-align: center;
-	font-family: 'AvenirNext-Medium', sans-serif;
-	font-size: 14px;
-	text-transform: uppercase;
-}
-
-.btn-color-outline {
-	max-height: 32px;
-	max-width: 144px;
-	line-height: 32px;
-	text-align: center;
-	font-family: 'AvenirNext-Medium', sans-serif;
-	font-size: 16px;
-	text-transform: uppercase;
-	cursor: pointer;
-	border-radius: 50%;
-}
-
-
 /*
 ==============================================
 	LANDING PAGE PROJECT IMAGE THUMBNAILS		 
 ==============================================
 */
-.portfolio-item{
-	width: 100%;
-	height: 180px;
-	margin: 0px;
-	background-size: 125%; 
-	background-position: center center;
-	-webkit-transition: background-size ease .5s;
-	-moz-transition: background-size ease .5s;
-	transition: background-size ease .5s;
-}
-
-.portfolio-item:hover {
-	background-size: 150%;
-}
-
 div.cover-text-placeholder{
 	margin: auto;
 	padding: 60px 0px 32px 0px;
 	z-index: 99;
 	opacity: 1;
-}
-
-.img-thumbnail {
-	padding: 0px !important;
-	border: 0px;
-	border-radius: 0px;
 }
 
 .cover{
@@ -669,25 +579,12 @@ div.cover-text-placeholder{
 	margin-bottom: 80px !important;
 }
 
-.margin-lg {
-	margin-top: 80px !important;
-	margin-bottom: 80px !important;
-}
-
 .margin-top-xl {
 	margin-top: 160px !important;
 }
 
-.padding-sm {
-	padding: 5px !important;
-}
-
 .padding-md {
 	padding: 15px !important;
-}
-
-.no-padding {
-	padding-left: 0px !important;
 }
 
 .margin-xs-shrink {
@@ -698,59 +595,8 @@ div.cover-text-placeholder{
 	margin-top: 180px;
 }
 
-.shiftup{
-	margin-top: -32px !important;
-}
-
-
 /*
 ================================
 	END OF MARGIN CLASSES
 ================================
 */
-
-
-
-/*
-================================
-	START OF MEDIA QUERIES
-================================
-*/
-
-iframe.video-container {
-    width: 945px;
-    height: 541px;
-}
-
-@media (max-width: 1366px) {
-    iframe.video-container {
-        width: 933px;
-        height: 534px;
-    }
-}
-
-@media (max-width: 1024px) {
-    iframe.video-container {
-        width: 766px;
-        height: 439px;
-    }
-}
-
-@media (max-width: 800px) {
-    iframe.video-container {
-        width: 610px;
-        height: 349px;
-    }
-
-    .nav-name-container {
-		text-align: center;
-	}
-
-	.text-shrink {
-		margin-bottom: 0px !important;
-	}
-
-	.header-shrink {
-		margin: 0px !important;
-	}
-}
