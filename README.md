@@ -1,11 +1,11 @@
+[![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
+
 ## Abhraneel Sarma Personal Website
 
 Hosted at: https://abhsarma.github.io
 
 If you want to use this template, please feel free to fork the repository under the terms of the license below.
 
-
-Shield: [![CC BY-NC 4.0][cc-by-nc-shield]][cc-by-nc]
 
 This work is licensed under a
 [Creative Commons Attribution-NonCommercial 4.0 International License][cc-by-nc].
