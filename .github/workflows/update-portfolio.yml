@@ -24,30 +24,46 @@ jobs:
       - name: Fetch GitHub Repositories
         run: |
           mkdir -p data
-          # Fetch your public repos
-          curl -H "Accept: application/vnd.github.v3+json" \
+          # Fetch your public repos with error handling
+          curl -f -H "Accept: application/vnd.github.v3+json" \
                https://api.github.com/users/suhaasteja/repos?sort=updated&per_page=20 \
-               > data/github-repos.json
+               > data/github-repos.json || echo "[]" > data/github-repos.json
+          
+          # Verify the file is valid JSON
+          cat data/github-repos.json
           
           # Create last updated timestamp
           echo "{\"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}" > data/last-updated.json
       
       - name: Generate Featured Projects
         run: |
-          # Optional: Create a filtered list of featured projects
-          # You can customize this to only show specific repos
           node -e "
           const fs = require('fs');
-          const repos = JSON.parse(fs.readFileSync('data/github-repos.json'));
           
-          // Filter and sort repos (e.g., by stars, exclude forks)
-          const featured = repos
-            .filter(r => !r.fork && r.stargazers_count >= 0)
-            .sort((a, b) => b.stargazers_count - a.stargazers_count)
-            .slice(0, 10);
-          
-          fs.writeFileSync('data/github-repos.json', JSON.stringify(featured, null, 2));
-          console.log('Featured projects updated:', featured.length);
+          try {
+            const content = fs.readFileSync('data/github-repos.json', 'utf8');
+            console.log('Raw content:', content.substring(0, 100));
+            
+            const repos = JSON.parse(content);
+            
+            if (!Array.isArray(repos)) {
+              console.error('Response is not an array');
+              process.exit(1);
+            }
+            
+            // Filter and sort repos
+            const featured = repos
+              .filter(r => r && !r.fork && typeof r.stargazers_count === 'number')
+              .sort((a, b) => b.stargazers_count - a.stargazers_count)
+              .slice(0, 10);
+            
+            fs.writeFileSync('data/github-repos.json', JSON.stringify(featured, null, 2));
+            console.log('Featured projects updated:', featured.length);
+          } catch (error) {
+            console.error('Error processing repos:', error.message);
+            // Create empty array as fallback
+            fs.writeFileSync('data/github-repos.json', '[]');
+          }
           "
       
       - name: Commit and Push Changes
