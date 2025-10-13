@@ -27,15 +27,31 @@ jobs:
           node-version: '18'
       
       - name: Fetch GitHub Repositories
+        env:
+          GITHUB_USER: ${{ github.repository_owner }}
         run: |
           mkdir -p data
-          # Fetch your public repos with error handling
-          curl -f -H "Accept: application/vnd.github.v3+json" \
-               https://api.github.com/users/suhaasteja/repos?sort=updated&per_page=20 \
-               > data/github-repos.json || echo "[]" > data/github-repos.json
           
-          # Verify the file is valid JSON
-          cat data/github-repos.json
+          echo "Fetching repos for user: $GITHUB_USER"
+          echo "Full URL: https://api.github.com/users/$GITHUB_USER/repos?sort=updated&per_page=20&type=owner"
+          
+          # Fetch your public repos with verbose output
+          HTTP_CODE=$(curl -w "%{http_code}" -o data/github-repos.json \
+               -H "Accept: application/vnd.github.v3+json" \
+               "https://api.github.com/users/$GITHUB_USER/repos?sort=updated&per_page=20&type=owner")
+          
+          echo "HTTP Status Code: $HTTP_CODE"
+          echo "Response content (first 500 chars):"
+          head -c 500 data/github-repos.json
+          echo ""
+          echo "File size:"
+          ls -lh data/github-repos.json
+          
+          # Check if response is valid
+          if [ "$HTTP_CODE" != "200" ]; then
+            echo "API call failed with status $HTTP_CODE"
+            echo "[]" > data/github-repos.json
+          fi
           
           # Create last updated timestamp
           echo "{\"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}" > data/last-updated.json
@@ -77,11 +93,3 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add data/
           git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update: GitHub projects $(date +%Y-%m-%d)" && git push)
-      
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          keep_files: false
-          force_orphan: false
