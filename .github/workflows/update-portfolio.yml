@@ -1,0 +1,66 @@
+name: Update Portfolio
+
+on:
+  schedule:
+    # Run every day at midnight UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # Allow manual trigger
+  push:
+    branches: [ main ]
+
+jobs:
+  update-portfolio:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Fetch GitHub Repositories
+        run: |
+          mkdir -p data
+          # Fetch your public repos
+          curl -H "Accept: application/vnd.github.v3+json" \
+               https://api.github.com/users/suhaasteja/repos?sort=updated&per_page=20 \
+               > data/github-repos.json
+          
+          # Create last updated timestamp
+          echo "{\"timestamp\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\"}" > data/last-updated.json
+      
+      - name: Generate Featured Projects
+        run: |
+          # Optional: Create a filtered list of featured projects
+          # You can customize this to only show specific repos
+          node -e "
+          const fs = require('fs');
+          const repos = JSON.parse(fs.readFileSync('data/github-repos.json'));
+          
+          // Filter and sort repos (e.g., by stars, exclude forks)
+          const featured = repos
+            .filter(r => !r.fork && r.stargazers_count >= 0)
+            .sort((a, b) => b.stargazers_count - a.stargazers_count)
+            .slice(0, 10);
+          
+          fs.writeFileSync('data/github-repos.json', JSON.stringify(featured, null, 2));
+          console.log('Featured projects updated:', featured.length);
+          "
+      
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update: GitHub projects $(date +%Y-%m-%d)" && git push)
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          # Keep the data directory in gh-pages
+          keep_files: false
