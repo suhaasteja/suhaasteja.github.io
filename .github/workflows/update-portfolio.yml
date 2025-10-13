@@ -79,9 +79,9 @@ jobs:
           git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update: GitHub projects $(date +%Y-%m-%d)" && git push)
       
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
-          # Keep the data directory in gh-pages
           keep_files: false
+          force_orphan: false
