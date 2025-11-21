@@ -4,8 +4,21 @@ const fs = require('fs');
 const path = require('path');
 
 async function fetchWakaTimeData() {
+    const outputPath = path.join(__dirname, '../src/data/coding.json');
+    const apiKey = process.env.WAKATIME_API_KEY;
+
+    if (!apiKey) {
+        console.warn('⚠️ WAKATIME_API_KEY is missing. Skipping WakaTime data fetch.');
+        if (!fs.existsSync(outputPath)) {
+            fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+            // Create dummy data compatible with TechStats
+            fs.writeFileSync(outputPath, JSON.stringify({ languages: [], total_seconds: 0, human_readable_total: '0 hrs', source: "Mock" }, null, 2));
+            console.log('Created dummy coding.json');
+        }
+        return;
+    }
+
     try {
-        const apiKey = process.env.WAKATIME_API_KEY;
         // WakaTime API requires base64 encoded API key
         const encodedKey = Buffer.from(apiKey).toString('base64');
 
@@ -22,13 +35,11 @@ async function fetchWakaTimeData() {
             human_readable_total: data.human_readable_total
         };
 
-        const outputPath = path.join(__dirname, '../src/data/coding.json');
         fs.mkdirSync(path.dirname(outputPath), { recursive: true });
         fs.writeFileSync(outputPath, JSON.stringify(stats, null, 2));
         console.log('WakaTime data saved!');
     } catch (error) {
         console.error('Error fetching WakaTime data:', error);
-        const outputPath = path.join(__dirname, '../src/data/coding.json');
         if (!fs.existsSync(outputPath)) {
             fs.mkdirSync(path.dirname(outputPath), { recursive: true });
             fs.writeFileSync(outputPath, JSON.stringify({ languages: [], total_seconds: 0, human_readable_total: '0 hrs' }, null, 2));

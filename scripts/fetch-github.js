@@ -4,8 +4,29 @@ const fs = require('fs');
 const path = require('path');
 
 async function fetchGitHubData() {
+    const token = process.env.GH_TOKEN;
+    const reposPath = path.join(__dirname, '../src/data/github-repos.json');
+    const codingPath = path.join(__dirname, '../src/data/coding.json'); // Fallback for coding stats if needed
+
+    if (!token) {
+        console.warn('⚠️ GH_TOKEN is missing. Skipping GitHub data fetch.');
+
+        // Ensure dummy data exists so build doesn't fail
+        if (!fs.existsSync(reposPath)) {
+            fs.mkdirSync(path.dirname(reposPath), { recursive: true });
+            fs.writeFileSync(reposPath, JSON.stringify([], null, 2));
+            console.log('Created dummy github-repos.json');
+        }
+
+        // If coding.json is also missing (and wakatime skipped), create it too
+        if (!fs.existsSync(codingPath)) {
+            fs.mkdirSync(path.dirname(codingPath), { recursive: true });
+            fs.writeFileSync(codingPath, JSON.stringify({ languages: [], source: "GitHub (Mock)" }, null, 2));
+        }
+        return;
+    }
+
     try {
-        const token = process.env.GH_TOKEN;
         const query = `
         {
             viewer {
@@ -83,7 +104,6 @@ async function fetchGitHubData() {
             .slice(0, 5); // Top 5 languages
 
         // Save Repos
-        const reposPath = path.join(__dirname, '../src/data/github-repos.json');
         fs.mkdirSync(path.dirname(reposPath), { recursive: true });
         fs.writeFileSync(reposPath, JSON.stringify(repos, null, 2));
         console.log('GitHub repos saved!');
@@ -96,7 +116,6 @@ async function fetchGitHubData() {
             source: "GitHub"
         };
 
-        const codingPath = path.join(__dirname, '../src/data/coding.json');
         fs.writeFileSync(codingPath, JSON.stringify(codingStats, null, 2));
         console.log('GitHub language stats saved!');
 

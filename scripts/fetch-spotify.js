@@ -10,12 +10,24 @@ const spotifyApi = new SpotifyWebApi({
 });
 
 async function fetchSpotifyData() {
+    const outputPath = path.join(__dirname, '../src/data/spotify.json');
+
+    if (!process.env.SPOTIFY_CLIENT_ID || !process.env.SPOTIFY_CLIENT_SECRET || !process.env.SPOTIFY_REFRESH_TOKEN) {
+        console.warn('⚠️ Spotify secrets are missing. Skipping Spotify data fetch.');
+        if (!fs.existsSync(outputPath)) {
+            fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+            fs.writeFileSync(outputPath, JSON.stringify([], null, 2));
+            console.log('Created dummy spotify.json');
+        }
+        return;
+    }
+
     try {
         const data = await spotifyApi.refreshAccessToken();
         spotifyApi.setAccessToken(data.body['access_token']);
 
         const topTracks = await spotifyApi.getMyTopTracks({ limit: 5, time_range: 'short_term' });
-        
+
         const tracks = topTracks.body.items.map(track => ({
             title: track.name,
             artist: track.artists.map(a => a.name).join(', '),
@@ -23,7 +35,6 @@ async function fetchSpotifyData() {
             externalUrl: track.external_urls.spotify
         }));
 
-        const outputPath = path.join(__dirname, '../src/data/spotify.json');
         // Ensure directory exists
         fs.mkdirSync(path.dirname(outputPath), { recursive: true });
         fs.writeFileSync(outputPath, JSON.stringify(tracks, null, 2));
@@ -31,7 +42,6 @@ async function fetchSpotifyData() {
     } catch (error) {
         console.error('Error fetching Spotify data:', error);
         // Fallback or empty array to prevent build failure
-        const outputPath = path.join(__dirname, '../src/data/spotify.json');
         if (!fs.existsSync(outputPath)) {
             fs.mkdirSync(path.dirname(outputPath), { recursive: true });
             fs.writeFileSync(outputPath, JSON.stringify([], null, 2));
