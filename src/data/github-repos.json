@@ -1,0 +1,26 @@
+[
+    {
+        "name": "portfolio-v2",
+        "description": "My personal portfolio website built with Astro",
+        "html_url": "https://github.com/suhaasteja/portfolio-v2",
+        "stargazers_count": 12,
+        "forks_count": 2,
+        "language": "Astro"
+    },
+    {
+        "name": "ai-agent-framework",
+        "description": "A lightweight framework for building AI agents",
+        "html_url": "https://github.com/suhaasteja/ai-agent-framework",
+        "stargazers_count": 45,
+        "forks_count": 8,
+        "language": "Python"
+    },
+    {
+        "name": "react-components",
+        "description": "Reusable React components library",
+        "html_url": "https://github.com/suhaasteja/react-components",
+        "stargazers_count": 30,
+        "forks_count": 5,
+        "language": "TypeScript"
+    }
+]

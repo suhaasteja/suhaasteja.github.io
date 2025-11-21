@@ -1,0 +1,18 @@
+{
+    "languages": [
+        {
+            "name": "TypeScript",
+            "percent": 45.5
+        },
+        {
+            "name": "Python",
+            "percent": 30.2
+        },
+        {
+            "name": "Rust",
+            "percent": 15.0
+        }
+    ],
+    "total_seconds": 123456,
+    "human_readable_total": "34 hrs 18 mins"
+}

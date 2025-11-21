@@ -1,0 +1,57 @@
+name: Daily Portfolio Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Every midnight UTC
+  workflow_dispatch:    # Manual trigger
+  push:
+    branches: [main]    # Trigger on code changes too
+
+permissions:
+  contents: write
+
+jobs:
+  update-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Fetch Dynamic Data
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          node scripts/fetch-spotify.js
+          node scripts/fetch-coding.js
+          node scripts/fetch-github.js
+
+      - name: Commit Data Changes
+        run: |
+          git config --global user.name "Portfolio Bot"
+          git config --global user.email "bot@users.noreply.github.com"
+          git add src/data/*.json
+          # Only commit if data changed
+          git diff --staged --quiet || git commit -m "chore: daily stats update [skip ci]"
+          git push
+
+      - name: Build Site
+        run: npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist  # or ./out depending on framework

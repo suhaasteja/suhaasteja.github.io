@@ -1,0 +1,106 @@
+<section class="hero">
+    <div class="glitch-container">
+        <h1 class="glitch" data-text="SUHAAS VIJJAGIRI">SUHAAS VIJJAGIRI</h1>
+        <p class="subtitle">SYSTEM_ONLINE // AI_ENGINEER</p>
+        <div class="status">
+            <span class="blink">_</span>
+            <span>LOCATION: SAN_FRANCISCO_BAY_AREA</span>
+        </div>
+    </div>
+</section>
+
+<style>
+    .hero {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .glitch {
+        font-size: 5rem;
+        font-weight: 700;
+        position: relative;
+        color: var(--text-main);
+        letter-spacing: 0.1em;
+    }
+
+    .glitch::before,
+    .glitch::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .glitch::before {
+        left: 2px;
+        text-shadow: -1px 0 var(--neon-purple);
+        clip: rect(24px, 550px, 90px, 0);
+        animation: glitch-anim-2 3s infinite linear alternate-reverse;
+    }
+
+    .glitch::after {
+        left: -2px;
+        text-shadow: -1px 0 var(--neon-cyan);
+        clip: rect(85px, 550px, 140px, 0);
+        animation: glitch-anim 2.5s infinite linear alternate-reverse;
+    }
+
+    @keyframes glitch-anim {
+        0% { clip: rect(10px, 9999px, 30px, 0); }
+        20% { clip: rect(80px, 9999px, 100px, 0); }
+        40% { clip: rect(10px, 9999px, 120px, 0); }
+        60% { clip: rect(50px, 9999px, 70px, 0); }
+        80% { clip: rect(100px, 9999px, 140px, 0); }
+        100% { clip: rect(30px, 9999px, 60px, 0); }
+    }
+
+    @keyframes glitch-anim-2 {
+        0% { clip: rect(120px, 9999px, 140px, 0); }
+        20% { clip: rect(10px, 9999px, 40px, 0); }
+        40% { clip: rect(80px, 9999px, 100px, 0); }
+        60% { clip: rect(30px, 9999px, 60px, 0); }
+        80% { clip: rect(10px, 9999px, 120px, 0); }
+        100% { clip: rect(50px, 9999px, 90px, 0); }
+    }
+
+    .subtitle {
+        font-family: var(--font-mono);
+        color: var(--neon-cyan);
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        letter-spacing: 0.2em;
+    }
+
+    .status {
+        margin-top: 2rem;
+        font-family: var(--font-mono);
+        font-size: 0.9rem;
+        color: var(--text-dim);
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blink {
+        animation: blink 1s infinite;
+        color: var(--neon-green);
+        font-weight: bold;
+    }
+
+    @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+    }
+
+    @media (max-width: 768px) {
+        .glitch { font-size: 3rem; }
+    }
+</style>

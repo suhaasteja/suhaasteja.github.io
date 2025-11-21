@@ -1,0 +1,275 @@
+---
+import '../styles/global.css';
+import InteractiveBackground from '../components/InteractiveBackground.astro';
+import GlitchHero from '../components/GlitchHero.astro';
+import HoloCard from '../components/HoloCard.astro';
+import Timeline from '../components/Timeline.astro';
+import SpotifyCard from '../components/SpotifyCard.astro';
+import TechStats from '../components/TechStats.astro';
+import githubRepos from '../data/github-repos.json';
+import lastUpdatedData from '../data/last-updated.json';
+
+const projects = githubRepos.slice(0, 6);
+const lastUpdated = new Date(lastUpdatedData.timestamp).toLocaleDateString();
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUHAAS_VIJJAGIRI // AI_ENGINEER</title>
+    <meta name="description" content="AI & Software Engineer. Neural Interface Portfolio." />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <InteractiveBackground />
+    
+    <GlitchHero />
+
+    <main class="container">
+        
+        <section id="about" data-aos="fade-up">
+            <div class="section-header">
+                <h2>01. SYSTEM_IDENTITY</h2>
+                <div class="line"></div>
+            </div>
+            <HoloCard>
+                    > INITIALIZING IDENTITY SCAN...<br>
+                    > SUBJECT: SUHAAS VIJJAGIRI<br>
+                    > ROLE: AI & SOFTWARE ENGINEER<br>
+                    > STATUS: ONLINE<br>
+                    > INITIALIZING IDENTITY SCAN...<br>
+                    > SUBJECT: SUHAAS VIJJAGIRI<br>
+                    > ROLE: AI & SOFTWARE ENGINEER<br>
+                    > STATUS: ONLINE<br>
+                    <br>
+                    AI Engineer with a Master's from SJSU, specializing in Generative AI and Large Language Models. 
+                    Proven expertise in architecting enterprise-scale RAG systems at Humana (Fortune 500) and building real-time IoT platforms at ZestIoT (High-Growth Startup). 
+                    Passionate about bridging the gap between research and production to deliver high-impact AI solutions.
+                </p>
+            </HoloCard>
+        </section>
+
+        <section id="work" data-aos="fade-up">
+            <div class="section-header">
+                <h2>02. DATA_LOGS</h2>
+                <div class="line"></div>
+            </div>
+            <Timeline />
+        </section>
+
+        <section id="projects" data-aos="fade-up">
+            <div class="section-header">
+                <h2>03. NEURAL_NET_PROJECTS</h2>
+                <div class="line"></div>
+            </div>
+            <div class="grid">
+                {projects.map((repo: any) => (
+                    <HoloCard title={repo.name}>
+                        <p>{repo.description || 'NO_DATA_AVAILABLE'}</p>
+                        <div class="meta">
+                            <span>⭐ {repo.stargazers_count}</span>
+                            <span>🍴 {repo.forks_count}</span>
+                            <span style="color: var(--neon-purple)">{repo.language || 'N/A'}</span>
+                        </div>
+                        <a href={repo.html_url} target="_blank" class="btn">ACCESS_REPO</a>
+                    </HoloCard>
+                ))}
+            </div>
+        </section>
+
+        <section id="dashboard" data-aos="fade-up">
+            <div class="section-header">
+                <h2>04. SYSTEM_STATUS</h2>
+                <div class="line"></div>
+            </div>
+            <div class="grid">
+                <HoloCard title="AUDIO_STREAM">
+                    <SpotifyCard />
+                </HoloCard>
+                <HoloCard title="LANGUAGE_PROCESSOR">
+                    <TechStats />
+                </HoloCard>
+                <HoloCard title="SIDE_CHANNELS">
+                    <div class="hobby-content">
+                        <h3><a href="https://instagram.com/suhaasteja" target="_blank" style="color: var(--neon-purple)">ACOUSTIC_INTERFACE</a></h3>
+                        <p>Guitarist // Hobbyist</p>
+                        <div class="equalizer">
+                            <div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                        </div>
+                        <p style="font-size: 0.8rem; color: var(--text-dim); margin-top: 1rem;">
+                            Exploring the intersection of algorithmic composition and analog sound.
+                            <br><a href="https://instagram.com/suhaasteja" target="_blank" style="font-size: 0.8rem; color: var(--neon-cyan)">@suhaasteja</a>
+                        </p>
+                    </div>
+                </HoloCard>
+            </div>
+        </section>
+
+        <section id="certifications" data-aos="fade-up">
+            <div class="section-header">
+                <h2>05. CREDENTIAL_KEYS</h2>
+                <div class="line"></div>
+            </div>
+            <div class="grid">
+                <HoloCard title="RAY CERTIFIED">
+                    <p>Anyscale / Distributed AI</p>
+                    <p style="font-size: 0.8rem; color: var(--text-dim)">Scaling LLMs & Reinforcement Learning</p>
+                </HoloCard>
+                <HoloCard title="DEEP LEARNING SPECIALIZATION">
+                    <p>Coursera / DeepLearning.AI</p>
+                    <p style="font-size: 0.8rem; color: var(--text-dim)">Neural Networks & Deep Learning</p>
+                </HoloCard>
+                <HoloCard title="GENERATIVE AI WITH LLMS">
+                    <p>Coursera / AWS</p>
+                    <p style="font-size: 0.8rem; color: var(--text-dim)">Transformer Models & Fine-tuning</p>
+                </HoloCard>
+            </div>
+        </section>
+
+        <section id="contact" data-aos="fade-up">
+            <div class="section-header">
+                <h2>06. ESTABLISH_UPLINK</h2>
+                <div class="line"></div>
+            </div>
+            <HoloCard>
+                <div class="contact-grid">
+                    <a href="mailto:suhaas.teja@gmail.com">EMAIL_UPLINK</a>
+                    <a href="https://www.linkedin.com/in/suhaas-teja/" target="_blank">LINKEDIN_NODE</a>
+                    <a href="https://github.com/suhaasteja" target="_blank">GITHUB_REPO</a>
+                </div>
+            </HoloCard>
+        </section>
+
+        <footer>
+            <p>SYSTEM_LAST_UPDATED: {lastUpdated}</p>
+            <p>END_OF_LINE</p>
+        </footer>
+
+    </main>
+
+    <script is:inline src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script is:inline>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+
+    <style>
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        section {
+            margin-bottom: 8rem;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--neon-cyan);
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            white-space: nowrap;
+        }
+
+        .line {
+            height: 1px;
+            background: rgba(0, 243, 255, 0.3);
+            width: 100%;
+        }
+
+        .terminal-text {
+            font-family: var(--font-mono);
+            color: var(--text-main);
+            line-height: 1.8;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .meta {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            color: var(--text-dim);
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--neon-cyan);
+            color: var(--neon-cyan);
+            font-family: var(--font-mono);
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: rgba(0, 243, 255, 0.1);
+            box-shadow: 0 0 10px var(--neon-cyan);
+        }
+
+        .contact-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            font-family: var(--font-mono);
+            color: var(--text-dim);
+            margin-bottom: 4rem;
+            font-size: 0.8rem;
+        }
+
+        /* Hobby Styles */
+        .hobby-content {
+            text-align: center;
+            padding: 1rem;
+        }
+        .equalizer {
+            display: flex;
+            gap: 4px;
+            justify-content: center;
+            height: 30px;
+            margin-top: 1rem;
+            align-items: flex-end;
+        }
+        .bar {
+            width: 6px;
+            background: var(--neon-purple);
+            animation: equalize 1s infinite alternate;
+        }
+        .bar:nth-child(1) { animation-delay: 0.1s; height: 40%; }
+        .bar:nth-child(2) { animation-delay: 0.3s; height: 80%; }
+        .bar:nth-child(3) { animation-delay: 0.5s; height: 60%; }
+        .bar:nth-child(4) { animation-delay: 0.2s; height: 90%; }
+        .bar:nth-child(5) { animation-delay: 0.4s; height: 50%; }
+        
+        @keyframes equalize {
+            0% { height: 20%; }
+            100% { height: 100%; }
+        }
+    </style>
+</body>
+</html>

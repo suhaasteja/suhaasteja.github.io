@@ -1,0 +1,139 @@
+---
+import HoloCard from './HoloCard.astro';
+
+const experiences = [
+    {
+        role: "Graduate Data Analytics Intern",
+        company: "Humana (Fortune 500)",
+        period: "May 2025 - Aug 2025",
+        badges: ["RAG EVALUATION", "SYNTHETIC DATA", "ENTERPRISE AI"],
+        summary: "Architected a framework-agnostic evaluation system for enterprise RAG pipelines, ensuring faithfulness and precision. Orchestrated synthetic data generation using Knowledge Graphs to enable robust adversarial testing of LLM applications in a regulated healthcare environment."
+    },
+    {
+        role: "AI Research Assistant",
+        company: "San Jose State University",
+        period: "Mar 2024 - May 2025",
+        badges: ["LLM AGENTS", "OBSERVABILITY", "PROD DEPLOYMENT"],
+        summary: "Led the end-to-end engineering of 'KingbotGPT', a production RAG chatbot serving 30k+ students. Designed advanced 'LLM-as-a-Judge' evaluation frameworks and integrated full-stack observability (Langfuse) to optimize response quality and minimize hallucinations."
+    },
+    {
+        role: "Software Engineer",
+        company: "ZestIoT (Startup - Contributed to $7M Funding)",
+        period: "Mar 2022 - May 2023",
+        badges: ["REAL-TIME DATA", "FULL STACK", "IOT ANALYTICS"],
+        summary: "Built scalable, real-time analytics platforms for aviation IoT. Developed complex front-end interfaces and optimized backend performance for high-frequency data visualization, bridging the gap between physical asset tracking and digital decision-making."
+    }
+];
+---
+
+<div class="timeline">
+    {experiences.map((exp, index) => (
+        <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+                <HoloCard class="mission-report">
+                    <div class="header">
+                        <div>
+                            <h3>{exp.role} <span class="company">@ {exp.company}</span></h3>
+                            <span class="period">{exp.period}</span>
+                        </div>
+                        <div class="badges">
+                            {exp.badges.map(badge => (
+                                <span class="impact-badge">{badge}</span>
+                            ))}
+                        </div>
+                    </div>
+                    <p class="summary">
+                        {exp.summary}
+                    </p>
+                </HoloCard>
+            </div>
+        </div>
+    ))}
+</div>
+
+<style>
+    .timeline {
+        position: relative;
+        padding-left: 2rem;
+        border-left: 2px solid rgba(0, 243, 255, 0.2);
+    }
+
+    .timeline-item {
+        margin-bottom: 3rem;
+        position: relative;
+    }
+
+    .timeline-marker {
+        position: absolute;
+        left: -2.6rem;
+        top: 1.5rem;
+        width: 1rem;
+        height: 1rem;
+        background: var(--bg-void);
+        border: 2px solid var(--neon-cyan);
+        border-radius: 50%;
+        box-shadow: 0 0 10px var(--neon-cyan);
+        z-index: 2;
+        transition: all 0.3s;
+    }
+
+    .timeline-item:hover .timeline-marker {
+        background: var(--neon-cyan);
+        box-shadow: 0 0 20px var(--neon-cyan);
+    }
+
+    .timeline-content {
+        padding-left: 1rem;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    h3 {
+        color: var(--neon-cyan);
+        font-size: 1.3rem;
+        margin: 0 0 0.5rem 0;
+    }
+
+    .company {
+        color: var(--text-main);
+        font-weight: normal;
+    }
+
+    .period {
+        color: var(--text-dim);
+        font-family: var(--font-mono);
+        font-size: 0.9rem;
+    }
+
+    .badges {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .impact-badge {
+        background: rgba(188, 19, 254, 0.1);
+        border: 1px solid var(--neon-purple);
+        color: var(--neon-purple);
+        padding: 0.2rem 0.5rem;
+        font-size: 0.7rem;
+        font-family: var(--font-mono);
+        border-radius: 4px;
+        box-shadow: 0 0 5px rgba(188, 19, 254, 0.2);
+        text-transform: uppercase;
+    }
+
+    .summary {
+        color: var(--text-main);
+        line-height: 1.8;
+        font-size: 1rem;
+    }
+</style>

@@ -1,0 +1,19 @@
+{
+  "name": "temp_astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@types/aos": "^3.0.7",
+    "aos": "^2.3.4",
+    "astro": "^5.16.0",
+    "axios": "^1.13.2",
+    "dotenv": "^17.2.3",
+    "spotify-web-api-node": "^5.0.2"
+  }
+}

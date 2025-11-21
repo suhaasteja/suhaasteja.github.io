@@ -1,0 +1,88 @@
+---
+import codingData from '../data/coding.json';
+const { languages, source } = codingData;
+---
+
+<div class="tech-stats">
+    <div class="header">
+        <span class="icon">📊</span>
+        <h3>Top Languages</h3>
+        {source === 'GitHub' && <span class="badge">GitHub</span>}
+    </div>
+    
+    <div class="languages">
+        {languages.map((lang: any) => (
+            <div class="language">
+                <div class="lang-info">
+                    <span class="name">{lang.name}</span>
+                    <span class="percent">{lang.percent}%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" style={`width: ${lang.percent}%; background-color: ${lang.color || 'var(--accent)'}`}></div>
+                </div>
+            </div>
+        ))}
+    </div>
+</div>
+
+<style>
+    .tech-stats {
+        height: 100%;
+    }
+
+    /* Removed hover effects as they are handled by HoloCard */
+    
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .header h3 {
+        color: var(--accent);
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .badge {
+        font-size: 0.7rem;
+        background: var(--bg-secondary);
+        padding: 0.2rem 0.5rem;
+        border-radius: 12px;
+        color: var(--text-secondary);
+    }
+    
+    .languages {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .lang-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.3rem;
+        font-size: 0.9rem;
+    }
+    
+    .name {
+        color: var(--text-primary);
+    }
+    
+    .percent {
+        color: var(--text-secondary);
+    }
+    
+    .progress-bar {
+        height: 6px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    
+    .progress {
+        height: 100%;
+        border-radius: 3px;
+    }
+</style>
