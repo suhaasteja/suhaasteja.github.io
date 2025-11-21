@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "build:vercel": "node scripts/fetch-github.js && node scripts/fetch-spotify.js && node scripts/fetch-coding.js && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
