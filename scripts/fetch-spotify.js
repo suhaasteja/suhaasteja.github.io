@@ -1,7 +1,11 @@
-require('dotenv').config();
-const SpotifyWebApi = require('spotify-web-api-node');
-const fs = require('fs');
-const path = require('path');
+import 'dotenv/config';
+import SpotifyWebApi from 'spotify-web-api-node';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const spotifyApi = new SpotifyWebApi({
     clientId: process.env.SPOTIFY_CLIENT_ID,

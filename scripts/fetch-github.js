@@ -1,7 +1,11 @@
-require('dotenv').config();
-const axios = require('axios');
-const fs = require('fs');
-const path = require('path');
+import 'dotenv/config';
+import axios from 'axios';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 async function fetchGitHubData() {
     const token = process.env.GH_TOKEN;
@@ -28,37 +32,37 @@ async function fetchGitHubData() {
 
     try {
         const query = `
-        {
+{
             viewer {
-                login
-                repositories(first: 10, orderBy: {field: UPDATED_AT, direction: DESC}, privacy: PUBLIC) {
+        login
+        repositories(first: 10, orderBy: { field: UPDATED_AT, direction: DESC }, privacy: PUBLIC) {
                     nodes {
-                        name
-                        description
-                        url
-                        stargazerCount
-                        forkCount
+                name
+                description
+                url
+                stargazerCount
+                forkCount
                         primaryLanguage {
-                            name
-                        }
-                        languages(first: 10) {
+                    name
+                }
+                languages(first: 10) {
                             edges {
-                                size
+                        size
                                 node {
-                                    name
-                                    color
-                                }
-                            }
+                            name
+                            color
                         }
                     }
                 }
             }
         }
-        `;
+    }
+}
+`;
 
         const response = await axios.post('https://api.github.com/graphql', { query }, {
             headers: {
-                Authorization: `Bearer ${token}`
+                Authorization: `Bearer ${token} `
             }
         });
 
