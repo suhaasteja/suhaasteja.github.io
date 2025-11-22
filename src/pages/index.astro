@@ -1,16 +1,22 @@
 ---
 import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
 import InteractiveBackground from '../components/InteractiveBackground.astro';
 import GlitchHero from '../components/GlitchHero.astro';
 import HoloCard from '../components/HoloCard.astro';
 import Timeline from '../components/Timeline.astro';
-import SpotifyCard from '../components/SpotifyCard.astro';
+
 import TechStats from '../components/TechStats.astro';
 import githubRepos from '../data/github-repos.json';
 import lastUpdatedData from '../data/last-updated.json';
 
+import { getCollection } from 'astro:content';
+
 const projects = githubRepos.slice(0, 6);
 const lastUpdated = new Date(lastUpdatedData.timestamp).toLocaleDateString();
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+).slice(0, 2);
 ---
 
 <!DOCTYPE html>
@@ -23,6 +29,7 @@ const lastUpdated = new Date(lastUpdatedData.timestamp).toLocaleDateString();
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <Navbar />
     <InteractiveBackground />
     
     <GlitchHero />
@@ -76,14 +83,51 @@ const lastUpdated = new Date(lastUpdatedData.timestamp).toLocaleDateString();
             </div>
         </section>
 
-        <section id="dashboard" data-aos="fade-up">
+        <section id="blog" data-aos="fade-up">
             <div class="section-header">
-                <h2>04. SYSTEM_STATUS</h2>
+                <h2>04. THOUGHT_STREAM</h2>
                 <div class="line"></div>
             </div>
             <div class="grid">
-                <HoloCard title="AUDIO_STREAM">
-                    <SpotifyCard />
+                {posts.map((post) => (
+                    <HoloCard title={post.data.title}>
+                        <p>{post.data.description}</p>
+                        <div class="meta">
+                            <span>📅 {post.data.pubDate.toLocaleDateString()}</span>
+                        </div>
+                        <a href={`/blog/${post.slug}/`} class="btn">READ_TRANSMISSION</a>
+                    </HoloCard>
+                ))}
+                <HoloCard title="ARCHIVE_ACCESS">
+                    <p>Access full transmission history.</p>
+                    <a href="/blog" class="btn">VIEW_ALL_LOGS</a>
+                </HoloCard>
+            </div>
+        </section>
+
+        <section id="dashboard" data-aos="fade-up">
+            <div class="section-header">
+                <h2>05. SYSTEM_STATUS</h2>
+                <div class="line"></div>
+            </div>
+            <div class="grid">
+                <HoloCard title="CERTIFICATIONS">
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div>
+                            <h3 style="color: var(--neon-cyan); margin-bottom: 0.5rem;">Ray Foundations Certification</h3>
+                            <p style="font-size: 0.9rem; color: var(--text-dim);">Anyscale • Nov 2025</p>
+                            <p style="font-size: 0.8rem; color: var(--text-dim);">Distributed Computing - Ray</p>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--neon-cyan); margin-bottom: 0.5rem;">Enterprise Design Thinking Practitioner</h3>
+                            <p style="font-size: 0.9rem; color: var(--text-dim);">IBM • Sep 2025</p>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--neon-cyan); margin-bottom: 0.5rem;">5-Day Gen AI Intensive Course with Google</h3>
+                            <p style="font-size: 0.9rem; color: var(--text-dim);">Kaggle</p>
+                            <p style="font-size: 0.8rem; color: var(--text-dim);">Generative AI Tools</p>
+                        </div>
+                    </div>
                 </HoloCard>
                 <HoloCard title="LANGUAGE_PROCESSOR">
                     <TechStats />
@@ -104,26 +148,7 @@ const lastUpdated = new Date(lastUpdatedData.timestamp).toLocaleDateString();
             </div>
         </section>
 
-        <section id="certifications" data-aos="fade-up">
-            <div class="section-header">
-                <h2>05. CREDENTIAL_KEYS</h2>
-                <div class="line"></div>
-            </div>
-            <div class="grid">
-                <HoloCard title="RAY CERTIFIED">
-                    <p>Anyscale / Distributed AI</p>
-                    <p style="font-size: 0.8rem; color: var(--text-dim)">Scaling LLMs & Reinforcement Learning</p>
-                </HoloCard>
-                <HoloCard title="DEEP LEARNING SPECIALIZATION">
-                    <p>Coursera / DeepLearning.AI</p>
-                    <p style="font-size: 0.8rem; color: var(--text-dim)">Neural Networks & Deep Learning</p>
-                </HoloCard>
-                <HoloCard title="GENERATIVE AI WITH LLMS">
-                    <p>Coursera / AWS</p>
-                    <p style="font-size: 0.8rem; color: var(--text-dim)">Transformer Models & Fine-tuning</p>
-                </HoloCard>
-            </div>
-        </section>
+
 
         <section id="contact" data-aos="fade-up">
             <div class="section-header">
@@ -135,6 +160,7 @@ const lastUpdated = new Date(lastUpdatedData.timestamp).toLocaleDateString();
                     <a href="mailto:suhaas.teja@gmail.com">EMAIL_UPLINK</a>
                     <a href="https://www.linkedin.com/in/suhaas-teja/" target="_blank">LINKEDIN_NODE</a>
                     <a href="https://github.com/suhaasteja" target="_blank">GITHUB_REPO</a>
+                    <a href="https://twitter.com/suhaasv_x" target="_blank">TWITTER_FEED</a>
                 </div>
             </HoloCard>
         </section>
@@ -166,6 +192,7 @@ const lastUpdated = new Date(lastUpdatedData.timestamp).toLocaleDateString();
 
         section {
             margin-bottom: 8rem;
+            scroll-margin-top: 5rem;
         }
 
         .section-header {

@@ -1,0 +1,171 @@
+---
+const links = [
+  { name: 'HOME', href: '/#top' },
+  { name: 'ABOUT', href: '/#about' },
+  { name: 'WORK', href: '/#work' },
+  { name: 'PROJECTS', href: '/#projects' },
+  { name: 'BLOG', href: '/#blog' },
+  { name: 'CONTACT', href: '/#contact' },
+];
+---
+
+<nav id="navbar">
+  <div class="nav-container">
+    <div class="nav-content">
+      <div class="logo">
+        <a href="/">
+          SUHAAS<span>_</span>VIJJAGIRI
+        </a>
+      </div>
+      
+      <div class="desktop-menu">
+        {links.map((link) => (
+          <a href={link.href} class="nav-link">
+            {link.name}
+          </a>
+        ))}
+      </div>
+
+      <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+        <span class="hamburger-icon">☰</span>
+        <span class="close-icon" style="display: none;">✕</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    {links.map((link) => (
+      <a href={link.href} class="mobile-nav-link">
+        {link.name}
+      </a>
+    ))}
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const hamburger = btn?.querySelector('.hamburger-icon') as HTMLElement;
+  const close = btn?.querySelector('.close-icon') as HTMLElement;
+
+  btn?.addEventListener('click', () => {
+    const isHidden = menu?.style.display === 'none' || !menu?.style.display;
+    if (menu) menu.style.display = isHidden ? 'block' : 'none';
+    
+    if (hamburger && close) {
+      hamburger.style.display = isHidden ? 'none' : 'block';
+      close.style.display = isHidden ? 'block' : 'none';
+    }
+  });
+</script>
+
+<style>
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+  }
+
+  .logo a {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  .logo span {
+    color: var(--neon-cyan, #00f3ff);
+  }
+
+  .logo a:hover {
+    color: var(--neon-cyan, #00f3ff);
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .desktop-menu {
+      display: flex;
+      gap: 2rem;
+    }
+    .mobile-menu-btn {
+      display: none;
+    }
+  }
+
+  .nav-link {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #d1d5db;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    transition: all 0.3s;
+  }
+
+  .nav-link:hover {
+    color: var(--neon-cyan, #00f3ff);
+    text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+  }
+
+  .mobile-menu-btn {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+
+  .mobile-menu-btn:hover {
+    color: white;
+  }
+
+  .mobile-menu {
+    display: none;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .mobile-nav-link {
+    display: block;
+    padding: 1rem;
+    color: #d1d5db;
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s;
+  }
+
+  .mobile-nav-link:hover {
+    color: var(--neon-cyan, #00f3ff);
+    background: rgba(255, 255, 255, 0.05);
+  }
+</style>

@@ -1,0 +1,111 @@
+---
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+
+interface Props {
+	title: string;
+	description: string;
+	pubDate: Date;
+	updatedDate?: Date;
+	heroImage?: string;
+}
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={description} />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="bg-black text-white font-space min-h-screen flex flex-col">
+        <Navbar />
+		<main class="flex-grow w-full max-w-4xl mx-auto px-4 py-12 mt-16">
+            <a href="/blog" class="text-gray-400 hover:text-primary mb-8 inline-block transition-colors">← Back to Blog</a>
+            
+			<article class="prose prose-invert prose-lg max-w-none blog-content">
+				<div class="mb-8">
+					<!-- Hero Image Removed as per request -->
+					
+                    <div class="text-center">
+                        <div class="text-gray-400 mb-2">
+                            <time datetime={pubDate.toISOString()}>
+                                {pubDate.toLocaleDateString('en-us', {
+                                    year: 'numeric',
+                                    month: 'long',
+                                    day: 'numeric',
+                                })}
+                            </time>
+                            {updatedDate && (
+                                <div class="italic text-sm">
+                                    Last updated on <time datetime={updatedDate.toISOString()}>
+                                        {updatedDate.toLocaleDateString('en-us', {
+                                            year: 'numeric',
+                                            month: 'long',
+                                            day: 'numeric',
+                                        })}
+                                    </time>
+                                </div>
+                            )}
+                        </div>
+                        <h1 class="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">{title}</h1>
+                        <hr class="border-gray-800 my-8" />
+                    </div>
+				</div>
+				<slot />
+			</article>
+		</main>
+        
+        <footer class="text-center py-8 text-gray-500 text-sm">
+            &copy; {new Date().getFullYear()} Suhaas Teja. All rights reserved.
+        </footer>
+	</body>
+</html>
+
+<style is:global>
+    .blog-content {
+        font-family: 'Inter', sans-serif;
+        line-height: 1.8;
+        color: #e0e0e0;
+    }
+    
+    .blog-content h1, 
+    .blog-content h2, 
+    .blog-content h3, 
+    .blog-content h4 {
+        font-family: 'Space Grotesk', sans-serif;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        color: var(--neon-cyan);
+    }
+
+    .blog-content p {
+        margin-bottom: 1.5em;
+        font-size: 1.1rem;
+    }
+
+    .blog-content strong {
+        color: white;
+    }
+
+    .blog-content code {
+        color: var(--neon-purple);
+        background: rgba(255, 255, 255, 0.1);
+        padding: 0.2em 0.4em;
+        border-radius: 4px;
+    }
+
+    .blog-content pre {
+        background: #111 !important;
+        border: 1px solid #333;
+        border-radius: 8px;
+    }
+</style>
