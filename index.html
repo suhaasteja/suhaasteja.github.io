@@ -1,15 +1,488 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="0; url=https://suhaasteja.vercel.app" />
-    <link rel="canonical" href="https://suhaasteja.vercel.app" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suhaas Vijjagiri - AI & Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --bg-card: #151515;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --accent: #00d4ff;
+            --accent-hover: #00b8e6;
+            --border: #2a2a2a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animated gradient background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 80%, rgba(138, 43, 226, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Header */
+        header {
+            padding: 4rem 0 6rem;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent) 0%, #8a2be2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        header > p {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        header p:last-of-type {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        /* Section styling */
+        section {
+            margin-bottom: 5rem;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 60%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--accent), transparent);
+        }
+
+        /* Cards */
+        article {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        article::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        article:hover::before {
+            opacity: 1;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 10px 40px rgba(0, 212, 255, 0.2);
+        }
+
+        article h3 {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        article h3 a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        article h3 a:hover {
+            color: var(--accent-hover);
+        }
+
+        article em {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        article ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        article li {
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            color: var(--text-secondary);
+        }
+
+        article li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        /* About section */
+        #about p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            line-height: 1.8;
+            max-width: 800px;
+        }
+
+        /* Projects grid */
+        #github-projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        #github-projects article {
+            height: 100%;
+        }
+
+        #github-projects small {
+            display: block;
+            margin-top: 1rem;
+            color: var(--text-secondary);
+        }
+
+        /* Skills section */
+        #skills > div {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #skills h3 {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        #skills p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+        }
+
+        /* Contact & Social */
+        #contact ul, #social nav {
+            list-style: none;
+        }
+
+        #contact li {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        #contact a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        #contact a:hover {
+            color: var(--accent-hover);
+        }
+
+        #social nav a {
+            display: inline-block;
+            margin-right: 1.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        #social nav a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--accent);
+            transition: width 0.3s ease;
+        }
+
+        #social nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0 3rem;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+            margin-top: 5rem;
+        }
+
+        /* Loading state */
+        .loading {
+            text-align: center;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header > p {
+                font-size: 1.2rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            #github-projects {
+                grid-template-columns: 1fr;
+            }
+
+            #social nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <header>
+        <h1>Suhaas Vijjagiri</h1>
+        <p>AI & Software Engineer</p>
+        <p>San Francisco Bay Area | 📧 suhaas.teja@gmail.com | 📱 408-829-7282</p>
+    </header>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>
+            AI & Software Engineer experienced in building scalable generative systems and optimizing 
+            observability for real-time monitoring. Skilled in Python, TypeScript, React, and Node.js, 
+            with a proven track record of enhancing both backend and frontend systems.
+        </p>
+    </section>
+
+    <section id="work">
+        <h2>Work Experience</h2>
+        
+        <article>
+            <h3>AI Intern - Humana</h3>
+            <p><em>May 2025 - Aug 2025</em></p>
+            <ul>
+                <li>Developed 5 synthetic red-teaming datasets using persona-based LLM prompting (Python, LangChain)</li>
+                <li>Researched and implemented 6 LLM-as-a-Judge evaluation metrics, expanding RAG system coverage by 70%</li>
+                <li>Automated multi-hop QA dataset generation via Knowledge Graphs, increasing dataset quality by 40%</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>GenAI & Data Analysis Research Assistant - SJSU</h3>
+            <p><em>Jan 2025 - May 2025</em></p>
+            <ul>
+                <li>Led an agentic data curation pipeline using Playwright and VertexAI, classifying 10,000 webpages with 95% accuracy</li>
+                <li>Designed a Human-in-the-Loop evaluation system with A/B testing, reducing manual review workload by 80%</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>AI Chatbot Research Assistant - SJSU Library</h3>
+            <p><em>Mar 2024 - May 2025</em></p>
+            <ul>
+                <li>Co-developed KingbotGPT, an RAG-based AI virtual assistant supporting over 2,000 student queries with >90% accuracy</li>
+                <li>Led the development of RAG evaluation and observability frameworks</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Software Engineer - Zest IoT</h3>
+            <p><em>Jun 2021 - May 2023</em></p>
+            <ul>
+                <li>Designed and implemented 10 responsive front-end features using React and TypeScript</li>
+                <li>Optimized RESTful API integration to reduce latency by 20%</li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 2rem;"><em>Auto-updated from GitHub</em></p>
+        <div id="github-projects">
+            <p class="loading">Loading projects...</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Technologies</h2>
+        <div>
+            <h3>ML & AI</h3>
+            <p>Python, PyTorch, Transformers, scikit-learn, Pandas</p>
+        </div>
+        <div>
+            <h3>Generative AI</h3>
+            <p>LangChain, LangGraph, LlamaIndex, RAG Systems, LLMs as Judge, Red Teaming, HITL Validation, 
+               Synthetic Dataset Development, LoRA/PEFT, Fine-tuning, RLHF, Conversational AI, Guardrails, 
+               Prompt Engineering</p>
+        </div>
+        <div>
+            <h3>Data & Infrastructure</h3>
+            <p>Vector Databases (FAISS, Chroma, Pinecone), SQL, Data Visualization, Web Scraping, Playwright, 
+               Azure AI Foundry, Databricks, AWS, Docker, CI/CD, APIs, Cloud Platforms</p>
+        </div>
+        <div>
+            <h3>Web Development</h3>
+            <p>TypeScript, React, Next.js, Node.js, Git, Debugging Tools</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out for collaborations or opportunities!</p>
+        <ul>
+            <li>Email: <a href="mailto:suhaas.teja@gmail.com">suhaas.teja@gmail.com</a></li>
+            <li>Phone: 408-829-7282</li>
+            <li>Location: San Francisco Bay Area, CA</li>
+        </ul>
+    </section>
+
+    <section id="social">
+        <h2>Social</h2>
+        <nav>
+            <a href="https://www.linkedin.com/in/suhaas-teja/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/suhaasteja" target="_blank">GitHub</a> |
+            <a href="https://suhaasteja.github.io/" target="_blank">Portfolio</a>
+        </nav>
+    </section>
+
+    <footer>
+        <p>Last updated: <span id="last-updated">Loading...</span></p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Built with ❤️ and auto-updated via GitHub Actions</p>
+    </footer>
+
+    </div> <!-- end container -->
+
     <script>
-      window.location.replace("https://suhaasteja.vercel.app");
+        // Load GitHub projects from generated JSON
+        async function loadGitHubProjects() {
+            try {
+                const response = await fetch('data/github-repos.json');
+                const repos = await response.json();
+                
+                const projectsContainer = document.getElementById('github-projects');
+                projectsContainer.innerHTML = '';
+                
+                repos.slice(0, 6).forEach(repo => {
+                    const article = document.createElement('article');
+                    article.innerHTML = `
+                        <h3><a href="${repo.html_url}" target="_blank">${repo.name}</a></h3>
+                        <p>${repo.description || 'No description available'}</p>
+                        <p><small>⭐ ${repo.stargazers_count} | 🍴 ${repo.forks_count} | Language: ${repo.language || 'N/A'}</small></p>
+                    `;
+                    projectsContainer.appendChild(article);
+                });
+            } catch (error) {
+                console.error('Error loading GitHub projects:', error);
+                document.getElementById('github-projects').innerHTML = '<p>Unable to load projects at this time.</p>';
+            }
+        }
+
+        // Load last updated timestamp
+        async function loadLastUpdated() {
+            try {
+                const response = await fetch('data/last-updated.json');
+                const data = await response.json();
+                document.getElementById('last-updated').textContent = new Date(data.timestamp).toLocaleDateString();
+            } catch (error) {
+                document.getElementById('last-updated').textContent = 'Recently';
+            }
+        }
+
+        // Initialize
+        loadGitHubProjects();
+        loadLastUpdated();
     </script>
-    <title>Redirecting…</title>
-  </head>
-  <body>
-    Redirecting…
-  </body>
+
+</body>
 </html>
